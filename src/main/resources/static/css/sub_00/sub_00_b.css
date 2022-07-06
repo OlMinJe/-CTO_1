@@ -14,6 +14,9 @@
 
 
 @media all and (min-width: 768px) {
+    .event .event_wrap { padding: 18% 0; }
     .event .event_wrap ul { flex-direction: row; }
     .event .event_wrap ul li { margin-bottom: 0; }
+    .event .event_wrap ul li { margin-bottom: 0; }
+    .event .event_wrap ul li span { padding: 100px }
 }

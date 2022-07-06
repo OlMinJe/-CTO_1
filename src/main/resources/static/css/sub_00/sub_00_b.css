@@ -18,5 +18,5 @@
     .event .event_wrap ul { flex-direction: row; }
     .event .event_wrap ul li { margin-bottom: 0; }
     .event .event_wrap ul li { margin-bottom: 0; }
-    .event .event_wrap ul li span { padding: 100px }
+    .event .event_wrap ul li span { padding: 100px 0; }
 }

@@ -1,2 +1,7 @@
+/* 글자 속성 */
+body { word-break: keep-all; }
+/* ul li 스타일 x */
+dl, ol, ul { margin: 0; }
 body li { list-style: none; }
-.col-12, col-11, col-10, col-9, col-8, col-7, col-6, col-5, col-4, col-3, col-2, col-1, col-0 { padding: 0 ; }
+/* 부트스트랩 덮어씌우기 */
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1, .col-0 { padding: 0 ; }

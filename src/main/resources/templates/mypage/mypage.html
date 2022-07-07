@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/mypage/mypage.css">
     <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/mypage/mypage.js"></script>
     <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
@@ -12,6 +13,9 @@
     <div class="col-12 mypage">
         <div class="col-12 title" style="float: left">내정보</div>
         <div class="col-12 mypage_con">
+            <!--왼쪽 메뉴
+            TODO: 992px 미만일 때는 display: none 처러, 상단에 클릭하면 펼쳐지는 메뉴로 빼야하나?
+                -> 그럴 경우에는 메뉴 div를 2개 만들어야 함. -->
             <div class="col-3 mypage_menu">
                 <div class="col-12 menu_01">
                     <div class="menu_title">활동내역</div>
@@ -32,21 +36,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-8 content_box">
-                <div class="col-6 box_left">
-                    <div class="col-4 user_photo"><a>프로필 사진 변경</a></div>
-                    <ul class="col-8">
-                        <li>닉네임(변수로 교체)</li>
-                        <li>포인트(변수로 교체)</li>
-                    </ul>
-                    <div class="col-12user_calender">
-                        <div class="col-12">출석체크 현황</div>
+            <!-- 오른쪽 컨텐츠-->
+            <div class="col-9 content_box">
+                <article class="col-6 content_left">
+                    <section class="top">
+                        <div class="col-4 photo"><a>프로필 사진 변경</a></div>  <!-- TODO: https://doolyit.tistory.com/204 -->
+                        <ul class="col-8">
+                            <li>닉네임(변수로 교체)</li>
+                            <li>포인트(변수로 교체)</li>
+                        </ul>
+                    </section>
+                    <section class="col-12 calender">
+                        <div class="col-12 sub_title">출석체크 현황</div>
                         <div class="today">5.30 (출력형식)</div>
                         <div class="today_complete">출석 완료</div>
                         <div class="calender">캘린더</div>
-                    </div>
-                </div>
-                <div class="col-6 box_right"></div>
+                    </section>
+                </article>
+                <article class="col-6 content_right">
+                    <div class="col-12 sub_title">오늘의 날씨</div>
+                    <section>날씨 api</section>
+                </article>
             </div>
         </div>
     </div>

@@ -1,2 +1,11 @@
+body div, body ul, body li, body article, body section, body a { border: 1px solid #ccc; }
+/*TODO: 구조 확인하기 위한 css 추후 삭제*/
+
 div.mypage { max-width: 1330px; margin: 0 auto; }
 .mypage .mypage_con { display: flex; }
+
+
+.mypage_con .content_box { display: flex; }
+.mypage_con .content_box .content_left .top { display: flex; align-items: center; }
+.mypage_con .content_box .content_left .top .photo { display: inline-block; float: left; }
+.mypage_con .content_box .content_left .top ul { display: inline-block; }

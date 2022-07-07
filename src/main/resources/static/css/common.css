@@ -1,6 +1,7 @@
 /* 글자 속성 */
 body { word-break: keep-all; }
 /* ul li 스타일 x */
+ul { padding-inline-start: 0;}
 dl, ol, ul { margin: 0; }
 body li { list-style: none; }
 /* 부트스트랩 덮어씌우기 */

@@ -10,6 +10,8 @@
     <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
 </head>
 <body>
+<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+
     <div class="col-12 mypage">
         <div class="col-12 title" style="float: left">내정보</div>
         <div class="col-12 mypage_con">
@@ -37,28 +39,31 @@
                 </div>
             </div>
             <!-- 오른쪽 컨텐츠-->
-            <div class="col-9 content_box">
-                <article class="col-6 content_left">
+            <div class="col-12 col-lg-9 content_box_01">
+                <article class="col-12 col-md-6 content_left">
                     <section class="top">
-                        <div class="col-4 photo"><a>프로필 사진 변경</a></div>  <!-- TODO: https://doolyit.tistory.com/204 -->
-                        <ul class="col-8">
+                        <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력 -->
+                        <div class="col-4 photo"><a href="">프로필 사진 변경</a></div>  <!-- TODO: https://doolyit.tistory.com/204 -->
+                        <ul>
                             <li>닉네임(변수로 교체)</li>
                             <li>포인트(변수로 교체)</li>
                         </ul>
                     </section>
                     <section class="col-12 calender">
                         <div class="col-12 sub_title">출석체크 현황</div>
-                        <div class="today">5.30 (출력형식)</div>
-                        <div class="today_complete">출석 완료</div>
-                        <div class="calender">캘린더</div>
+                        <div class="col-6 today">5.30 (출력형식)</div>
+                        <div class="col-6 today_complete">출석 완료</div>
+                        <div class="sub_calender">캘린더를 어쩌냐</div>
                     </section>
                 </article>
-                <article class="col-6 content_right">
+                <article class="col-12 col-md-6 content_right">
                     <div class="col-12 sub_title">오늘의 날씨</div>
                     <section>날씨 api</section>
                 </article>
             </div>
         </div>
     </div>
+
+<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 </body>
 </html>

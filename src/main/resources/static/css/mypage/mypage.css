@@ -1,11 +1,37 @@
 body div, body ul, body li, body article, body section, body a { border: 1px solid #ccc; }
 /*TODO: 구조 확인하기 위한 css 추후 삭제*/
+/*div.mypage { max-width: 1330px; margin: 0 auto; padding: 0 15px; }*/
 
-div.mypage { max-width: 1330px; margin: 0 auto; }
-.mypage .mypage_con { display: flex; }
+.mypage .title { margin-bottom: 30px; font-size: 30px; line-height: 36px; color: #ccc; }
+.mypage .mypage_con { display: flex; justify-content: space-around; }
+
+/* 공통*/
+.mypage_con .content_box .content_left .calender .sub_title, .mypage_con .content_box .content_right .sub_title
+{ margin-bottom: 15px; padding: 10px; font-size: 20px; line-height; 26px; }
 
 
-.mypage_con .content_box { display: flex; }
-.mypage_con .content_box .content_left .top { display: flex; align-items: center; }
-.mypage_con .content_box .content_left .top .photo { display: inline-block; float: left; }
-.mypage_con .content_box .content_left .top ul { display: inline-block; }
+/* MENU */
+.mypage .mypage_con .mypage_menu { display: none; padding-right: 20px; }
+.mypage .mypage_con .mypage_menu .menu_title { margin-bottom: 15px; padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000; }
+.mypage .mypage_con .mypage_menu .menu_01 { margin-bottom: 30px; }
+.mypage .mypage_con .mypage_menu ul li { padding: 10px; border-bottom: 1px solid #ccc; }
+
+/* content 박스 [1번-내정보 메인]*/
+.mypage_con .content_box_01 { display: flex; flex-direction: column; height: 100%; }
+.mypage_con .content_box_01 .content_left .top { display: flex; margin-bottom: 30px; }
+.mypage_con .content_box_01 .content_left .top .photo { display: inline-block; float: left; margin-right: 15px; height: 200px; text-align: center; }
+.mypage_con .content_box_01 .content_left .top .photo a { display: block; height: 100%; }
+.mypage_con .content_box_01 .content_left .top ul { width: 55%; }
+.mypage_con .content_box_01 .content_left .top ul li { margin-bottom: 30px; padding: 6px 3px; }
+.mypage_con .content_box_01 .content_left .top ul li:last-child { margin-bottom: 0; }
+.mypage_con .content_box_01 .content_left .calender .today { display: inline-block; float: left; padding: 6px 3px; }
+.mypage_con .content_box_01 .content_left .calender .today_complete { display: inline-block; padding: 6px 3px; text-align: right;}
+.mypage_con .content_box_01 .content_left .calender .sub_calender { height: 400px; } /* 높이 수정 필요 */
+
+@media all and (min-width: 768px){
+    .mypage_con .content_box_01 { flex-direction: row; }
+}
+
+@media all and (min-width: 992px){
+    .mypage .mypage_con .mypage_menu { display: block; }
+}

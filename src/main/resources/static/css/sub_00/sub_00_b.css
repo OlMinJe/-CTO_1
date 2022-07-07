@@ -5,12 +5,26 @@
 /* https://webisfree.com/2017-04-10/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9(bootstrap)%EC%97%90%EC%84%9C-padding%EA%B0%92%EC%9D%84-%EC%97%86%EC%95%A0%EB%8A%94-css%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94 */
 
 .event { max-width: 1330px; margin: 0 auto;}
-.event .event_title { padding: 30px 0; border: 1px solid; text-align: center; font-size: 30px; font-size: 0.3erm; line-height: 36px; line-height: 0.36erm; color: #ccc; }
-.event .event_wrap { height: 700px; padding: 30px 0; border: 1px solid #ccc; border-top: none; } /* TODO: 높이 변경 필요 */
+.event .event_title { padding: 30px 0; border: 1px solid; text-align: center; font-size: 30px; line-height: 36px; color: #ccc; }
+.event .event_wrap { height: 700px; padding: 30px 0; border-top: none; } /* TODO: 높이 변경 필요 */
 .event .event_wrap ul { display: flex; justify-content: space-between; flex-direction: column; align-items: center; }
 .event .event_wrap ul li { display: grid; list-style: none; margin-bottom: 15px; text-align: center;}
 .event .event_wrap ul li:last-child { margin-bottom: 0; }
-.event .event_wrap ul li span { padding: 60px 0; border: 1px solid #ccc; }
+.event .event_wrap ul li span { position: relative; padding: 60px 0; border-radius:10%; background-color: #c4f2c2; font-size: 30px; line-height: 36px; }
+.event .event_wrap ul li span::after { content: '추후 화살표 이미지로 수정'; bottom: 15px; right: 10px; position: absolute; font-size: 10px; line-height: 16px; }
+.event .event_wrap ul li span:hover { background-color: #9fdebd; }
+.event .event_wrap ul li span:active { background-color: ##80ecb; }
+
+
+/* TODO: 추가해보고 싶은 속성 */
+.btn-12{ position: relative; display: none; }
+.btn-12 span { background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); display: block; position: absolute; width: 130px; height: 40px; box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px; margin:0; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s;  transition: all .3s; }
+.btn-12 span:nth-child(1) {  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001; -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg); transform: rotateX(90deg); -webkit-transform-origin: 50% 50% -20px; -moz-transform-origin: 50% 50% -20px; transform-origin: 50% 50% -20px; }
+.btn-12 span:nth-child(2) { -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); transform: rotateX(0deg); -webkit-transform-origin: 50% 50% -20px; -moz-transform-origin: 50% 50% -20px; transform-origin: 50% 50% -20px; }
+.btn-12:hover span:nth-child(1) { box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1); -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); transform: rotateX(0deg); }
+.btn-12:hover span:nth-child(2) { box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1); color: transparent; -webkit-transform: rotateX(-90deg); -moz-transform: rotateX(-90deg); transform: rotateX(-90deg); }
 
 
 @media all and (min-width: 768px) {
@@ -20,3 +34,9 @@
     .event .event_wrap ul li { margin-bottom: 0; }
     .event .event_wrap ul li span { padding: 100px 0; }
 }
+
+
+
+
+
+

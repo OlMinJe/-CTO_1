@@ -1,14 +1,54 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">>
+    <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/sub_00/sub_00_b.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/sub_00/sub_00.js"></script>
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/mypage/mypage.css">
+    <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/mypage/mypage.js"></script>
     <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
 </head>
 <body>
-
+    <div class="col-12 mypage">
+        <div class="col-12 title" style="float: left">내정보</div>
+        <div class="col-12 mypage_con">
+            <div class="col-3 mypage_menu">
+                <div class="col-12 menu_01">
+                    <div class="menu_title">활동내역</div>
+                    <ul>
+                        <li>이벤트 참여내역</li>
+                        <li>커뮤니티 사용내역</li>
+                        <li>위치기반 사용내역</li>
+                        <li>테스트 결과 내역</li>
+                    </ul>
+                </div>
+                <div class="col-12 menu_02">
+                    <div class="menu_title">정보변경</div>
+                    <ul>
+                        <li>비밀번호 변경</li>
+                        <li>닉네임 변경</li>
+                        <li>프로필 사진 변경</li>
+                        <li>회원탈퇴</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8 content_box">
+                <div class="col-6 box_left">
+                    <div class="col-4 user_photo"><a>프로필 사진 변경</a></div>
+                    <ul class="col-8">
+                        <li>닉네임(변수로 교체)</li>
+                        <li>포인트(변수로 교체)</li>
+                    </ul>
+                    <div class="col-12user_calender">
+                        <div class="col-12">출석체크 현황</div>
+                        <div class="today">5.30 (출력형식)</div>
+                        <div class="today_complete">출석 완료</div>
+                        <div class="calender">캘린더</div>
+                    </div>
+                </div>
+                <div class="col-6 box_right"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

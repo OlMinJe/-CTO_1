@@ -13,25 +13,29 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 /* MENU */
 .mypage .mypage_con .mypage_menu { display: none; padding-right: 20px; }
 .mypage .mypage_con .mypage_menu .menu_title { margin-bottom: 15px; padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000; }
-.mypage .mypage_con .mypage_menu .menu_01 { margin-bottom: 30px; }
-.mypage .mypage_con .mypage_menu ul li { padding: 10px; border-bottom: 1px solid #ccc; }
+.mypage .mypage_con .mypage_menu .menu_title.mt { margin: 30px 0 15px; }
+.mypage .mypage_con .mypage_menu bottom { position: relative; padding: 10px; border-bottom: 2px solid #ccc; }
+.mypage .mypage_con .mypage_menu bottom:before { content: ''; position: absolute; bottom: -2px; left: 0; display: block; width: 2px; height: 2px; transition: all linear 0.5s; }
+.mypage .mypage_con .mypage_menu bottom:hover:before { width: 100%; background-color: orange; }
 
-/* content 박스 [1번-내정보 메인]*/
-.mypage_con .content_box_01 { display: flex; flex-direction: column; height: 100%; }
-.mypage_con .content_box_01 .content_left .top { display: flex; margin-bottom: 30px; }
-.mypage_con .content_box_01 .content_left .top .photo { display: inline-block; float: left; margin-right: 15px; height: 200px; text-align: center; }
-.mypage_con .content_box_01 .content_left .top .photo a { display: block; height: 100%; }
-.mypage_con .content_box_01 .content_left .top ul { width: 55%; }
-.mypage_con .content_box_01 .content_left .top ul li { margin-bottom: 30px; padding: 6px 3px; }
-.mypage_con .content_box_01 .content_left .top ul li:last-child { margin-bottom: 0; }
-.mypage_con .content_box_01 .content_left .calender .today { display: inline-block; float: left; padding: 6px 3px; }
-.mypage_con .content_box_01 .content_left .calender .today_complete { display: inline-block; padding: 6px 3px; text-align: right;}
-.mypage_con .content_box_01 .content_left .calender .sub_calender { height: 400px; } /* 높이 수정 필요 */
+/* content 박스 [내정보 메인]*/
+.mypage_con .content_box_main { display: flex; flex-direction: column; height: 100%; }
+.mypage_con .content_box_main .content_left .top { display: flex; margin-bottom: 30px; }
+.mypage_con .content_box_main .content_left .top .photo { display: inline-block; float: left; margin-right: 15px; height: 200px; text-align: center; }
+.mypage_con .content_box_main .content_left .top .photo a { display: block; height: 100%; }
+.mypage_con .content_box_main .content_left .top ul { width: 55%; }
+.mypage_con .content_box_main .content_left .top ul li { margin-bottom: 30px; padding: 6px 3px; }
+.mypage_con .content_box_main .content_left .top ul li:last-child { margin-bottom: 0; }
+.mypage_con .content_box_main .content_left .calender .today { display: inline-block; float: left; padding: 6px 3px; }
+.mypage_con .content_box_main .content_left .calender .today_complete { display: inline-block; padding: 6px 3px; text-align: right;}
+.mypage_con .content_box_main .content_left .calender .sub_calender { height: 400px; } /* 높이 수정 필요 */
+
+.mypage_con .content_box { display: none; }
 
 @media all and (min-width: 768px){
-    .mypage_con .content_box_01 { flex-direction: row; }
+    .mypage_con .content_box_main { flex-direction: row; }
 }
 
 @media all and (min-width: 992px){
-    .mypage .mypage_con .mypage_menu { display: block; }
+    .mypage .mypage_con .mypage_menu { display: flex; flex-direction: column; }
 }

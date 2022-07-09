@@ -13,9 +13,11 @@
 <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
 
     <div class="col-12 mypage">
-        <bottom type="radio" id="tab_0" name="menu_tab" value="0" onclick="showMenu(this)">
-            <div class="col-12 title" style="float: left">내정보</div>
-        </bottom>
+        <div class="col-12 title" style="float: left">
+            <bottom type="radio" id="tab_0" name="menu_tab" value="0" onclick="showMenu(this)">
+                내정보
+            </bottom>
+        </div>
         <div class="col-12 mypage_con">
             <!--왼쪽 메뉴
             TODO: 992px 미만일 때는 display: none 처러, 상단에 클릭하면 펼쳐지는 메뉴로 빼야하나?
@@ -79,25 +81,50 @@
                     </article>
                     <article class="col-12 col-md-6 content_right">
                         <div class="col-12 sub_title">오늘의 날씨</div>
-                        <section>날씨 api</section>
+                        <section class="col-12 weather_api">날씨 api</section>
+                        <section class="col-12 weather_list">
+                            <ul class="col-6">
+                                <li>강수확률<span>값</span></li>
+                                <li>북서풍<span>값</span></li>
+                                <li>미세<span>값</span></li>
+                                <li>일몰<span>값</span></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li>체감<span>값</span></li>
+                                <li>습도<span>값</span></li>
+                                <li>초미세<span>값</span></li>
+                                <li>체감<span>값</span></li>
+                            </ul>
+                        </section>
                     </article>
                 </div>
                 <!-- 2. 내정보 [활동내역 - 이벤트 참여내역]-->
-                <div class="col-12 content_box" id="tab_1_content">111111</div>
+                <div class="col-12 content_box" id="tab_1_content">이벤트 참내역</div>
                 <!-- 3. 내정보 [활동내역 - 커뮤니티 참여내역]-->
-                <div class="col-12 content_box" id="tab_2_content">222222</div>
+                <div class="col-12 content_box" id="tab_2_content">커뮤니티 참여내역</div>
                 <!-- 4. 내정보 [활동내역 - 위치기반 참여내역]-->
-                <div class="col-12 content_box" id="tab_3_content">333333</div>
+                <div class="col-12 content_box" id="tab_3_content">위치기반 참여내역</div>
                 <!-- 5. 내정보 [활동내역 - 테스트 참여내역]-->
-                <div class="col-12 content_box" id="tab_4_content">444444</div>
+                <div class="col-12 content_box" id="tab_4_content">테스트 참여내역</div>
                 <!-- 6. 내정보 [정보변경 - 비밀번호 변경]-->
-                <div class="col-12 content_box" id="tab_5_content">555555</div>
+                <div class="col-12 content_box" id="tab_5_content">
+                    <div class="col-12">재로그인으로 갑시다</div>
+                    <form action="/user/login" method="post">
+                       <!--백엔드랑 합치기-->
+                        <!-- <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />-->
+
+                        <input type="text" name="username" placeholder="이메일 입력해주세요">
+                        <input type="password" name="password" placeholder="비밀번호">
+                        <button type="submit">로그인</button>
+                    </form>
+                    <!-- TODO: 참고 사이트 https://choco4study.tistory.com/63-->
+                </div>
                 <!-- 7. 내정보 [정보변경 - 닉네임 변경]-->
-                <div class="col-12 content_box" id="tab_6_content">666666</div>
+                <div class="col-12 content_box" id="tab_6_content">닉네임 변경</div>
                 <!-- 8. 내정보 [정보변경 - 프로필 사진 변경]-->
-                <div class="col-12 content_box" id="tab_7_content">777777</div>
+                <div class="col-12 content_box" id="tab_7_content">프로필 사진 변경</div>
                 <!-- 9. 내정보 [정보변경 - 비밀번호 변경]-->
-                <div class="col-12 content_box" id="tab_8_content">888888</div>
+                <div class="col-12 content_box" id="tab_8_content">비밀번호 변경</div>
             </div>
         </div>
     </div>

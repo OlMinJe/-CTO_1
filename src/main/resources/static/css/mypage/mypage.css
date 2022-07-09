@@ -2,7 +2,8 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 /*TODO: 구조 확인하기 위한 css 추후 삭제*/
 /*div.mypage { max-width: 1330px; margin: 0 auto; padding: 0 15px; }*/
 
-.mypage .title { margin-bottom: 30px; font-size: 30px; line-height: 36px; font-weight: 700; color: #ccc; }
+.mypage .title { margin-bottom: 30px; padding: 15px 10px; font-size: 30px; line-height: 36px; font-weight: 700; color: #ccc; }
+.mypage .title bottom { cursor: pointer; }
 .mypage .mypage_con { display: flex; justify-content: space-around; flex-direction: column; }
 
 /* 공통*/
@@ -14,11 +15,11 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 .mypage_con .mypage_menu { display: none; padding-right: 20px; }
 .mypage_con .mypage_menu .menu_title { margin-bottom: 15px; padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000; }
 .mypage_con .mypage_menu .menu_title.mt { margin: 30px 0 15px; }
-.mypage_con .mypage_menu bottom { position: relative; padding: 10px; border-bottom: 2px solid #ccc; }
+.mypage_con .mypage_menu bottom { position: relative; padding: 10px; border-bottom: 2px solid #ccc; cursor: pointer; }
 .mypage_con .mypage_menu bottom:before { content: ''; position: absolute; bottom: -2px; left: 0; display: block; width: 2px; height: 2px; transition: all linear 0.5s; }
 .mypage_con .mypage_menu bottom:hover:before { width: 100%; background-color: orange; }
 
-/* content 박스 [내정보 메인]*/
+/* ----------- content 박스 [내정보 메인] -----------*/
 .content_box#tab_0_content { display: flex; flex-direction: column; height: 100%; }
 .content_box#tab_0_content .content_left { float: left; }
 .content_box#tab_0_content .content_left .top { display: flex; margin-bottom: 30px; }
@@ -28,7 +29,6 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 .content_box#tab_0_content .content_left .top .photo label { cursor: pointer; font-size: 1em; }
 .content_box#tab_0_content .content_left .top .photo  #chooseFile { visibility: hidden; }
 .content_box#tab_0_content .content_left .top .photo a { display: block; height: 100%; }
-
 .content_box#tab_0_content .content_left .top ul { width: 55%; }
 .content_box#tab_0_content .content_left .top ul li { margin-bottom: 30px; padding: 6px 3px; }
 .content_box#tab_0_content .content_left .top ul li:last-child { margin-bottom: 0; }
@@ -36,18 +36,20 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 .content_box#tab_0_content .content_left .calender .today { display: inline-block; float: left; padding: 6px 3px; }
 .content_box#tab_0_content .content_left .calender .today_complete { display: inline-block; padding: 6px 3px; text-align: right;}
 .content_box#tab_0_content .content_left .calender .sub_calender { height: 400px; } /* 높이 수정 필요 */
-/*
-.custom_calendar_table td { text-align: center; }
+/*.custom_calendar_table td { text-align: center; }
 .custom_calendar_table thead.cal_date th { font-size: 1.5rem; }
 .custom_calendar_table thead.cal_date th button { font-size: 1.5rem; background: none; border: none; }
 .custom_calendar_table thead.cal_week th { background-color: #288CFF; color: #fff; }
 .custom_calendar_table tbody td { cursor: pointer; }
 .custom_calendar_table tbody td:nth-child(1) { color: red; }
 .custom_calendar_table tbody td:nth-child(7) { color: #288CFF; }
-.custom_calendar_table tbody td.select_day { background-color: #288CFF; color: #fff; }
-*/
+.custom_calendar_table tbody td.select_day { background-color: #288CFF; color: #fff; }*/
 
 .content_box#tab_0_content .content_right { float: right; }
+.content_box#tab_0_content .content_right .weather_api { padding: 40px 0; text-align: center; }
+.content_box#tab_0_content .content_right .weather_list ul { float: left; text-align: center}
+.content_box#tab_0_content .content_right .weather_list ul li { padding: 40px 0; }
+.content_box#tab_0_content .content_right .weather_list ul li span { padding: 0 10px; }
 
 
 .mypage_con .content_box { display: none; }

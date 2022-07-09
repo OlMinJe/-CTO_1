@@ -99,7 +99,7 @@
                     </article>
                 </div>
                 <!-- 2. 내정보 [활동내역 - 이벤트 참여내역]-->
-                <div class="col-12 content_box" id="tab_1_content">이벤트 참내역</div>
+                <div class="col-12 content_box" id="tab_1_content">이벤트 참여내역</div>
                 <!-- 3. 내정보 [활동내역 - 커뮤니티 참여내역]-->
                 <div class="col-12 content_box" id="tab_2_content">커뮤니티 참여내역</div>
                 <!-- 4. 내정보 [활동내역 - 위치기반 참여내역]-->
@@ -108,11 +108,8 @@
                 <div class="col-12 content_box" id="tab_4_content">테스트 참여내역</div>
                 <!-- 6. 내정보 [정보변경 - 비밀번호 변경]-->
                 <div class="col-12 content_box" id="tab_5_content">
-                    <div class="col-12">재로그인으로 갑시다</div>
+                    <div class="col-12">로그인 기획 확인 필요</div>
                     <form action="/user/login" method="post">
-                       <!--백엔드랑 합치기-->
-                        <!-- <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />-->
-
                         <input type="text" name="username" placeholder="이메일 입력해주세요">
                         <input type="password" name="password" placeholder="비밀번호">
                         <button type="submit">로그인</button>
@@ -120,11 +117,20 @@
                     <!-- TODO: 참고 사이트 https://choco4study.tistory.com/63-->
                 </div>
                 <!-- 7. 내정보 [정보변경 - 닉네임 변경]-->
-                <div class="col-12 content_box" id="tab_6_content">닉네임 변경</div>
+                <div class="col-12 content_box" id="tab_6_content">
+                    <input type="text" name="username" placeholder="기존 닉네임 가져오기">
+                    <button type="submit">변경하기</button>
+                </div>
                 <!-- 8. 내정보 [정보변경 - 프로필 사진 변경]-->
-                <div class="col-12 content_box" id="tab_7_content">프로필 사진 변경</div>
+                <div class="col-12 content_box" id="tab_7_content">프로필 사진 변경-메인에 넣은거 아이디 값만 바꿔서 넣기</div>
                 <!-- 9. 내정보 [정보변경 - 비밀번호 변경]-->
-                <div class="col-12 content_box" id="tab_8_content">비밀번호 변경</div>
+                <div class="col-12 content_box" id="tab_8_content">
+                    회원 탈퇴의 경우 재로그인해서 확인하기<br/>
+                    <input type="text" name="username" placeholder="이메일 입력해주세요">
+                    <input type="password" name="password" placeholder="비밀번호">
+                    <button type="submit">로그인</button>
+                    <!-- TODO: 회원탈퇴 및 다른 부분 스프링 참고하기-->
+                </div>
             </div>
         </div>
     </div>

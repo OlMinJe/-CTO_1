@@ -5,6 +5,7 @@
     <title>서브페이지_b</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/sub_00/sub_00_b.css">
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/sub_00/sub_00_a.css">
     <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/sub_00/sub_00.js"></script>
 </head>
 <body>
@@ -17,6 +18,67 @@
 
     <!--화면 구조 설계-->
     <a class="btn btn-default" href="">테스트</a>
+    <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html">
+        <!--<div id ="event-wrap">
+            <header>
+                <div>
+                    <h1 class ="logo">
+                        <a href="#"><img src="images/CTO_Logo_01.png" alt="Logo"></a>
+                    </h1>
+                     #대부분의 경우 웹사이트의 로고 사이즈는 250px(width) x 100px(height) 추후 사이즈, 로고 이미지 조정
+
+                    <ul class="gnb">
+                        <li>
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <img src="images/icon_search_btn_01.png" alt="search">
+                        </li>
+                    </ul>
+                </div>
+                #<div class="event-burger">
+                #<div class="line1"></div>
+                #<div class="line2"></div>
+                #<div class="line3"></div>
+            #</div>
+            </header>
+        -->
+    </header>
+    <div id ="event-container">
+        <div id="event_top">
+            <h2>독서 감상 대회</h2>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="tabs">
+            <div class="tab" data-tab-target="#tab1">
+                <p>참여하기</p>
+            </div>
+            <div class="tab" data-tab-target="#tab2">
+                <p>다른 사람들의 참여 내역</p>
+            </div>
+            <div class="tab" data-tab-target="#tab3">
+                <p>tab3</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="tab1" data-tab-content class="items active">
+            <h2>참여하기</h2>
+            <p>탭 1에 들어갈 내용~</p>
+        </div>
+        <div id="tab2" data-tab-content class="items">
+            <h2>Tab2</h2>
+            <p>탭 2에 들어갈 내용~</p>
+        </div>
+        <div id="tab3" data-tab-content class="items">
+            <h2>Tab3</h2>
+            <p>탭 3에 들어갈 내용~</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/sub_00/sub_00.js"></script>
+    <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 
 </body>
 </html>

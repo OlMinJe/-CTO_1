@@ -1,5 +1,5 @@
 /*
-    TODO: 참고 사이트 ( 이해 불가 )
+    TODO: 참고 사이트
     1. https://kyung-a.tistory.com/18
     2. https://www.w3schools.com/howto/howto_html_include.asp
     또는 해당 파일에 스크립트 태그 넣고 코드를 넣는 방법도 있지만, 적용해야할 파일이 너무 많아서 js 파일 따로 분리해놓음

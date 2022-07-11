@@ -1,4 +1,4 @@
-// sub_00_a
+// event_detail
 const tabs = document.querySelectorAll("[data-tab-target]");
 const tabcon = document.querySelectorAll("[data-tab-content]");
 tabs.forEach((tab) => {

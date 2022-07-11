@@ -1,1 +1,18 @@
 /*div.header { max-width: 1330px; margin: 0 auto; padding: 0 15px; }*/
+
+
+/*
+header{ height: 120px; border-bottom: 1px solid #bbb; }
+header > div { max-width: 1330px; margin: 0 auto; }
+header .logo{ float: left;}
+header .logo img { width:200px; height: 100px; margin-top: 10px; padding-bottom: 10px; }
+
+header .gnb{ float: right; width: 300px; position: relative; margin-top: 30px; }
+
+.search{ position: relative; width: 300px; }
+
+header .gnb input{width: 100%; border: 1px solid #bbb; border-radius: 8px; padding:10px 12px; font-size: 14px; }
+
+header .gnb img{position: absolute; width: 17px; top: 10px; right: 12px; margin: 0;}
+*/
+

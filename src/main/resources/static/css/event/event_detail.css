@@ -1,28 +1,16 @@
-* {
-    margin: 0; padding: 0; box-sizing: border-box; user-select: none; max-width: 1330px; margin: 0 auto;
-}
+* { box-sizing: border-box; user-select: none; }
+/*body{ height: 100vh; display: flex; align-items: center; justify-content: center; background-color: orange; }*/
+
+
+/* event-container */
 /*
-body{ height: 100vh; display: flex; align-items: center; justify-content: center; background-color: orange; }
+#event-container { width: 100%; padding: 10px 0; background:white; border-bottom: 1px solid #bbb; }
+#event-container div { margin: 0; font-size: 2em; line-height: 2.6em; }
+ TODO: #event_top 으로 지정한 것과 차이 없음! 오히려 div 박스 한개를 줄여서 더 효율적인 방ㅇ식...!
+        그리고 ID는 그 페이지 안에 고유한 1개의 값이라 정말 중요한 거 아니면 클래스 명으로 지어주는게 좋아!
 */
-
-ul,li { list-style: none; }
-
-header{ height: 120px; border-bottom: 1px solid #bbb; }
-header > div { max-width: 1330px; margin: 0 auto; }
-header .logo{ float: left;}
-header .logo img { width:200px; height: 100px; margin-top: 10px; padding-bottom: 10px; }
-
-header .gnb{ float: right; width: 300px; position: relative; margin-top: 30px; }
-
-/*.search{ position: relative; width: 300px; } */
-
-header .gnb input{width: 100%; border: 1px solid #bbb; border-radius: 8px; padding:10px 12px; font-size: 14px; }
-
-header .gnb img{position: absolute; width: 17px; top: 10px; right: 12px; margin: 0;}
-
-/* event-container*/
-
-#event_top { width: 100%; height: 50px; padding-top: 10px; background:white; border-bottom: 1px solid #bbb; /*text-align: center;*/ }
+#event_top { width: 100%; padding: 10px 0; background:white; border-bottom: 1px solid #bbb; }
+#event_top div { margin: 0; font-size: 2em; line-height: 2.6em; }
 
 /* event-tabs */
 

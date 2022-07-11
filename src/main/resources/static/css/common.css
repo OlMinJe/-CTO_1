@@ -10,8 +10,12 @@ body li { list-style: none; }
 .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1, .col-0 { padding: 0; }
 
 /* TODO: 모든 페이지의 최상위 부모는 <div class="col-12">로 시작해야한다 */
-body > div.col-12 { max-width: 1330px; margin: 0 auto; padding: 0 15px;
+body > div.col-12 { max-width: 1330px; margin: 0 auto; padding: 0 15px; }
 
-/* h 태그 속성 해제 TODO: 왜 적용 안되는 걸까??,,,*/
-html .h1, html .h2, html .h3, html .h4, html .h5, html .h6, html h1, html h2, html h3, html h4, html h5, html h6 { margin-bottom: 0rem !important; }
-h1, h2, h3, h4, h5, h6 { maigi-bottom: 0; }
+/* 버튼 속성 일부 초기화 */
+button { text-align: left; border: none; outline: none; background-color: #fff;}
+button:focus{ border: none; outline:none; }
+
+/* h 태그 속성 일부 초기화 */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }

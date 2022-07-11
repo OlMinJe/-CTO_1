@@ -1,4 +1,9 @@
 /* TODO: (참고 사이트) https://seongeun-it.tistory.com/113 */
+/* var Content = document.getElementsByClassName("content_box");
+   Content[0].style.display = "block";
+*/
+$(document).ready(function(){ console.log("test"); });
+
 function showMenu(element){
     var content = document.getElementsByClassName("content_box");
     for(var i=0; i<content.length; i++){
@@ -10,7 +15,7 @@ function showMenu(element){
     }
 }
 /* TOdO: (참고 사이트) https://velog.io/@minkyeong-ko/HTMLCSSJS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%A6%84-%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0 */
-var submit = document.getElementById('submitButton');
+/*var submit = document.getElementById('submitButton');
 submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
 
 function showImage() {
@@ -40,95 +45,77 @@ function loadFile(input) {
 
     var container = document.getElementById('image-show');
     container.appendChild(newImage);
-}
+}*/
 
-/* TODO: (참고 사이트) https://myhappyman.tistory.com/145 */
-/*
-function () {
-    calendarMaker(("#calendarForm"), new Date());
-}
+/* TODO: (참고 사이트) https://www.youtube.com/watch?v=jFmcH5GVRs4
+ 달력 */
 
-var nowDate = new Date();
-function calendarMaker(target, date) {
-    if (date == null || date == undefined) {
-        date = new Date();
-    }
-    nowDate = date;
-    if ($(target).length > 0) {
-        var year = nowDate.getFullYear();
-        var month = nowDate.getMonth() + 1;
-        $(target).empty().append(assembly(year, month));
-    } else {
-        console.error("custom_calendar Target is empty!!!");
-        return;
-    }
+const date = new Date();
 
-    var thisMonth = new Date(nowDate.getFullYear(), nowDate.getMonth(), 1);
-    var thisLastDay = new Date(nowDate.getFullYear(), nowDate.getMonth() + 1, 0);
+const renderCalender = () => {
+    const viewYear = date.getFullYear();
+    const viewMonth = date.getMonth();
 
+    document.querySelector('.year_month').innerHTML = '${viewYear}년 ${viewMonth + 1}월';
 
-    var tag = "<tr>";
-    var cnt = 0;
-    //빈 공백 만들어주기
-    for (i = 0; i < thisMonth.getDay(); i++) {
-        tag += "<td></td>";
-        cnt++;
-    }
+    const prevLast = new Date(viewYear, viewYear, 0);
+    const thisLast = new Date(viewYear, viewMonth + 1, 0);
 
-    //날짜 채우기
-    for (i = 1; i <= thisLastDay.getDate(); i++) {
-        if (cnt % 7 == 0) { tag += "<tr>"; }
+    const PLDate = prevLast.getDate();
+    const PLDay = prevLast.getDay();
 
-        tag += "<td>" + i + "</td>";
-        cnt++;
-        if (cnt % 7 == 0) {
-            tag += "</tr>";
+    const TLDate = thisLast.getDate();
+    const TLDDay = thisLast.getDay();
+
+    const prevDates = [];
+    const thisDates = [Array(TLDate + 1).keys()].slice(1)
+    const nextDates = [];
+
+    if(PLDate !== 6) {
+        for(let i = 0; i < PLDate+1 ; i++) {
+            prevDates.unshift(PLDate - i);
         }
     }
-    $(target).find("#custom_set_date").append(tag);
-    calMoveEvtFn();
+    for(let i = 0; i < 7 - TLDate; i++) { nextDates.push(i); }
 
-    function assembly(year, month) {
-        var calendar_html_code =
-            "<table class='custom_calendar_table'>" +
-            "<colgroup>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "<col style='width:81px'/>" +
-            "</colgroup>" +
-            "<thead class='cal_date'>" +
-            "<th><button type='button' class='prev'><</button></th>" +
-            "<th colspan='5'><p><span>" + year + "</span>년 <span>" + month + "</span>월</p></th>" +
-            "<th><button type='button' class='next'>></button></th>" +
-            "</thead>" +
-            "<thead  class='cal_week'>" +
-            "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>" +
-            "</thead>" +
-            "<tbody id='custom_set_date'>" +
-            "</tbody>" +
-            "</table>";
-        return calendar_html_code;
-    }
+    const dates = prevDates.concat(thisDates, nextDates);
+    const firstDateIndex = dates.indexOf(1);
+    const lastDateIndex = dates.indexOf(TLDate);
 
-    function calMoveEvtFn() {
-        //전달 클릭
-        $(".custom_calendar_table").on("click", ".prev", function () {
-            nowDate = new Date(nowDate.getFullYear(), nowDate.getMonth() - 1, nowDate.getDate());
-            calendarMaker($(target), nowDate);
-        });
-        //다음날 클릭
-        $(".custom_calendar_table").on("click", ".next", function () {
-            nowDate = new Date(nowDate.getFullYear(), nowDate.getMonth() + 1, nowDate.getDate());
-            calendarMaker($(target), nowDate);
-        });
-        //일자 선택 클릭
-        $(".custom_calendar_table").on("click", "td", function () {
-            $(".custom_calendar_table .select_day").removeClass("select_day");
-            $(this).removeClass("select_day").addClass("select_day");
-        });
+
+    dates.forEach((date, i) => {
+        const condition = i >= firstDateIndex && i <= lastDateIndex + 1
+                          ? 'this'
+                          : 'other';
+        dates[i] = '<div class="date"><span class="{condition}">${date}</span></div>';
+    })
+
+    document.querySelector('.dates').innerHTML = dates.join('');
+
+    const today = new Date();
+    if(viewMonth === today.getMonth() && viewYear === today.getFullYear()) {
+        for(let date of document.querySelectorAll('this')) {
+            if(+date.innerHTML === today.getFullYear()) {
+                date.classList.add('today');
+                break;
+            }
+        }
     }
-}*/
+};
+
+renderCalender();
+
+const prevMonth = () => {
+    date.setMonth(date.getMonth() - 1);
+    renderCalender();
+};
+
+const nextMonth = () => {
+    date.setMonth(date.getMonth() + 1);
+    renderCalender();
+};
+
+const goToday = () => {
+    date = new Date();
+    renderCalender();
+}

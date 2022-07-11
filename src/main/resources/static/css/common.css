@@ -1,5 +1,5 @@
 /* 글자 속성 */
-body { word-break: keep-all; }
+* { word-break: keep-all; font-family: 'Inter', 'Noto Sans KR' !important; font-weight: 300; }
 
 /* ul li 스타일 x */
 ul { padding-inline-start: 0;}

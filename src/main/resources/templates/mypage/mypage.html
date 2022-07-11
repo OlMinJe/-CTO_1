@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/mypage/mypage.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+    <!--jquery 추가-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
 </head>
 <body>
@@ -16,59 +17,39 @@
 
     <div class="col-12 mypage">
         <div class="col-12 title" style="float: left">
-            <bottom type="radio" id="tab_0" name="menu_tab" value="0" onclick="showMenu(this)">
+            <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="showMenu(this)">
                 내정보
-            </bottom>
+            </button>
         </div>
         <div class="col-12 mypage_con">
             <!--왼쪽 메뉴
             TODO: 992px 미만일 때는 display: none 처러, 상단에 클릭하면 펼쳐지는 메뉴로 빼야하나?
                 -> 그럴 경우에는 메뉴 div를 2개 만들어야 함. -->
             <div class="col-3 mypage_menu">
-                <div class="menu_title">활동내역</div>
-                <bottom type="radio" id="tab_1" name="menu_tab" value="1" onclick="showMenu(this)">이벤트 참여내역</bottom>
-                <bottom type="radio" id="tab_2" name="menu_tab" value="2" onclick="showMenu(this)">커뮤니티 사용내역</bottom>
-                <bottom type="radio" id="tab_3" name="menu_tab" value="3" onclick="showMenu(this)">위치기반 사용내역</bottom>
-                <bottom type="radio" id="tab_4" name="menu_tab" value="4" onclick="showMenu(this)">테스트 결과 내역</bottom>
-                <div class="menu_title mt">정보변경</div>
-                <bottom type="radio" id="tab_5" name="menu_tab" value="5" onclick="showMenu(this)">비밀번호 변경</bottom>
-                <bottom type="radio" id="tab_6" name="menu_tab" value="6" onclick="showMenu(this)">닉네임 변경</bottom>
-                <bottom type="radio" id="tab_7" name="menu_tab" value="7" onclick="showMenu(this)">프로필 사진 변경</bottom>
-                <bottom type="radio" id="tab_8" name="menu_tab" value="8" onclick="showMenu(this)">회원탈퇴</bottom>
+                <div class="col-12">
+                    <div class="menu_title">활동내역</div>
+                    <button type="radio" class="col-12" id="tab_1" name="menu_tab" value="1" onclick="showMenu(this)">이벤트 참여내역</button>
+                    <button type="radio" class="col-12" id="tab_2" name="menu_tab" value="2" onclick="showMenu(this)">커뮤니티 사용내역</button>
+                    <button type="radio" class="col-12" id="tab_3" name="menu_tab" value="3" onclick="showMenu(this)">위치기반 사용내역</button>
+                    <button type="radio" class="col-12" id="tab_4" name="menu_tab" value="4" onclick="showMenu(this)">테스트 결과 내역</button>
+                    <div class="menu_title mt">정보변경</div>
+                    <button type="radio" class="col-12" id="tab_5" name="menu_tab" value="5" onclick="showMenu(this)">비밀번호 변경</button>
+                    <button type="radio" class="col-12" id="tab_6" name="menu_tab" value="6" onclick="showMenu(this)">닉네임 변경</button>
+                    <button type="radio" class="col-12" id="tab_7" name="menu_tab" value="7" onclick="showMenu(this)">프로필 사진 변경</button>
+                    <button type="radio" class="col-12" id="tab_8" name="menu_tab" value="8" onclick="showMenu(this)">회원탈퇴</button>
+                </div>
             </div>
 
             <!-- 오른쪽 컨텐츠-->
             <div class="col-12 col-lg-9 content">
                 <!-- 1. 내정보 [main] -->
-                <div class="col-12 content_box" id="tab_0_content" style="display: block;"> <!--id="tab_1_content"-->
+                <div class="col-12 content_box" id="tab_0_content"> <!--id="tab_1_content"-->
                     <article class="col-12 col-md-6 content_left">
                         <section class="top">
                             <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력
                             / https://doolyit.tistory.com/204
                             / 근데 닉네임 변경 페이지가 있는데 굳이 이 부분이 필요할까? -->
-                            <div class="col-4 photo">
-                                <div class="image-upload" id="image-upload">
-                                    <form method="post" enctype="multipart/form-data">
-                                        <div class="button">
-                                            <label for="chooseFile">
-                                                프로필 바꾸기
-                                            </label>
-                                        </div>
-                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-                                    </form>
-                                    <div class="fileContainer">
-                                        <div class="fileInput">
-                                            <p>FILE NAME: </p>
-                                            <p id="fileName"></p>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <div class="submitButton" id="submitButton">SUBMIT</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="image-show" id="image-show"></div>
-                            </div>
+                            <div class="col-4 photo">프로필 사진(변경 x)</div>
                             <ul>
                                 <li>닉네임(변수로 교체)</li>
                                 <li>포인트(변수로 교체)</li>
@@ -76,9 +57,27 @@
                         </section>
                         <section class="col-12 calender">
                             <div class="col-12 sub_title">출석체크 현황</div>
-                            <div class="col-6 today">5.30 (출력형식)</div>
-                            <div class="col-6 today_complete">출석 완료</div>
-                            <div class="sub_calender" id="calendarForm"></div>
+                            <div class="col-12 calender_top">
+                                <div class="col-4 nav">
+                                    <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                                    <button class="nav-btn go-prev" onclick="nextMonth()">Today;</button>
+                                    <button class="nav-btn go-prev" onclick="goToday()">&gt;</button>
+                                </div>
+                                <div class="col-4 year_month"></div>
+                                <div class="col-4 today_complete">출석 완료</div>
+                            </div>
+                            <div class="calender_bottom">
+                                <div class="days">
+                                    <div class="day">일</div>
+                                    <div class="day">월</div>
+                                    <div class="day">화</div>
+                                    <div class="day">수</div>
+                                    <div class="day">목</div>
+                                    <div class="day">금</div>
+                                    <div class="day">토</div>
+                                </div>
+                                <div class="dates"></div>
+                            </div>
                         </section>
                     </article>
                     <article class="col-12 col-md-6 content_right">
@@ -124,7 +123,29 @@
                     <button type="submit">변경하기</button>
                 </div>
                 <!-- 8. 내정보 [정보변경 - 프로필 사진 변경]-->
-                <div class="col-12 content_box" id="tab_7_content">프로필 사진 변경-메인에 넣은거 아이디 값만 바꿔서 넣기</div>
+                <div class="col-12 content_box" id="tab_7_content">
+                    <div class="image-upload" id="image-upload">
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="button">
+                                <label for="chooseFile">
+                                    프로필 바꾸기
+                                </label>
+                            </div>
+                            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                        </form>
+                        <div class="fileContainer">
+                            <div class="fileInput">
+                                <p>FILE NAME: </p>
+                                <p id="fileName"></p>
+                            </div>
+                            <div class="buttonContainer">
+                                <div class="submitButton" id="submitButton">SUBMIT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-show" id="image-show"></div>
+                </div>
                 <!-- 9. 내정보 [정보변경 - 비밀번호 변경]-->
                 <div class="col-12 content_box" id="tab_8_content">
                     회원 탈퇴의 경우 재로그인해서 확인하기<br/>
@@ -138,5 +159,6 @@
     </div>
 
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
 </body>
 </html>

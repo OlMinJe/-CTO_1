@@ -53,13 +53,10 @@ function loadFile(input) {
 const date = new Date();
 
 const renderCalender = () => {
-    const viewYear = date.getFullYear();
-    const viewMonth = date.getMonth();
+    document.querySelector('.year_month').innerHTML =  date.getFullYear() +'년 ' + (date.getMonth()+1) + '월';
 
-    document.querySelector('.year_month').innerHTML = '${viewYear}년 ${viewMonth + 1}월';
-
-    const prevLast = new Date(viewYear, viewYear, 0);
-    const thisLast = new Date(viewYear, viewMonth + 1, 0);
+    const prevLast = new Date(date.getFullYear(), date.getFullYear(), 0);
+    const thisLast = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 
     const PLDate = prevLast.getDate();
     const PLDay = prevLast.getDay();
@@ -87,13 +84,13 @@ const renderCalender = () => {
         const condition = i >= firstDateIndex && i <= lastDateIndex + 1
                           ? 'this'
                           : 'other';
-        dates[i] = '<div class="date"><span class="{condition}">${date}</span></div>';
+        dates[i] = '<div class="date"><span class="{condition}">' + date + '</span></div>';
     })
 
     document.querySelector('.dates').innerHTML = dates.join('');
 
     const today = new Date();
-    if(viewMonth === today.getMonth() && viewYear === today.getFullYear()) {
+    if(date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
         for(let date of document.querySelectorAll('this')) {
             if(+date.innerHTML === today.getFullYear()) {
                 date.classList.add('today');
@@ -106,16 +103,13 @@ const renderCalender = () => {
 renderCalender();
 
 const prevMonth = () => {
-    date.setMonth(date.getMonth() - 1);
-    renderCalender();
-};
+  date.setDate(1);
+  date.setMonth(date.getMonth() - 1);
+  renderCalender();
+}
 
 const nextMonth = () => {
-    date.setMonth(date.getMonth() + 1);
-    renderCalender();
-};
-
-const goToday = () => {
-    date = new Date();
-    renderCalender();
+  date.setDate(1);
+  date.setMonth(date.getMonth() + 1);
+  renderCalender();
 }

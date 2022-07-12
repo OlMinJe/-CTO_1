@@ -34,11 +34,11 @@ body div, body ul, body li, body article, body section, body a { border: 1px sol
 .content_box#tab_0_content .content_left .calender .calender_bottom .day { width: calc(100% / 7); }
 .content_box#tab_0_content .content_left .calender .calender_bottom .dates { display: flex; flex-flow: row wrap; height: 300px;  }
 .content_box#tab_0_content .content_left .calender .calender_bottom .date { width: calc(100% / 7); }
-
 .content_box#tab_0_content .content_left .calender .calender_bottom .day:nth-child(7n +1),
 .content_box#tab_0_content .content_left .calender .calender_bottom .date:nth-child(7n +1) { color: #D13E3E;}
 .content_box#tab_0_content .content_left .calender .calender_bottom .day:nth-child(7n),
 .content_box#tab_0_content .content_left .calender .calender_bottom .date:nth-child(7n) { color: #396EE2;}
+
 
 .content_box#tab_0_content .content_right { float: right; }
 .content_box#tab_0_content .content_right .weather_api { padding: 40px 0; text-align: center; }

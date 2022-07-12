@@ -2,7 +2,7 @@
 /*TODO: 구조 확인하기 위한 css 추후 삭제*/*/
 
 /* 내정보 큰 구조 구분 */
-.mypage { padding-top: 30px;}
+.mypage { padding-top: 30px; }
 .mypage .title { padding: 15px 0; font-size: 30px; line-height: 36px; font-weight: 700; color: #ccc; }
 .mypage .title button { cursor: pointer; background-color: #fff; border: none; }
 .mypage .mypage_con { display: flex; justify-content: space-around; flex-direction: column; }

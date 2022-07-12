@@ -44,7 +44,7 @@
             <div class="col-12 col-lg-9 content">
                 <!-- 1. 내정보 [main] -->
                 <div class="col-12 content_box" id="tab_0_content"> <!--id="tab_1_content"-->
-                    <article class="col-12 col-md-6 content_left">
+                    <article class="col-12 col-md-7 content_left">
                         <section class="top">
                             <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력
                             / https://doolyit.tistory.com/204
@@ -60,8 +60,8 @@
                             <div class="col-12 calender_top">
                                 <div class="col-4 nav">
                                     <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-                                    <button class="nav-btn go-prev">Today;</button>
-                                    <button class="nav-btn go-prev" onclick="nextMonth()">&gt;</button>
+                                    <!--<button class="nav-btn go-today"--><div>Today</div>
+                                    <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
                                 </div>
                                 <div class="col-4 year_month"></div>
                                 <div class="col-4 today_complete">출석 완료</div>
@@ -80,23 +80,25 @@
                             </div>
                         </section>
                     </article>
-                    <article class="col-12 col-md-6 content_right">
+                    <article class="col-12 col-md-5 content_right">
                         <div class="col-12 sub_title">오늘의 날씨</div>
-                        <section class="col-12 weather_api">날씨 api</section>
-                        <section class="col-12 weather_list">
-                            <ul class="col-6">
-                                <li>강수확률<span>값</span></li>
-                                <li>북서풍<span>값</span></li>
-                                <li>미세<span>값</span></li>
-                                <li>일몰<span>값</span></li>
-                            </ul>
-                            <ul class="col-6">
-                                <li>체감<span>값</span></li>
-                                <li>습도<span>값</span></li>
-                                <li>초미세<span>값</span></li>
-                                <li>체감<span>값</span></li>
-                            </ul>
-                        </section>
+                        <div class="col-12 weather_wrap">
+                            <section class="col-12 weather_api">날씨 api 이미지</section>
+                            <section class="col-12 weather_con">
+                                <ul class="col-4 weather_list">
+                                    <li>강수확률<span>값</span></li>
+                                    <li>북서풍<span>값</span></li>
+                                    <li>미세<span>값</span></li>
+                                    <li>일몰<span>값</span></li>
+                                </ul>
+                                <ul class="col-4 weather_list">
+                                    <li>체감<span>값</span></li>
+                                    <li>습도<span>값</span></li>
+                                    <li>초미세<span>값</span></li>
+                                    <li>체감<span>값</span></li>
+                                </ul>
+                            </section>
+                        </div>
                     </article>
                 </div>
                 <!-- 2. 내정보 [활동내역 - 이벤트 참여내역]-->

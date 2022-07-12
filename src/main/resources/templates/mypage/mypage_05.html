@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/mypage/mypage.css">
+    <!--jquery 추가-->
+    <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
+</head>
+<body>
+<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+
+<div class="col-12 mypage">
+    <div class="col-12 title" style="float: left">
+        <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="showMenu(this)">
+            내정보
+        </button>
+    </div>
+    <div class="col-12 mypage_con">
+        <!--왼쪽 메뉴
+        TODO: 992px 미만일 때는 display: none 처러, 상단에 클릭하면 펼쳐지는 메뉴로 빼야하나?
+            -> 그럴 경우에는 메뉴 div를 2개 만들어야 함. -->
+        <div class="col-3 mypage_menu">
+            <div class="col-12">
+                <div class="menu_title">활동내역</div>
+                <button type="radio" class="col-12" id="tab_1" name="menu_tab" value="1" onclick="location.href='mypage_01.html'">이벤트 참여내역</button> <!--showMenu(this)-->
+                <button type="radio" class="col-12" id="tab_2" name="menu_tab" value="2" onclick="location.href='mypage_02.html'">커뮤니티 사용내역</button>
+                <button type="radio" class="col-12" id="tab_3" name="menu_tab" value="3" onclick="location.href='mypage_03.html'">위치기반 사용내역</button>
+                <button type="radio" class="col-12" id="tab_4" name="menu_tab" value="4" onclick="location.href='mypage_04.html'">테스트 결과 내역</button>
+                <div class="menu_title mt">정보변경</div>
+                <button type="radio" class="col-12" id="tab_5" name="menu_tab" value="5" onclick="location.href='mypage_05.html'">비밀번호 변경</button>
+                <button type="radio" class="col-12" id="tab_6" name="menu_tab" value="6" onclick="location.href='mypage_06.html'">닉네임 변경</button>
+                <button type="radio" class="col-12" id="tab_7" name="menu_tab" value="7" onclick="location.href='mypage_07.html'">프로필 사진 변경</button>
+                <button type="radio" class="col-12" id="tab_8" name="menu_tab" value="8" onclick="location.href='mypage_08.html'">회원탈퇴</button>
+            </div>
+        </div>
+
+        <!-- 오른쪽 컨텐츠-->
+        <div class="col-12 col-lg-9 content">
+            <div class="col-12 content_box" id="tab_5_content">
+                <!------------------------------------------>
+                <div class="col-12">로그인 기획 확인 필요</div>
+                <form action="/user/login" method="post">
+                    <input type="text" name="username" placeholder="이메일 입력해주세요">
+                    <input type="password" name="password" placeholder="비밀번호">
+                    <button type="submit">로그인</button>
+                </form>
+                <!-- TODO: 참고 사이트 https://choco4study.tistory.com/63-->
+                <!------------------------------------------>
+            </div>
+        </div>
+    </div>
+</div>
+<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+</body>
+</html>

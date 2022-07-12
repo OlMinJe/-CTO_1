@@ -57,7 +57,7 @@
 .content_box#tab_0_content .content_right .weather_wrap .weather_con .weather_list li span { padding: 0 10px; }
 
 
-.mypage_con .content_box { display: none; }
+/*.mypage_con .content_box { display: none; }*/
 /* TODO: 이렇게 지정하는게 맞는지 html에서 따로 넣어도 되는건지 의문 */
 /*.content_box#tab_0_content { display: none; }*/
 

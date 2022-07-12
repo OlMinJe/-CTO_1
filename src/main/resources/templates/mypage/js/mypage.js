@@ -1,9 +1,6 @@
-/* TODO: (참고 사이트) https://seongeun-it.tistory.com/113 */
-/* var Content = document.getElementsByClassName("content_box");
-   Content[0].style.display = "block";
-*/
-$(document).ready(function(){ console.log("test"); });
+$(document).ready(function(){ console.log('test'); });
 
+/* 메뉴탭 이벤트 (참고 사이트) https://seongeun-it.tistory.com/113
 function showMenu(element){
     var content = document.getElementsByClassName("content_box");
     for(var i=0; i<content.length; i++){
@@ -14,6 +11,18 @@ function showMenu(element){
         }
     }
 }
+*/
+
+/* 새고할 때 고정 (작업 필요) https://snupi.tistory.com/195 */
+window.addEventListener('beforeunload', (event) => {
+    // 표준에 따라 기본 동작 방지
+    event.preventDefault();
+    // Chrome에서는 returnValue 설정이 필요함
+    event.returnValue = '';
+});
+
+
+
 /* TOdO: (참고 사이트) https://velog.io/@minkyeong-ko/HTMLCSSJS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%A6%84-%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0 */
 /*var submit = document.getElementById('submitButton');
 submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
@@ -51,7 +60,6 @@ function loadFile(input) {
  달력 */
 
 const date = new Date();
-
 const renderCalender = () => {
     document.querySelector('.year_month').innerHTML =  date.getFullYear() +'년 ' + (date.getMonth()+1) + '월';
 
@@ -104,15 +112,12 @@ const renderCalender = () => {
         }
       }
 };
-
 renderCalender();
-
 const prevMonth = () => {
   date.setDate(1);
   date.setMonth(date.getMonth() - 1);
   renderCalender();
 }
-
 const nextMonth = () => {
   date.setDate(1);
   date.setMonth(date.getMonth() + 1);

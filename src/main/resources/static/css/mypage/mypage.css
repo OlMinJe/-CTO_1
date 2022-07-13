@@ -1,25 +1,31 @@
 /*body div, body ul, body li, body article, body section, body a { border: 1px solid #ccc; }*/
-/*TODO: 구조 확인하기 위한 css 추후 삭제*/*/
+/* 추후 삭제 필요
+.mypage_con .content_box { display: none; }
+.content_box#tab_0_content { display: none; }*/
 
 /* 내정보 큰 구조 구분 */
 .mypage { padding-top: 30px; }
 .mypage .title { padding: 15px 0; font-size: 30px; line-height: 36px; font-weight: 700; color: #ccc; }
-.mypage .title button { cursor: pointer; background-color: #fff; border: none; }
+.mypage .title a { background-color: #fff; border: none; }
 .mypage .mypage_con { display: flex; justify-content: space-around; flex-direction: column; }
 
 /* MENU */
-.mypage_con .mypage_menu { display: none; padding-right: 20px; }
-.mypage_con .mypage_menu .menu_title { margin-bottom: 15px; padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000; }
-.mypage_con .mypage_menu .menu_title.mt { margin: 30px 0 15px; }
-.mypage_con .mypage_menu button { position: relative; padding: 10px; border-bottom: 2px solid #ccc; cursor: pointer; }
-.mypage_con .mypage_menu button:before { content: ''; position: absolute; bottom: -2px; left: 0; display: block; width: 2px; height: 2px; transition: all linear 0.5s; }
-.mypage_con .mypage_menu button:hover:before { width: 100%; background-color: orange; }
+.mypage_con .mypage_menu .mobile_title { padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000;  }
+.mypage_con .mypage_menu .mobile_title span { float: right; }
+.mypage_con .mypage_menu .menu_list .menu_title { margin-bottom: 15px; padding: 10px; font-size: 20px; line-height: 26px; color: #fff; background-color: #000; }
+.mypage_con .mypage_menu .menu_list .menu_title.mt { margin-top: 30px; }
+.mypage_con .mypage_menu .menu_list { display: none; }
+.mypage_con .mypage_menu li { position: relative; padding: 10px; border-bottom: 2px solid #ccc; cursor: pointer; }
+.mypage_con .mypage_menu li:before { content: ''; position: absolute; bottom: -2px; left: 0; display: block; width: 2px; height: 2px; transition: all linear 0.5s; }
+.mypage_con .mypage_menu li:hover:before { width: 100%; background-color: orange; }
 
 
 .mypage_con .content_box {border-top: 1px solid #ccc; padding: 20px 0;}
-/* ----------- content 박스 [내정보 메인] ----------- */
+/* ----------- content 박스 [0. 내정보 메인] ----------- */
 .mypage_con .content_box .content_left .calender .sub_title, .mypage_con .content_box .content_right .sub_title
-{ margin-bottom: 15px; padding: 15px 10px 10px;; font-size: 20px; line-height: 26px; }
+{ margin-bottom: 15px; margin-top: 30px; padding: 10px 10px 10px;; font-size: 20px; line-height: 26px; }
+.mypage_con .content_box .content_right .sub_title { margin-top: 0; }
+
 .content_box#tab_0_content { display: flex; flex-direction: column; height: 100%; }
 .content_box#tab_0_content .content_left { float: left; }
 .content_box#tab_0_content .content_left .top { display: flex; align-items: center; justify-content: space-around; margin-bottom: 30px; }
@@ -30,13 +36,13 @@
 .content_box#tab_0_content .content_left .calender { border-top: 1px solid #ccc; }
 .content_box#tab_0_content .content_left .calender .calender_top { display: flex; align-items: center; padding: 6px; }
 .content_box#tab_0_content .content_left .calender .calender_top .nav { align-items: center; }
-.content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn { font-size: 20px; line-height:26px; background-color: transparent; border-radius: 50%; cursor: pointer; }
+.content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn { font-size: 15px; line-height:21px; background-color: transparent; border-radius: 50%; cursor: pointer; }
 .content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn:hover { background-color: blue;}
 .content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn:focus { background-color: #ccc;}
-.content_box#tab_0_content .content_left .calender .calender_top .nav div { padding: 0 10px; font-size:20px; line-height: 26px; }
-.content_box#tab_0_content .content_left .calender .calender_top .year_month { font-size:20px; line-height: 26px; text-align: center; }
+.content_box#tab_0_content .content_left .calender .calender_top .nav div { padding: 0 5px; font-size: 15px; line-height: 21px; }
+.content_box#tab_0_content .content_left .calender .calender_top .year_month { font-size: 15px; line-height: 21px; text-align: center; }
 .content_box#tab_0_content .content_left .calender .calender_top .today_complete { display: inline-block; text-align: right; font-size: 15px; line-height: 21px; }
-.content_box#tab_0_content .content_left .calender .calender_bottom { height: 600px; }
+.content_box#tab_0_content .content_left .calender .calender_bottom { height: 500px; }
 .content_box#tab_0_content .content_left .calender .calender_bottom .days { display: flex; margin: 25px 0 10px; }
 .content_box#tab_0_content .content_left .calender .calender_bottom .day { padding: 15px 0; width: calc(100% / 7); text-align: center; }
 .content_box#tab_0_content .content_left .calender .calender_bottom .dates { display: flex; flex-flow: row wrap; height: 400px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
@@ -52,14 +58,14 @@
 .content_box#tab_0_content .content_right { float: right; text-align: center; padding: 0 20px;}
 .content_box#tab_0_content .content_right .weather_wrap { background-color: #ccc; border-radius: 7%; }
 .content_box#tab_0_content .content_right .weather_wrap .weather_api { padding: 40px 0; }
+.content_box#tab_0_content .content_right .weather_wrap .weather_con { display: flex; justify-content: space-evenly; }
 .content_box#tab_0_content .content_right .weather_wrap .weather_con .weather_list { display: inline-block; }
 .content_box#tab_0_content .content_right .weather_wrap .weather_con .weather_list li { padding: 40px 0; }
 .content_box#tab_0_content .content_right .weather_wrap .weather_con .weather_list li span { padding: 0 10px; }
 
 
-/*.mypage_con .content_box { display: none; }*/
-/* TODO: 이렇게 지정하는게 맞는지 html에서 따로 넣어도 되는건지 의문 */
-/*.content_box#tab_0_content { display: none; }*/
+/* ----------- content 박스 [1. 이벤트 참여냐역] ----------- */
+
 
 /* ----------- content 박스 [ 프로필 사진 변경] ----------- */
 .content_box#tab_7_content .buttom { display: flex; justify-content: center; }
@@ -67,12 +73,27 @@
 .content_box#tab_7_content #chooseFile { visibility: hidden; }
 .content_box#tab_7_content a { display: block; height: 100%; }
 
+@media all and (min-width: 480px) {
+    .content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn { font-size: 20px; line-height: 26px; }
+    .content_box#tab_0_content .content_left .calender .calender_top .nav div { padding: 0 10px; font-size: 20px; line-height: 26px; }
+    .content_box#tab_0_content .content_left .calender .calender_top .year_month { font-size: 20px; line-height: 26px; }
+    .content_box#tab_0_content .content_left .calender .calender_bottom { height: 600px; }
+}
 
 @media all and (min-width: 768px){
-    .mypage .mypage_con { flex-direction: row; }
-    .mypage_con .content_box#tab_0_content { flex-direction: row; }
+    .mypage .mypage_con { padding-left: 30px; padding-right: 30px; }
+    .mypage .title { padding-left: 30px; padding-right: 30px; }
 }
 
 @media all and (min-width: 992px){
+    .mypage .mypage_con { padding-left: 0; padding-right: 0; }
+    .mypage .title { padding-left: 10px; padding-right: 10px; }
+
+    .mypage_con .mypage_menu .mobile_title { display: none; }
+    .mypage_con .mypage_menu { padding-right: 20px; }
+    .mypage_con .mypage_menu .menu_list { display: block; }
+    .mypage .mypage_con { flex-direction: row; }
+    .mypage_con .content_box#tab_0_content { flex-direction: row; }
     .mypage .mypage_con .mypage_menu { display: flex; flex-direction: column; }
+    .mypage_con .content_box .content_left .calender .sub_title { margin-top: 30px;}
 }

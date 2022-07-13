@@ -17,26 +17,32 @@
 
     <div class="col-12 mypage">
         <div class="col-12 title" style="float: left">
-            <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="location.href='mypage.html'">
-                내정보
-            </button>
+            <a class="col-12" id="tab_0" name="menu_tab" onclick="location.href='mypage.html'">내정보</a>
+            <!--
+            <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="location.href='mypage.html">내정보</button>
+            -->
         </div>
         <div class="col-12 mypage_con">
-            <!--왼쪽 메뉴
-            TODO: 992px 미만일 때는 display: none 처러, 상단에 클릭하면 펼쳐지는 메뉴로 빼야하나?
-                -> 그럴 경우에는 메뉴 div를 2개 만들어야 함. -->
-            <div class="col-3 mypage_menu">
-                <div class="col-12">
+            <!--왼쪽 메뉴 -->
+            <div class="col-12 col-lg-3 mypage_menu">
+                <button type="button" class="col-12 mobile_title" onclick="mobile_menu()">메뉴<span>&gt;</span></button>
+                <div class="col-0 menu_list">
                     <div class="menu_title">활동내역</div>
-                    <button type="radio" class="col-12" id="tab_1" name="menu_tab" value="1" onclick="location.href='mypage_01.html'">이벤트 참여내역</button> <!--showMenu(this)-->
-                    <button type="radio" class="col-12" id="tab_2" name="menu_tab" value="2" onclick="location.href='mypage_02.html'">커뮤니티 사용내역</button>
-                    <button type="radio" class="col-12" id="tab_3" name="menu_tab" value="3" onclick="location.href='mypage_03.html'">위치기반 사용내역</button>
-                    <button type="radio" class="col-12" id="tab_4" name="menu_tab" value="4" onclick="location.href='mypage_04.html'">테스트 결과 내역</button>
+                    <ul>
+                        <li class="col-12" onclick="location.href='mypage_01.html'">이벤트 참여내역</li>
+                        <li class="col-12" onclick="location.href='mypage_02.html'">커뮤니티 사용내역</li>
+                        <li class="col-12" onclick="location.href='mypage_03.html'">위치기반 사용내역</li>
+                        <li class="col-12" onclick="location.href='mypage_04.html'">테스트 결과 내역</li>
+                    </ul>
+                </div>
+                <div class="col-0 menu_list">
                     <div class="menu_title mt">정보변경</div>
-                    <button type="radio" class="col-12" id="tab_5" name="menu_tab" value="5" onclick="location.href='mypage_05.html'">비밀번호 변경</button>
-                    <button type="radio" class="col-12" id="tab_6" name="menu_tab" value="6" onclick="location.href='mypage_06.html'">닉네임 변경</button>
-                    <button type="radio" class="col-12" id="tab_7" name="menu_tab" value="7" onclick="location.href='mypage_07.html'">프로필 사진 변경</button>
-                    <button type="radio" class="col-12" id="tab_8" name="menu_tab" value="8" onclick="location.href='mypage_08.html'">회원탈퇴</button>
+                    <ul>
+                        <li class="col-12" onclick="location.href='mypage_05.html'">비밀번호 변경</li>
+                        <li class="col-12" onclick="location.href='mypage_06.html'">닉네임 변경</li>
+                        <li class="col-12" onclick="location.href='mypage_07.html'">프로필 사진 변경</li>
+                        <li class="col-12" onclick="location.href='mypage_08.html'">회원탈퇴</li>
+                    </ul>
                 </div>
             </div>
 
@@ -44,7 +50,7 @@
             <div class="col-12 col-lg-9 content">
                 <!-- 0. 내정보 [main] -->
                 <div class="col-12 content_box" id="tab_0_content"> <!--id="tab_1_content"-->
-                    <article class="col-12 col-md-7 content_left">
+                    <article class="col-12 col-lg-7 content_left">
                         <section class="top">
                             <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력
                             / https://doolyit.tistory.com/204
@@ -80,7 +86,7 @@
                             </div>
                         </section>
                     </article>
-                    <article class="col-12 col-md-5 content_right">
+                    <article class="col-12 col-lg-5 content_right">
                         <div class="col-12 sub_title">오늘의 날씨</div>
                         <div class="col-12 weather_wrap">
                             <section class="col-12 weather_api">날씨 api 이미지</section>
@@ -110,7 +116,17 @@
 </html>
 
 
-
+<!--
+<button type="radio" class="col-12" id="tab_1" name="menu_tab" value="1" onclick="location.href='mypage_01.html'">이벤트 참여내역</button> showMenu(this)
+<button type="radio" class="col-12" id="tab_2" name="menu_tab" value="2" onclick="location.href='mypage_02.html'">커뮤니티 사용내역</button>
+<button type="radio" class="col-12" id="tab_3" name="menu_tab" value="3" onclick="location.href='mypage_03.html'">위치기반 사용내역</button>
+<button type="radio" class="col-12" id="tab_4" name="menu_tab" value="4" onclick="location.href='mypage_04.html'">테스트 결과 내역</button>
+<div class="menu_title mt">정보변경</div>
+<button type="radio" class="col-12" id="tab_5" name="menu_tab" value="5" onclick="location.href='mypage_05.html'">비밀번호 변경</button>
+<button type="radio" class="col-12" id="tab_6" name="menu_tab" value="6" onclick="location.href='mypage_06.html'">닉네임 변경</button>
+<button type="radio" class="col-12" id="tab_7" name="menu_tab" value="7" onclick="location.href='mypage_07.html'">프로필 사진 변경</button>
+<button type="radio" class="col-12" id="tab_8" name="menu_tab" value="8" onclick="location.href='mypage_08.html'">회원탈퇴</button>
+-->
 <!-- 1. 내정보 [활동내역 - 이벤트 참여내역]-->
 <!--<div class="col-12 content_box" id="tab_1_content">
     <div data-include-path="/22_ig031/src/main/resources/templates/mypage/mypage_01.html"></div>

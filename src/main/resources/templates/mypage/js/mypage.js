@@ -14,13 +14,22 @@ function showMenu(element){
 */
 
 /* 새고할 때 고정 (작업 필요) https://snupi.tistory.com/195 */
-window.addEventListener('beforeunload', (event) => {
+/*window.addEventListener('beforeunload', (event) => {
     // 표준에 따라 기본 동작 방지
     event.preventDefault();
     // Chrome에서는 returnValue 설정이 필요함
     event.returnValue = '';
-});
+});*/
 
+/* 모바일 메뉴 */
+function mobile_menu() {
+    var menu = $('.menu_list').css('display');
+    if( menu == 'none') {
+        $('.menu_list').css('display','block');
+    } else {
+        $('.menu_list').css('display','none');
+    }
+}
 
 
 /* TOdO: (참고 사이트) https://velog.io/@minkyeong-ko/HTMLCSSJS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%A6%84-%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0 */

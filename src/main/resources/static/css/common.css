@@ -26,3 +26,6 @@ a:hover { color: #000; text-decoration: none; }
 
 /* p태그 */
 p {  margin-bottom: 0; }
+
+/* label */
+label { margin-bottom: 0; }

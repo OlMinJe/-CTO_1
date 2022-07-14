@@ -65,6 +65,33 @@
 
 
 /* ----------- content 박스 [1. 이벤트 참여냐역] ----------- */
+.content_box#tab_1_content .title { font-size: 20px; line-height: 26px; color: #333; padding-left: 0; padding-right: 0; }
+.content_box#tab_1_content .event_filter_wrap { margin-bottom: 30px;}
+.content_box#tab_1_content .event_filter_wrap .event_filter_con { border: 1px solid #333; padding: 15px 10px; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .col-12 { margin-bottom: 15px; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .col-12:last-child { margin-bottom: 0; }
+
+
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box li, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box li { display: inline-block; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box li { margin-bottom: 5px; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box li:last-child { margin-bottom: 0; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box label, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box label { border: 1px solid #ccc; border-radius: 10px; padding: 3px 7px; font-size: 15px; font-weight: 600; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box input, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box input { display: none; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box input:checked + label, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box input:checked + label { border: 1px solid rgb(218, 66, 66); background-color: rgb(218, 66, 66); color: #fff; }
+
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box div, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box div { display: inline-block; margin-bottom: 8px; width: 100%; }
+.content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box ul, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box ul { display: inline-block; }
+
+
+.content_box#tab_1_content .event_attend_table { overflow: auto; }
+.content_box#tab_1_content .event_attend_table::-webkit-scrollbar { width: 0; }
+.content_box#tab_1_content .event_attend_table table thead th { padding: 5px 10px; border-top: 1px solid #333; border-bottom: 1px solid #333; border-right: 1px solid #333; text-align: center; }
+.content_box#tab_1_content .event_attend_table table thead th:first-child { border-left: 1px solid #333 }
+.content_box#tab_1_content .event_attend_table table tbody td { padding: 5px 10px; border-top: 1px solid #333; border-bottom: 1px solid #333; border-right: 1px solid #333; text-align: center; }
+.content_box#tab_1_content .event_attend_table table tbody td:first-child { border-left: 1px solid #333 }
+
+
+
 
 
 /* ----------- content 박스 [ 프로필 사진 변경] ----------- */
@@ -73,27 +100,43 @@
 .content_box#tab_7_content #chooseFile { visibility: hidden; }
 .content_box#tab_7_content a { display: block; height: 100%; }
 
+
+
+
+
+/* 반응형 */
 @media all and (min-width: 480px) {
+    /* [0] 메인*/
     .content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn { font-size: 20px; line-height: 26px; }
     .content_box#tab_0_content .content_left .calender .calender_top .nav div { padding: 0 10px; font-size: 20px; line-height: 26px; }
     .content_box#tab_0_content .content_left .calender .calender_top .year_month { font-size: 20px; line-height: 26px; }
     .content_box#tab_0_content .content_left .calender .calender_bottom { height: 600px; }
+
+    /* [1] 이벤트 참여 내역*/
+    .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box div, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box div { margin-rigtht: 20px; margin-bottom: 0; width: 28%; }
 }
 
 @media all and (min-width: 768px){
     .mypage .mypage_con { padding-left: 30px; padding-right: 30px; }
     .mypage .title { padding-left: 30px; padding-right: 30px; }
+
+    /* [1] 이벤트 참여 내역*/
+    .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box div, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box div { width: 18%; }
 }
 
 @media all and (min-width: 992px){
-    .mypage .mypage_con { padding-left: 0; padding-right: 0; }
     .mypage .title { padding-left: 10px; padding-right: 10px; }
-
+    .mypage .mypage_con { flex-direction: row; padding-left: 0; padding-right: 0; }
     .mypage_con .mypage_menu .mobile_title { display: none; }
     .mypage_con .mypage_menu { padding-right: 20px; }
     .mypage_con .mypage_menu .menu_list { display: block; }
-    .mypage .mypage_con { flex-direction: row; }
+
+    /* [0] 메인*/
     .mypage_con .content_box#tab_0_content { flex-direction: row; }
     .mypage .mypage_con .mypage_menu { display: flex; flex-direction: column; }
     .mypage_con .content_box .content_left .calender .sub_title { margin-top: 30px;}
+
+    /* [1] 이벤트 참여 내역*/
+    .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_category_box div, .content_box#tab_1_content .event_filter_wrap .event_filter_con .event_isuse_box div { width: 16%; }
+
 }

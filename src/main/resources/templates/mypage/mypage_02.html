@@ -47,7 +47,32 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_2_content">
                 <!------------------------------------------>
-                커뮤니티 이용내역
+                <div class="col-12 title">커뮤니티 이용내역</div>
+                <div class="col-12 community_filter_wrap">
+                    <div class="col-12 community_filter_con">
+                        <div class="col-12 community_filter_list">
+                            <label for="startDate">시작 날짜<br/>
+                                <input type="date" id="startDate" name="startDate" min="2022-01-01" max="2022-12-31">
+                            </label>
+                            <label for="endDate">종료 날짜<br/>
+                                <input type="date" id="endDate" name="startDate" min="2022-01-01" max="2022-12-31">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 community_table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th style="width: 10%;">번호</th>
+                                <th style="width: 10%;">카테고리</th>
+                                <th style="width: auto;">제목</th>
+                            </tr>
+                            </thead>
+                            <tbody id="community_table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <!------------------------------------------>
             </div>
         </div>
@@ -55,5 +80,6 @@
 </div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage_02.js"></script>
 </body>
 </html>

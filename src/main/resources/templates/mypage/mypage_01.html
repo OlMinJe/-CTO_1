@@ -48,26 +48,44 @@
             <div class="col-12 content_box" id="tab_1_content">
                 <!------------------------------------------>
                 <div class="col-12 title">이벤트 참여내역</div>
-                <div class="col-12 event_attend_filter">
-                    <div class="col-12 title">필터</div>
+                <div class="col-12 event_filter_wrap">
+                    <!--https://retrieverj.tistory.com/17-->
+                    <div class="col-12 event_filter_con">
+                        <!-- TODO: value 깂 장확하게 알아오기 -->
+                        <div class="col-12 event_category_box">
+                            <div>이벤트 카테고리</div>
+                            <ul class="filter_list">
+                                <li><input type="checkbox" checked><label class="filter01 all">전체</label></li>
+                                <li><input type="checkbox" checked><label class="filter01">삼행시</label></li>
+                                <li><input type="checkbox" checked><label class="filter01">독서감상</label></li>
+                                <li><input type="checkbox" checked><label class="filter01">독서퀴즈</label></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 event_isuse_box">
+                            <div>참여 여부</div>
+                            <ul class="filter_list">
+                                <li><input type="checkbox" checked><label class="filter02 all">전체</label></li>
+                                <li><input type="checkbox" checked><label class="filter02">참여</label></li>
+                                <li><input type="checkbox" checked><label class="filter02">미참여</label></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 test_btn"  style="text-align: right;">
+                            <p><input type="submit" value="검색"> <button type="button" class="resetBtn" onclick="resetBtn()">초기화</button></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 event_attend_table">
                     <table>
                         <thead>
                         <tr>
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>등록일</th>
+                            <th style="width: 10%;">번호</th>
+                            <th style="width: 10%;">카테고리</th>
+                            <th style="width: auto;">이벤트 명</th>
+                            <th style="width: 10%;">참여 여부</th>
+                            <th style="width: 10%;">지급 포인트</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>블로그 스킨 변경</td>
-                            <td>Horong</td>
-                            <td>2021-02-01</td>
-                        </tr>
+                        <tbody id="event_attend_table">
                         </tbody>
                     </table>
                 </div>
@@ -76,7 +94,9 @@
         </div>
     </div>
 </div>
+</div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage_01.js"></script>
 </body>
 </html>

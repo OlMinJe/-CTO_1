@@ -47,13 +47,13 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_1_content">
                 <!------------------------------------------>
-                <div class="col-12 title">이벤트 참여내역</div>
-                <div class="col-12 event_filter_wrap">
+                <div class="col-12" id="sub_title">이벤트 참여내역</div>
+                <div class="col-12 filter_wrap">
                     <!--https://retrieverj.tistory.com/17-->
-                    <div class="col-12 event_filter_con">
+                    <div class="col-12 filter_con">
                         <!-- TODO: value 깂 장확하게 알아오기 -->
                         <div class="col-12 event_category_box">
-                            <div>이벤트 카테고리</div>
+                            <div class="filter_sub_title">이벤트 카테고리</div>
                             <ul class="filter_list">
                                 <li><input type="checkbox" checked><label class="filter01 all">전체</label></li>
                                 <li><input type="checkbox" checked><label class="filter01">삼행시</label></li>
@@ -62,23 +62,23 @@
                             </ul>
                         </div>
                         <div class="col-12 event_isuse_box">
-                            <div>참여 여부</div>
+                            <div class="filter_sub_title">참여 여부</div>
                             <ul class="filter_list">
                                 <li><input type="checkbox" checked><label class="filter02 all">전체</label></li>
                                 <li><input type="checkbox" checked><label class="filter02">참여</label></li>
                                 <li><input type="checkbox" checked><label class="filter02">미참여</label></li>
                             </ul>
                         </div>
-                        <div class="col-12 test_btn"  style="text-align: right;">
-                            <p><input type="submit" value="검색"> <button type="button" class="resetBtn" onclick="resetBtn()">초기화</button></p>
+                        <div class="col-12 btn"  style="text-align: right;">
+                            <p><input type="submit" class="btn-style" value="검색"> <button type="button" class="resetBtn btn-style" onclick="resetBtn()">초기화</button></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 event_attend_table">
-                    <table>
+                <div class="col-12 event_attend_table" id="sub_table">
+                    <table class="table table-hover table-bordered">
                         <thead>
                         <tr>
-                            <th style="width: 10%;">번호</th>
+                            <th style="width: 10%;">No.</th>
                             <th style="width: 10%;">카테고리</th>
                             <th style="width: auto;">이벤트 명</th>
                             <th style="width: 10%;">참여 여부</th>

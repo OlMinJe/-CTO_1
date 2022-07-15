@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    mypage_01();
+});
+
+
 function filter_checked(obj){ //체크하기
 	obj.parentNode.querySelector('input').checked = true;
 }
@@ -74,16 +79,16 @@ function mypage_01(){
 
     for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
         e.innerHTML = '<tr>'+
-                         '<td id="diplay_no"></td>'+
-                         '<td id="event_category"></td>'+
-                         '<td id="event_title"></td>'+
-                         '<td id="isuse"></td>'+
-                         '<td id="point"></td>'+
+                         '<td class="diplay_no"></td>'+
+                         '<td class="category"></td>'+
+                         '<td class="table_title"></td>'+
+                         '<td class="isuse"></td>'+
+                         '<td class="point"></td>'+
                      '</tr>';
-        document.getElementById('diplay_no').innerHTML = '<span>' + i + '</span>';
-        document.getElementById('event_category').innerHTML = '<span>' + i + '</span>';
-        document.getElementById('event_title').innerHTML = '<span>' + i + '</span>';
-        document.getElementById('isuse').innerHTML = '<span>' + i + '</span>';
-        document.getElementById('point').innerHTML = '<span>' + i + '</span>';
+        document.querySelector('.event_attend_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+        document.querySelector('.event_attend_table .category').innerHTML = '<span>' + '삼행시' + '</span>';
+        document.querySelector('.event_attend_table .table_title').innerHTML = '<span>' + '제목 테스트' + '</span>';
+        document.querySelector('.event_attend_table .isuse').innerHTML = '<span>' +'Y' + '</span>';
+        document.querySelector('.event_attend_table .point').innerHTML = '<span>' + i + '</span>';
     }
 }

@@ -47,31 +47,37 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_2_content">
                 <!------------------------------------------>
-                <div class="col-12 title">커뮤니티 이용내역</div>
-                <div class="col-12 community_filter_wrap">
-                    <div class="col-12 community_filter_con">
-                        <div class="col-12 community_filter_list">
-                            <label for="startDate">시작 날짜<br/>
-                                <input type="date" id="startDate" name="startDate" min="2022-01-01" max="2022-12-31">
-                            </label>
-                            <label for="endDate">종료 날짜<br/>
-                                <input type="date" id="endDate" name="startDate" min="2022-01-01" max="2022-12-31">
-                            </label>
+                <div class="col-12" id="sub_title">커뮤니티 이용내역</div>
+                <div class="col-12 filter_wrap">
+                    <div class="col-12 filter_con">
+                        <div class="col-12 community_date_box">
+                            <div class="filter_sub_title">기간</div>
+                            <ul>
+                                <li><input type="date" id="startDate" name="startDate" min="2022-01-01" max="2022-12-31"></li>
+                                <li><input type="date" id="endDate" name="startDate" min="2022-01-01" max="2022-12-31"></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 community_category_box">
+                            <div class="filter_sub_title">카테고리</div>
+                        </div>
+                        <div class="col-12 btn"  style="text-align: right;">
+                            <p><input type="submit" class="btn-style" value="검색"> <button type="button" class="resetBtn btn-style" onclick="resetBtn()">초기화</button></p>
                         </div>
                     </div>
-                    <div class="col-12 community_table">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th style="width: 10%;">번호</th>
-                                <th style="width: 10%;">카테고리</th>
-                                <th style="width: auto;">제목</th>
-                            </tr>
-                            </thead>
-                            <tbody id="community_table">
-                            </tbody>
-                        </table>
-                    </div>
+                </div>
+                <div class="col-12 community_table" id="sub_table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="width: 10%;">No.</th>
+                            <th style="width: 10%;">카테고리</th>
+                            <th style="width: auto;">제목</th>
+                            <th style="width: 10%;">댓글수</th>
+                        </tr>
+                        </thead>
+                        <tbody id="community_table">
+                        </tbody>
+                    </table>
                 </div>
                 <!------------------------------------------>
             </div>

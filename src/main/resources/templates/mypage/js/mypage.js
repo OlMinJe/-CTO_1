@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    mypage_01();
 });
 
 /* 모바일 메뉴 */

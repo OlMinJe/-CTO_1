@@ -15,7 +15,7 @@
 .filter_wrap .filter_con ul li { display: inline-block; }
 .filter_wrap .filter_con ul li { margin-bottom: 5px; }
 .filter_wrap .filter_con ul li:last-child { margin-bottom: 0; }
-.filter_wrap .filter_con label { border-radius: 10px; padding: 3px 7px; font-size: 15px; font-weight: 600; }
+.filter_wrap .filter_con label { border: 1px solid #ccc; border-radius: 10px; padding: 3px 7px; font-size: 15px; font-weight: 600; }
 .filter_wrap .filter_con input { display: none; }
 .filter_wrap .filter_con input:checked + label { border: 1px solid rgb(218, 66, 66); background-color: rgb(218, 66, 66); color: #fff; }
 .filter_wrap .filter_con .btn { margin-bottom: 15px; }
@@ -95,7 +95,16 @@
 
 /* ----------- content 박스 [2. 커뮤니티 사용내역] ----------- */
 .content_box#tab_2_content .title { font-size: 20px; line-height: 26px; color: #333; padding-left: 0; padding-right: 0; }
-.content_box#tab_2_content .filter_wrap .filter_con .community_date_box input { display: block; }
+.content_box#tab_2_content .filter_wrap .filter_con .filter_sub_title { vertical-align: top; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_date_box,
+.content_box#tab_2_content .filter_wrap .filter_con .community_category_box,
+.content_box#tab_2_content .filter_wrap .filter_con .community_comment_box,
+.content_box#tab_2_content .filter_wrap .filter_con .community_writer_box { display: flex; flex-direction: column; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_date_box input { display: inline-block; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_date_box ul li:first-child { margin-right: 15px; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_date_box ul li span { margin-right: 15px; font-weight: 500; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal { margin-top: 5px; }
+.content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal .filter_sub_title { display: none; }
 
 /* ----------- content 박스 [3. 위치기반 사용내역] ----------- */
 /* ----------- content 박스 [4. 테스트 결과 내역] ----------- */
@@ -122,6 +131,15 @@
     .content_box#tab_0_content .content_left .calender .calender_top .nav div { padding: 0 10px; font-size: 20px; line-height: 26px; }
     .content_box#tab_0_content .content_left .calender .calender_top .year_month { font-size: 20px; line-height: 26px; }
     .content_box#tab_0_content .content_left .calender .calender_bottom { height: 600px; }
+
+    /* [2] 커뮤니티 이용내역 */
+    .content_box#tab_2_content .filter_wrap .filter_con .community_date_box,
+    .content_box#tab_2_content .filter_wrap .filter_con .community_category_box,
+    .content_box#tab_2_content .filter_wrap .filter_con .community_comment_box,
+    .content_box#tab_2_content .filter_wrap .filter_con .community_writer_box { flex-direction: row; }
+    .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal .filter_sub_title { display: block; }
+    .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 5px; }
+
 }
 
 @media all and (min-width: 768px){
@@ -129,6 +147,9 @@
     .filter_wrap .filter_con .filter_sub_title { width: 18%; }
     .mypage .mypage_con { padding-left: 30px; padding-right: 30px; }
     .mypage .title { padding-left: 30px; padding-right: 30px; }
+
+    /* [2] 커뮤니티 이용내역 */
+    .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 0; }
 }
 
 @media all and (min-width: 992px){

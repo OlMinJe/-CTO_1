@@ -12,10 +12,10 @@ function filter_unChecked(obj){ //체크해제
 const filter01 = document.querySelectorAll('.filter01'); //체크버튼
 const filter02 = document.querySelectorAll('.filter02'); //체크버튼
 const filterAll_01 = document.querySelector('.filter01.all'); //'all' 체크버튼
-const filterAll_02 = document.querySelector('.filter02.all'); //'all' 체크버튼
+const filterAll_02 = document.querySelector('.filter02.All'); //'all' 체크버튼
 
 function resetBtn(){
-    $("input:checkbox").prop("checked", false);
+    $("input:checkbox").prop("checked", true);
 }
 
 filter01.forEach(function(el){
@@ -25,7 +25,7 @@ filter01.forEach(function(el){
 				filter_checked(e.target);
 				const checked = document.querySelectorAll('.filter_wrap input:checked');
 				if(filter01.length -1 == checked.length){ //모두 체크되어있다면 all도 체크
-					filter_unChecked(filterAll_01);
+					filter_checked(filterAll_01);
 				}
 			}else{
 				filter_unChecked(e.target);

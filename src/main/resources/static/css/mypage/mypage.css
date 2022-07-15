@@ -24,7 +24,7 @@
 .filter_wrap .filter_con .btn p .btn-style { border: none; border-radius: 10%; padding: 5px 10px; background-color: skyblue; color: #fff; }
 .filter_wrap .filter_con .btn p .btn-style:hover { background-color: blueviolet; }
 .filter_wrap .filter_con .btn p .btn-style:focus { background-color: bisque; }
-#sub_table { overflow: auto; }
+#sub_table { overflow: auto; } /* TODO: 부트스트랩이랑 충돌남 */
 #sub_table::-webkit-scrollbar { width: 0; }
 #sub_table table thead th, #sub_table table tbody td { vertical-align: middle; text-align: center;}
 

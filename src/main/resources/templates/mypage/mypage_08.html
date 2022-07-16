@@ -47,11 +47,30 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_8_content">
                 <!------------------------------------------>
-                회원 탈퇴의 경우 재로그인해서 확인하기<br/>
-                <input type="text" name="username" placeholder="이메일 입력해주세요">
-                <input type="password" name="password" placeholder="비밀번호">
-                <button type="submit">로그인</button>
                 <!-- TODO: 회원탈퇴 및 다른 부분 스프링 참고하기-->
+                <div class="col-12" id="sub_title">회원 탈퇴</div>
+                <div class="col-12" style="text-align: center;">
+                    <div class="col-12 login">로그인 하기</div>
+                    <form action="/user/login" method="post" id="login">
+                        <input type="text" name="username" placeholder="이메일 입력해주세요">
+                        <input type="password" name="password" placeholder="비밀번호">
+                        <button type="submit" class="btn btn-info">로그인</button>
+                    </form>
+                    <div class="col-12 no_user">
+                        <div class="col-12 no_user_title">로그인 후 탈퇴 페이지</div>
+                        <form>
+                            <ul>
+                                <li><input type="checkbox"checked>선택 1</li>
+                                <li><input type="checkbox">선택 1</li>
+                                <li><input type="checkbox">선택 1</li>
+                                <li><input type="checkbox">선택 1</li>
+                                <li><input type="checkbox">선택 1</li>
+                                <li class="flex__"><span>기타</span><input type="text" checked></li>
+                                <li class="float__"><input type="submit" class="no_user_btn btn btn-info"></input></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
                 <!------------------------------------------>
             </div>
         </div>

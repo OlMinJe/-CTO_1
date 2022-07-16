@@ -47,13 +47,21 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_5_content">
                 <!------------------------------------------>
-                <div class="col-12">로그인 기획 확인 필요</div>
-                <form action="/user/login" method="post">
-                    <input type="text" name="username" placeholder="이메일 입력해주세요">
-                    <input type="password" name="password" placeholder="비밀번호">
-                    <button type="submit">로그인</button>
-                </form>
-                <!-- 참고 사이트 https://choco4study.tistory.com/63-->
+                <div class="col-12" id="sub_title">비밀번호 변경</div>
+                <div class="col-12" style="text-align: center;">
+                    <div class="col-12 login">로그인 하기</div>
+                    <form action="/user/login" method="post">
+                        <input type="text" name="username" placeholder="이메일 입력해주세요">
+                        <input type="password" name="password" placeholder="비밀번호">
+                        <button type="submit" class="btn btn-info">로그인</button>
+                        <!--위치가 여기 맞나?-->
+                        <div class="col-12">
+                            <div class="col-4 id__"><a href="mypage.html">아이디 찾기</a></div>
+                            <div class="col-4 pass__"><a href="mypage.html">비밀번호 찾기</a></div>
+                        </div>
+                    </form>
+                    <!-- 참고 사이트 https://choco4study.tistory.com/63-->
+                </div>
                 <!------------------------------------------>
             </div>
         </div>

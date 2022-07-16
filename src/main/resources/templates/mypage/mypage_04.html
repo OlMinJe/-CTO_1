@@ -47,7 +47,20 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_4_content">
                 <!------------------------------------------>
-                테스트 참여내역
+                <div class="col-12" id="sub_title">테스트 참여내역</div>
+                <div class="col-12 webTest_table" id="sub_table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="width: 10%;">No.</th>
+                            <th style="width: auto;">참여 테스트</th>
+                            <th style="width: 20%;">결과</th>
+                        </tr>
+                        </thead>
+                        <tbody id="webTest_table">
+                        </tbody>
+                    </table>
+                </div>
                 <!------------------------------------------>
             </div>
         </div>
@@ -55,5 +68,23 @@
 </div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+<script>
+    $(document).ready(function(){
+        mypage_04();
+    });
+    function mypage_04(){
+        var e = document.getElementById('webTest_table');
+
+        for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
+            e.innerHTML = '<tr>'+
+                '<td class="diplay_no"></td>'+
+                '<td class="webTest"></td>'+
+                '<td class="webTest_result"></td>';
+            document.querySelector('.webTest_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+            document.querySelector('.webTest_table .webTest').innerHTML = '<span>' + '테스트 이름' + '</span>';
+            document.querySelector('.webTest_table .webTest_result').innerHTML = '<a href="https://m.blog.naver.com/dasol825/220672901113" >' + '결과(클릭하면 상세)' + '</a>';
+        }
+    }
+</script>
 </body>
 </html>

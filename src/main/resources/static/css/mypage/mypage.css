@@ -109,15 +109,48 @@
 /* ----------- content 박스 [3. 위치기반 사용내역] ----------- */
 /* ----------- content 박스 [4. 테스트 결과 내역] ----------- */
 /* ----------- content 박스 [5. 비밀번호 변경] ----------- */
+.content_box#tab_5_content .login { font-size: 28px; line-height: 40px; font-weight: 600; margin-bottom: 2.5em; }
+.content_box#tab_5_content form { display: flex; flex-direction: column; margin: 0 auto; width: 80%; }
+.content_box#tab_5_content form input { margin-bottom: 20px; padding: 10px 20px; }
+.content_box#tab_5_content form input[name="password"] { margin-bottom: 50px; }
+.content_box#tab_5_content form button { margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; }
+.content_box#tab_5_content form .col-4 { display: inline-block; }
+
 /* ----------- content 박스 [6. 닉네임 변경] ----------- */
+.content_box#tab_6_content .user_nickname { font-size: 20px; line-height: 26px; margin-bottom: 3em;}
+.content_box#tab_6_content .user_nickname span { font-size: 28px; line-height: 40px; font-weight: 600; }
+
 /* ----------- content 박스 [7. 프로필 사진 변경] ----------- */
-.content_box#tab_7_content .buttom { display: flex; justify-content: center; }
-.content_box#tab_7_content label { cursor: pointer; font-size: 1em; }
-.content_box#tab_7_content #chooseFile { visibility: hidden; }
+.content_box#tab_7_content .image-upload { padding: 30px 0; }
+.content_box#tab_7_content .image-upload .button { display: flex; justify-content: center; }
+.content_box#tab_7_content .image-upload label { cursor: pointer; font-size: 1em; padding: 20px 50px; border-radius: 10px; background-color: skyblue; }
+.content_box#tab_7_content .image-upload  #chooseFile { visibility: hidden; }
 .content_box#tab_7_content a { display: block; height: 100%; }
+.content_box#tab_7_content .image-upload .fileContainer { display: flex; justify-content: center; align-items: center; }
+.content_box#tab_7_content .image-upload .fileContainer .fileInput { display: flex; align-items: center; border-bottom: solid 2px black; width: 60%; height: 30px; }
+.content_box#tab_7_content .image-upload .fileContainer .fileInput #fileName { margin-left: 5px; }
+.content_box#tab_7_content .image-upload .fileContainer .buttonContainer { width: 15%; display: flex; justify-content: center; align-items: center; margin-left: 10px; background-color: black; color: white; border-radius: 30px; padding: 10px; font-size: 0.8em; cursor: pointer; }
+.content_box#tab_7_content .change-show div { font-weight: 500; margin-bottom: 20px; }
+.content_box#tab_7_content .change-show div span { font-weight: 600; color: lightskyblue; }
+.content_box#tab_7_content .change-show button { margin-bottom: 20px; }
+.content_box#tab_7_content .image-show { z-index: -1; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; }
+
 
 /* ----------- content 박스 [8. 회원탈퇴] ----------- */
+.content_box#tab_8_content .login { font-size: 28px; line-height: 40px; font-weight: 600; margin-bottom: 2.5em; }
+.content_box#tab_8_content form#login { display: flex; flex-direction: column; margin: 0 auto; width: 80%; }
+.content_box#tab_8_content form#login input { margin-bottom: 20px; padding: 10px 20px; }
+.content_box#tab_8_content form#login input[name="password"] { margin-bottom: 50px; }
+.content_box#tab_8_content form#login button { margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; }
 
+.content_box#tab_8_content .no_user { padding: 30px 0; }
+.content_box#tab_8_content .no_user .no_user_title { margin-bottom: 30px; font-size: 30px; line-height: 36px; }
+.content_box#tab_8_content .no_user form ul { text-align: left; }
+.content_box#tab_8_content .no_user form ul li { display: flex; margin-bottom: 10px; font-size: 20px; line-height: 26px; }
+.content_box#tab_8_content .no_user form ul li:last-child { margin-bottom: 0; }
+.content_box#tab_8_content .no_user form ul li input { margin-right: 10px; }
+.content_box#tab_8_content .no_user form ul .flex__ { flex-direction: column; }
+.content_box#tab_8_content .no_user form ul .float__ { float: right; }
 
 
 /* 반응형 */
@@ -140,6 +173,15 @@
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal .filter_sub_title { display: block; }
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 5px; }
 
+    /* [5] 비밀번호 변경 */
+    .content_box#tab_5_content form { width: 60%; }
+
+    /* [7] 프로필 사진 변경 */
+    .content_box#tab_7_content .image-upload { padding: 30px 0; }
+
+    /* [8] 회원탈퇴 */
+    .content_box#tab_8_content form#login { width: 60%; }
+    .content_box#tab_8_content .no_user ul { padding: 0 10px; }
 }
 
 @media all and (min-width: 768px){
@@ -150,6 +192,13 @@
 
     /* [2] 커뮤니티 이용내역 */
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 0; }
+
+    /* [5] 비밀번호 변경 */
+    .content_box#tab_5_content form { width: 40%; }
+
+    /* [8] 회원탈퇴 */
+    .content_box#tab_8_content form#login { width: 40%; }
+    .content_box#tab_8_content .no_user ul { padding: 0 50px; }
 }
 
 @media all and (min-width: 992px){
@@ -167,4 +216,9 @@
     .mypage_con .content_box#tab_0_content { flex-direction: row; }
     .mypage .mypage_con .mypage_menu { display: flex; flex-direction: column; }
     .mypage_con .content_box .content_left .calender .sub_title { margin-top: 30px; }
+}
+
+@media all and (min-width: 1200px) {
+    /* [8] 회원탈퇴 */
+    .content_box#tab_8_content .no_user ul { padding: 0 50px; }
 }

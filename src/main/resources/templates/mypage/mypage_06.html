@@ -47,8 +47,24 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_6_content">
                 <!------------------------------------------>
-                <input type="text" name="username" placeholder="기존 닉네임 가져오기">
-                <button type="submit">변경하기</button>
+                <div class="col-12" id="sub_title">닉네임 변경</div>
+                <div class="col-12" style="text-align: center;">
+                    <div class="col-12 user_nickname"><span>기존 닉네임값</span> 님<br>변경하실 닉네임을 적어주세요.</div>
+                    <div class="col-12 change_nickname">
+                        <input type="text" class="changeNickname"/>
+                        <button type="submit" class="changeBtn btn btn-info">변경하기</button>
+                        <script>
+                            document.querySelector('.changeBtn').addEventListener('click', () =>{
+                                const input = document.querySelector('.changeNickname'); //변경할 닉네임 입력하는 inoput 태그
+                                const value = input.value; //변경할 닉네임 값을 저장
+                                input.value = '';//input 태그 값 초기화
+
+                                /* TODO: 백엔드 연결필요
+                                    참고 사이트 : https://roughroad.tistory.com/275 */
+                            })
+                        </script>
+                    </div>
+                </div>
                 <!------------------------------------------>
             </div>
         </div>

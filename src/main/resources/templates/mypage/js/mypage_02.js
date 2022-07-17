@@ -6,20 +6,20 @@ function mypage_02(){
     var e = document.getElementById('community_table');
 
     for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
-        e.innerHTML = '<tr>'+
-                         '<td class="diplay_no"></td>'+
-                         '<td class="category"></td>'+
-                         '<td class="table_title"></td>'+
-                         '<td class="comment"></td>'+
-                         '<td class="writer"></td>'+
-                         '<td class="comment_use"></td>'+
+        e.innerHTML += '<tr>'+
+                         '<td class="diplay_no">' + (i+1) + '</td>'+
+                         '<td class="category">' + i + '</td>'+
+                         '<td class="table_title">' + i + '</td>'+
+                         '<td class="comment">' + i + '</td>'+
+                         '<td class="writer">' + 'Y' + '</td>'+
+                         '<td class="comment_use">' + 'N' + '</td>'+
                      '</tr>';
-        document.querySelector('.community_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+        /*document.querySelector('.community_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
         document.querySelector('.community_table .category').innerHTML = '<span>' + i + '</span>';
         document.querySelector('.community_table .table_title').innerHTML = '<span>' + i + '</span>';
         document.querySelector('.community_table .comment').innerHTML = '<span>' + i + '</span>';
         document.querySelector('.community_table .writer').innerHTML = '<span>' + 'Y' + '</span>';
-        document.querySelector('.community_table .comment_use').innerHTML = '<span>' + 'N' + '</span>';
+        document.querySelector('.community_table .comment_use').innerHTML = '<span>' + 'N' + '</span>';*/
     }
 }
 

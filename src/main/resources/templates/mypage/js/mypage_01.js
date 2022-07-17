@@ -78,17 +78,17 @@ function mypage_01(){
     var e = document.getElementById('event_attend_table');
 
     for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
-        e.innerHTML = '<tr>'+
-                         '<td class="diplay_no"></td>'+
-                         '<td class="category"></td>'+
-                         '<td class="table_title"></td>'+
-                         '<td class="isuse"></td>'+
-                         '<td class="point"></td>'+
+        e.innerHTML += '<tr>'+
+                         '<td class="diplay_no">' + (i+1) + '</td>'+
+                         '<td class="category">' + '삼행시' + '</td>'+
+                         '<td class="table_title">' + '제목 테스트' + '</td>'+
+                         '<td class="isuse">' +'Y' + '</td>'+
+                         '<td class="point">' + i + '</td>'+
                      '</tr>';
-        document.querySelector('.event_attend_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+        /*document.querySelector('.event_attend_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
         document.querySelector('.event_attend_table .category').innerHTML = '<span>' + '삼행시' + '</span>';
         document.querySelector('.event_attend_table .table_title').innerHTML = '<span>' + '제목 테스트' + '</span>';
         document.querySelector('.event_attend_table .isuse').innerHTML = '<span>' +'Y' + '</span>';
-        document.querySelector('.event_attend_table .point').innerHTML = '<span>' + i + '</span>';
+        document.querySelector('.event_attend_table .point').innerHTML = '<span>' + i + '</span>';*/
     }
 }

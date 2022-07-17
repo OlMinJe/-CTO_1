@@ -1,0 +1,22 @@
+/* 공통 */
+.advice-menu ul { display: flex; text-align: center; }
+.advice-menu ul li { padding: 20px 20px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
+.advice-menu ul li:hover { background-color: cornsilk; }
+
+/* 상위 메뉴 */
+.advice-menu li.active { background-color: lightskyblue; }
+/* 하위 메뉴 */
+.advice-menu .advice-menu-con-01,.advice-menu .advice-menu-con-02 { flex-direction: column; }
+
+
+/* 컨텐츠 */
+.advice-content { padding: 60px 0; }
+.advice-content .content-table thead { text-align: center; }
+
+
+@media all and (min-width: 768px){
+    .advice-menu .advice-menu-con-01, .advice-menu .advice-menu-con-02 { flex-direction: row; }
+    .advice-menu .advice-menu-con-01 li { width: 20%; }
+    .advice-menu .advice-menu-con-02 li { width: 25%; }
+
+}

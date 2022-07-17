@@ -75,13 +75,14 @@
         var e = document.getElementById('webTest_table');
 
         for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
-            e.innerHTML = '<tr>'+
-                '<td class="diplay_no"></td>'+
-                '<td class="webTest"></td>'+
-                '<td class="webTest_result"></td>';
-            document.querySelector('.webTest_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+            e.innerHTML += '<tr>'+
+                '<td class="diplay_no"><span>' + (i+1) + '</span></td>'+
+                '<td class="webTest"><span>' + '테스트 이름' + '</span></td>'+
+                '<td class="webTest_result"><a href="https://m.blog.naver.com/dasol825/220672901113" >' + '결과(클릭하면 상세)' + '</a></td>'+
+                '</tr>';
+            /*document.querySelector('.webTest_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
             document.querySelector('.webTest_table .webTest').innerHTML = '<span>' + '테스트 이름' + '</span>';
-            document.querySelector('.webTest_table .webTest_result').innerHTML = '<a href="https://m.blog.naver.com/dasol825/220672901113" >' + '결과(클릭하면 상세)' + '</a>';
+            document.querySelector('.webTest_table .webTest_result').innerHTML = '<a href="https://m.blog.naver.com/dasol825/220672901113" >' + '결과(클릭하면 상세)' + '</a>';*/
         }
     }
 </script>

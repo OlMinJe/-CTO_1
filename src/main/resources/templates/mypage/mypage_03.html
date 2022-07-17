@@ -75,13 +75,14 @@
         var e = document.getElementById('location_table');
 
         for(var i = 0; i < 1; i++){ /* 저장된 seq의 값만큼 돌아가도록 변경하기*/
-            e.innerHTML = '<tr>'+
-                '<td class="diplay_no"></td>'+
-                '<td class="select_01"></td>'+
-                '<td class="select_02"></td>';
-            document.querySelector('.location_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
+            e.innerHTML += '<tr>'+
+                '<td class="diplay_no">' + (i+1) + '</td>'+
+                '<td class="select_01">' + '공연' + '</td>'+
+                '<td class="select_02"><a href="https://weblin.tistory.com/5">' + '고척스카이돔' + '</a></td>'+
+                '</tr>';
+           /* document.querySelector('.location_table .diplay_no').innerHTML = '<span>' + (i+1) + '</span>';
             document.querySelector('.location_table .select_01').innerHTML = '<span>' + '공연' + '</span>';
-            document.querySelector('.location_table .select_02').innerHTML = '<a href="https://weblin.tistory.com/5">' + '고척스카이돔' + '</a>';
+            document.querySelector('.location_table .select_02').innerHTML = '<a href="https://weblin.tistory.com/5">' + '고척스카이돔' + '</a>';*/
         }
     }
 </script>

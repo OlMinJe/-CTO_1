@@ -12,8 +12,8 @@ let active_woman = document.querySelector("#active_woman");
 let normal = document.getElementById('sub-menu-01');
 let woman = document.getElementById('sub-menu-02');
 
-let normal_li = document.querySelectorAll('.advice-menu-con-01 li');
-let woman_li = document.querySelectorAll('.advice-menu-con-02 li');
+let normal_li = document.querySelectorAll('.advice-menu-box-01 li');
+let woman_li = document.querySelectorAll('.advice-menu-box-02 li');
 
 let title_index = document.getElementById('advice-table');
 
@@ -94,3 +94,12 @@ active_woman.addEventListener("click", function (){
     woman.style.display = "flex";
     li_active_02();
 })
+
+function imgClick(){
+    var active = $('.advice-menu-con').css('display');
+    if(active == 'block' ){
+        $('.advice-menu-con').css('display','none');
+    } else{
+        $('.advice-menu-con').css('display','block');
+    }
+}

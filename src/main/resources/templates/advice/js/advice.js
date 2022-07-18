@@ -15,13 +15,14 @@ let woman = document.getElementById('sub-menu-02');
 let normal_li = document.querySelectorAll('.advice-menu-con-01 li');
 let woman_li = document.querySelectorAll('.advice-menu-con-02 li');
 
-let title_01_index = document.getElementById('advice-table');
-let title_02_index = document.getElementById('advice-table');
+let title_index = document.getElementById('advice-table');
 
 function li_active_01(){
     for(let i = 0; i < normal_li.length; i++) {
         normal_li[i].addEventListener("click", function () {
-            title_01_index.remove();
+            while (title_index.hasChildNodes()) {
+                title_index.removeChild(title_index.firstChild);
+            }
             for(let j = 0; j < normal_li.length; j++){
                 if(normal_li[j].classList.contains('active') == true){
                     normal_li[j].classList.remove('active');
@@ -29,6 +30,7 @@ function li_active_01(){
             }
             normal_li[i].classList.add('active');
             content_table_01();
+            /* 선택된 카테고리 값 보내기 -> content_table_01() 함수에서 받은 값으로 해당 카테고리 게시글 출력하기*/
         })
     }
 }
@@ -36,6 +38,9 @@ function li_active_01(){
 function li_active_02(){
     for(let i = 0; i < woman_li.length; i++) {
         woman_li[i].addEventListener("click", function () {
+            while (title_index.hasChildNodes()) {
+                title_index.removeChild(title_index.firstChild);
+            }
             for(let j = 0; j < woman_li.length; j++){
                 if(woman_li[j].classList.contains('active') == true){
                     woman_li[j].classList.remove('active');
@@ -48,9 +53,9 @@ function li_active_02(){
 }
 
 function content_table_01(){
-    for(let i = 0; i < 10; i++) {
-        title_01_index.innerHTML +=
-            '<tr>'+
+    for(let i = 0; i < 10; i++) { //해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
+        title_index.innerHTML +=
+            '<tr class="adivce-table">'+
             '<td class="diplay_no">' + '<span>' + (i+1) + '</span>' + '</td>'+
             '<td class="wirter">' + '<span>' + '글쓴이' + '</span>' +'</td>'+
             '<td class="title">' + '<span>' + title_01[i] + '</span>' + '</td>'+
@@ -61,8 +66,8 @@ function content_table_01(){
 
 function content_table_02(){
     for(let i = 0; i < 10; i++) {
-        title_02_index.innerHTML +=
-            '<tr>'+
+        title_index.innerHTML +=
+            '<tr class="adivce-table">'+
             '<td class="diplay_no">' + '<span>' + (i+1) + '</span>' + '</td>'+
             '<td class="wirter">' + '<span>' + '글쓴이' + '</span>' +'</td>'+
             '<td class="title">' + '<span>' + title_02[i] + '</span>' + '</td>'+

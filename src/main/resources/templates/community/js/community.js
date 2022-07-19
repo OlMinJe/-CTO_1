@@ -4,7 +4,6 @@ $(document).ready(function(){
 });
 /* TODO: 나중에 삭제 */
 let title_01 = ["일반고민", "대인관계 / 가족", "정신건강", "직장", "성소수자"];
-let title_02 = ["성추행", "출산 / 육아", "섭식장애", "외모 강박증"];
 
 let active_normal = document.querySelector("#community_normal");
 let active_editor = document.querySelector("#community_editor");
@@ -63,7 +62,7 @@ active_editor.addEventListener("click", function (){
 })
 
 function imgClick(){
-    var active = $('.advice-menu-con').css('display');
+    var active = $('.community-menu-con').css('display');
     if(active == 'block' ){
         $('.community-menu-con').css('display','none');
     } else{

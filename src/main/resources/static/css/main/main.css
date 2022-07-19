@@ -30,6 +30,11 @@
 .sub_swiper_wrap .swiper-slide.slide05 { background-color: #FFCE5E; }
 
 
+/* wiseSaying_wrap */
+.wiseSaying_wrap { display: flex; text-align: center; }
+.wiseSaying_wrap > div { border: 1px solid #ccc; padding: 10px 0; }
+
+
 /* community_wrap */
 .community_wrap { display: flex; flex-direction: column; }
 .community_wrap .moble_mb { margin-bottom: 15px; }

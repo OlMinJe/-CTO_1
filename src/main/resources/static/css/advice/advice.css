@@ -9,14 +9,9 @@
 .advice-menu .advice-menu-wrap li img { float: right; transform: rotate(90deg);}
 .advice-menu .advice-menu-wrap li:hover img { transform: rotate(180deg);}
 
-
 /* 하위 메뉴 */
 .advice-menu .advice-menu-box-01,.advice-menu .advice-menu-box-02 { flex-direction: column; }
-
-
 #sub-menu-01, #sub-menu-02 { display: none; }
-
-
 
 /* 컨텐츠 */
 .advice-content { padding: 60px 0; }

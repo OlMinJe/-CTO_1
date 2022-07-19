@@ -1,0 +1,30 @@
+/* 공통 */
+.community-menu ul { display: flex; text-align: center; }
+.community-menu ul li { padding: 20px 20px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
+.community-menu ul li:hover { background-color: cornsilk; }
+.community-menu li.active { background-color: lightskyblue; }
+
+/* 상위 메뉴 */
+.community-menu .community-menu-wrap li { position: relative; }
+.community-menu .community-menu-wrap li img { float: right; transform: rotate(90deg);}
+.community-menu .community-menu-wrap li:hover img { transform: rotate(180deg);}
+
+/* 하위 메뉴 */
+.community-menu .community-menu-box-01, .community-menu .community-menu-box-02 { flex-direction: column; }
+#sub-menu-01, #sub-menu-02 { display: none; }
+
+/* 컨텐츠 */
+.community-content { padding: 60px 0; }
+.community-content .content-table thead { text-align: center; }
+
+
+
+@media all and (min-width: 768px){
+    .community-menu .community-menu-wrap li img { display: none; }
+    .community-menu .community-menu-wrap li img { display: none; }
+    .community-menu .community-menu-box-01, .community-menu .community-menu-box-02 { flex-direction: row; }
+    .community-menu .community-menu-box-01 li { width: 20%; }
+    .community-menu .community-menu-box-02 li { width: 25%; }
+    #sub-menu-01, #sub-menu-02 { display: flex; }
+
+}

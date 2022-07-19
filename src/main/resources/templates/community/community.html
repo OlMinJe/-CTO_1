@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/community/community.css">
+    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
+</head>
+<body>
+<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+
+<div class="col-12 community">
+    <div class="col-12 community-menu">
+        <ul class="community-menu-wrap">
+            <li class="col-6 active" id="community_normal">
+                커뮤니티
+                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
+            </li>
+            <li class="col-6" id="community_editor">
+                에디터 칼럼
+                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
+            </li>
+        </ul>
+        <div class="col-12 community-menu-con">
+            <ul class="col-12 community-menu-box-01" id="sub-menu">
+                <li class="active">일상</li>
+                <li>취미</li>
+                <li>유머</li>
+                <li>음식</li>
+                <li>정보</li>
+                <li>취업/진로</li>
+                <li>기타</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-12 community-content">
+        <div class="content-table">
+            <table class="table table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th style="width: 10%;">No.</th>
+                    <th style="width: 10%;">작성자</th>
+                    <th style="width: auto;">제목</th>
+                    <th style="width: 10%;">댓글수</th>
+                </tr>
+                </thead>
+                <tbody id="community-table"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/community/js/community.js"></script>
+</body>
+</html>

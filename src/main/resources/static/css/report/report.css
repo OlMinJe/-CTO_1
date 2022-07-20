@@ -1,13 +1,13 @@
 
 /*tab menu css */
 
-.report_main { margin: 0 auto; width:1380px; max-width: 100%; }
+/*.report_main { margin: 0 auto; width:1380px; max-width: 100%; }*/
 
 .report_main input[type=radio] { display: none; }
 
 #tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { background-color: rgba(0, 0, 0, 0.2); box-shadow: none; }
 
-.report_content > div { display: none; }
+.report_content > div { display: none; line-height: 2.3; font-size: 17px; }
 
 #tab-1:checked ~ .report_content div:nth-child(1), #tab-2:checked ~ .report_content div:nth-child(2), #tab-3:checked ~ .report_content div:nth-child(3), #tab-4:checked ~ .report_content div:nth-child(4), #tab-5:checked ~ .report_content div:nth-child(5)  { display: block; }
 
@@ -17,7 +17,7 @@
 
 .report_content { background-color: rgba(255, 255, 255, 0.2); min-height: 250px; }
 
-.report_content > div{ padding: 30px; line-height: 1.5; font-size: 17px; }
+/*.report_content > div{ padding: 30px; line-height: 1.5; font-size: 17px; }*/
 
 
 /*list.css*/
@@ -147,6 +147,9 @@ a { text-decoration: none; color: inherit; }
 
 /*media.css*/
 /*view page css */
+@media all and (min-width: 768px){
+    .report_content > div { padding: 30px;  }
+}
 
 @media (max-width: 1000px) {
     .report_board_wrap { width: 100%; min-width: 320px; padding: 0 30px; box-sizing: border-box; }
@@ -238,5 +241,5 @@ section.report_notice { padding: 80px 0; }
 
 * { list-style: none; text-decoration: none; padding: 0; margin: 0; box-sizing: border-box; }
 .clearfix:after { content: ''; display: block; clear: both; }
-.container { width: 1100px; margin: 0 auto; }
+/*.container { width: 1100px; margin: 0 auto; }*/
 .blind { position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px; }

@@ -30,6 +30,9 @@ p {  margin-bottom: 0; }
 /* label */
 label { margin-bottom: 0; }
 
+/* dd */
+dd { margin-bottom: 0; margin-left: 0; }
+
 /* container */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-right: 0; padding-left: 0; margin-right: 0; margin-left: 0; }
 

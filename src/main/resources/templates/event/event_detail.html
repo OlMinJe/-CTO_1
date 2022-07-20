@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
     <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/event/event_detail.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/static/js/sub_00/sub_00.js"></script>
+
     <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
 </head>
+
 <body>
     <!--부트스트랩 스크립트 설정-->
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
@@ -23,41 +24,31 @@
     <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
 
     <div class="col-12">
-        <div id ="event-container">
+        <div id ="event-container ">
             <div id="event_top">
-                <h2>독서 감상 대회</h2>
+                <h1>독서 감상 대회</h1>
             </div>
         </div>
-        <div lass="main">
-            <div class="tabs">
-                <div class="tab" data-tab-target="#tab1">
-                    <p>참여하기</p>
+
+
+        <div class="event-detail-main">
+            <input type="radio" id="tab-1" name="show" checked/>
+            <input type="radio" id="tab-2" name="show" />
+            <div class="tab">
+                <label for="tab-1">참여하기</label>
+                <label for="tab-2">다른사람들의 참여내역</label>
+            </div>
+            <div class="event-detail-content">
+                <div class="content-dis">
+                    참여하기
                 </div>
-                <div class="tab" data-tab-target="#tab2">
-                    <p>다른 사람들의 참여 내역</p>
-                </div>
-                <div class="tab" data-tab-target="#tab3">
-                    <p>tab3</p>
+                <div class="content-dis">
+                    다른사람들의 참여냐역
                 </div>
             </div>
-        </div>
-        <div class="content">
-            <div id="tab1" data-tab-content class="items active">
-                <h2>참여하기</h2>
-                <p>탭 1에 들어갈 내용~</p>
-            </div>
-            <div id="tab2" data-tab-content class="items">
-                <h2>Tab2</h2>
-                <p>탭 2에 들어갈 내용~</p>
-            </div>
-            <div id="tab3" data-tab-content class="items">
-                <h2>Tab3</h2>
-                <p>탭 3에 들어갈 내용~</p>
-            </div>
-        </div>
-    </div>
 
     <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-
+        </div>
+    </div>
 </body>
 </html>

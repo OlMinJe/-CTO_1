@@ -2,40 +2,52 @@
 /*body{ height: 100vh; display: flex; align-items: center; justify-content: center; background-color: orange; }*/
 
 
-/* event-container */
 /*
-#event-container { width: 100%; padding: 10px 0; background:white; border-bottom: 1px solid #bbb; }
-#event-container div { margin: 0; font-size: 2em; line-height: 2.6em; }
  TODO: #event_top 으로 지정한 것과 차이 없음! 오히려 div 박스 한개를 줄여서 더 효율적인 방ㅇ식...!
         그리고 ID는 그 페이지 안에 고유한 1개의 값이라 정말 중요한 거 아니면 클래스 명으로 지어주는게 좋아!
 */
-#event_top { width: 100%; padding: 10px 0; background:white; border-bottom: 1px solid #bbb; }
-#event_top div { margin: 0; font-size: 2em; line-height: 2.6em; }
+
+ul,li { list-style: none; }
+
+header{ height: 120px; border-bottom: 1px solid #bbb; }
+
+header > div { max-width: 1330px; margin: 0 auto; }
+
+header .logo{ float: left; }
+
+header .logo img { width:200px; height: 100px; margin-top: 10px; padding-bottom: 10px; }
+
+header .gnb{ float: right; width: 300px; position: relative; margin-top: 30px; }
+
+/*.search{ position: relative; width: 300px; } */
+
+header .gnb input{ width: 100%; border: 1px solid #bbb; border-radius: 8px; padding:10px 12px; font-size: 14px; }
+
+header .gnb img{ position: absolute; width: 17px; top: 10px; right: 12px; margin: 0; }
+
+
+/* event-container*/
+
+#event_top { width: 100%; height: 50px; padding-top: 10px; padding-bottom: 10px; background:white; border-bottom: 1px solid #bbb; /*text-align: center;*/ }
+
 
 /* event-tabs */
 
-/*.event-tabs{ display: flex; position: relative; text-align: center; width: 100%; height: 70px; background-color: white; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}
-.event-tabs .event-tab{width: 600px; height: 100%; margin-top: 15px; text-align: center; color:#06345a; cursor:pointer; z-index: 2; }
 
-.event-tabs .border{ position: absolute; width: 600px; height: 8px; background:rgba(77, 77, 19); bottom: 0; z-index: 2; transition: 0.4s; }
+.event-detail-main input[type=radio] { display: none;}
 
-.event-tabs .background{ z-index: 1; position: absolute; width: 600px; height: 100%; background:rgb(200, 200, 200); bottom: 0; transition: 0.4s; }
-*/
+#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2){ background-color: rgba(0, 0, 0, 0.2); box-shadow: none; }
 
-/* event-burger */
-/*.burger{}
+.event-detail-content > div { display: none; }
 
-.burger div{ width: 25px; height: 3px; background-color: gray; margin: 3px; justify-content: space-around; align-items: center;}
-*/
+#tab-1:checked ~ .content div:nth-child(1), #tab-2:checked ~ .content div:nth-child(2)  { display: block; }
 
-/* event-main */
+.event-detail-main { margin: 0 auto; width:1380px; max-width: 100%; }
 
-.main { display: flex; flex-direction: column; }
-.tabs { display: flex; padding-top: 20px;}
-.tabs .tab { font-size: 1rem; text-align: center; line-height: 30px; width: 600px; height: 50px; cursor: pointer; background-color: rgb(243, 243, 243); color: rgb(20, 19, 19); position: relative; border-top-right-radius: 10px; border-top-left-radius: 10px; border: 2px solid black; }
-.content { border: 2px solid black; width: 100%; height: 1000px; }
-.items { width: 300px; display: none; padding: 10px; background-color: #fff; position: relative;}
-.items::before { content: ""; position: absolute; top: -4px; left: 0; width: 440px; height: 4px; background-color: rgb(255, 255, 255);}
-.items:nth-child(2)::before { left: 444px; top: -4px; background-color: rgb(255, 255, 255); }
-.items:nth-child(3)::before { left: 888px; top: -4px; background-color: rgb(255, 255, 255); }
-.items.active { display: inline-block; }
+.tab { overflow: hidden; }
+
+.tab label { font-size: 18px; cursor: pointer; float: left; width: 50%; text-align: center; padding: 15px 0; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
+
+.event-detail-content { background-color: rgba(0, 0, 0, 0.2); min-height: 250px; }
+
+.event-detail-content > div{ padding: 30px; line-height: 1.5; font-size: 17px;}

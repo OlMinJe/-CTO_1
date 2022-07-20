@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" report_content="width=device-width, initial-scale=1.0">
+  <title>공지사항</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+  <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
+  <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
+  <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
+  <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/report/report.css">
+
+</head>
+
+<body>
+<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<div class="report_board_wrap">
+  <div class="report_board_title">
+    <strong>신고게시판</strong>
+
+  </div>
+  <div class="board_write_wrap">
+    <div class="report_board_write">
+      <div class="report_write_title">
+        <dl>
+          <dt>제목</dt>
+          <dd><input type="text" placeholder="제목 입력"></dd>
+        </dl>
+      </div>
+      <div class="report_write_info">
+        <dl>
+          <dt>글쓴이</dt>
+          <dd><input type="text" placeholder="글쓴이 입력"></dd>
+        </dl>
+        <dl>
+          <dt>비밀번호</dt>
+          <dd><input type="password" placeholder="비밀번호 입력"></dd>
+        </dl>
+      </div>
+      <div class="report_write_content">
+        <textarea placeholder="내용 입력"></textarea>
+      </div>
+      <form action="" method="post" enctype="multipart/form-data">
+        <input type="file">
+      </form>
+    </div>
+    <div class="report_bt_wrap">
+      <a href="report_view.html" class="on">등록</a>
+      <a href="report.html">취소</a>
+    </div>
+  </div>
+</div>
+<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+</body>
+</html>

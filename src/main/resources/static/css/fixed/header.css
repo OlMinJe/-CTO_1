@@ -19,12 +19,14 @@ header .header_wrap { display: flex; align-items: center; }
 
 header .header_wrap .header_left, header .header_wrap .header_right { padding: 2% 30px;}
 
-header .header_wrap .header_left .logo { display: inline-block; padding: 10px 5px;}
+header .header_wrap .header_left .logo { display: inline-block; padding: 10px 5px; }
+header .header_wrap .header_left .logo img  { width: 130px; }
 header .header_wrap .header_left ul { float: right; display: flex; justify-content: space-between;  }
 header .header_wrap .header_left ul li { padding: 10px 20px; font-size: 20px; line-height: 26px; font-weight: 600; }
 
-header .header_wrap .header_right .gnb{ display: flex; justify-content: space-between; }
+header .header_wrap .header_right .gnb{ display: flex; justify-content: space-between; align-items: center; }
 header .header_wrap .header_right .gnb input { width: 80%; border: 1px solid #bbb; border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+header .header_wrap .header_right .gnb img { width: 30px; height: 30px; }
 
 
 /* 고정 헤더 */

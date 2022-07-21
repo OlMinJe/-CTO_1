@@ -1,23 +1,58 @@
 /* 공통 */
+.advice-menu, .advice-content { margin-bottom: 50px; }
 .advice-menu ul { display: flex; text-align: center; }
 .advice-menu ul li { padding: 20px 20px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
 .advice-menu ul li:hover { background-color: cornsilk; }
 .advice-menu li.active { background-color: lightskyblue; }
 
-/* 상위 메뉴 */
+.advice_view_wrap, .advice_board_wrap { width: 1000px; }
+.advice_category_title { margin-right: 10px; margin-bottom: 10px; font-size: 15px; line-height: 21px; font-weight: 500; color: skyblue; }
+
+.btn_wrap { text-align: center; }
+.btn_wrap a { display: inline-block; min-width: 80px; padding: 5px 10px; border-radius: 10px; font-size: 1.0rem; line-height: 1.6rem; background-color: skyblue; }
+
+
+
+/* advice 상위 메뉴 */
 .advice-menu .advice-menu-wrap li { position: relative; }
 .advice-menu .advice-menu-wrap li img { float: right; transform: rotate(90deg);}
 .advice-menu .advice-menu-wrap li:hover img { transform: rotate(180deg);}
 
-/* 하위 메뉴 */
+/* advice 하위 메뉴 */
 .advice-menu .advice-menu-box-01,.advice-menu .advice-menu-box-02 { flex-direction: column; }
 #sub-menu-01, #sub-menu-02 { display: none; }
 
-/* 컨텐츠 */
-.advice-content { padding: 60px 0; }
+/* advice 컨텐츠 */
+.advice-content .content-table table { margin-bottom: 2rem; }
 .advice-content .content-table thead { text-align: center; }
+.advice-content ul { justify-content: center; }
 
+/* advice_view_wrap */
+.advice_view_wrap .advice_view_con { margin-bottom: 30px; }
+.advice_view_wrap .advice_view_con .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
+.advice_view_wrap .advice_view_con .board_view_info { border-bottom: 3px solid skyblue; padding: 0 15px 15px; font-size: 15px; line-height: 21px; font-weight: 500; }
+.advice_view_wrap .advice_view_con .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
+.advice_view_wrap .advice_view_con .board_view_info dl:first-child { padding-left: 0; }
+.advice_view_wrap .advice_view_con .board_view_info dl:last-child { padding-right: 0; }
+.advice_view_wrap .advice_view_con .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
+.advice_view_wrap .advice_view_con .board_view_info dl:first-child::before { content: none; }
+.advice_view_wrap .advice_view_con .board_view_info dl dt { display: inline-block; margin-right: 10px; }
+.advice_view_wrap .advice_view_con .board_view_info dl dd { float: right; }
+.advice_view_wrap .advice_view_con .board_view_content { padding: 30px 15px; border-bottom: 3px solid skyblue; }
 
+/* advice_board_wrap */
+.advice_board_wrap .advice_board_title {  margin-right: 10px; margin-bottom: 10px; font-size: 15px; line-height: 21px; font-weight: 500; color: skyblue; }
+.advice_board_wrap .advice_board_con dl dt, .advice_board_wrap .advice_board_con dl dd { display: inline-block; }
+.advice_board_wrap .advice_board_con dl dt { float: left; }
+.advice_board_wrap .advice_board_con .write_title, .advice_board_wrap .advice_board_con .write_info { margin-bottom: 15px; }
+.advice_board_wrap .advice_board_con .write_title dl dt, .advice_board_wrap .advice_board_con .write_info dl dt { padding: 10px 0; position: relative; }
+/*.advice_board_wrap .advice_board_con .write_title dl dt::after, .advice_board_wrap .advice_board_con .write_info dl dt::after { content: ''; position: absolute; top: 14px; right: 30px; border-right: 1px solid skyblue; height: 15px; }*/
+.advice_board_wrap .advice_board_con .write_title dl dd input, .advice_board_wrap .advice_board_con .write_info dl dd select { padding: 10px; width: 80%; border: 1px solid skyblue; border-radius: 10px; }
+.advice_board_wrap .advice_board_con .write_info { border-bottom: 3px solid skyblue; padding: 0 0 20px; }
+.advice_board_wrap .advice_board_con .write_info dl dd select { width: 50%; }
+.advice_board_wrap .advice_board_con .write_content { margin-bottom: 30px; padding: 30px 15px; border-bottom: 3px solid skyblue; }
+.advice_board_wrap .advice_board_con .write_content textarea { width: 100%; min-height: 300px; }
+.advice_board_wrap .advice_board_con form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 3px solid skyblue;}
 
 @media all and (min-width: 768px){
     .advice-menu .advice-menu-wrap li img { display: none; }

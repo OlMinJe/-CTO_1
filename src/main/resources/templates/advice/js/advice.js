@@ -58,7 +58,7 @@ function content_table_01(){
             '<tr class="adivce-table">'+
             '<td class="diplay_no">' + '<span>' + (i+1) + '</span>' + '</td>'+
             '<td class="wirter">' + '<span>' + '글쓴이' + '</span>' +'</td>'+
-            '<td class="title">' + '<span>' + title_01[i] + '</span>' + '</td>'+
+            '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/advice/advice_view.html">' + title_01[i] + '</a></span>' + '</td>'+
             '<td class="comment_count">' + '<span>' + '100' + '</span>' + '</td>'+
             '</tr>';
     }
@@ -70,7 +70,7 @@ function content_table_02(){
             '<tr class="adivce-table">'+
             '<td class="diplay_no">' + '<span>' + (i+1) + '</span>' + '</td>'+
             '<td class="wirter">' + '<span>' + '글쓴이' + '</span>' +'</td>'+
-            '<td class="title">' + '<span>' + title_02[i] + '</span>' + '</td>'+
+            '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/advice/advice_view.html">' + title_02[i] + '</a></span>' + '</td>'+
             '<td class="comment_count">' + '<span>' + '100' + '</span>' + '</td>'+
             '</tr>';
     }

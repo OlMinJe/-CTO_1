@@ -1,8 +1,16 @@
 /* 공통 */
+.community-menu, .community-content { margin-bottom: 50px; }
 .community-menu ul { display: flex; text-align: center; }
 .community-menu ul li { padding: 20px 20px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
 .community-menu ul li:hover { background-color: cornsilk; }
 .community-menu li.active { background-color: lightskyblue; }
+
+.community_view_wrap, .community_board_wrap { width: 1000px; }
+.community_category_title { margin-right: 10px; margin-bottom: 10px; font-size: 15px; line-height: 21px; font-weight: 500; color: skyblue; }
+
+.btn_wrap { text-align: center; }
+.btn_wrap a { display: inline-block; min-width: 80px; padding: 5px 10px; border-radius: 10px; font-size: 1.0rem; line-height: 1.6rem; background-color: skyblue; }
+
 
 /* 상위 메뉴 */
 .community-menu .community-menu-wrap li { position: relative; }
@@ -14,8 +22,40 @@
 #sub-menu { display: none; }
 
 /* 컨텐츠 */
-.community-content { padding: 60px 0; }
+.community-content .content-table table { margin-bottom: 2rem; }
 .community-content .content-table thead { text-align: center; }
+.community-content ul { justify-content: center; }
+
+
+
+/* community_view_wrap */
+.community_view_wrap .community_view_con { margin-bottom: 30px; }
+.community_view_wrap .community_view_con .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
+.community_view_wrap .community_view_con .board_view_info { border-bottom: 3px solid skyblue; padding: 0 15px 15px; font-size: 15px; line-height: 21px; font-weight: 500; }
+.community_view_wrap .community_view_con .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
+.community_view_wrap .community_view_con .board_view_info dl:first-child { padding-left: 0; }
+.community_view_wrap .community_view_con .board_view_info dl:last-child { padding-right: 0; }
+.community_view_wrap .community_view_con .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
+.community_view_wrap .community_view_con .board_view_info dl:first-child::before { content: none; }
+.community_view_wrap .community_view_con .board_view_info dl dt { display: inline-block; margin-right: 10px; }
+.community_view_wrap .community_view_con .board_view_info dl dd { float: right; }
+.community_view_wrap .community_view_con .board_view_content { padding: 30px 15px; border-bottom: 3px solid skyblue; }
+
+/* community_board_wrap */
+.community_board_wrap .community_board_title {  margin-right: 10px; margin-bottom: 10px; font-size: 15px; line-height: 21px; font-weight: 500; color: skyblue; }
+.community_board_wrap .community_board_con dl dt, .community_board_wrap .community_board_con dl dd { display: inline-block; }
+.community_board_wrap .community_board_con dl dt { float: left; }
+.community_board_wrap .community_board_con .write_title, .community_board_wrap .community_board_con .write_info { margin-bottom: 15px; }
+.community_board_wrap .community_board_con .write_title dl dt, .community_board_wrap .community_board_con .write_info dl dt { padding: 10px 0; position: relative; }
+/*.community_board_wrap .community_board_con .write_title dl dt::after, .community_board_wrap .community_board_con .write_info dl dt::after { content: ''; position: absolute; top: 14px; right: 30px; border-right: 1px solid skyblue; height: 15px; }*/
+.community_board_wrap .community_board_con .write_title dl dd input, .community_board_wrap .community_board_con .write_info dl dd select { padding: 10px; width: 80%; border: 1px solid skyblue; border-radius: 10px; }
+.community_board_wrap .community_board_con .write_info { border-bottom: 3px solid skyblue; padding: 0 0 20px; }
+.community_board_wrap .community_board_con .write_info dl dd select { width: 50%; }
+.community_board_wrap .community_board_con .write_content { margin-bottom: 30px; padding: 30px 15px; border-bottom: 3px solid skyblue; }
+.community_board_wrap .community_board_con .write_content textarea { width: 100%; min-height: 300px; }
+.community_board_wrap .community_board_con form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 3px solid skyblue;}
+
+
 
 @media all and (min-width: 768px){
     .community-menu .community-menu-wrap li img { display: none; }

@@ -11,7 +11,10 @@
   <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
   <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/advice/advice.css">
   <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
-
+  <!--써머노트-->
+  <script src="/22_ig031/src/main/resources/static/SummerNote/summernote-lite.js"></script>
+  <script src="/22_ig031/src/main/resources/static/SummerNote/lang/summernote-ko-KR.js"></script>
+  <link rel="stylesheet" href="/22_ig031/src/main/resources/static/SummerNote/summernote-lite.css">
 </head>
 
 <body>
@@ -44,7 +47,9 @@
       </dl>
     </div>
     <div class="col-12 write_content">
-      <textarea placeholder="내용 입력"></textarea>
+      <form method="post">
+        <textarea id="summernote" name="editordata"></textarea>
+      </form>
     </div>
     <form name="file" action="" method="post" enctype="multipart/form-data">
       <input type="file">
@@ -57,5 +62,19 @@
 
 </div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<script>
+  $(document).ready(function() {
+    //여기 아래 부분
+    $('#summernote').summernote({
+      height: 300,                 // 에디터 높이
+      minHeight: null,             // 최소 높이
+      maxHeight: null,             // 최대 높이
+      focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
+      lang: "ko-KR",					// 한글 설정
+      placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
+
+    });
+  });
+</script>
 </body>
 </html>

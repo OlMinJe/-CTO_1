@@ -11,8 +11,6 @@
 .btn_wrap { text-align: center; }
 .btn_wrap a { display: inline-block; min-width: 80px; padding: 5px 10px; border-radius: 10px; font-size: 1.0rem; line-height: 1.6rem; background-color: skyblue; }
 
-
-
 /* advice 상위 메뉴 */
 .advice-menu .advice-menu-wrap li { position: relative; }
 .advice-menu .advice-menu-wrap li img { float: right; transform: rotate(90deg);}
@@ -23,6 +21,7 @@
 #sub-menu-01, #sub-menu-02 { display: none; }
 
 /* advice 컨텐츠 */
+.advice-content form { margin-bottom: 20px; margin-left: auto; margin-right: auto; }
 .advice-content .content-table table { margin-bottom: 2rem; }
 .advice-content .content-table thead { text-align: center; }
 .advice-content ul { justify-content: center; }
@@ -46,7 +45,7 @@
 .advice_board_wrap .advice_board_con dl dt { float: left; }
 .advice_board_wrap .advice_board_con .write_title, .advice_board_wrap .advice_board_con .write_info { margin-bottom: 15px; }
 .advice_board_wrap .advice_board_con .write_title dl dt, .advice_board_wrap .advice_board_con .write_info dl dt { padding: 10px 0; position: relative; }
-/*.advice_board_wrap .advice_board_con .write_title dl dt::after, .advice_board_wrap .advice_board_con .write_info dl dt::after { content: ''; position: absolute; top: 14px; right: 30px; border-right: 1px solid skyblue; height: 15px; }*/
+   /*.advice_board_wrap .advice_board_con .write_title dl dt::after, .advice_board_wrap .advice_board_con .write_info dl dt::after { content: ''; position: absolute; top: 14px; right: 30px; border-right: 1px solid skyblue; height: 15px; }*/
 .advice_board_wrap .advice_board_con .write_title dl dd input, .advice_board_wrap .advice_board_con .write_info dl dd select { padding: 10px; width: 80%; border: 1px solid skyblue; border-radius: 10px; }
 .advice_board_wrap .advice_board_con .write_info { border-bottom: 3px solid skyblue; padding: 0 0 20px; }
 .advice_board_wrap .advice_board_con .write_info dl dd select { width: 50%; }
@@ -62,4 +61,8 @@
     .advice-menu .advice-menu-box-02 li { width: 25%; }
     #sub-menu-01, #sub-menu-02 { display: flex; }
 
+}
+
+@media all and (min-width: 992px){
+    .advice-content form { width: 30%; }
 }

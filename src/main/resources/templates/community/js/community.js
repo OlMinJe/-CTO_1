@@ -3,7 +3,7 @@ $(document).ready(function(){
     content_table_01();
 });
 /* TODO: 나중에 삭제 */
-let title_01 = ["일반고민", "대인관계 / 가족", "정신건강", "직장", "성소수자"];
+let title_01 = ["일상", "취미", "유머", "정보", "취업/진로", "기타"];
 
 let active_normal = document.querySelector("#community_normal");
 let active_editor = document.querySelector("#community_editor");

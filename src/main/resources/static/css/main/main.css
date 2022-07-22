@@ -39,12 +39,12 @@
 .community_wrap { display: flex; flex-direction: column; }
 .community_wrap .moble_mb { margin-bottom: 15px; }
 .community_wrap .community_normal, .community_wrap .community_editor { border: 1px solid #ccc; padding: 20px 10px; }
-.community_wrap .community_normal .community_menu, .community_wrap .community_editor .community_menu { margin-bottom: 15px; }
+.community_wrap .community_normal .main_community_menu, .community_wrap .community_editor .community_menu { margin-bottom: 15px; }
 
-.community_wrap .community_normal .community_menu { display: flex; justify-content: space-around;}
-.community_wrap .community_normal .community_menu li { padding: 5px 10px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
-.community_wrap .community_normal .community_menu li:hover { background-color: cornsilk; }
-.community_wrap .community_normal .community_menu li.active { background-color: lightskyblue; }
+.community_wrap .community_normal .main_community_menu { display: flex; justify-content: space-around;}
+.community_wrap .community_normal .main_community_menu li { padding: 5px 10px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
+.community_wrap .community_normal .main_community_menu li:hover { background-color: cornsilk; }
+.community_wrap .community_normal .main_community_menu li.active { background-color: lightskyblue; }
 
 .community_wrap .community_editor .community_menu { padding: 5px 0; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; text-align: center; }
 

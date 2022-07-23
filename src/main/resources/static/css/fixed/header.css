@@ -15,7 +15,7 @@ header .gnb input{width: 100%; border: 1px solid #bbb; border-radius: 8px; paddi
 
 /* 기본 헤더 */
 header { height: 100%; border-bottom: 1px solid #bbb; }
-header .header_wrap { display: flex; justify-content: space-between; align-items: center; padding: 5% 30px; }
+header .header_wrap { display: flex; justify-content: space-between; align-items: center; padding: 40px 30px; }
 
 .header_logo .logo { display: inline-block; }
 .header_logo .logo img  { width: 100px; }

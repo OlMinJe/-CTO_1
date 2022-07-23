@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <title>상담</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+    <script src="/templates/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/advice/advice.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/static/css/advice/advice.css">
+    <script type="text/javascript" src="/templates/includeHtml.js"></script>
 </head>
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/templates/fixed/header/header.html"></header>
 
 <div class="col-12 advice">
     <div class="col-12 advice-menu">
         <ul class="advice-menu-wrap">
             <li class="col-6 active" id="active_normal">
                 일반 고민
-                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
+                <img src="/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
             </li>
             <li class="col-6" id="active_woman">
                 여성 고민
-                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
+                <img src="/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
             </li>
         </ul>
         <div class="col-12 advice-menu-con">
@@ -73,13 +73,13 @@
     </div>
 
     <div class="btn_wrap">
-        <a onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice_write.html';" class="on">글쓰기</a>
+        <a onclick="location.href='/templates/advice/advice_write.html';" class="on">글쓰기</a>
         <!--<a href="#">수정</a>-->
     </div>
 </div>
 
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/advice/js/advice.js"></script>
+<footer data-include-path="/templates/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/templates/advice/js/advice.js"></script>
 </body>
 </html>
 

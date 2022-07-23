@@ -7,18 +7,18 @@
 
 #tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { background-color: rgba(0, 0, 0, 0.2); box-shadow: none; }
 
+
 .report_content > div { display: none; line-height: 2.3; font-size: 17px; }
 
 #tab-1:checked ~ .report_content div:nth-child(1), #tab-2:checked ~ .report_content div:nth-child(2), #tab-3:checked ~ .report_content div:nth-child(3), #tab-4:checked ~ .report_content div:nth-child(4), #tab-5:checked ~ .report_content div:nth-child(5)  { display: block; }
 
-.tab { overflow: hidden; }
+.report_main .tab { display: flex; flex-direction: column; margin-bottom: 50px; }
 
-.tab label { font-size: 18px; cursor: pointer; float: left; width: 20%; text-align: center; padding: 15px 0; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
+.report_main .tab label { font-size: 18px; cursor: pointer; float: left; text-align: center; padding: 15px 0; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
 
-.report_content { padding: 100px 0 50px; background-color: rgba(255, 255, 255, 0.2); min-height: 250px; }
 
+.report_content { background-color: rgba(255, 255, 255, 0.2); min-height: 250px; }
 /*.report_content > div{ padding: 30px; line-height: 1.5; font-size: 17px; }*/
-
 
 /*list.css*/
 
@@ -72,7 +72,7 @@ a { text-decoration: none; color: inherit; }
 
 
 /* paging butto css*/
-#report_board-list { margin-bottom: 30px; }
+.report_board_list { margin-bottom: 30px; }
 .report_board_page {/* margin-top: 30px;*/ margin-bottom: 30px; text-align: center; font-size: 0; }
 
 .report_board_page a { display: inline-block; width: 32px; height: 32px; box-sizing: border-box; vertical-align: middle; border: 1px solid #ddd; border-left: 0; line-height: 100%; }
@@ -150,8 +150,10 @@ a { text-decoration: none; color: inherit; }
 /*media.css*/
 /*view page css */
 @media all and (min-width: 768px){
-    .report_content { padding-left: 30px; padding-right: 30px; }
-    /*.report_content > div { padding: 30px; }*/
+    .report_main .tab { flex-direction: row; margin-bottom: 100px; }
+    .report_main .tab label { width: 20%; }
+
+    .report_content, .report_notice { padding-left: 30px; padding-right: 30px; }
 }
 
 @media (max-width: 1000px) {
@@ -203,32 +205,32 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /*section.report_notice { padding: 80px 0; }*/
 
-.report_page-title { margin-bottom: 60px; }
-.report_page-title h3 { font-size: 28px; color: #333333; font-weight: 400; text-align: center; }
+.report_page_title { margin-bottom: 60px; }
+.report_page_title h3 { font-size: 28px; color: #333333; font-weight: 400; text-align: center; }
 
-#report_board-search .report_search-window { padding: 15px 0; background-color: #f9f7f9; }
-#report_board-search .report_search-window .search-wrap { position: relative; margin: 0 auto; width: 80%;  max-width: 564px; }
-#report_board-search .report_search-window .search-wrap input { height: 40px; width: 100%; font-size: 14px; padding: 7px 14px; border: 1px solid #ccc; }
-#report_board-search .report_search-window .search-wrap input:focus { border-color: #333; outline: 0; border-width: 1px; }
-#report_board-search .report_search-window .search-wrap .btn { position: absolute; right: 0; top: 0; bottom: 0; width: 108px; padding: 0; font-size: 16px; }
+.report_board_search .report_search_window { padding: 15px 0; background-color: #f9f7f9; }
+.report_board_search .report_search_window .search-wrap { position: relative; margin: 0 auto; width: 80%;  max-width: 564px; }
+.report_board_search .report_search_window .search-wrap input { height: 40px; width: 100%; font-size: 14px; padding: 7px 14px; border: 1px solid #ccc; }
+.report_board_search .report_search_window .search-wrap input:focus { border-color: #333; outline: 0; border-width: 1px; }
+.report_board_search .report_search_window .search-wrap .btn { position: absolute; right: 0; top: 0; bottom: 0; width: 108px; padding: 0; font-size: 16px; }
 
-.report_board-table { font-size: 13px; width: 100%; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.report_board_table { font-size: 13px; width: 100%; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
 
-.report_board-table a { color: #333; display: inline-block; line-height: 1.4; word-break: break-all; vertical-align: middle; }
-.report_board-table a:hover { text-decoration: underline; }
-.report_board-table th { text-align: center; }
+.report_board_table a { color: #333; display: inline-block; line-height: 1.4; word-break: break-all; vertical-align: middle; }
+.report_board_table a:hover { text-decoration: underline; }
+.report_board_table th { text-align: center; }
 
-.report_board-table .th-num { width: 100px; text-align: center; }
+.report_board_table .th-num { /*width: 100px; */ text-align: center; }
 
-.report_board-table .th-date { width: 200px;}
+/*.report_board_table .th-date { width: 200px;}*/
 
-.report_board-table th, .report_board-table td {  padding: 14px 0; }
+.report_board_table th, .report_board_table td {  padding: 14px 0; }
 
-.report_board-table tbody td { border-top: 1px solid #e7e7e7; text-align: center; }
+.report_board_table tbody td { border-top: 1px solid #e7e7e7; text-align: center; }
 
-.report_board-table tbody th { padding-left: 28px; padding-right: 14px;  border-top: 1px solid #e7e7e7; text-align: left; }
+.report_board_table tbody th { padding-left: 28px; padding-right: 14px;  border-top: 1px solid #e7e7e7; text-align: left; }
 
-.report_board-table tbody th p{ display: none; }
+.report_board_table tbody th p{ display: none; }
 
 .btn { display: inline-block; padding: 0 30px; font-size: 15px; font-weight: 400; background: transparent; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; text-transform: uppercase; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 

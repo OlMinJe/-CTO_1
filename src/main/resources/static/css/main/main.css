@@ -1,5 +1,12 @@
 /* 공통 */
-.mb { margin-bottom: 3em; }
+.mb { margin-bottom: 4em; }
+.moble_mb { margin-bottom: 15px; }
+
+/* search_wrap */
+.search_wrap { text-align: center; }
+.search_wrap > div { display: inline-block; }
+.search_wrap input { width: 80%; border: 1px solid #bbb; border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+.search_wrap img { width: 25px; margin-top: -8px; }
 
 /* mainvisual_wrap */
 .mainvisual_wrap { height: 300px; }
@@ -11,13 +18,17 @@
 
 /* second_row_wrap (location/ user) */
 .second_row_wrap { display: flex; flex-direction: column; }
-.second_row_wrap .location_wrap { border: 1px solid #ccc; }
-.second_row_wrap .user_wrap { border: 1px solid #ccc; padding: 20px 10px;}
-.second_row_wrap .user_wrap .user_title { margin-bottom: 15px; font-size: 20px; line-height: 26px; }
-.second_row_wrap .user_wrap .user_con form { display: flex; flex-direction: column; }
-.second_row_wrap .user_wrap .user_con form input[name="username"], .second_row_wrap .user_wrap .user_con form input[name="password"] { margin-bottom: 10px; }
-.second_row_wrap .user_wrap .user_con form div.col-12 { display: flex; justify-content: center;}
-
+.second_row_wrap .location_wrap { border: 1px solid #ccc; min-height: 300px;}
+.second_row_wrap .user_wrap { padding: 30px 20px;}
+.second_row_wrap .user_wrap form { display: flex; flex-direction: column; }
+.second_row_wrap .user_wrap form input[name="username"], .second_row_wrap .user_wrap form input[name="password"] { border: 1px solid #ccc; padding: 20px 10px; font-size: 15px; line-height: 21px; color: #ccc; }
+.second_row_wrap .user_wrap form input[name="username"] { border-radius: 10px 10px 0 0; }
+.second_row_wrap .user_wrap form input[name="password"] { border-top: none; border-radius: 0 0 10px 10px; margin-bottom: 30px; }
+.second_row_wrap .user_wrap form button { padding: 15px 10px; margin-bottom: 10px; border-radius: 10px; background-color: #345F53; font-size: 16px; line-height: 22px; font-weight: 600; }
+.second_row_wrap .user_wrap form div.col-12 { display: flex; }
+.second_row_wrap .user_wrap form div.col-12 a { font-size: 13px; line-height: 19px; font-weight: 500; }
+.second_row_wrap .user_wrap form div.col-12 .user_id_pass a:first-child { margin-right: 5px; }
+.second_row_wrap .user_wrap form div.col-12 .new_user { text-align: right; }
 
 /* sub_swiper_wrap */
 .sub_swiper_wrap { overflow: hidden; }
@@ -32,26 +43,23 @@
 
 /* wiseSaying_wrap */
 .wiseSaying_wrap { display: flex; text-align: center; }
-.wiseSaying_wrap > div { border: 1px solid #ccc; padding: 10px 0; }
-
+.wiseSaying_wrap .title { padding: 15px 5px; border-radius: 10px 0 0 10px; font-size: 15px; line-height: 21px; font-weight: 500; color: #fff; background-color: #88B04B; }
+.wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border: 1px solid #345F53; border-radius: 0 10px 10px 0; font-size: 13px; line-height: 20px; font-weight: 400; }
 
 /* community_wrap */
 .community_wrap { display: flex; flex-direction: column; }
-.community_wrap .moble_mb { margin-bottom: 15px; }
-.community_wrap .community_normal, .community_wrap .community_editor { border: 1px solid #ccc; padding: 20px 10px; }
-.community_wrap .community_normal .main_community_menu, .community_wrap .community_editor .community_menu { margin-bottom: 15px; }
-
-.community_wrap .community_normal .main_community_menu { display: flex; justify-content: space-around;}
-.community_wrap .community_normal .main_community_menu li { padding: 5px 10px; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; }
+.community_wrap .community_normal, .community_wrap .community_editor { border: 1px solid #345F53; border-radius: 10px; padding: 20px 20px; }
+.community_wrap .community_normal .main_community_menu,.community_wrap .community_editor .community_menu { margin-bottom: 15px; }
+.community_wrap .community_normal .main_community_menu { display: flex; justify-content: space-around; }
+.community_wrap .community_normal .main_community_menu li { padding: 8px 10px; border-radius: 10px; background-color: #345F53; cursor: pointer; text-align: center; white-space: nowrap; font-size: 12px; line-height: 18px; color: #fff; }
 .community_wrap .community_normal .main_community_menu li:hover { background-color: cornsilk; }
-.community_wrap .community_normal .main_community_menu li.active { background-color: lightskyblue; }
-
-.community_wrap .community_editor .community_menu { padding: 5px 0; border-bottom: 1px solid #ccc; border-radius: 10px; background-color: aliceblue; cursor: pointer; text-align: center; }
+.community_wrap .community_normal .main_community_menu li.active { background-color: #88B04B; }
+.community_wrap .community_editor .community_menu { padding: 5px 10px; border-radius: 10px; background-color: #345F53; cursor: pointer; text-align: center; font-size: 15px; line-height: 21px; color: #fff; }
 
 
 /* advice_wrap */
 .advice_wrap ul { display: flex; justify-content: space-around; text-align: center; }
-.advice_wrap ul li { padding: 15px 0; border-radius: 10px; background-color: aliceblue; }
+.advice_wrap ul li { padding: 15px 0; width: 30%; border-radius: 10px; background-color: #345F53; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 500; color: #fff; }
 
 
 /* fixed_icon */
@@ -62,15 +70,27 @@
 .fixed_icon .comment { position: fixed; display: none; z-index: 1000; bottom: 90px; right: 95px; padding: 20px 10px; border-radius: 30px;  background-color: #ccc; }
 
 
+@media all and (min-width: 480px) {
+    .community_wrap .community_normal .main_community_menu li { padding-left: 15px; padding-right: 15px; }
+}
 
 @media all and (min-width: 768px) {
-    .second_row_wrap { flex-direction: row; }
+    .moble_mb { margin-bottom: 0; }
 
-    .community_wrap { flex-direction: row; }
-    .community_wrap .moble_mb { margin-bottom: 0; }
-    .community_wrap div.pl{ padding-left: 10px;}
+    .search_wrap input { width: 50%; }
+    .second_row_wrap { flex-direction: row; }
+    .second_row_wrap .user_wrap form button { padding-top: 20px; border-bottom: 20px; font-size: 18px; line-height: 24px; }
+
+    .wiseSaying_wrap .title { padding-left: 0; padding-right: 0; font-size: 20px; line-height: 26px; }
+    .wiseSaying_wrap .wiseSaying_con { padding: 16px 0; font-size: 15px; line-height: 21px; }
+
+    .community_wrap .community_normal .main_community_menu li { font-size: 15px; line-height: 21px; }
+    .advice_wrap ul li { width: 100%; font-size: 16px; line-height: 25px; }
+
 }
 
 @media all and (min-width: 992px) {
+    .community_wrap { flex-direction: row; }
+    .community_wrap div.pl{ padding-left: 15px;}
     .community_wrap .community_normal .community_menu li { padding-left: 20px; padding-right: 20px; }
 }

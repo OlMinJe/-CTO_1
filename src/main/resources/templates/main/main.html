@@ -17,26 +17,19 @@
 </head>
 <body>
 <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
-
-<!--
-<div class="col-12 col-md-0">
-    <img src="/static/img/icon_search_btn_01.png" alt="search">
-</div>
--->
-
 <div class="col-12 main">
     <div class="col-12 search-wrap mb">
         <div class="board-content-search">
             <div class="selectbox">
-                <button type="button" class="bt-select">
+                <button type="button" class="bt-select box_border box_back ">
                     <span>제목</span><i class="ico"></i></button>
-                <ul>
+                <ul class="box_border">
                     <li><a href="#">제목</a></li>
                     <li><a href="#">제목+본문</a></li>
                     <li><a href="#">작성자</a></li>
                 </ul>
             </div>
-            <div class="tagsearch">
+            <div class="tagsearch box_border">
                 <input type="text" id="searchText" class="" placeholder="검색어를 입력하세요." autocomplete="off">
                 <button class="bt-submit"></button>
             </div>
@@ -61,7 +54,7 @@
             <form action="" method="post">
                 <input type="text" name="username" placeholder="이메일 입력해주세요">
                 <input type="password" name="password" placeholder="비밀번호">
-                <button type="submit" class="btn btn-info">로그인</button>
+                <button type="submit" class="btn btn-info box_back">로그인</button>
                 <div class="col-12">
                     <div class="col-8 user_id_pass">
                         <a href="">아이디 찾기</a>
@@ -91,12 +84,12 @@
 
     <div class="col-12 wiseSaying_wrap mb">
         <div class="col-3 title">오늘의 명언</div>
-        <div class="col-9 wiseSaying_con">명언 연결</div>
+        <div class="col-9 wiseSaying_con box_border">명언 연결</div>
     </div>
 
     <div class="col-12 community_wrap mb">
         <div class="col-12 col-lg-7 moble_mb">
-            <div class="col-12 community_normal">
+            <div class="col-12 community_normal box_border">
                 <ul class="col-12 main_community_menu">
                     <li class="col-0 active">일상</li>
                     <li class="col-0">취미</li>
@@ -120,8 +113,8 @@
             </div>
         </div>
         <div class="col-12 col-lg-5 pl">
-            <div class="col-12 community_editor">
-                <div class="col-12 community_menu acitve" id="community_menu_02">에디터 칼럼</div>
+            <div class="col-12 community_editor box_border">
+                <div class="col-12 community_menu box_back acitve" id="community_menu_02">에디터 칼럼</div>
                 <div class="content_table">
                     <table class="table table-hover table-bordered">
                         <thead>
@@ -154,7 +147,6 @@
         <img src="/22_ig031/src/main/resources/static/img/fixed_icon.png">
         <div class="comment" onclick="location.href='https://www.youtube.com/watch?v=RwJ2TBB43lM';">챗봇 상담하러 가기(클릭)</div>
 </div>
-
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/22_ig031/src/main/resources/templates/main/js/main.js"></script>
 </body>

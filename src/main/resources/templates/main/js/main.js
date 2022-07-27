@@ -52,7 +52,7 @@ function mainCommunity_li_active(){
 function mainCommunity_table(){
     for(let i = 0; i < 10; i++) { //해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
         mainCommunity_content.innerHTML +=
-            '<tr class="adivce-table">'+
+            '<tr class="community-table">'+
             '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + title_01[i] + '</a></span>' + '</td>'+
             '<td class="comment_count">' + '<span>' + '100' + '</span>' + '</td>'+
             '</tr>';
@@ -62,7 +62,7 @@ function mainCommunity_table(){
 function mainEditor_table(){
     for(let i = 0; i < 10; i++) { //해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
         mainEditor_content.innerHTML +=
-            '<tr class="adivce-table">'+
+            '<tr class="community-table">'+
             '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + title_01[i] + '</a></span>' + '</td>'+
             '<td class="comment_count">' + '<span>' + '100' + '</span>' + '</td>'+
             '</tr>';

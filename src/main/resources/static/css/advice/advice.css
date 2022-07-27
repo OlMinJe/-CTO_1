@@ -59,7 +59,12 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
 .view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; color: #345F53; }
 .view_list .board_view_info dl dd { float: right; }
 .view_list .board_view_content { padding: 30px 15px; border-bottom: 2px solid #345F53; min-height: 300px; }
-
+.view_wrap .btn_wrap { margin-bottom: 40px; }
+.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #345F53; text-align: left; font-weight: 500; }
+.comment_num span { margin-left: 5px; font-size: 20px; line-height: 26px; font-weight: 600; color: #345F53; }
+.input_box { display: flex; justify-content: space-between; }
+.input_box textarea { width: calc(100% - 115px);  padding: 5px 10px; }
+.input_box button { padding: 20px; }
 
 /* advice_board_wrap */
 .board_con { display: inline-block; text-align: initial; }

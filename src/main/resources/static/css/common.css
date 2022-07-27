@@ -36,6 +36,12 @@ dd { margin-bottom: 0; margin-left: 0; }
 /* container */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-right: 0; padding-left: 0; margin-right: 0; margin-left: 0; }
 
+/* 선에 색만 있는 박스 */
+.box_border { border: 1px solid #345f53; border-radius: 10px; color: #345f53; }
+
+/* 선 없고 배경 색상만 있는 박스 */
+.box_back { background-color: #345f53; border-radius: 10px; color: #fff; }
+
 @media (min-width: 576px){
     .container, .container-sm { max-width: initial; }
 }

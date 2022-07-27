@@ -18,13 +18,28 @@
 <body>
 <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
 
-
+<!--
+<div class="col-12 col-md-0">
+    <img src="/static/img/icon_search_btn_01.png" alt="search">
+</div>
+-->
 
 <div class="col-12 main">
-    <div class="col-12 search_wrap mb">
-        <div class="col-12 col-md-0">
-            <input type="text" placeholder="검색어를 입력하세요.">
-            <img src="/static/img/icon_search_btn_01.png" alt="search">
+    <div class="col-12 search-wrap mb">
+        <div class="board-content-search">
+            <div class="selectbox">
+                <button type="button" class="bt-select">
+                    <span>제목</span><i class="ico"></i></button>
+                <ul>
+                    <li><a href="#">제목</a></li>
+                    <li><a href="#">제목+본문</a></li>
+                    <li><a href="#">작성자</a></li>
+                </ul>
+            </div>
+            <div class="tagsearch">
+                <input type="text" id="searchText" class="" placeholder="검색어를 입력하세요." autocomplete="off">
+                <button class="bt-submit"></button>
+            </div>
         </div>
     </div>
 
@@ -49,10 +64,10 @@
                 <button type="submit" class="btn btn-info">로그인</button>
                 <div class="col-12">
                     <div class="col-8 user_id_pass">
-                        <a href="mypage.html">아이디 찾기</a>
-                        <a href="mypage.html">비밀번호 찾기</a>
+                        <a href="">아이디 찾기</a>
+                        <a href="">비밀번호 찾기</a>
                     </div>
-                    <div class="col-4 new_user"><a href="mypage.html">회원가입</a></div>
+                    <div class="col-4 new_user"><a href="">회원가입</a></div>
                 </div>
             </form>
         </div>

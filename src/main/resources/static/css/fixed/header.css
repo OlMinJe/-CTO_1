@@ -25,9 +25,6 @@ header .header_wrap { display: flex; justify-content: space-between; align-items
 .header_menu ul li { padding: 10px 20px; font-size: 20px; line-height: 26px; font-weight: 600; }
 
 .header_right { display: flex; justify-content: flex-end; align-items: center; }
-.header_right .gnb { display: inline-block; margin-right: 10px; text-align: right; }
-.header_right .gnb input { width: 80%; border: 1px solid #bbb; border-radius: 8px; padding: 10px 12px; font-size: 14px; }
-.header_right .gnb img { width: 25px; margin-top: -8px; }
 .header_right .event-burger { display: inline-block; }
 .header_right .event-burger > div { width: 40px; border-bottom: 2px solid #000; border-radius: 10px; margin-bottom: 10px; }
 .header_right .event-burger > div:last-child { margin-bottom: 0; }

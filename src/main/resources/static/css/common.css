@@ -37,6 +37,7 @@ dd { margin-bottom: 0; margin-left: 0; }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-right: 0; padding-left: 0; margin-right: 0; margin-left: 0; }
 
 /* 선에 색만 있는 요소 (클래스명: box_eft_01) */
+.box_eft_00 { border: 1px solid #00695C; border-radius: 10px; color: #212121; }
 .box_eft_01 { border: 1px solid #00695C; border-radius: 10px; color: #212121; }
 .box_eft_01.active { border: 1px solid #00695C; border-radius: 10px; background-color: #00695C; color: #fff; }
 

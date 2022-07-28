@@ -12,8 +12,8 @@ let active_woman = document.querySelector("#active_woman");
 let normal = document.getElementById('sub-menu-01');
 let woman = document.getElementById('sub-menu-02');
 
-let normal_li = document.querySelectorAll('.advice-menu-box-01 li');
-let woman_li = document.querySelectorAll('.advice-menu-box-02 li');
+let normal_li = document.querySelectorAll('.menu-box-01 li');
+let woman_li = document.querySelectorAll('.menu-box-02 li');
 
 let title_index = document.getElementById('advice-table');
 

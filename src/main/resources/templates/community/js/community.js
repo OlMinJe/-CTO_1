@@ -9,7 +9,7 @@ let active_normal = document.querySelector("#community_normal");
 let active_editor = document.querySelector("#community_editor");
 
 let normal = document.getElementById('sub-menu');
-let normal_li = document.querySelectorAll('.community-menu-box-01 li');
+let normal_li = document.querySelectorAll('.menu-box-01 li');
 
 let title_index = document.getElementById('community-table');
 

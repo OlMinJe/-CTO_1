@@ -96,6 +96,4 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
 
 @media all and (min-width: 992px){
     .content form { width: 50%; }
-
-    body .col-12.advice_view_wrap, body .col-12.advice_board_wrap { padding-left: 50px; padding-right: 50px; }
 }

@@ -1,5 +1,5 @@
 /* 공통 */
-body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.board_wrap { text-align: center; padding-top: 50px; }
+body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.board_wrap, div.col-12.editor_wrap { text-align: center; padding-top: 50px; }
 .menu, .content { display: inline-block; margin-bottom: 50px; }
 .menu ul { display: flex; text-align: center; }
 .menu ul li{ padding: 10px 20px; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }
@@ -85,6 +85,20 @@ body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.boar
 .filebox input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }
 
 
+/* editor */
+.editor_con { text-align: initial; display: inline-block; }
+.editor_con .title { margin-bottom: 30px; padding: 15px 0; border-top: 3px solid #00695C; border-bottom: 1px solid #00695C; font-size: 40px; line-height: 46px; font-weight: 600; color: #00695C; }
+.content_list { padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #00695C; }
+.content_card .img { display: inline-block; position: relative; vertical-align: middle; margin-bottom: 20px; padding-top: 47%; border-radius: 10px; width: 100%; height: 0; background-color: #ccc; overflow: hidden; }
+.content_card .img img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.right { display: inline-block; vertical-align: middle; }
+.right .column { margin-bottom: 5px;  font-weight: 500; }
+.right .sub_title { margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 25px; line-height: 31px; letter-spacing: -0.1rem; font-weight: 600; }
+.right .sub_content { margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 21px; }
+.right .username span, .right .comment_num span { margin-left: 5px; width: calc(100% - 50px); vertical-align: bottom; display: -webkit-inline-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; font-size: 15px; line-height: 21px; font-weight: 600; color: #00695C; }
+.right .username { display: inline-block; margin-right: 5px; }
+.right .comment_num { display: inline-block;  padding-bottom: 0; margin-bottom: 0; border: none; font-weight: initial; }
+
 
 
 @media all and (min-width: 768px){
@@ -93,8 +107,16 @@ body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.boar
     .menu .menu-box-01 { flex-direction: row; }
     .menu .menu-box-01 li { width: 20%; }
     .menu #sub-menu.menu-box-01 { display: flex; }
+
+    /* editor */
+    .content_card .img { padding-top: 23%; margin-bottom: 0; margin-right: 20px; }
+    .right { width: 62%; }
 }
 
 @media all and (min-width: 992px) {
     .content form { width: 30%;}
+
+    /* editor */
+    .content_card .img { padding-top: 20%; }
+    .right .sub_title { font-size: 30px; line-height: 36px; }
 }

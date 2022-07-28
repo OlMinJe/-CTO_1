@@ -1,5 +1,5 @@
 /* 글자 속성 */
-* { word-break: keep-all; font-family: 'Inter', 'Noto Sans KR' !important; font-weight: 300; font-size: 15px; line-height: 21px; }
+* { word-break: keep-all; font-family: 'Inter', 'Noto Sans KR' !important; font-weight: 300; font-size: 15px; line-height: 21px; color: #212121; }
 
 /* ul li 스타일 x */
 ul { padding-inline-start: 0;}

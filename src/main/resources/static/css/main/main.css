@@ -7,7 +7,7 @@
 .search_wrap > div { display: inline-block; }
 .board-content-search { text-align: center; }
 .board-content-search * { vertical-align: middle; }
-.board-content-search .selectbox { width: 10%; display: inline-block; border-radius: 10px 0 0 10px; text-align: initial; background-color: #345F53; color: #fff; }
+.board-content-search .selectbox { width: 10%; display: inline-block; border-radius: 10px 0 0 10px; text-align: initial; background-color: #00695C; color: #fff; }
 .board-content-search .selectbox .bt-select { padding: 10px 20px; width: 30%; height: 100%; text-align: left; text-indent: 18px; }
 .board-content-search .selectbox ul { z-index: 1; display: none; position: absolute; left: -1px; top: -1px; right: -1px; padding: 7px 0 10px; text-indent: 18px; }
 .board-content-search .tagsearch { display: inline-block; margin-left: -5px; width: 50%; border-radius: 0 10px 10px 0; }
@@ -50,22 +50,21 @@
 
 /* wiseSaying_wrap */
 .wiseSaying_wrap { display: flex; text-align: center; }
-.wiseSaying_wrap .title { padding: 15px 5px; border-radius: 10px 0 0 10px; font-weight: 500; color: #fff; background-color: #88B04B; }
-.wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border-radius: 0 10px 10px 0; font-size: 13px; line-height: 20px; font-weight: 400; }
+.wiseSaying_wrap .title { padding: 15px 5px; border: 1px solid #f8bbd0; border-radius: 10px 0 0 10px;  background-color: #f8bbd0; font-weight: 500; color: #fff; }
+.wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border-radius: 0 10px 10px 0; border-left: 0; font-size: 13px; line-height: 20px; font-weight: 400; }
 
 /* community_wrap */
 .community_wrap { display: flex; flex-direction: column; }
 .community_normal, .community_editor { padding: 20px 20px; }
 .community_normal .main_community_menu, .community_editor .community_menu { margin-bottom: 15px; }
 .community_normal .main_community_menu { display: flex; justify-content: space-around; }
-.community_normal .main_community_menu li { padding: 8px 10px; border-radius: 10px; background-color: #345F53; cursor: pointer; text-align: center; white-space: nowrap; font-size: 12px; line-height: 18px; color: #fff; }
-.community_normal .main_community_menu li:hover, .community_normal .main_community_menu li.active { background-color: #88B04B; }
+.community_normal .main_community_menu li { padding: 8px 10px; cursor: pointer; text-align: center; white-space: nowrap; font-size: 12px; line-height: 18px; }
 .community_editor .community_menu { padding: 5px 10px; cursor: pointer; text-align: center; }
 
 
 /* advice_wrap */
 .advice_wrap ul { display: flex; justify-content: space-around; text-align: center; }
-.advice_wrap ul li { padding: 15px 0; width: 30%; border-radius: 10px; background-color: #345F53; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 500; color: #fff; }
+.advice_wrap ul li { padding: 15px 0; width: 30%; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 500; }
 
 
 /* fixed_icon */

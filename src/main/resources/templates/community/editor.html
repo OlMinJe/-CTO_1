@@ -1,25 +1,8 @@
-<!doctype html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>editor</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/templates/jquery-3.6.0.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/community/community.css">
-    <script type="text/javascript" src="/templates/includeHtml.js"></script>
-</head>
-<body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
-
 <div class="col-12 editor_wrap">
-    <div class="col-12 col-md-10 editor_con">
-        <div class="col-12 menu">
+    <div class="col-12 editor_con">
+        <!--<div class="col-12 menu">
             <ul class="menu-wrap">
-                <li class="col-6 box_eft_01" id="community_normal" onclick="location.href='/22_ig031/src/main/resources/templates/community/community.html';">
+                <li class="col-6 box_eft_01" id="community_normal">
                     커뮤니티
                     <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
                 </li>
@@ -28,10 +11,11 @@
                     <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
                 </li>
             </ul>
-        </div>
+        </div>-->
         <div class="col-12 title">Editor</div>
         <div class="col-12 content_list">
-            <!--<% for(int i =0; i < 3; i++){  %>-->
+            <!-- 스크립트로 돌릴 부분
+            <% for(int i =0; i < 3; i++){  %>-->
             <div class="col-12 content_card">
                 <div class="col-12 col-md-4 img"><img></div>
                 <ul class="col-0 right">
@@ -50,7 +34,7 @@
             </div>
             <!--<% } %>-->
         </div>
-        <ul class="pagination">
+        <!--<ul class="pagination">
             <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -58,10 +42,6 @@
             <li class="page-item"><a class="page-link" href="#">4</a></li>
             <li class="page-item"><a class="page-link" href="#">5</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
+        </ul>-->
     </div>
 </div>
-
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-</body>
-</html>

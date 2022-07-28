@@ -1,5 +1,6 @@
 /* 공통 */
-body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.board_wrap, div.col-12.editor_wrap { text-align: center; padding-top: 50px; }
+body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.board_wrap { text-align: center; padding-top: 50px; }
+div.col-12.editor_wrap { text-align: center; }
 .menu, .content { display: inline-block; margin-bottom: 50px; }
 .menu ul { display: flex; text-align: center; }
 .menu ul li{ padding: 10px 20px; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }

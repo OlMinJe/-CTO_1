@@ -19,48 +19,53 @@
 
 <body>
 <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
-<div class="col-12 community_board_wrap">
-  <div class="col-12 community_board_title">글 작성</div>
-  <div class="col-12 community_board_con">
-    <div class="col-12 write_title">
-      <dl>
-        <dt class="col-2">제목</dt>
-        <dd class="col-10"><input type="text" placeholder="제목 입력"></dd>
-      </dl>
-    </div>
-    <div class="col-12 write_info">
-      <dl>
-        <dt class="col-2">카테고리</dt>
-        <dd class="col-10">
-          <select name="category" form="">
-            <option value="01">[일반] 일반고민</option>
-            <option value="02">[일반] 대인관계/가족</option>
-            <option value="03">[일반] 정신건강</option>
-            <option value="04">[일반] 직장</option>
-            <option value="04">[일반] 성소수자</option>
-            <option value="04">[여성] 성추행</option>
-            <option value="04">[여성] 출산/육아</option>
-            <option value="04">[여성] 섭식장애</option>
-            <option value="04">[여성] 외모 강박증</option>
-          </select>
-        </dd>
-      </dl>
-    </div>
-    <div class="col-12 write_content">
-      <form method="post">
-        <!--<textarea id="summernote" name="editordata"></textarea>-->
-        <textarea>내용</textarea>
+<div class="col-12 board_wrap">
+  <div class="col-10 board_con">
+    <div class="col-12 board_title">글 작성</div>
+    <div class="col-12 board_list">
+      <div class="col-12 write_title">
+        <dl>
+          <dt class="col-2">제목</dt>
+          <dd class="col-10"><input type="text" placeholder="제목 입력" class="box_eft_01"></dd>
+        </dl>
+      </div>
+      <div class="col-12 write_info">
+        <dl>
+          <dt class="col-2">카테고리</dt>
+          <dd class="col-10">
+            <select name="category" form="" class="box_eft_01">
+              <option value="01">[일반] 일반고민</option>
+              <option value="02">[일반] 대인관계/가족</option>
+              <option value="03">[일반] 정신건강</option>
+              <option value="04">[일반] 직장</option>
+              <option value="04">[일반] 성소수자</option>
+              <option value="04">[여성] 성추행</option>
+              <option value="04">[여성] 출산/육아</option>
+              <option value="04">[여성] 섭식장애</option>
+              <option value="04">[여성] 외모 강박증</option>
+            </select>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-12 write_content">
+        <form method="post">
+          <!--<textarea id="summernote" name="editordata"></textarea>-->
+          <textarea>내용</textarea>
+        </form>
+      </div>
+      <form name="file" action="" method="post" enctype="multipart/form-data">
+        <div class="filebox">
+          <label class="box_back" for="file">파일찾기</label>
+          <input class="upload-name box_eft_01" value="첨부파일" placeholder="첨부파일">
+          <input type="file" id="file">
+        </div>
       </form>
     </div>
-    <form name="file" action="" method="post" enctype="multipart/form-data">
-      <input type="file">
-    </form>
+    <div class="col-12 btn_wrap">
+      <a onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice_view.html';" class="on box_eft_02">등록</a>
+      <a onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';" class="box_eft_02">취소</a>
+    </div>
   </div>
-  <div class="col-12 btn_wrap">
-    <a onclick="location.href='/22_ig031/src/main/resources/templates/community/community_view.html';" class="on">등록</a>
-    <a onclick="location.href='/22_ig031/src/main/resources/templates/community/community.html';">취소</a>
-  </div>
-
 </div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
 <script>

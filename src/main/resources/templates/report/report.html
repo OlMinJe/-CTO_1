@@ -24,17 +24,17 @@
         <input type="radio" id="tab-4" name="show" />
         <input type="radio" id="tab-5" name="show" />
         <div class="tab">
-            <label for="tab-1">유저신고</label>
-            <label for="tab-2">댓글/게시판신고</label>
-            <label for="tab-3">페이지오류신고</label>
-            <label for="tab-4">저작권/명예회손</label>
-            <label for="tab-5">기타</label>
+            <label class="box_eft_01" for="tab-1">유저신고</label>
+            <label class="box_eft_01" for="tab-2">댓글/게시판신고</label>
+            <label class="box_eft_01" for="tab-3">페이지오류신고</label>
+            <label class="box_eft_01" for="tab-4">저작권/명예회손</label>
+            <label class="box_eft_01" for="tab-5">기타</label>
         </div>
     </div>
     <div class="col-10 content">
         <form class="d-flex">
-            <input class="form-control me-2 box_border" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success box_back" type="submit">Search</button>
+            <input class="form-control me-2 box_eft_01" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success box_eft_02" type="submit">Search</button>
         </form>
         <div class="content-table">
             <table class="table table-hover table-bordered">
@@ -45,7 +45,7 @@
                     <th style="width: 10%;">날짜</th>
                 </tr>
                 </thead>
-                <tbody id="advice-table">
+                <tbody id="report-table">
                 <!-- TODO : 추후에 스크립트를 이용해서 넣는걸로 바꾸기 -->
                     <tr>
                         <td>1</td>
@@ -68,7 +68,7 @@
     </div>
 
     <div class="btn_wrap">
-        <a onclick="location.href='/templates/advice/advice_write.html';" class="on box_back">글쓰기</a>
+        <a onclick="location.href='/templates/report/report_write.html';" class="on box_eft_02">글쓰기</a>
     </div>
 </div>
 

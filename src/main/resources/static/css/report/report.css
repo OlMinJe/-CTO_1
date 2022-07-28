@@ -1,6 +1,6 @@
 /* ----------- 공통 ----------- */
-.report_main, .view_wrap { text-align: center; }
-.report_main .menu, .report_main .content, .view_con { display: inline-block; margin-bottom: 50px; text-align: initial; }
+.report_main, .view_wrap, .board_wrap { text-align: center; }
+.report_main .menu, .report_main .content, .view_con, .board_con { display: inline-block; margin-bottom: 50px; text-align: initial; }
 .btn_wrap { text-align: center; }
 .btn_wrap a { display: inline-block; min-width: 80px; padding: 10px 30px; font-size: 1.0rem; line-height: 1.6rem; }
 
@@ -9,9 +9,10 @@
 .menu input[type=radio] { display: none; }
 .menu .tab { display: flex; flex-direction: column; }
 
-.menu label { cursor: pointer; float: left; padding: 10px 20px; border-radius: 10px; text-align: center; text-transform: uppercase; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
-.menu label:hover { background-color: #345F53; color: #fff; }
-#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { border-radius: 10px; background-color: #345F53; color: #fff; }
+.menu label { cursor: pointer; float: left; padding: 10px 20px; border-radius: 0; text-align: center; text-transform: uppercase; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
+.menu label:first-child { border-radius: 10px 0 0 10px; }
+.menu label:last-child { border-radius: 0 10px 10px 0; }
+#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { border: none; background-color: #00695C; color: #fff; }
 /* TODO: 스크립트로 수정 필요
 #tab-1:checked ~ .report_content div:nth-child(1), #tab-2:checked ~ .report_content div:nth-child(2), #tab-3:checked ~ .report_content div:nth-child(3), #tab-4:checked ~ .report_content div:nth-child(4), #tab-5:checked ~ .report_content div:nth-child(5)  { display: block; }*/
 
@@ -34,27 +35,27 @@
 
 /* ----------- report list - pagination ----------- */
 .pagination { justify-content: center; }
-.page-item .page-link { border: 1px solid #345f53; color: #345f53; border-radius: 0; }
-.page-item.disabled .page-link { border: 1px solid #345f53; color: #345f53; }
-.page-item.active .page-link { background-color: #345f53; color: #fff; border-color: #345f53; }
+.page-item .page-link { border: 1px solid #00695C; color: #00695C; border-radius: 0; }
+.page-item.disabled .page-link { border: 1px solid #00695C; color: #00695C; }
+.page-item.active .page-link { background-color: #00695C; color: #fff; border-color: #00695C; }
 
 
 /* ----------- view.css (상세 페이지) ----------- */
-.view_con .category_title { text-align: initial; color: #345F53; font-weight: 600; }
+.view_con .category_title { text-align: initial; color: #00695C; font-weight: 600; }
 .view_list { margin-bottom: 30px; text-align: initial; }
 .view_list .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
-.view_list .board_view_info { border-bottom: 2px solid #345F53; padding: 0 15px 15px; font-weight: 500; }
+.view_list .board_view_info { border-bottom: 2px solid #00695C; padding: 0 15px 15px; font-weight: 500; }
 .view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
 .view_list .board_view_info dl:first-child { padding-left: 0; }
 .view_list .board_view_info dl:last-child { padding-right: 0; }
 .view_list .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
 .view_list .board_view_info dl:first-child::before { content: none; }
-.view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; color: #345F53; }
+.view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; color: #00695C; }
 .view_list .board_view_info dl dd { float: right; }
-.view_list .board_view_content { padding: 30px 15px; border-bottom: 2px solid #345F53; min-height: 300px; }
+.view_list .board_view_content { padding: 30px 15px; border-bottom: 2px solid #00695C; min-height: 300px; }
 .view_wrap .btn_wrap { margin-bottom: 40px; }
-.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #345F53; text-align: left; font-weight: 500; }
-.comment_num span { margin-left: 5px; font-size: 20px; line-height: 26px; font-weight: 600; color: #345F53; }
+.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #00695C; text-align: left; font-weight: 500; }
+.comment_num span { margin-left: 5px; font-size: 20px; line-height: 26px; font-weight: 600; color: #00695C; }
 .input_box { display: flex; justify-content: space-between; }
 .input_box textarea { width: calc(100% - 115px);  padding: 5px 10px; }
 .input_box button { padding: 20px; }
@@ -62,18 +63,18 @@
 
 /* ----------- write.css (작성 페이지) ----------- */
 .board_con { display: inline-block; text-align: initial; }
-.board_title { margin-right: 10px; margin-bottom: 10px;  font-size: 20px; line-height: 26px; font-weight: 600; color: #345F53; }
+.board_title { margin-right: 10px; margin-bottom: 10px;  font-size: 20px; line-height: 26px; font-weight: 600; color: #00695C; }
 .board_list { text-align: initial; }
 .board_list dl dt, .board_list dl dd { display: inline-block; }
 .board_list dl dt { float: left; }
 .board_list .write_title, .board_list .write_info { margin-bottom: 15px; }
 .board_list .write_title dl dt, .board_list .write_info dl dt { padding: 10px 0; position: relative; }
 .board_list .write_title dl dd input, .board_list .write_info dl dd select { padding: 10px; width: 90%;  }
-.board_list .write_info { border-bottom: 2px solid #345F53; padding: 0 0 20px; }
+.board_list .write_info { border-bottom: 2px solid #00695C; padding: 0 0 20px; }
 .board_list .write_info dl dd select { width: 50%; }
 .board_list .write_content { margin-bottom: 30px; padding: 30px 15px 0 15px; }
 .board_list .write_content textarea { width: 100%; min-height: 300px; }
-.board_list form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 2px solid #345F53;}
+.board_list form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 2px solid #00695C;}
 .filebox label { display: inline-block; padding: 10px 20px; vertical-align: middle; cursor: pointer; height: 40px; margin-right: 10px; }
 .filebox .upload-name { display: inline-block; height: 40px; padding: 0 10px; vertical-align: middle; width: calc(100% - 115px); color: #999; }
 .filebox input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }

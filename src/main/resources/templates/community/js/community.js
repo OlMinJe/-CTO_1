@@ -70,6 +70,9 @@ function content_table_01(){
 }
 
 active_normal.addEventListener("click", function (){
+    while (table_tbody.hasChildNodes()) {
+        table_tbody.removeChild(table_tbody.firstChild);
+    }
     /* 상위 메뉴 */
     active_normal.classList.add('active');
     active_editor.classList.remove('active');
@@ -84,14 +87,17 @@ active_editor.addEventListener("click", function (){
     active_editor.classList.add('active');
     /* 하위 메뉴*/
     normal.style.display = "none";
+    while (table_tbody.hasChildNodes()) {
+        table_tbody.removeChild(table_tbody.firstChild);
+    }
     li_active_02();
 })
 
 function imgClick(){
-    var active = $('.community-menu-con').css('display');
+    var active = $('.menu-con').css('display');
     if(active == 'block' ){
-        $('.community-menu-con').css('display','none');
+        $('.menu-con').css('display','none');
     } else{
-        $('.community-menu-con').css('display','block');
+        $('.menu-con').css('display','block');
     }
 }

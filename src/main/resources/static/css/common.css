@@ -1,5 +1,5 @@
 /* 글자 속성 */
-* { word-break: keep-all; font-family: 'Inter', 'Noto Sans KR' !important; font-weight: 300; font-size: 15px; line-height: 21px; color: #212121; }
+* { word-break: keep-all; font-family: 'SCDream' !important; font-size: 15px; line-height: 21px; color: #212121; }
 
 /* ul li 스타일 x */
 ul { padding-inline-start: 0;}
@@ -69,3 +69,135 @@ dd { margin-bottom: 0; margin-left: 0; }
     .container, .container-lg, .container-md, .container-sm, .container-xl { max-width: initial; }
 }
 
+
+
+/* Inter*/
+@font-face{
+    font-family: 'Inter';
+    font-weight: 900;
+    src: url('/static/FontFile/Inter-Black.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 800;
+    src: url('/static/FontFile/Inter-ExtraBold.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('/static/FontFile/Inter-Bold.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url('/static/FontFile/Inter-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url('/static/FontFile/Inter-Medium.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url('/static/FontFile/Inter-Regular.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 300;
+    src: url('/static/FontFile/Inter-Light.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 200;
+    src: url('/static/FontFile/Inter-ExtraLight.ttf');
+}
+@font-face{
+    font-family: 'Inter';
+    font-weight: 100;
+    src: url('/static/FontFile/Inter-Thin.ttf');
+}
+
+/* IBMPlexSansKR */
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 700;
+    src: url('/static/FontFile/IBMPlexSansKR-Bold.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 600;
+    src: url('/static/FontFile/IBMPlexSansKR-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 500;
+    src: url('/static/FontFile/IBMPlexSansKR-Medium.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 400;
+    src: url('/static/FontFile/IBMPlexSansKR-Regular.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 300;
+    src: url('/static/FontFile/IBMPlexSansKR-Light.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 200;
+    src: url('/static/FontFile/IBMPlexSansKR-ExtraLight.ttf');
+}
+@font-face{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 100;
+    src: url('/static/FontFile/IBMPlexSansKR-Thin.ttf');
+}
+
+/* SCDream */
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 900;
+    src: url('/static/FontFile/SCDream9.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 800;
+    src: url('/static/FontFile/SCDream8.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 700;
+    src: url('/static/FontFile/SCDream7.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 600;
+    src: url('/static/FontFile/SCDream6.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 500;
+    src: url('/static/FontFile/SCDream5.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 400;
+    src: url('/static/FontFile/SCDream4.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 300;
+    src: url('/static/FontFile/SCDream3.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 200;
+    src: url('/static/FontFile/SCDream2.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 100;
+    src: url('/static/FontFile/SCDream1.otf');
+}

@@ -1,91 +1,130 @@
+/* Inter*/
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 900;
-    src: url('/static/FontFile/inter-Black.ttf');
+    src: url('/static/FontFile/Inter-Black.ttf') format();
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 800;
-    src: url('/static/FontFile/inter-ExtraBold.ttf');
+    src: url('/static/FontFile/Inter-ExtraBold.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 700;
-    src: url('/static/FontFile/inter-Bold.ttf');
+    src: url('/static/FontFile/Inter-Bold.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 600;
-    src: url('/static/FontFile/inter-SemiBold.ttf');
+    src: url('/static/FontFile/Inter-SemiBold.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 500;
-    src: url('/static/FontFile/inter-Medium.ttf');
+    src: url('/static/FontFile/Inter-Medium.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 400;
-    src: url('/static/FontFile/inter-Regular.ttf');
+    src: url('/static/FontFile/Inter-Regular.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 300;
-    src: url('/static/FontFile/inter-Light.ttf');
+    src: url('/static/FontFile/Inter-Light.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 200;
-    src: url('/static/FontFile/inter-ExtraLight.ttf');
+    src: url('/static/FontFile/Inter-ExtraLight.ttf');
 }
 @font-face{
-    font-family: 'inter';
+    font-family: 'Inter';
     font-weight: 100;
-    src: url('/static/FontFile/inter-Thin.ttf');
+    src: url('/static/FontFile/Inter-Thin.ttf');
 }
 
+/* IBMPlexSansKR */
 @font-face{
-    font-family: 'Noto Sans KR';
-    font-weight: 900;
-    src: url('/static/FontFile/NotoSansKR-Black.ttf');
-}
-@font-face{
-    font-family: 'Noto Sans KR';
-    font-weight: 800;
-    src: url('/static/FontFile/NotoSansKR-ExtraBold.ttf');
-}
-@font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 700;
-    src: url('/static/FontFile/NotoSansKR-Bold.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-Bold.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 600;
-    src: url('/static/FontFile/NotoSansKR-SemiBold.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-SemiBold.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 500;
-    src: url('/static/FontFile/NotoSansKR-Medium.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-Medium.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 400;
-    src: url('/static/FontFile/NotoSansKR-Regular.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-Regular.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 300;
-    src: url('/static/FontFile/NotoSansKR-Light.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-Light.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 200;
-    src: url('/static/FontFile/NotoSansKR-ExtraLight.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-ExtraLight.ttf');
 }
 @font-face{
-    font-family: 'Noto Sans KR';
+    font-family: 'IBM Plex Sans KR';
     font-weight: 100;
-    src: url('/static/FontFile/NotoSansKR-Thin.ttf');
+    src: url('/static/FontFile/IBMPlexSansKR-Thin.ttf');
+}
+
+/* SCDream */
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 900;
+    src: url('/static/FontFile/SCDream9.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 800;
+    src: url('/static/FontFile/SCDream8.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 700;
+    src: url('/static/FontFile/SCDream7.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 600;
+    src: url('/static/FontFile/SCDream6.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 500;
+    src: url('/static/FontFile/SCDream5.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 400;
+    src: url('/static/FontFile/SCDream4.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 300;
+    src: url('/static/FontFile/SCDream3.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 200;
+    src: url('/static/FontFile/SCDream2.otf');
+}
+@font-face{
+    font-family: 'SCDream';
+    font-weight: 100;
+    src: url('/static/FontFile/SCDream1.otf');
 }

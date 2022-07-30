@@ -3,7 +3,7 @@ body > div.col-12.community, body > div.col-12.view_wrap, body > div.col-12.boar
 div.col-12.editor_wrap { text-align: center; }
 .menu, .content { display: inline-block; margin-bottom: 50px; }
 .menu ul { display: flex; text-align: center; }
-.menu ul li{ padding: 10px 20px; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }
+.menu ul li{ padding: 10px 0; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }
 .menu ul li:first-child { border-radius: 10px 0 0 10px; }
 .menu ul li:last-child { border-radius: 0 10px 10px 0; }
 

@@ -1,6 +1,6 @@
 /* 공통 */
 .mb { margin-bottom: 4em; }
-.moble_mb { margin-bottom: 15px; }
+.moble_mb { margin-bottom: 30px; }
 
 /* search_wrap */
 .search_wrap { text-align: center; }
@@ -9,10 +9,10 @@
 .board-content-search * { vertical-align: middle; }
 .board-content-search span { color: #fff; }
 .board-content-search .selectbox { position: relative; display: inline-block; border-radius: 10px 0 0 10px; text-align: initial; background-color: #00695C; color: #fff; }
-.board-content-search .selectbox .bt-select { padding: 10px 50px 10px 30px; height: 100%; text-align: left; }
+.board-content-search .selectbox .bt-select { padding: 10px 50px 10px 30px; height: 100%; border: none; text-align: left; }
 .board-content-search .selectbox ul { z-index: 1; display: none; position: absolute; left: 0; top: 0; width: 100%; padding: 7px 0 10px; text-indent: 18px; background-color: #E0F2F1; border-radius: 10px 0 0 10px; }
-.board-content-search .tagsearch { display: inline-block; margin-left: -5px; width: 70%; border-radius: 0 10px 10px 0; }
-.board-content-search .tagsearch input[type="text"] { float: left; padding: 12px 20px; border-radius: 0 10px 10px 0; width: 87%; height: 100%; font-size: 13px; }
+.board-content-search .tagsearch { display: inline-flex; margin-left: -6px; width: 70%; border-radius: 0 10px 10px 0; }
+.board-content-search .tagsearch input[type="text"] { float: left; margin-right: 10px; padding: 12px 20px; border-left: none; border-radius: 0 10px 10px 0; width: 87%; height: 100%; font-size: 13px; }
 .board-content-search .bt-submit { float: right; margin-top: 5px; margin-right: 8px; width: 30px; height: 30px; background-size: 30px 30px; background-image: url("/22_ig031/src/main/resources/static/img/icon_search_btn_01.png"); background-repeat: no-repeat; }
 
 
@@ -52,14 +52,16 @@
 /* wiseSaying_wrap */
 .wiseSaying_wrap { display: flex; text-align: center; }
 .wiseSaying_wrap .title { padding: 15px 5px; border: 1px solid #f8bbd0; border-radius: 10px 0 0 10px;  background-color: #f8bbd0; font-weight: 500; color: #fff; }
-.wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border-bottom: 1px solid #00695C; font-size: 13px; line-height: 20px; font-weight: 400; }
+.wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border-bottom: 1px solid #f8bbd0; font-size: 13px; line-height: 20px; font-weight: 400; }
 
 /* community_wrap */
 .community_wrap { display: flex; flex-direction: column; }
 .community_normal, .community_editor { padding: 20px 20px; }
 .community_normal .main_community_menu, .community_editor .community_menu { margin-bottom: 15px; }
-.community_normal .main_community_menu { display: flex; justify-content: space-around; }
-.community_normal .main_community_menu li { padding: 8px 10px; cursor: pointer; text-align: center; white-space: nowrap; font-size: 12px; line-height: 18px; }
+.community_normal .main_community_menu { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.community_normal .main_community_menu li { width: 23%; padding: 8px 0; cursor: pointer; text-align: center; white-space: nowrap; font-size: 12px; line-height: 18px; }
+.community_normal .main_community_menu li.mb { margin-bottom: 10px; }
+.community_normal .main_community_menu span { width: 23%; }
 .community_editor .community_menu { padding: 5px 10px; cursor: pointer; text-align: center; }
 
 
@@ -77,12 +79,10 @@
 
 
 @media all and (min-width: 480px) {
-    .community_normal .main_community_menu li { padding-left: 15px; padding-right: 15px; }
+
 }
 
 @media all and (min-width: 768px) {
-    .moble_mb { margin-bottom: 0; }
-
     .board-content-search .tagsearch { width: 50%; }
 
     .second_row_wrap { flex-direction: row; }
@@ -91,12 +91,16 @@
     .wiseSaying_wrap .title { padding-left: 0; padding-right: 0; font-size: 20px; line-height: 26px; }
     .wiseSaying_wrap .wiseSaying_con { padding: 16px 0; font-size: 15px; line-height: 21px; }
 
-    .community_normal .main_community_menu li { font-size: 15px; line-height: 21px; }
+    .community_normal .main_community_menu { justify-content: space-around; }
+    .community_normal .main_community_menu li { width: 13%;  margin-right: 0; font-size: 15px; line-height: 21px; }
+    .community_normal .main_community_menu li.mb { margin-bottom: 0; }
     .advice_wrap ul li { width: 100%; font-size: 16px; line-height: 25px; }
 
 }
 
 @media all and (min-width: 992px) {
+    .moble_mb { margin-bottom: 0; }
+
     .community_wrap { flex-direction: row; }
     .community_wrap div.pl{ padding-left: 15px; }
     .community_normal .community_menu li { padding-left: 20px; padding-right: 20px; }

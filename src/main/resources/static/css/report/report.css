@@ -9,7 +9,7 @@
 .menu input[type=radio] { display: none; }
 .menu .tab { display: flex; flex-direction: column; }
 
-.menu label { cursor: pointer; float: left; padding: 10px 20px; border-radius: 0; text-align: center; text-transform: uppercase; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
+.menu label { cursor: pointer; float: left; padding: 10px 0; border-radius: 0; text-align: center; text-transform: uppercase; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
 .menu label:first-child { border-radius: 10px 0 0 10px; }
 .menu label:last-child { border-radius: 0 10px 10px 0; }
 #tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { border: none; background-color: #00695C; color: #fff; }

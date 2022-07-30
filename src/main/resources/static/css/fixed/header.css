@@ -18,7 +18,7 @@ header { height: 100%; border-bottom: 1px solid #bbb; }
 header .header_wrap { display: flex; justify-content: space-between; align-items: center; padding: 40px 30px; }
 
 .header_logo .logo { display: inline-block; }
-.header_logo .logo img  { width: 100px; }
+.header_logo .logo img  { width: 70px; }
 
 /* TODO: display:none 처리 해놓음! */
 .header_menu ul { display: none; justify-content: space-between; }
@@ -35,7 +35,7 @@ header .header_wrap { display: flex; justify-content: space-between; align-items
 
 
 @media all and (min-width: 768px){
-    .header_logo .logo img  { width: 130px; }
+    .header_logo .logo img  { width: 100px; }
     .header_right .gnb { margin-right: 15px; }
 }
 

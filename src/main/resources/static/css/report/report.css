@@ -41,7 +41,7 @@
 
 
 /* ----------- view.css (상세 페이지) ----------- */
-.view_con .category_title { text-align: initial; color: #00695C; font-weight: 600; }
+.view_con .category_title { text-align: initial; color: #00695C; font-weight: 500; }
 .view_list { margin-bottom: 30px; text-align: initial; }
 .view_list .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
 .view_list .board_view_info { border-bottom: 2px solid #00695C; padding: 0 15px 15px; font-weight: 500; }
@@ -50,11 +50,11 @@
 .view_list .board_view_info dl:last-child { padding-right: 0; }
 .view_list .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
 .view_list .board_view_info dl:first-child::before { content: none; }
-.view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; color: #00695C; }
+.view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; font-weight: 400; color: #00695C; }
 .view_list .board_view_info dl dd { float: right; }
 .view_list .board_view_content { padding: 30px 15px; border-bottom: 2px solid #00695C; min-height: 300px; }
 .view_wrap .btn_wrap { margin-bottom: 40px; }
-.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #00695C; text-align: left; font-weight: 500; }
+.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #00695C; text-align: left; font-weight: 400; }
 .comment_num span { margin-left: 5px; font-size: 20px; line-height: 26px; font-weight: 600; color: #00695C; }
 .input_box { display: flex; justify-content: space-between; }
 .input_box textarea { width: calc(100% - 115px);  padding: 5px 10px; }

@@ -34,7 +34,7 @@
 .user_wrap form input[name="password"] { border-top: none; border-radius: 0 0 10px 10px; margin-bottom: 30px; }
 .user_wrap form button { padding: 15px 10px; margin-bottom: 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
 .user_wrap form div.col-12 { display: flex; }
-.user_wrap form div.col-12 a { font-size: 13px; line-height: 19px; font-weight: 500; }
+.user_wrap form div.col-12 a { font-size: 13px; line-height: 19px; font-weight: 400; }
 .user_wrap form div.col-12 .user_id_pass a:first-child { margin-right: 5px; }
 .user_wrap form div.col-12 .new_user { text-align: right; }
 
@@ -51,7 +51,7 @@
 
 /* wiseSaying_wrap */
 .wiseSaying_wrap { display: flex; text-align: center; }
-.wiseSaying_wrap .title { padding: 15px 5px; border: 1px solid #f8bbd0; border-radius: 10px 0 0 10px;  background-color: #f8bbd0; font-weight: 500; color: #fff; }
+.wiseSaying_wrap .title { padding: 15px 5px; border: 1px solid #f8bbd0; border-radius: 10px 0 0 10px;  background-color: #f8bbd0; font-weight: 600; color: #fff; }
 .wiseSaying_wrap .wiseSaying_con { padding: 10px 5px; border-bottom: 1px solid #f8bbd0; font-size: 13px; line-height: 20px; font-weight: 400; }
 
 /* community_wrap */
@@ -67,7 +67,7 @@
 
 /* advice_wrap */
 .advice_wrap ul { display: flex; justify-content: space-around; text-align: center; }
-.advice_wrap ul li { padding: 15px 0; width: 30%; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 500; }
+.advice_wrap ul li { padding: 15px 0; width: 30%; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 600; }
 
 
 /* fixed_icon */

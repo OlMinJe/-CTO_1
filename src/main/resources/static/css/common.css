@@ -1,5 +1,5 @@
 /* 글자 속성 */
-* { word-break: keep-all; font-family: 'SCDream' !important; font-size: 15px; line-height: 21px; color: #212121; }
+* { word-break: keep-all; font-family: 'SCDream' !important; font-size: 15px; line-height: 21px; font-weight: 300; color: #212121; }
 
 /* ul li 스타일 x */
 ul { padding-inline-start: 0;}

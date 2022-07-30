@@ -10,7 +10,7 @@ body li { list-style: none; }
 .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1, .col-0 { padding: 0; }
 
 /* TODO: 모든 페이지의 최상위 부모는 <div class="col-12">로 시작해야한다 */
-body > div.col-12 { max-width: 1330px; margin: 0 auto; padding: 50px 15px; }
+body > div.col-12 { max-width: 1330px; margin: 0 auto; padding: 80px 15px 120px; }
 
 /* 버튼 속성 일부 초기화 */
 button { text-align: left; border: none; outline: none; background-color: #fff;}

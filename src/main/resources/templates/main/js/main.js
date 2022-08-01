@@ -2,12 +2,15 @@ $(document).ready(function(){
     main_table_active();
 });
 
+
+// mainvisual 스와이퍼 이벤트
 let mainvisual_swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper-pagination",
     },
 });
 
+// sub 스와이퍼 이벤트
 const sub_swiper = new Swiper('.sub_swiper_wrap .swiper-container', {
     loop: true,
     centeredSlides: true,
@@ -20,6 +23,7 @@ const sub_swiper = new Swiper('.sub_swiper_wrap .swiper-container', {
     },
 });
 
+// 커뮤니티 이벤트
 function main_table_active(){
     mainCommunity_table();
     mainEditor_table();
@@ -29,7 +33,6 @@ let title_01 = ["일상", "취미", "유머", "정보", "취업/진로", "기타
 let mainCommunity_li = document.querySelectorAll('.main_community_menu li');
 let mainCommunity_content = document.getElementById('main_community_table');
 let mainEditor_content = document.getElementById('main_editor_table');
-
 
 function mainCommunity_li_active(){
     for(let i = 0; i < mainCommunity_li.length; i++) {
@@ -44,13 +47,13 @@ function mainCommunity_li_active(){
             }
             mainCommunity_li[i].classList.add('active');
             mainCommunity_table();
-            /* 선택된 카테고리 값 보내기 -> content_table_01() 함수에서 받은 값으로 해당 카테고리 게시글 출력하기*/
+            // 선택된 카테고리 값 보내기 -> content_table_01() 함수에서 받은 값으로 해당 카테고리 게시글 출력하기
         })
     }
 }
 
 function mainCommunity_table(){
-    for(let i = 0; i < 10; i++) { //해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
+    for(let i = 0; i < 10; i++) { // 해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
         mainCommunity_content.innerHTML +=
             '<tr class="community-table">'+
             '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + title_01[i] + '</a></span>' + '</td>'+
@@ -60,7 +63,7 @@ function mainCommunity_table(){
 }
 
 function mainEditor_table(){
-    for(let i = 0; i < 10; i++) { //해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
+    for(let i = 0; i < 10; i++) {
         mainEditor_content.innerHTML +=
             '<tr class="community-table">'+
             '<td class="title">' + '<span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + title_01[i] + '</a></span>' + '</td>'+
@@ -68,3 +71,15 @@ function mainEditor_table(){
             '</tr>';
     }
 }
+
+// fixed 아이콘 hover 이벤트
+let fixed = document.getElementById("fixed");
+let fixed_comment = document.getElementById("fixed_comment");
+
+fixed.addEventListener("mouseover", function (event) {
+    fixed_comment.style.display = "block";
+}, false);
+
+fixed.addEventListener("mouseout", function (event) {
+    fixed_comment.style.display = "none";
+}, false);

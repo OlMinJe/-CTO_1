@@ -12,7 +12,7 @@
 .menu label { cursor: pointer; float: left; padding: 10px 0; border-radius: 0; text-align: center; text-transform: uppercase; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
 .menu label:first-child { border-radius: 10px 0 0 10px; }
 .menu label:last-child { border-radius: 0 10px 10px 0; }
-#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { border: none; background-color: #00695C; color: #fff; }
+#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2), #tab-3:checked ~ .tab label:nth-child(3), #tab-4:checked ~ .tab label:nth-child(4), #tab-5:checked ~ .tab label:nth-child(5) { border: none; background-color: #dcc5df; color: #fff; }
 /* TODO: 스크립트로 수정 필요
 #tab-1:checked ~ .report_content div:nth-child(1), #tab-2:checked ~ .report_content div:nth-child(2), #tab-3:checked ~ .report_content div:nth-child(3), #tab-4:checked ~ .report_content div:nth-child(4), #tab-5:checked ~ .report_content div:nth-child(5)  { display: block; }*/
 
@@ -35,9 +35,10 @@
 
 /* ----------- report list - pagination ----------- */
 .pagination { justify-content: center; }
-.page-item .page-link { border: 1px solid #00695C; color: #00695C; border-radius: 0; }
-.page-item.disabled .page-link { border: 1px solid #00695C; color: #00695C; }
-.page-item.active .page-link { background-color: #00695C; color: #fff; border-color: #00695C; }
+.page-item .page-link { border: 1px solid #dcc5df; color: #dcc5df; border-radius: 0; }
+.page-item.disabled .page-link { border: 1px solid #dcc5df; color: #dcc5df; }
+.page-item.active .page-link { background-color: #dcc5df; color: #fff; border-color: #dcc5df; }
+.page-item.active .page-link { border-color: #f7cc6d; }
 
 
 /* ----------- view.css (상세 페이지) ----------- */

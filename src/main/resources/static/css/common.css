@@ -36,23 +36,44 @@ dd { margin-bottom: 0; margin-left: 0; }
 /* container */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-right: 0; padding-left: 0; margin-right: 0; margin-left: 0; }
 
-/* 선에 색만 있는 요소 (클래스명: box_eft_01) */
+/*
+!* 선에 색만 있는 요소 (클래스명: box_eft_01) *!
 .box_eft_00 { border: 1px solid #00695C; border-radius: 10px; color: #212121; }
 .box_eft_01 { border: 1px solid #00695C; border-radius: 10px; color: #212121; }
 .box_eft_01.active { border: 1px solid #00695C; border-radius: 10px; background-color: #00695C; color: #fff; }
 
-/* 선 없고 배경 색상만 있는 요소 (클래스명: box_eft_02) */
+!* 선 없고 배경 색상만 있는 요소 (클래스명: box_eft_02) *!
 .box_eft_02 { border: 1px solid #00695C; border-radius: 10px; background-color: #00695C; color: #fff; }
 
-/* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 */
+!* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 *!
 .box_eft_01:hover { border: 1px solid #00695C; background-color: #E0F2F1; color: #212121 }
 .box_eft_01:focus-visible { border: 1px solid #00695C; background-color: #E0F2F1; color: #212121 }
 
-/* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 */
+!* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 *!
 .box_eft_02:hover { border: 1px solid #00695C; background-color: #E0F2F1; color: #212121 }
 .box_eft_02:focus-visible { border: 1px solid #00695C; background-color: #E0F2F1; color: #212121 }
+*/
 
 
+/* 선에 색만 있는 요소 (클래스명: box_eft_01) */
+.box_eft_00 { border: 1px solid #dcc5df; border-radius: 10px; color: #212121; }
+.box_eft_01 { border: 1px solid #dcc5df; border-radius: 10px; color: #212121; }
+.box_eft_01.active { border: 1px solid #dcc5df; border-radius: 10px; background-color: #dcc5df; color: #fff; }
+
+/* 선 없고 배경 색상만 있는 요소 (클래스명: box_eft_02) */
+.box_eft_02 { border: 1px solid #dcc5df; border-radius: 10px; background-color: #dcc5df; color: #fff; }
+
+/* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 */
+.box_eft_01:hover { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
+.box_eft_01:focus-visible { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
+
+/* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 */
+.box_eft_02:hover { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
+.box_eft_02:focus-visible { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
+
+
+/* #dcc5df */
+/* #f7cc6d */
 
 @media (min-width: 576px){
     .container, .container-sm { max-width: initial; }

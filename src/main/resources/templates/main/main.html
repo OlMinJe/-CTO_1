@@ -21,7 +21,7 @@
     <div class="col-12 search-wrap mb">
         <div class="board-content-search">
             <div class="selectbox">
-                <button type="button" class="bt-select box_eft_02">
+                <button type="button" class="bt-select">
                     <span>제목</span><i class="ico"></i></button>
                 <ul class="box_eft_00">
                     <li><a href="#">제목</a></li>
@@ -54,7 +54,7 @@
             <form action="" method="post">
                 <input class="box_eft_01" type="text" name="username" placeholder="이메일 입력해주세요">
                 <input class="box_eft_01" type="password" name="password" placeholder="비밀번호">
-                <button type="submit" class="btn btn-info box_eft_02">로그인</button>
+                <button type="submit" class="btn box_eft_02">로그인</button>
                 <div class="col-12">
                     <div class="col-8 user_id_pass">
                         <a href="">아이디 찾기</a>
@@ -65,23 +65,40 @@
             </form>
         </div>
     </div>
-
-    <div class="col-12 sub_swiper_wrap mb">
-        <!-- https://lpla.tistory.com/149 -->
-        <div class="col-6 sub_swiper_con">
-            <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- 이미지로 넣으면 x -->
-                    <div class="swiper-slide slide01">1</div>
-                    <div class="swiper-slide slide02">2</div>
-                    <div class="swiper-slide slide03">3</div>
-                    <div class="swiper-slide slide04">4</div>
-                    <div class="swiper-slide slide05">5</div>
+</div>
+<section class="col-12 sub_swiper_wrap mb">
+        <canvas id="nigthSky"></canvas>
+        <div class="col-12 col-md-8 sub_swiper_con"><!-- https://lpla.tistory.com/149 -->
+            <div class="col-6 sub_swiper_list">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- 이미지로 넣으면 x -->
+                        <div class="swiper-slide slide01">
+                            <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=VyEJs-u3Wyk';">
+                                오늘 하루 <br class="br_hidden"><span class="music">추천곡</span>을<br>들으면서 시작해보면 어떨까요?
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide02">
+                            <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=yiS5jtvH0zU';">
+                                요즘은 <span class="dog">OOO</span>를<br>보고 <i>"힐링"</i>한다구!
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide03">
+                            <div class="col-12 swiper_title">
+                                Q. 요즘 유행하는 <span>당근게임</span> 들어봤어?
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide04">
+                            <div class="col-12 swiper_title">
+                                흐엉 아이디어 고갈
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
+<div class="col-12 main">
     <div class="col-12 wiseSaying_wrap mb">
         <div class="col-3 title">오늘의 명언</div>
         <div class="col-9 wiseSaying_con">명언 연결</div>
@@ -115,7 +132,7 @@
         </div>
         <div class="col-12 col-lg-5 pl">
             <div class="col-12 community_editor box_eft_00">
-                <div class="col-12 community_menu box_eft_02" id="community_menu_02">에디터 칼럼</div>
+                <div class="col-12 community_menu" id="community_menu_02">에디터 칼럼</div>
                 <div class="content_table">
                     <table class="table table-hover table-bordered">
                         <thead>
@@ -147,9 +164,6 @@
 <div class="col-12 fixed" id="fixed">
     <div class="comment" id="fixed_comment">
         <a href="https://www.youtube.com/watch?v=RwJ2TBB43lM">챗봇 상담하러 가기(클릭)</a>
-        <a href="https://www.youtube.com/watch?v=RwJ2TBB43lM">챗봇 상담하러 가기(클릭)</a>
-        <a href="https://www.youtube.com/watch?v=RwJ2TBB43lM">챗봇 상담하러 가기(클릭)</a>
-
     </div>
 </div>
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>

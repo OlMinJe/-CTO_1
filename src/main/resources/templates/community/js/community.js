@@ -94,10 +94,13 @@ active_editor.addEventListener("click", function (){
 })
 
 function imgClick(){
-    var active = $('.menu-con').css('display');
+    let active = $('.menu-con').css('display');
     if(active == 'block' ){
         $('.menu-con').css('display','none');
     } else{
         $('.menu-con').css('display','block');
     }
 }
+
+
+

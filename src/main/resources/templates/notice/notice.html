@@ -2,56 +2,31 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>공지사항</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
     <script src="/templates/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
     <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
     <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/community/community.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/notice/notice.css">
     <script type="text/javascript" src="/templates/includeHtml.js"></script>
 </head>
 <body>
 <header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
 
-<div class="col-12 community">
-    <div class="col-12 col-lg-10 menu">
-        <ul class="menu-wrap">
-            <li class="col-6 active box_eft_01" id="community_normal">
-                커뮤니티
-                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
-            </li>
-            <li class="col-6 box_eft_01" id="community_editor" >
-                에디터 칼럼
-                <img src="/22_ig031/src/main/resources/static/img/icon_01.png" alt="모바일 아이콘" onclick="imgClick();">
-            </li>
-        </ul>
-        <div class="col-12 menu-con">
-            <ul class="col-12 menu-box-01" id="sub-menu">
-                <li class="box_eft_01 active">일상</li>
-                <li class="box_eft_01">취미</li>
-                <li class="box_eft_01">유머</li>
-                <li class="box_eft_01">음식</li>
-                <li class="box_eft_01">정보</li>
-                <li class="box_eft_01">취업/진로</li>
-                <li class="box_eft_01">기타</li>
-            </ul>
-        </div>
-    </div>
+<div class="col-12 notice">
+    <div class="col-12 col-lg-10 list-title">공지사항</div>
     <div class="col-12 col-lg-10 content">
         <form class="d-flex">
             <input class="form-control me-2 box_eft_01" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success box_eft_02" type="submit">Search</button>
         </form>
         <div class="content-table">
-            <table class="table table-hover table-bordered" id="community-table">
-                <thead id="community-table-head"></thead>
-                <tbody id="community-table-body"></tbody>
+            <table class="table table-hover table-bordered" id="notice-table">
+                <thead id="notice-table-head"></thead>
+                <tbody id="notice-table-body"></tbody>
             </table>
-            <div class="col-12" id="editor_content">
-                <div data-include-path="/22_ig031/src/main/resources/templates/community/editor.html"></div>
-            </div>
             <ul class="pagination">
                 <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -64,12 +39,12 @@
         </div>
     </div>
     <div class="btn_wrap">
-        <a onclick="location.href='/22_ig031/src/main/resources/templates/community/community_write.html';" class="on box_eft_02">글쓰기</a>
+        <a onclick="location.href='/22_ig031/src/main/resources/templates/notice/notice_write.html';" class="on box_eft_02">글쓰기</a>
         <!--<a href="#">수정</a>-->
     </div>
 </div>
 
 <footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/community/js/community.js"></script>
+<script type="text/javascript" src="/22_ig031/src/main/resources/templates/notice/js/notice.js"></script>
 </body>
 </html>

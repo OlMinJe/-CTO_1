@@ -1,52 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>서브페이지_b</title>
+    <title>삼행기</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <script src="/templates/jquery-3.6.0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
     <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
     <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
     <link rel="stylesheet" type="text/css" href="/static/css/event/event_detail.css">
-
     <script type="text/javascript" src="/templates/includeHtml.js"></script>
+
 </head>
-
 <body>
-    <!--부트스트랩 스크립트 설정-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<!--부트스트랩 스크립트 설정-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
-    <!-- col-함수의 경우 기본적으로 padding-left.right 값이 들어가더라구!
-        그래서 그냥 최상위 부모한테는 max-width: 1330px;만 줘도 될 거 같아!
-        대신 다른 요소에서 col-함수 사용하면 css로 padding값 초기화 시켜주면 될 거 같아~! -->
+<!-- col-함수의 경우 기본적으로 padding-left.right 값이 들어가더라구!
+    그래서 그냥 최상위 부모한테는 max-width: 1330px;만 줘도 될 거 같아!
+    대신 다른 요소에서 col-함수 사용하면 css로 padding값 초기화 시켜주면 될 거 같아~! -->
 
-    <!--화면 구조 설계-->
-    <header data-include-path="/templates/fixed/header/header.html"></header>
+<!--화면 구조 설계-->
 
-    <div class="col-12">
-        <div id ="event-container">
-            <div id="event_top">독서 감상 대회</div>
+
+<div class="col-12 event_detail">
+    <div id ="col-12 event-container">
+        <div id="col-12 event_top">
+            <div class="col-12 event_wrap">
+                <ul>
+                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail.html" style="margin-left: 110px;" class="event_btn pink rounded">삼행시</a></li>
+                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail_book.html"  class="event_btn purple rounded">독서감상대회</a></li>
+                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail_bookQ.html" class="event_btn blue rounded">?</a></li>
+                </ul>
+            </div>
         </div>
 
 
-        <div class="event-detail-main">
-            <input type="radio" id="tab-1" name="show" checked/>
-            <input type="radio" id="tab-2" name="show" />
-            <div class="tab">
-                <label for="tab-1">참여하기</label>
-                <label for="tab-2">다른사람들의 참여내역</label>
+        <div class="col-12 col-md-10 event-detail-main">
+            <input type="radio" id="event_tab-1" name="show" checked/>
+            <input type="radio" id="event_tab-2" name="show" />
+            <div class="event_menu">
+                <label style="width: 100vh;" class="col-md-6 active box_eft_01" for="event_tab-1">참여하기</label>
+                <label style="width: 100vh;" class="col-md-6 box_eft_01" for="event_tab-2">다른 사람들의 참여내역</label>
+
+
             </div>
-            <div class="event-detail-content">
-                <div class="content-dis">
-                    참여하기
+
+
+            <div class="col-12 event-detail-content">
+                <div class="col-12 content-dis">
+                    <div class="col-12 col-md-10 event_content" >
+                        <h4 style="text-align: left;"> 제 n회차 삼행시 </h4>
+                        <div class="event_detail_box"> <span class="event_detail_span1" >응모중</span> </div>
+                        <p style="text-align: left;">기간 : 2022.07.27 ~ 2022.12.31</p>
+                        <hr/>
+
+                        <p style="text-align:left; margin-left: 70px; ">※ 삼행시 단어를 꼭 포함해서 제출해주세요! ※ </p>
+                        <label class="event_detail_label">살&nbsp;&nbsp;<input type="text"> </label>
+                        <label class="event_detail_label">려&nbsp;&nbsp;<input type="text"> </label>
+                        <label class="event_detail_label">줘&nbsp;&nbsp;<input type="text"> </label>
+
+
+                    </div>
                 </div>
-                <div class="content-dis">
-                    다른사람들의 참여냐역
+
+                <div class="col-12 content-dis">
+                    <div class="col-12 col-md-10 event_content" >
+
+                        <h4 style="text-align: left;"> 제 n회차 삼행시 </h4>
+                        <div class="event_detail_box"> <span class="event_detail_span1" >응모중</span>
+                        </div>
+                        <p style="text-align: left;">기간 : 2022.07.27 ~ 2022.12.31</p>
+                        <hr/>
+
+                        <div class="event_sub_content text">
+                            <ul style="text-align: left;">
+                                <li style="margin-left: 30px; margin-top: 20px; font-weight: bold">살려줘</li>
+                                <img src="/22_ig031/src/main/resources/static/img/heart.png" style="float: right; margin-right: 35px;" alt="좋아요"> <!-- 하트 이모지 변경하여 리액트 구현 예정 -->
+                                <!-- 데이터 가져오기 ( 수정 예정 )  -->
+                                <li style="margin-left: 30px;">살려주세요</li>
+                                <li style="margin-left: 30px;" >려기 죽어가요</li>
+                                <li style="margin-left: 30px;" >줘, 졸업장</li>
+                                <hr style="margin-bottom: 10px;"/>
+                            </ul>
+
+                        </div>
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-    <footer data-include-path="/templates/fixed/footer/footer.html"></footer>
+        </div>
+        <div class="btn_wrap">
+            <a class="box_eft_02" onclick="javascript:btn()">제출하기</a>
         </div>
     </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!-- jquery -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  <!-- 스크립트 -->
+<script>
+    function btn(){
+        alert('제출이 완료되었습니다.');
+    }
+</script>
+
+<footer data-include-path="/templates/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/templates/event/js/event.js"></script>
 </body>
 </html>

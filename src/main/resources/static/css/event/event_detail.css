@@ -7,47 +7,226 @@
         그리고 ID는 그 페이지 안에 고유한 1개의 값이라 정말 중요한 거 아니면 클래스 명으로 지어주는게 좋아!
 */
 
-ul,li { list-style: none; }
-
-header{ height: 120px; border-bottom: 1px solid #bbb; }
-
-header > div { max-width: 1330px; margin: 0 auto; }
-
-header .logo{ float: left; }
-
-header .logo img { width:200px; height: 100px; margin-top: 10px; padding-bottom: 10px; }
-
-header .gnb{ float: right; width: 300px; position: relative; margin-top: 30px; }
-
-/*.search{ position: relative; width: 300px; } */
-
-header .gnb input{ width: 100%; border: 1px solid #bbb; border-radius: 8px; padding:10px 12px; font-size: 14px; }
-
-header .gnb img{ position: absolute; width: 17px; top: 10px; right: 12px; margin: 0; }
-
-
 /* event-container*/
 #event-container { margin-bottom: 30px; }
-#event_top { /*width: 100%; height: 50px; padding-top: 10px; padding-bottom: 10px;*/ background:white; /*border-bottom: 1px solid #bbb; text-align: center;*/ font-size: 30px; line-height: 36px; font-weight: 600; }
+
+/*#event_top { width: 100%; height: 50px; padding-top: 10px; padding-bottom: 10px; {background:white;font-size: 30px; line-height: 36px; font-weight: 600; } */
 
 
 /* event-tabs */
 
-.event-detail-main { border-top: 1px solid #bbb; }
-.event-detail-main input[type=radio] { display: none;}
+/*.event-detail-main { border-top: 1px solid #bbb; }*/
+.event-detail-main input[type=radio] { display: none; }
 
-#tab-1:checked ~ .tab label:nth-child(1), #tab-2:checked ~ .tab label:nth-child(2){ background-color: rgba(0, 0, 0, 0.2); box-shadow: none; }
+/*
+input[type='radio']{  border: 1px solid #dcc5df; border-radius: 10px; color: #212121;  },
+input[type='radio']:checked {  border: 1px solid #dcc5df; border-radius: 10px; background-color: #dcc5df; color: #fff; }
+*/
+
+#event_tab-1:checked ~ .event_menu label:nth-child(1), #event_tab-2:checked ~ .event_menu label:nth-child(2){ /*background-color: rgba(0, 0, 0, 0.2); */ box-shadow: none; }
 
 .event-detail-content > div { display: none; }
 
-#tab-1:checked ~ .content div:nth-child(1), #tab-2:checked ~ .content div:nth-child(2)  { display: block; }
+#event_tab-1:checked ~ .event-detail-content div:nth-child(1), #event_tab-2:checked ~ .event-detail-content div:nth-child(2)  { display: block; }
 
-.event-detail-main { margin: 0 auto; width:1380px; max-width: 100%; }
+/*.event-detail-main { margin: 0 auto; width:1380px; max-width: 100%; }*/
 
-.tab { overflow: hidden; }
+.main_tab { overflow: hidden; }
 
-.tab label { font-size: 18px; cursor: pointer; float: left; width: 50%; text-align: center; padding: 15px 0; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
 
-.event-detail-content { background-color: rgba(0, 0, 0, 0.2); min-height: 250px; }
+/*.main_tab label { font-size: 18px; cursor: pointer; float: left; width: 50%; text-align: center; padding: 15px 0; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; user-select: none; -webkit-user-select: none; }
+*/
 
-.event-detail-content > div{ padding: 30px; line-height: 1.5; font-size: 17px;}
+.event-detail-content { /*background-color: rgba(255, 255, 255, 0.2);*/ min-height: 250px; }
+
+.event-detail-content > div{ padding: 20px; line-height: 1.5; font-size: 17px;}
+
+.event_content {   margin: 0 auto; }
+
+
+/* 공통 */
+body > div.col-12.event_detail, body > div.col-12.event-container , body > div.col-12.event_wrap, body > div.col-12.board_wrap { text-align: center; }
+.menu, .event_content, .event_bookQ_content, .view_con, .event-detail-main, .content-dis, .event_content, .event_menu, .event_wrap { display: inline-block;}
+.menu ul { display: flex; text-align: center; }
+.menu ul li{ padding: 10px 20px; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }
+.menu ul li:first-child { border-radius: 10px 0 0 10px; }
+.menu ul li:last-child { border-radius: 0 10px 10px 0; }
+
+.event_menu label { /*display: flex; */ text-align: center;     display: table-cell; vertical-align: middle; }
+.event_menu label{ padding: 10px 20px; cursor: pointer; font-size: 20px; line-height: 26px; font-weight: 600; }
+.event_menu label:first-child { border-radius: 10px 0 0 10px; }
+.event_menu label:last-child { border-radius: 0 10px 10px 0; }
+
+.btn_wrap { text-align: center; }
+.btn_wrap a { display: inline-block; min-width: 80px; padding: 10px 30px; font-size: 1.0rem; line-height: 1.6rem; }
+
+
+/* advice 상위 메뉴 */
+.menu-wrap { margin-bottom: 10px; }
+.menu-wrap li { position: relative; }
+.menu-wrap li img { float: right; transform: rotate(90deg);}
+.menu-wrap li:hover img { transform: rotate(180deg);}
+
+
+
+
+
+/* advice 하위 메뉴 */
+.menu .menu-box-01, .menu .menu-box-02 { flex-direction: column; }
+.menu .menu-box-01 li, .menu .menu-box-02 li { border-right: none; border-radius: 0; font-size: 16px; line-height: 22px; }
+.menu .menu-box-01 li:last-child, .menu .menu-box-02 li:last-child { border-right: 1px solid #00695C; }
+#sub-menu-01, #sub-menu-02 { display: none; }
+
+
+.event_title { padding: 30px 0; text-align: center; font-size: 30px; line-height: 36px; font-weight: 700; }
+/*
+.event_wrap ul { display: flex; justify-content: space-between; flex-direction: column; align-items: center; }
+.event_wrap ul li { display: grid; margin-bottom: 15px; padding: 0 15px; text-align: center;}
+.event_wrap ul li:last-child { margin-bottom: 0; }
+.event_wrap ul li span { position: relative; padding: 30px 0; border-radius:10%; background-color: #c4f2c2; font-size: 30px; line-height: 36px; }
+.event_wrap ul li span:hover { background-color: #9fdebd; }
+*/
+.event_wrap { height: 80px; padding: 10px 0; border-top: none; } /* TODO: 높이 변경 필요 */
+
+
+
+/**/
+.sam_button{ margin: auto; display: block; }
+
+img{ float:left; margin: 0px auto; }
+
+.book_explain { vertical-align:middle; }
+
+.content-dis { border: 1px solid #dcc5df; height: 600px; border-radius: 20px; margin-bottom: 70px; }
+
+.event_bookQ_content { border: 1px solid #dcc5df; height: 1000px; border-radius: 20px; margin-bottom: 70px;}
+
+.event_sub_content { border: 1px solid #dcc5df; width:90%; height: 350px; margin: 55px; margin-top: 15px; border-radius: 20px; }
+
+/* button */
+
+.event_btn.blue     {background-color: #7fb1bf;}
+.event_btn.green   {background-color: #9abf7f;}
+.event_btn.red       {background-color: #fa5a5a;}
+.event_btn.purple {background-color: #cb99c5;}
+.event_btn.yellow {background-color: #f0d264;}
+.event_btn.pink {background-color: #fbe9e7;}
+
+.event_btn { width: 351px; float: left; color: black; padding: 15px 25px; display: inline-block; margin-right: 15px; border: 1px solid rgba(0,0,0,0.21); border-bottom-color: rgba(0,0,0,0.34); text-shadow:0 1px 0 rgba(0,0,0,0.15); text-align: center; font-weight: 500; box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset,  0 2px 0 -1px rgba(0,0,0,0.13),  0 3px 0 -1px rgba(0,0,0,0.08),  0 3px 13px -1px rgba(0,0,0,0.21);}
+.event_btn:active { top: 1px; border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21); box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset; position: relative; }
+
+.event_detail_label
+{ display: flex; flex-basis: 100%; align-items: center; color: rgba(0, 0, 0, 0.35); font-size: 12px; margin: 8px 0px; margin-left: 70px; margin-top:50px; color: red; font-size: xx-large; font-weight: 400;}
+
+
+/*.event_detail_p::after {content: ""; flex-grow: 1; background: rgba(0, 0, 0, 0.35); height: 1px; font-size: 0px; line-height: 0px; margin: 0px 16px; margin-right: 180px;}
+
+*/
+
+/*input[type="text"]{ text-decoration: underline; text-underline-position:under;}
+*/
+
+h4 { margin:10px 0 0 15px;}
+
+h3 { margin-left: 15px; color: lightsteelblue;}
+
+.btn_wrap { text-align: center; margin-top: 50px; margin-bottom: 80px;}
+
+/* span */
+.event_detail_span1{ color: white; font-size: small; text-align: center; border-bottom: 1px solid #dcc5df;}
+
+.event_detail_box { margin-left: 15px; border-radius: 20px; background-color: #dcc5df; width: 50px; height: 30px; text-align: center; float: left; margin-right: 10px;}
+
+hr{ margin-bottom: 30px; padding: 15px 0; border-top: 1px solid #dcc5df; line-height: 46px; color: #dcc5df;}
+
+
+/* table */
+
+.content form { margin-bottom: 20px; margin-left: auto; margin-right: auto; }
+.content-table table { margin-bottom: 2rem; }
+.content-table thead { text-align: center; }
+.content-table table th { font-weight: 500; }
+.content-table table td.title { text-align: initial; }
+.pagination { justify-content: center; }
+
+
+/**/
+#check-btn { display: none; }
+#check-btn:checked ~ .menubars { display: block; }
+.menubars { display: none; }
+
+
+.event_box_eft_01 {
+    width: 500px;
+    border: 1px solid #00695C; border-radius: 10px; color: #212121;
+
+}
+
+
+
+/*borad view */
+
+/* advice_view_wrap */
+.view_con .category_title { text-align: initial; color: #00695C; font-weight: 600; }
+.view_list { margin-bottom: 30px; text-align: initial; }
+.view_list .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
+.view_list .board_view_info { border-bottom: 2px solid #00695C; padding: 0 15px 15px; font-weight: 500; }
+.view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
+.view_list .board_view_info dl:first-child { padding-left: 0; }
+.view_list .board_view_info dl:last-child { padding-right: 0; }
+.view_list .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
+.view_list .board_view_info dl:first-child::before { content: none; }
+.view_list .board_view_info dl dt { display: inline-block; margin-right: 10px; color: #00695C; }
+.view_list .board_view_info dl dd { float: right; }
+.view_list .board_view_content { padding: 30px 15px; border-bottom: 2px solid #00695C; min-height: 300px; }
+.view_wrap .btn_wrap { margin-bottom: 40px; }
+.comment_num { padding-bottom: 10px; margin-bottom: 20px; border-bottom: 2px solid #00695C; text-align: left; font-weight: 500; }
+.comment_num span { margin-left: 5px; font-size: 20px; line-height: 26px; font-weight: 600; color: #00695C; }
+.input_box { display: flex; justify-content: space-between; }
+.input_box textarea { width: calc(100% - 115px);  padding: 5px 10px; }
+.input_box button { padding: 20px; }
+
+
+
+
+/*이벤트_독서퀴즈_지난이벤트*/
+
+.Enter_list_wrap ul { font-size: 0;}
+
+.Enter_list_wrap .Enter_bookQ_item { display: inline-block; width: 20%; margin-top: 40px; margin-left: 5%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.Enter_list_wrap .Enter_bookQ_item:nth-child(-n+4) { margin-top: 0;}
+
+.Enter_list_wrap .Enter_bookQ_item:nth-child(4n-3) { margin-left: 0; }
+
+.Enter_list_wrap .Enter_bookQ_item .Enter_image { width: 100%; height: 280px; background-color: #ddd; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
+
+.Enter_list_wrap .item2 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ1.jpg"); }
+.Enter_list_wrap .item2 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ2.jpeg"); }
+.Enter_list_wrap .item3 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ3.jpeg"); }
+.Enter_list_wrap .item4 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ4.jpeg"); }
+.Enter_list_wrap .item5 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ5.jpeg"); }
+.Enter_list_wrap .item6 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ6.jpeg"); }
+.Enter_list_wrap .item7 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ7.jpeg"); }
+.Enter_list_wrap .item8 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ8.jpeg"); }
+
+.Enter_list_wrap .Enter_bookQ_item .Enter_content { padding: 20px;}
+
+.Enter_list_wrap .Enter_bookQ_item strong { display: block; margin: 0 0 10px 0 ; font-size: 16px; letter-spacing: -1px;}
+
+.Enter_list_wrap .Enter_bookQ_item p { font-size: 13px; letter-spacing: -1px; }
+
+.Enter_list_wrap .Enter_bookQ_item a { display: inline-block; margin-top: 20px; padding: 5px 10px; background: #eee; font-size: 13px; letter-spacing: -1px; transition: all 1s ease; }
+
+.Enter_list_wrap .Enter_bookQ_item a:hover { background: #a9a9aa; color: #fff; }
+
+
+
+/* 반응형
+
+@media all and ( min-width : 768px) {
+
+}
+
+
+ */

@@ -1,21 +1,23 @@
 <!doctype html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- 추가 필수 -->
     <title>Document</title>
+    <!--추가-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> <!-- 스와이퍼 -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/main/main.css">
-    <script type="text/javascript" src="/templates/includeHtml.js"></script>
+    <script type="text/javascript" src="/includeHtml.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/main/main.css">
 </head>
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 <div class="col-12 main">
     <div class="col-12 search-wrap mb">
         <div class="board-content-search">
@@ -37,7 +39,7 @@
     <div class="col-12 mainvisual_wrap mb">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" onclick="location.href='/22_ig031/src/main/resources/templates/notice/notice.html'">>공지사항 (ver.22/12/31)</div>
+                <div class="swiper-slide" onclick="location.href='../notice/notice.html'">>공지사항 (ver.22/12/31)</div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
                 <div class="swiper-slide">Slide 4</div>
@@ -64,37 +66,37 @@
     </div>
 </div>
 <section class="col-12 sub_swiper_wrap mb">
-        <canvas id="nigthSky"></canvas>
-        <div class="col-12 col-md-8 sub_swiper_con"><!-- https://lpla.tistory.com/149 -->
-            <div class="col-6 sub_swiper_list">
-                <div class="swiper-container mySwiper">
-                    <div class="swiper-wrapper">
-                        <!-- 이미지로 넣으면 x -->
-                        <div class="swiper-slide slide01">
-                            <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=VyEJs-u3Wyk';">
-                                오늘 하루 <br class="br_hidden"><span class="music">추천곡</span>을<br>들으면서 시작해보면 어떨까요?
-                            </div>
+    <canvas id="nigthSky"></canvas>
+    <div class="col-12 col-md-8 sub_swiper_con"><!-- https://lpla.tistory.com/149 -->
+        <div class="col-6 sub_swiper_list">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- 이미지로 넣으면 x -->
+                    <div class="swiper-slide slide01">
+                        <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=VyEJs-u3Wyk';">
+                            오늘 하루 <br class="br_hidden"><span class="music">추천곡</span>을<br>들으면서 시작해보면 어떨까요?
                         </div>
-                        <div class="swiper-slide slide02">
-                            <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=yiS5jtvH0zU';">
-                                요즘은 <span class="dog">OOO</span>를<br>보고 <i>"힐링"</i>한다구!
-                            </div>
+                    </div>
+                    <div class="swiper-slide slide02">
+                        <div class="col-12 swiper_title" onclick="location.href='https://www.youtube.com/watch?v=yiS5jtvH0zU';">
+                            요즘은 <span class="dog">OOO</span>를<br>보고 <i>"힐링"</i>한다구!
                         </div>
-                        <div class="swiper-slide slide03">
-                            <div class="col-12 swiper_title">
-                                Q. 요즘 유행하는 <span>당근게임</span> 들어봤어?
-                            </div>
+                    </div>
+                    <div class="swiper-slide slide03">
+                        <div class="col-12 swiper_title">
+                            Q. 요즘 유행하는 <span>당근게임</span> 들어봤어?
                         </div>
-                        <div class="swiper-slide slide04">
-                            <div class="col-12 swiper_title">
-                                흐엉 아이디어 고갈
-                            </div>
+                    </div>
+                    <div class="swiper-slide slide04">
+                        <div class="col-12 swiper_title">
+                            흐엉 아이디어 고갈
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <div class="col-12 main">
     <div class="col-12 wiseSaying_wrap mb">
         <div class="col-3 title">오늘의 명언</div>
@@ -147,14 +149,14 @@
 
     <div class="col-12 advice_wrap">
         <ul style="margin-bottom: 15px;">
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">일반고민</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">대인관계/가족</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">정신건강</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">일반고민</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">대인관계/가족</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">정신건강</li>
         </ul>
         <ul>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">직장</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">성소수자</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';">여성</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">직장</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">성소수자</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">여성</li>
         </ul>
     </div>
 </div>
@@ -163,9 +165,8 @@
         <a href="https://www.youtube.com/watch?v=RwJ2TBB43lM">챗봇 상담하러 가기(클릭)</a>
     </div>
 </div>
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/main/js/main.js"></script>
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/fixed/footer/js/footer.js"></script>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/js/main.js"></script><!--불러오기 성공-->
+<script type="text/javascript" src="/js/footer.js"></script>
 </body>
 </html>

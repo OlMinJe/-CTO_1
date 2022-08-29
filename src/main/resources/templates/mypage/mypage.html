@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/mypage/mypage.css">
-    <script type="text/javascript" src="/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/mypage/mypage.css">
+    <script type="text/javascript" src="/includeHtml.js"></script>
 </head>
 <body>
-<header data-include-path="/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 
     <div class="col-12 mypage">
         <div class="col-12 title" style="float: left">
-            <a class="col-12" id="tab_0" name="menu_tab" onclick="location.href='mypage.html'">내정보</a>
+            <a class="col-12" id="tab_0" name="menu_tab" onclick="location.href='/mypage/mypage.html'">내정보</a>
             <!--
             <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="location.href='mypage.html">내정보</button>
             -->
@@ -29,19 +29,19 @@
                 <div class="col-0 menu_list mt">
                     <div class="menu_title" onclick="mobile_menu()">활동내역</div>
                     <ul id="menu_list_01">
-                        <li class="col-12" onclick="location.href='mypage_01.html'">이벤트 참여내역</li>
-                        <li class="col-12" onclick="location.href='mypage_02.html'">커뮤니티 사용내역</li>
-                        <li class="col-12" onclick="location.href='mypage_03.html'">위치기반 사용내역</li>
-                        <li class="col-12" onclick="location.href='mypage_04.html'">테스트 결과 내역</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_01.html'">이벤트 참여내역</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_02.html'">커뮤니티 사용내역</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_03.html'">위치기반 사용내역</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_04.html'">테스트 결과 내역</li>
                     </ul>
                 </div>
                 <div class="col-0 menu_list" id="menu_list_02">
                     <div class="menu_title">정보변경</div>
                     <ul>
-                        <li class="col-12" onclick="location.href='mypage_05.html'">비밀번호 변경</li>
-                        <li class="col-12" onclick="location.href='mypage_06.html'">닉네임 변경</li>
-                        <li class="col-12" onclick="location.href='mypage_07.html'">프로필 사진 변경</li>
-                        <li class="col-12" onclick="location.href='mypage_08.html'">회원탈퇴</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_05.html'">비밀번호 변경</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_06.html'">닉네임 변경</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_07.html'">프로필 사진 변경</li>
+                        <li class="col-12" onclick="location.href='/mypage/mypage_08.html'">회원탈퇴</li>
                     </ul>
                 </div>
             </div>
@@ -110,8 +110,8 @@
             </div>
         </div>
     </div>
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/mypage/js/mypage.js"></script>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/js/mypage.js"></script>
 <script>
 /* 내정보 메인 - 달력(참고 사이트) https://www.youtube.com/watch?v=jFmcH5GVRs4 */
 const date = new Date();

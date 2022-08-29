@@ -201,14 +201,14 @@ hr{ margin-bottom: 30px; padding: 15px 0; border-top: 1px solid #dcc5df; line-he
 
 .Enter_list_wrap .Enter_bookQ_item .Enter_image { width: 100%; height: 280px; background-color: #ddd; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
 
-.Enter_list_wrap .item2 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ1.jpg"); }
-.Enter_list_wrap .item2 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ2.jpeg"); }
-.Enter_list_wrap .item3 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ3.jpeg"); }
-.Enter_list_wrap .item4 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ4.jpeg"); }
-.Enter_list_wrap .item5 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ5.jpeg"); }
-.Enter_list_wrap .item6 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ6.jpeg"); }
-.Enter_list_wrap .item7 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ7.jpeg"); }
-.Enter_list_wrap .item8 .Enter_image { background-image:url("static/img/Enter_list_bookQ/Enter_list_bookQ8.jpeg"); }
+.Enter_list_wrap .item2 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ1.jpg"); }
+.Enter_list_wrap .item2 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ2.jpeg"); }
+.Enter_list_wrap .item3 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ3.jpeg"); }
+.Enter_list_wrap .item4 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ4.jpeg"); }
+.Enter_list_wrap .item5 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ5.jpeg"); }
+.Enter_list_wrap .item6 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ6.jpeg"); }
+.Enter_list_wrap .item7 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ7.jpeg"); }
+.Enter_list_wrap .item8 .Enter_image { background-image:url("/static/img/Enter_list_bookQ/Enter_list_bookQ8.jpeg"); }
 
 .Enter_list_wrap .Enter_bookQ_item .Enter_content { padding: 20px;}
 

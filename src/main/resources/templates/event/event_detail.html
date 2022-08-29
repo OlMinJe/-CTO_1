@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>삼행기</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/event/event_detail.css">
-    <script type="text/javascript" src="/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/event/event_detail.css">
+    <script type="text/javascript" src="/includeHtml.js"></script>
 
 </head>
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 <!--부트스트랩 스크립트 설정-->
 <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
@@ -30,9 +30,9 @@
         <div id="col-12 event_top">
             <div class="col-12 event_wrap">
                 <ul>
-                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail.html" style="margin-left: 110px;" class="event_btn pink rounded">삼행시</a></li>
-                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail_book.html"  class="event_btn purple rounded">독서감상대회</a></li>
-                    <li><a href="/22_ig031/src/main/resources/templates/event/event_detail_bookQ.html" class="event_btn blue rounded">?</a></li>
+                    <li><a href="/event/event_detail.html" style="margin-left: 110px;" class="event_btn pink rounded">삼행시</a></li>
+                    <li><a href="/event/event_detail_book.html"  class="event_btn purple rounded">독서감상대회</a></li>
+                    <li><a href="/event/event_detail_bookQ.html" class="event_btn blue rounded">?</a></li>
                 </ul>
             </div>
         </div>
@@ -78,7 +78,7 @@
                         <div class="event_sub_content text">
                             <ul style="text-align: left;">
                                 <li style="margin-left: 30px; margin-top: 20px; font-weight: bold">살려줘</li>
-                                <img src="/22_ig031/src/main/resources/static/img/heart.png" style="float: right; margin-right: 35px;" alt="좋아요"> <!-- 하트 이모지 변경하여 리액트 구현 예정 -->
+                                <img src="/img/heart.png" style="float: right; margin-right: 35px;" alt="좋아요"> <!-- 하트 이모지 변경하여 리액트 구현 예정 -->
                                 <!-- 데이터 가져오기 ( 수정 예정 )  -->
                                 <li style="margin-left: 30px;">살려주세요</li>
                                 <li style="margin-left: 30px;" >려기 죽어가요</li>
@@ -109,7 +109,7 @@
     }
 </script>
 
-<footer data-include-path="/templates/fixed/footer/footer.html"></footer>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/js/event.js"></script>
 </body>
 </html>

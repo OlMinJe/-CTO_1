@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.mapper.MainMapper">
+	<select id="now" resultType="string">
+		SELECT NOW() FROM DUAL;
+	</select>	
+		
+	<!-- <select id="memberLogin" resultType="MemberVO">
+		SELECT memberId, memberPass
+		FROM hello_member
+		WHERE memberId = #{memberId}
+		AND memberPass = #{memberPass}
+	</select> -->
+
+	<!-- 회원 강제 탈퇴 시키기 -->
+	<update id="dropUser">
+		Delete FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</update>
+
+	<!--관리자 페이지 - 회원리스트-->
+	<select id="dispAdmin" resultType="MemberVO">
+		SELECT *
+		FROM hello_member
+	</select>
+
+	<!--보기만 가능한 게시판-->
+	<select id="boardList_view" resultType="BoardVO">
+		SELECT *
+		FROM hello_board
+	</select>
+	
+	<select id="userCheck" resultType="MemberVO">
+		SELECT mb_id, mb_pw
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+	
+	<insert id="kakaoLogin" parameterType="HashMap">
+		INSERT IGNORE into kakao_member 
+		VALUES (#{id}, #{name}, #{email})
+	</insert>
+	
+	<select id="idCheck" parameterType="String" resultType="Integer">
+		SELECT count(*)
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+
+	<select id="nickCheck" parameterType="String" resultType="Integer">
+		SELECT count(*)
+		FROM hello_member
+		WHERE mb_nick = #{mb_nick}
+	</select>
+
+	<insert id="memberRegister">
+		INSERT into hello_member(mb_name, mb_id, mb_pw, mb_nick, mb_email, mb_addr, mb_sex, mb_doctor, mb_img)
+		VALUES (#{mb_name}, #{mb_id}, #{mb_pw}, #{mb_nick}, #{mb_email}, #{mb_addr}, #{mb_sex}, #{mb_doctor}, #{mb_img})
+	</insert>
+
+	<!-- 아이디 찾기 -->
+	<select id="find_id" parameterType="String" resultType="String">
+		select mb_id from hello_member where mb_email = #{mb_email}
+	</select>
+
+	<!-- 비밀번호 변경 -->
+	<update id="update_pw" parameterType="memberVO">
+		update hello_member set mb_pw = #{mb_pw} where mb_id = #{mb_id}
+	</update>
+
+	<select id="memberModifyGET" resultType="MemberVO" parameterType="String">
+		SELECT *
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+	
+	<update id="memberModifyPOST" parameterType="MemberVO">
+		UPDATE hello_member
+		SET mb_pw = #{mb_pw}
+		WHERE mb_id = #{mb_id}
+	</update>
+
+	<!--탈퇴-->
+	<delete id="memberDeletePOST" parameterType="MemberVO">
+		DELETE from hello_member
+		WHERE mb_id = #{mb_id}
+	</delete>
+
+	<select id="memberDeleteGET" resultType="MemberVO" parameterType="String">
+		SELECT *
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+
+	<!--닉네임 변경-->
+	<update id="nickModifyPOST" parameterType="MemberVO">
+	UPDATE hello_member
+	SET mb_nick = #{mb_nick}
+	WHERE mb_id = #{mb_id}
+</update>
+
+	<select id="nickModifyGET" resultType="MemberVO" parameterType="String">
+		SELECT *
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+
+	<!--프로필 변경-->
+	<update id="profileModifyPOST" parameterType="MemberVO">
+		UPDATE hello_member
+		SET mb_img = #{mb_img}
+		WHERE mb_id = #{mb_id}
+	</update>
+
+	<select id="profileModifyGET" resultType="MemberVO" parameterType="String">
+		SELECT *
+		FROM hello_member
+		WHERE mb_id = #{mb_id}
+	</select>
+
+	<!--게시판부터 수정 필요함-->
+	<insert id="boardWrite">
+		INSERT INTO hello_board (title, content, writer, filepath, filename)
+		VALUES (#{title}, #{content}, #{writer}, #{filepath}, #{filename})
+	</insert>
+
+	<select id="boardList" resultType="hashmap" parameterType="hashmap">
+		<![CDATA[
+			SELECT * 
+			FROM hello_board
+			ORDER BY NUM DESC
+			LIMIT #{pageStart}, #{perPageNum}
+		]]>
+	</select>
+	<select id="boardListCnt" resultType="int">
+		SELECT count(*)
+		FROM hello_board
+	</select>
+	<select id="boardRead" resultType="BoardVO">
+		SELECT num, title, content, writer
+		FROM hello_board
+		WHERE num = #{num}
+	</select>
+	
+	<update id="boardModify" parameterType="com.project.vo.BoardVO">
+		UPDATE hello_board b, hello_member m
+		SET b.title = #{title},
+			b.content = #{content},
+			b.regdate = now()
+		WHERE num = #{num}
+		and b.writer in (
+			select memberId from hello_member
+			where memberId = #{writer}
+		)		
+	</update>
+	
+	<delete id="boardDelete" parameterType="int">
+		DELETE FROM hello_board
+		WHERE num = #{num}
+	</delete> 
+</mapper>

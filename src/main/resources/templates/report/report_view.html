@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>report_view</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" report_content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/report/report.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/report/report.css">
+    <script type="text/javascript" src="/includeHtml.js"></script>
 
 </head>
 
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 <div class="col-12 view_wrap">
     <div class="col-12 col-lg-10 view_con">
         <div class="col-12 category_title">신고게시판의 카테고리</div>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="col-12 btn_wrap">
-            <a onclick="location.href='report.html';" class="on box_eft_02">목록</a>
+            <a onclick="location.href='/report/report.html';" class="on box_eft_02">목록</a>
             <a href="edit.html" class="box_eft_01">수정</a>
         </div>
 
@@ -75,7 +75,7 @@
 
     </div>
 </div>
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>
 <!--<div class="col-12 report_board_wrap">

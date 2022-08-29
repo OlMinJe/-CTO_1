@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>공지사항</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/static/css/notice/notice.css">
-    <script type="text/javascript" src="/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href=/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/notice/notice.css">
+    <script type="text/javascript" src="/includeHtml.js"></script>
 </head>
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 
 <div class="col-12 notice">
     <div class="col-12 col-lg-10 list-title">공지사항</div>
@@ -39,12 +39,12 @@
         </div>
     </div>
     <div class="btn_wrap">
-        <a onclick="location.href='/22_ig031/src/main/resources/templates/notice/notice_write.html';" class="on box_eft_02">글쓰기</a>
+        <a onclick="location.href='/notice/notice_write.html';" class="on box_eft_02">글쓰기</a>
         <!--<a href="#">수정</a>-->
     </div>
 </div>
 
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
-<script type="text/javascript" src="/22_ig031/src/main/resources/templates/notice/js/notice.js"></script>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
+<script type="text/javascript" src="/js/notice.js"></script>
 </body>
 </html>

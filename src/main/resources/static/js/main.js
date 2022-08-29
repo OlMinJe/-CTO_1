@@ -146,7 +146,7 @@ function mainTableActive(){
         for(let i = 0; i < 10; i++) { // 해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
             mainCommunity_content.innerHTML +=
                 '<tr class="community-table">'+
-                '<td class="title"><span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + i + '</a></span></td>'+
+                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>'+
                 '<td class="comment_count"><span>' + '100' + '</span></td>'+
                 '</tr>';
         }
@@ -156,7 +156,7 @@ function mainTableActive(){
         for(let i = 0; i < 10; i++) {
             mainEditor_content.innerHTML +=
                 '<tr class="community-table">'+
-                '<td class="title"><span><a href="/22_ig031/src/main/resources/templates/community/community_view.html">' + i + '</a></span></td>'+
+                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>'+
                 '<td class="comment_count"><span>' + '100' + '</span></td>'+
                 '</tr>';
         }

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- 추가 필수 -->
-    <title>Document</title>
+    <title>Main</title>
     <!--추가-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
     <script type="text/javascript" src="/jquery-3.6.0.js"></script>
@@ -39,7 +39,7 @@
     <div class="col-12 mainvisual_wrap mb">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" onclick="location.href='../notice/notice.html'">>공지사항 (ver.22/12/31)</div>
+                <div class="swiper-slide" onclick="location.href='/notice/notice.html'">>공지사항 (ver.22/12/31)</div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
                 <div class="swiper-slide">Slide 4</div>
@@ -56,10 +56,10 @@
                 <button type="submit" class="btn box_eft_02">로그인</button>
                 <div class="col-12">
                     <div class="col-8 user_id_pass">
-                        <a href="">아이디 찾기</a>
-                        <a href="">비밀번호 찾기</a>
+                        <a href="/login/find_id_form.html">아이디 찾기</a><!--html 창 만들고 연결하기-->
+                        <a href="/login/find_pw_form.html">비밀번호 찾기</a><!--html 창 만들고 연결하기-->
                     </div>
-                    <div class="col-4 new_user"><a href="">회원가입</a></div>
+                    <div class="col-4 new_user"><a href="/login/register.html">회원가입</a></div><!--html 창 만들고 연결하기-->
                 </div>
             </form>
         </div>
@@ -149,14 +149,14 @@
 
     <div class="col-12 advice_wrap">
         <ul style="margin-bottom: 15px;">
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">일반고민</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">대인관계/가족</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">정신건강</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">일반고민</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">대인관계/가족</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">정신건강</li>
         </ul>
         <ul>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">직장</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">성소수자</li>
-            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='../advice/advice.html';">여성</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">직장</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">성소수자</li>
+            <li class="col-0 col-md-3 box_eft_02" onclick="location.href='/advice/advice.html';">여성</li>
         </ul>
     </div>
 </div>
@@ -166,7 +166,7 @@
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>
-<script type="text/javascript" src="/js/main.js"></script><!--불러오기 성공-->
+<script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/footer.js"></script>
 </body>
 </html>

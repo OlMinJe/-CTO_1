@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>notice_write</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script src="/22_ig031/src/main/resources/templates/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/22_ig031/src/main/resources/static/css/notice/notice.css">
-    <script type="text/javascript" src="/22_ig031/src/main/resources/templates/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/notice/notice.css">
+    <script type="text/javascript" src="/includeHtml.js"></script>
     <!--써머노트-->
-    <script src="/22_ig031/src/main/resources/static/SummerNote/summernote-lite.js"></script>
-    <script src="/22_ig031/src/main/resources/static/SummerNote/lang/summernote-ko-KR.js"></script>
-    <link rel="stylesheet" href="/22_ig031/src/main/resources/static/SummerNote/summernote-lite.css">
+    <script src="/SummerNote/summernote-lite.js"></script>
+    <script src="/SummerNote/lang/summernote-ko-KR.js"></script>
+    <link rel="stylesheet" href="/SummerNote/summernote-lite.css">
 </head>
 
 <body>
-<header data-include-path="/22_ig031/src/main/resources/templates/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 <div class="col-12 board_wrap">
     <div class="col-12 col-lg-10 board_con">
         <div class="col-12 board_title">글 작성</div>
@@ -62,12 +62,12 @@
             </form>
         </div>
         <div class="col-12 btn_wrap">
-            <a onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice_view.html';" class="on box_eft_02">등록</a>
-            <a onclick="location.href='/22_ig031/src/main/resources/templates/advice/advice.html';" class="box_eft_02">취소</a>
+            <a onclick="location.href='/advice/advice_view.html';" class="on box_eft_02">등록</a>
+            <a onclick="location.href='/advice/advice.html';" class="box_eft_02">취소</a>
         </div>
     </div>
 </div>
-<footer data-include-path="/22_ig031/src/main/resources/templates/fixed/footer/footer.html"></footer>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 <script>
     $(document).ready(function() {
         //여기 아래 부분

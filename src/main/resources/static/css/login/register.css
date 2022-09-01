@@ -1,0 +1,25 @@
+.register { margin-left: auto; margin-right: auto }
+.title_01 { margin-bottom: 40px; padding: 10px 0 10px 10px; border-top: 3px solid #dcc5df; border-bottom: 3px solid #dcc5df; font-size: 25px; line-height: 31px; font-weight: 600; color: #dcc5df; }
+.title_02 { margin-bottom: 30px; text-align: center; font-size: 30px; line-height: 36px; color: #212121; font-weight: 600; }
+
+form { margin-bottom: 50px; }
+.register ul li { display: flex; align-items: center; margin-bottom: 35px; }
+.register ul li:first-child { flex-direction: column; }
+.register .sub_title { font-size: 16px; line-height: 22px; color: #212121; font-weight: 500; }
+.register input { padding: 7px 15px; border: 1px solid #212121; border-radius: 10px; }
+.register input[name="file"] { padding: 70px; border-radius: 50%; }
+.register input[type="text"], .register input[type="password"] { width: 40%; }
+.register button { margin-left: 10px; padding: 7px 15px;}
+.register button[id="email_auth_btn"] { margin-right: 10px; }
+
+.register section { display: inline-block; }
+.register section:first-child { margin-bottom: 10px; }
+.register section input[type="text"] { width: 53.5%; }
+
+.address { margin-bottom: 35px; }
+.address .sub_title { float: left; margin-bottom: 10px; }
+.address input { margin-bottom: 10px; }
+.address input:last-child { margin-bottom: 0; }
+.register .address section input[type="text"]:last-child { margin-bottom: 0; }
+
+.register .doctor .sub_title { float: left; display: inline-block; margin-bottom: 10px; }

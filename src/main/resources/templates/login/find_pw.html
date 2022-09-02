@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-
     <title>비밀번호 찾기</title>
+    <script type="text/javascript" src="/includeHtml.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/login/find.css">
 </head>
 <body>
+<header data-include-path="/fixed/header/header.html"></header>
 <!--사용 안하는 임시페이지-->
-<div>
-    <div>
-        <div>
-            <h3>비밀번호 찾기 검색결과</h3>
-        </div>
-        <div>
-            <tbody>
-            <tr>
-                <td th:text="${pw}"></td>
-            </tr>
-            </tbody>
-            <p>
-                <button type="button" onclick="location.href='/login/login.html'">로그인으로 이동</button>
-                <button type="button" onclick="location.href='/'">메인으로</button>
-            </p>
+<div class="col-12">
+    <div class="col-11 col-sm-8 col-md-6 col-lg-5 result_wrap">
+        <div class="title">비밀번호 찾기 검색결과</div>
+        <tbody>
+        <tr>
+            <span>회원님의 임시 비밀번호</span><br><td th:text="${pw}"></td>
+        </tr>
+        </tbody>
+        <div style="text-align: center;">
+            <button type="button" class="box_eft_02" onclick="location.href='/login/login.html'">로그인으로 이동</button>
+            <button type="button" class="box_eft_02" onclick="location.href='/'">메인으로</button>
         </div>
     </div>
 </div>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

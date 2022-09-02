@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>아이디 찾기</title>
 
-
+    <script type="text/javascript" src="/includeHtml.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/login/find.css">
 </head>
 <body>
-<div>
-    <div>
+<header data-include-path="/fixed/header/header.html"></header>
+<div class="col-12">
+    <div class="col-11 col-sm-8 col-md-6 col-lg-5 id_form_wrap">
+        <div class="title">아이디 찾기</div>
         <form action="/find_id" method="get">
-            <div>
-                <h3>아이디 찾기</h3>
+            <div style="margin-bottom: 40px;">
+                <div class="col-12 comment">- 회원님의 이메일을 입력해주세요.</div>
+                <input type="text" class="box_eft_01" id="mb_email" name="mb_email" placeholder="이메일 입력" required>
             </div>
-            <div>
-                <p>
-                    <label>Email</label>
-                    <input type="text" id="mb_email" name="mb_email" required>
-                </p>
-                <p>
-                    <button type="submit" id=findBtn>아이디 검색하기</button>
-                    <button type="button" onclick="history.go(-1);">로그인</button>
-                </p>
+            <div style="text-align: center;">
+                <button type="submit" class="box_eft_02" id=findBtn>아이디 검색하기</button>
+                <button type="button" class="box_eft_02" onclick="history.go(-1);">로그인</button>
             </div>
         </form>
     </div>
 </div>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

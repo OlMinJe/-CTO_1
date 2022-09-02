@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>아이디 찾기</title>
 
+    <script type="text/javascript" src="/includeHtml.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/login/find.css">
 </head>
 <body>
-<div>
-    <div>
-        <div>
-            <h3>아이디 찾기 검색결과</h3>
-        </div>
-        <div>
-            <tbody>
-            <tr th:each="id : ${id}">
-                <td th:text="${id}"></td>
-            </tr>
-            </tbody>
-            <p>
-                <button type="button" onclick="location.href='/login/login.html'">로그인으로 이동</button>
-                <button type="button" onclick="location.href='/'">메인으로</button>
-            </p>
+<header data-include-path="/fixed/header/header.html"></header>
+<div class="col-12">
+    <div class="col-11 col-sm-8 col-md-6 col-lg-5 result_wrap">
+        <div class="title">아이디 찾기</div>
+        <tbody>
+        <tr th:each="id : ${id}">
+            <span>회원님의 아이디는</span><br><td th:text="${id}"></td>
+        </tr>
+        </tbody>
+        <div style="text-align: center;">
+            <button type="submit" class="box_eft_02" onclick="location.href='/login/login.html'">로그인으로 이동</button>
+            <button type="button" class="box_eft_02" onclick="location.href'/'">메인으로</button>
         </div>
     </div>
 </div>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

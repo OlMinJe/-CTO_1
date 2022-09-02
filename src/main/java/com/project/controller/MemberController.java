@@ -118,12 +118,12 @@ public class MemberController {
         String toMail = email;
         String title = "너나들이 홈페이지 이메일 인증번호 입니다.";
         String content =
-                "너나들이에 회원가입 해주셔서 감사합니다." +
-                        "<br><br>" +
-                        "인증 번호는 " + checkNum + "입니다." +
-                        "<br><br>" +
-                        "해당 인증번호를 복사해서 인증번호 확인란에 기입하여 주세요." +
-                        "감사합니다.";
+                "<div align='center' style='border:1px solid black; font-family:verdana'>" +
+                        "<h3 style='color: blue;'>" +
+                        "너나들이에 회원가입 해주셔서 감사합니다.<br>" +
+                        "해당 인증번호를 복사해서 인증번호 확인란에 기입해주세요.</h3>" +
+                        "<p>이메일 인증 번호 : " +
+                        checkNum + "</p></div>";
 
         try {
             MimeMessage message = mailSender.createMimeMessage();

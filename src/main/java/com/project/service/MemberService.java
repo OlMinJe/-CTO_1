@@ -37,7 +37,6 @@ public class MemberService implements UserDetailsService {
         return mapper.userCheck(memberVO);
     }
 
-
     // 아이디체크
     public int idCheck(String mb_id) throws Exception {
         return mapper.idCheck(mb_id);
@@ -48,7 +47,7 @@ public class MemberService implements UserDetailsService {
         return mapper.nickCheck(mb_nick);
     }
 
-    // 회원가입(기존 코드에서 추가)
+    // 회원가입
     public void memberRegister(MemberVO memberVO, MultipartFile file) throws Exception {
         //저장 경로 삭제 -> DB Table에만 저장됨
         //String imgPath=System.getProperty("user.dir")+"\\src\\main\\resources\\static\\profile";
@@ -60,7 +59,7 @@ public class MemberService implements UserDetailsService {
         mapper.memberRegister(memberVO);
     }
 
-    //관리자 페이지 진입하기
+    //관리자 페이지 진입(implements UserDetailsService 사용 시 필수 메소드)
     //@Override
     public UserDetails loadUserByUsername(String mb_id) throws UsernameNotFoundException {
         //로그인을 하기 위해 가입된 user 정보를 조회하는 매서드
@@ -74,9 +73,9 @@ public class MemberService implements UserDetailsService {
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        if(("master").equals(mb_id)) { //("master".equals(mb_id))
+        if(("master").equals(mb_id)) {
             authorities.add(new SimpleGrantedAuthority(Role.ADMIN.getValue()));
-        }else {
+        } else {
             authorities.add(new SimpleGrantedAuthority(Role.MEMBER.getValue()));
         }
         return new User(member.getMb_id(), member.getMb_pw(),authorities);
@@ -107,7 +106,7 @@ public class MemberService implements UserDetailsService {
         }
     }
 
-    //비밀번호 찾기 - 임시 비밀번호 전송
+    //비밀번호 찾기 - 임시 비밀번호 전송폼
     @Autowired
     private JavaMailSender mailSender;
 
@@ -122,19 +121,18 @@ public class MemberService implements UserDetailsService {
 
         if(div.equals("find_pw")) {
 
-            setForm += "202031011@g.baewha.ac.kr";
+            setForm += "juliepark4253@gmail.com";
             toMail += mail;
             title += "너나들이에서 제공하는 임시 비밀번호 입니다.";
             content +=
                     "<div align='center' style='border:1px solid black; font-family:verdana'>" +
                             "<h3 style='color: blue;'>" +
-                            memberVO.getMb_id() + "님의 임시 비밀번호 입니다." +
+                            memberVO.getMb_id() + "님의 임시 비밀번호 입니다.<br>" +
                             "임시 비밀번호로 로그인 후에는 반드시 비밀번호를 변경하십시오.</h3>" +
                             "<p>임시 비밀번호 : " +
                             memberVO.getMb_pw() + "</p></div>";
 
         }
-        // 받는 사람 E-Mail 주소
 
         try {
             MimeMessage message = mailSender.createMimeMessage();
@@ -149,18 +147,18 @@ public class MemberService implements UserDetailsService {
         }
     }
 
-    //비밀번호 찾기 - 임시 비밀번호로 로그인이 가능하도록 함
+    //비밀번호 찾기 - 화면
     public void find_pw(HttpServletResponse response, MemberVO memberVO) throws Exception {
         response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
-        // 아이디가 없으면
+        // 가입된 아이디가 없으면
         if(mapper.idCheck(memberVO.getMb_id()) == 0) {
             out.print("가입된 아이디가 없습니다.");
             out.close();
         }
-        // 가입에 사용한 이메일이 아니면
+        // 가입된 이메일이 아니면
         else if(!memberVO.getMb_email().equals(mapper.memberModifyGET(memberVO.getMb_id()).getMb_email())) {
-            out.print("가입된 이메일 입니다.");
+            out.print("가입된 이메일이 없습니다.");
             out.close();
         }else {
             // 임시 비밀번호 생성

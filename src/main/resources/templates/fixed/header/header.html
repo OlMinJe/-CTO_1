@@ -5,7 +5,7 @@
             <!-- 대부분의 경우 웹사이트의 로고 사이즈는 250px(width) x 100px(height) 추후 사이즈, 로고 이미지 조정 -->
 
         </div>
-        <div class="col-0 col-lg-6 header_menu">
+        <div class="col-0 col-lg-8 header_menu">
             <ul class="col-12">
                 <li onclick="location.href='/community/community.html'">커뮤니티</li>
                 <li onclick="location.href='/advice/advice.html'">상담</li>
@@ -16,16 +16,30 @@
                 <li onclick="location.href='/mypage/mypage.html'">마이페이지</li>
             </ul>
         </div>
-        <div class="col-9 col-lg-3 header_right">
-            <!-- 테스트용 버튼 만들어 놓음(추후 삭제 필요) -->
-            <ul>
-                <li onclick="location.href='/login/login.html'">로그인</li>
+        <div class="col-9 col-lg-2 header_right">
+            <ul class="web_right">
+                <li onclick="location.href='/login/login.html'">로그인</li>&nbsp;
                 <li onclick="location.href='/login/register.html'">회원가입</li>
             </ul>
-            <div class="col-0 event-burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="mob_right">
+                <div class="col-0 event-burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="mob_menu">
+                   <li>
+                       <a onclick="location.href='/login/login.html'">로그인</a>&nbsp;
+                       <a onclick="location.href='/login/register.html'">회원가입</a>
+                       <a onclick="location.href='/'">마이페이지</a>
+                    </li>
+                    <li onclick="location.href='/community/community.html'">커뮤니티</li>
+                    <li onclick="location.href='/advice/advice.html'">상담</li>
+                    <li onclick="location.href=''">위치기반</li>
+                    <li onclick="location.href='/Entertainment/Entertainment.html'">ENT</li>
+                    <li onclick="location.href='/event/event_detail.html'">이벤트</li>
+                    <li onclick="location.href='/report/report.html'">신고</li>
+                </ul>
             </div>
         </div>
     </div>

@@ -236,35 +236,35 @@
 <body>
 <header data-include-path="/fixed/header/header.html"></header>
     <div class="col-12">
-        <div class="col-10 register">
+        <div class="col-12 col-lg-10 register">
             <div class="title_01">회원가입</div>
             <div class="title_02">정보입력</div>
             <form action="/register" method="post" enctype="multipart/form-data">
                 <div class="col-12" style="margin-bottom: 50px;">
-                    <input type="file" class="col-3" name="file" id="mb_img">
+                    <input type="file" class="col-12" name="file" id="mb_img">
                 </div>
-                <ul class="col-9">
+                <ul class="col-12 col-sm-11 col-md-10 col-lg-9">
                     <li>
                         <div class="col-3 sub_title">닉네임</div>
-                        <input type="text" name="mb_nick" id="mb_nick" placeholder="닉네임을 입력하세요.">
+                        <input type="text" name="mb_nick" id="mb_nick" placeholder="닉네임">
                         <button type="button" class="box_eft_02" onclick="nickCheck()">중복확인</button> <!--08.23.error!-->
                     </li>
                     <li>
                         <div class="col-3 sub_title">아이디</div>
-                        <input type="text" name="mb_id" id="mb_id" placeholder="아이디를 입력하세요.">
+                        <input type="text" name="mb_id" id="mb_id" placeholder="아이디">
                         <button type="button" class="box_eft_02" onclick="idCheck()">중복확인</button>
                     </li> <!--08.23.error!-->
                     <li>
                         <div class="col-3 sub_title">비밀번호</div>
-                        <input type="password" name="mb_pw" id="mb_pw" placeholder="비밀번호를 입력하세요.">
+                        <input type="password" name="mb_pw" id="mb_pw" placeholder="비밀번호">
                     </li>
-                    <li>
+                    <li class="password">
                         <div class="col-3 sub_title">비밀번호 확인</div>
                         <input type="password" placeholder="비밀번호 확인" id="pw_check">
                     </li>
                     <li>
                         <div class="col-3 sub_title">이름</div>
-                        <input type="text" name="mb_name" id="mb_name" placeholder="이름을 입력하세요.">
+                        <input type="text" name="mb_name" id="mb_name" placeholder="이름">
                     </li>
                     <li class="email_auth">
                         <div class="col-3 sub_title">이메일</div>
@@ -274,7 +274,7 @@
                                 <button type="button" id="email_auth_btn" class="box_eft_02 email_auth_btn">인증번호 받기</button>
                             </section>
                             <section>
-                                <input type="text" placeholder="인증번호 입력" id="email_auth_key">
+                                <input type="text" placeholder="인증번호" id="email_auth_key">
                                 <button type="button" class="box_eft_02" id="check_mail">인증번호 확인</button>
                             </section>
                         </div>
@@ -294,9 +294,11 @@
                         <input type="radio" name="mb_sex" class="box_eft_01" id="select02" value="여성"><label for="select02">여성</label>
                     </li>
                     <li class="doctor">
-                        <div class="col-6 sub_title">의사 혹은 상담가 등의 전문가 인가요?</div>
-                        <input type="radio" name="mb_doctor" class="box_eft_01" id="select03" value="일반인" checked="checked"><label for="select03">아니오</label>
-                        <input type="radio" name="mb_doctor" class="box_eft_01" id="select04" value="전문가"><label for="select04">네</label>
+                        <div class="col-4 col-md-6 sub_title">의사 혹은 상담가 등의 전문가 인가요?</div>
+                        <div>
+                            <input type="radio" name="mb_doctor" class="box_eft_01" id="select03" value="일반인" checked="checked"><label for="select03">아니오</label>
+                            <input type="radio" name="mb_doctor" class="box_eft_01" id="select04" value="전문가"><label for="select04">네</label>
+                        </div>
                     </li>
                 </ul>
             </form>

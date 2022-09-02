@@ -11,23 +11,23 @@ header .gnb{ float: right; width: 300px; position: relative; margin-top: 30px; }
 header .gnb input{width: 100%; border: 1px solid #bbb; border-radius: 8px; padding:10px 12px; font-size: 14px; }
 */
 
-
-
 /* 기본 헤더 */
 header { height: 100%; border-bottom: 1px solid #bbb; }
-header .header_wrap { display: flex; justify-content: space-between; align-items: center; padding: 40px 30px; }
+header .header_wrap { display: flex; justify-content: space-between; align-items: flex-end; padding: 20px 30px; }
 
 .header_logo .logo { display: inline-block; }
 .header_logo .logo img  { width: 70px; }
 
-/* TODO: display:none 처리 해놓음! */
 .header_menu ul { display: none; justify-content: space-between; }
-.header_menu ul li { padding: 10px 20px; font-size: 20px; line-height: 26px; font-weight: 600; }
+.header_menu ul li { padding-left: 10px; padding-right: 10px; font-size: 17px; line-height: 23px; font-weight: 600; }
 
-.header_right { display: flex; justify-content: flex-end; align-items: center; }
+.header_right .web_right { display: none; text-align: end;}
+.header_right .web_right li { display: inline-block; padding-left: 5px; padding-right: 5px; }
+
 .header_right .event-burger { display: inline-block; }
 .header_right .event-burger > div { width: 40px; border-bottom: 2px solid #000; border-radius: 10px; margin-bottom: 10px; }
 .header_right .event-burger > div:last-child { margin-bottom: 0; }
+
 
 /* 고정 헤더 */
 
@@ -41,4 +41,7 @@ header .header_wrap { display: flex; justify-content: space-between; align-items
 
 @media all and (min-width: 992px){
     .header_menu ul { display: flex; }
+
+    .header_right .web_right { display: block; }
+    .header_right .mob_right { display: none; }
 }

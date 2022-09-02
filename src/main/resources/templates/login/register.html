@@ -67,11 +67,13 @@
                 if($('#email_auth_key').val() != email_auth_cd){
                     alert("인증번호가 일치하지 않습니다.");
                     return false;
+                } else if ($('#email_auth_key').val() == ''){
+                    alert("이메일 인증번호를 작성하세요.");
+                    return false;
                 } else if ($('#email_auth_key').val() == email_auth_cd){
                     alert("이메일 인증에 성공했습니다.");
                     return true;
                 }
-
                 fn_join();
             });
 

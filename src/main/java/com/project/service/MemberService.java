@@ -4,16 +4,22 @@ import com.project.domain.Role;
 import com.project.mapper.MainMapper;
 import com.project.vo.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.mail.internet.MimeMessage;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -25,6 +31,7 @@ public class MemberService implements UserDetailsService {
     @Autowired
     MainMapper mapper;
 
+    /** 회원가입 **/
     // 유저체크
     public MemberVO userCheck(MemberVO memberVO) throws Exception {
         return mapper.userCheck(memberVO);
@@ -74,4 +81,109 @@ public class MemberService implements UserDetailsService {
         }
         return new User(member.getMb_id(), member.getMb_pw(),authorities);
     }
+
+
+    /** 로그인 **/
+    // 로그인
+    public MemberVO memberLogin(MemberVO memberVO) throws Exception {
+        return mapper.memberLogin(memberVO);
+    }
+
+    // 아이디 찾기
+    public String find_id(HttpServletResponse response, String mb_email) throws Exception {
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter out = response.getWriter();
+        String id = mapper.find_id(mb_email);
+
+        if (id == null) {
+            out.println("<script>");
+            out.println("alert('가입된 아이디가 없습니다.');");
+            out.println("history.go(-1);");
+            out.println("</script>");
+            out.close();
+            return null;
+        } else {
+            return id;
+        }
+    }
+
+    //비밀번호 찾기 - 임시 비밀번호 전송
+    @Autowired
+    private JavaMailSender mailSender;
+
+    public void send_mail(MemberVO memberVO, String div) throws Exception {
+
+        String mail = memberVO.getMb_email();
+
+        String setForm="";
+        String toMail="";
+        String title="";
+        String content="";
+
+        if(div.equals("find_pw")) {
+
+            setForm += "202031011@g.baewha.ac.kr";
+            toMail += mail;
+            title += "너나들이에서 제공하는 임시 비밀번호 입니다.";
+            content +=
+                    "<div align='center' style='border:1px solid black; font-family:verdana'>" +
+                            "<h3 style='color: blue;'>" +
+                            memberVO.getMb_id() + "님의 임시 비밀번호 입니다." +
+                            "임시 비밀번호로 로그인 후에는 반드시 비밀번호를 변경하십시오.</h3>" +
+                            "<p>임시 비밀번호 : " +
+                            memberVO.getMb_pw() + "</p></div>";
+
+        }
+        // 받는 사람 E-Mail 주소
+
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+            helper.setFrom(setForm);
+            helper.setTo(toMail);
+            helper.setSubject(title);
+            helper.setText(content,true);
+            mailSender.send(message);
+        } catch (Exception e) {
+            System.out.println("메일발송 실패 : " + e);
+        }
+    }
+
+    //비밀번호 찾기 - 임시 비밀번호로 로그인이 가능하도록 함
+    public void find_pw(HttpServletResponse response, MemberVO memberVO) throws Exception {
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter out = response.getWriter();
+        // 아이디가 없으면
+        if(mapper.idCheck(memberVO.getMb_id()) == 0) {
+            out.print("가입된 아이디가 없습니다.");
+            out.close();
+        }
+        // 가입에 사용한 이메일이 아니면
+        else if(!memberVO.getMb_email().equals(mapper.memberModifyGET(memberVO.getMb_id()).getMb_email())) {
+            out.print("가입된 이메일 입니다.");
+            out.close();
+        }else {
+            // 임시 비밀번호 생성
+            String pw = "";
+            for (int i = 0; i < 12; i++) {
+                pw += (char) ((Math.random() * 26) + 97);
+            }
+            memberVO.setMb_pw(pw);
+            // 비밀번호 변경
+            mapper.update_pw(memberVO);
+            // 비밀번호 변경 메일 발송
+            send_mail(memberVO, "find_pw");
+
+            out.print("작성한 이메일로 임시 비밀번호를 발송했습니다.");
+
+            BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+            String encodePass = encoder.encode(memberVO.getMb_pw());
+            memberVO.setMb_pw(encodePass);
+            mapper.update_pw(memberVO);
+            out.close();
+        }
+    }
+
+
+
 }

@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>비밀번호 찾기</title>
 </head>
 <body>
-
+<!--사용 안하는 임시페이지-->
+<div>
+    <div>
+        <div>
+            <h3>비밀번호 찾기 검색결과</h3>
+        </div>
+        <div>
+            <tbody>
+            <tr>
+                <td th:text="${pw}"></td>
+            </tr>
+            </tbody>
+            <p>
+                <button type="button" onclick="location.href='/login/login.html'">로그인으로 이동</button>
+                <button type="button" onclick="location.href='/'">메인으로</button>
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

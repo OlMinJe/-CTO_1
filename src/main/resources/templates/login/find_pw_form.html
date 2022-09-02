@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>비밀번호 찾기</title>
+    <script>
+        $(function(){
+            $("#findBtn").click(function(){
+                $.ajax({
+                    url : "/find_pw",
+                    type : "GET",
+                    data : {
+                        mb_id : $("#mb_id").val(),
+                        mb_email : $("#mb_email").val()
+                    },
+                    success : function(result) {
+                        alert(result);
+                    },
+                })
+            });
+        })
+    </script>
 </head>
 <body>
+<div>
+    <div>
+        <div>
+            <h3>임시 비밀번호 발급</h3>
+        </div>
+        <div>임시 비밀번호를 발급받기 위해서는 가입 시 작성한 회원 정보를 정확히 작성하십시오.</div>
+        <div>
+            <p>
+                <label>아이디</label>
+                <input type="text" id="mb_id" name="id" required>
+            </p>
+            <p>
+                <label>이메일</label>
+                <input type="text" id="mb_email" name="email" required>
+            </p>
+            <p>
+                <button type="submit" id="findBtn">임시 비밀번호 발급</button>
+                <button type="button" onclick="history.go(-1);">로그인</button>
+            </p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

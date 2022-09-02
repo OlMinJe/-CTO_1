@@ -14,23 +14,24 @@ public class MailConfig {
     public static JavaMailSender mailSender(){
 
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("smtp.naver.com");
-        mailSender.setPort(465);
-        mailSender.setUsername("wlals4253@naver.com");
-        mailSender.setPassword("TD78KVYFV6G3");
+        mailSender.setHost("smtp.gmail.com");
+        mailSender.setPort(587);
+        mailSender.setUsername("juliepark4253@gmail.com"); //임시계정으로 사용가능함
+        mailSender.setPassword("iofevbntxguohmdb");
 
         Properties props=mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol","smtp");
-        props.put("mail.smtp.port", "465");
+        props.put("mail.smtp.port", "587");
         props.put("mail.smtp.auth","true");
-        props.put("mail.smtp.host", "smtp.naver.com");
+        props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.starttls.enable","true");
-        props.put("mail.smtp.socketFactory.port", "465");
+        props.put("mail.smtp.socketFactory.port", "587"); //465
         props.put("mail.debug","true");
-        props.put("mail.smtp.ssl.trust","smtp.naver.com");
+        props.put("mail.smtp.ssl.trust","smtp.gmail.com");
         props.put("mail.smtps.ssl.checkserveridentity","true");
         props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.ssl.enable","true");
+        //props.put("mail.smtp.ssl.enable","true");
+        props.put("mail.smtp.starttls.enable","true");
         props.put("mail.smtp.ssl.protocols","TLSv1.2");
 
         return mailSender;

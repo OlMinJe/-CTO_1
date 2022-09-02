@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>아이디 찾기</title>
+
+
 </head>
 <body>
-
+<div>
+    <div>
+        <form action="/find_id" method="get">
+            <div>
+                <h3>아이디 찾기</h3>
+            </div>
+            <div>
+                <p>
+                    <label>Email</label>
+                    <input type="text" id="mb_email" name="mb_email" required>
+                </p>
+                <p>
+                    <button type="submit" id=findBtn>아이디 검색하기</button>
+                    <button type="button" onclick="history.go(-1);">로그인</button>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>

@@ -12,7 +12,7 @@ import java.util.Optional;
 @Repository
 public interface MainMapper {
 
-	//회원가입
+	/* 회원가입 */
 	// 유저체크
 	public MemberVO userCheck(MemberVO memberVO) throws Exception;
 
@@ -24,20 +24,9 @@ public interface MainMapper {
 
 	// 회원가입
 	public void memberRegister(MemberVO memberVO) throws Exception;
-	
-	
 
-	//추가
-	public void dropUser(String id) throws Exception;
 
-	//관리자 페이지 - 회원 리스트
-	public List<MemberVO> dispAdmin() throws Exception;
-
-	//보기만 가능한 게시판(추가)
-	public List<BoardVO> boardList_view() throws Exception;
-	
-	public String now() throws Exception;
-
+	/* 로그인 */
 	// 아이디 찾기
 	public String find_id(String email) throws Exception;
 
@@ -45,11 +34,27 @@ public interface MainMapper {
 	// 비밀번호 변경
 	public int update_pw(MemberVO memberVO) throws Exception;
 
-	//관리자 페이지(추가)
-	Optional<MemberVO> findByUsername(String mb_id) throws Exception;
-
 	// 로그인
 	public MemberVO memberLogin(MemberVO memberVO) throws Exception;
+
+
+
+
+
+	
+	//회원 강제추방(관리자페이지)
+	public void dropUser(String id) throws Exception;
+
+	//관리자 페이지 - 회원 리스트
+	public List<MemberVO> dispAdmin() throws Exception;
+
+	//보기만 가능한 게시판
+	public List<BoardVO> boardList_view() throws Exception;
+	
+	public String now() throws Exception;
+
+	//관리자 페이지(추가)
+	Optional<MemberVO> findByUsername(String mb_id) throws Exception;
 
 	
 	// 회원정보 수정 - 세션 가져오기
@@ -70,7 +75,8 @@ public interface MainMapper {
 	public MemberVO profileModifyGET(String mb_id) throws Exception;
 	public void profileModifyPOST(MemberVO memberVO) throws Exception;
 
-	// 게시판
+	
+	/* 게시판 */
 	public void boardWrite(BoardVO boardVO) throws Exception;
 	
 	public List<Map<String, Object>> boardList(Criteria cri) throws Exception;

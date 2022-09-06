@@ -16,8 +16,8 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .header_logo .logo img  { width: 60px; }
 .header_wrap .nav_mian { display: none; }
 .header_wrap .nav_title { display: inline-block;  padding-left: 3px; padding-right: 3px; transition: 0.3s; border-top-left-radius: 4px; border-top-right-radius: 4px; cursor: pointer; }
+.header_wrap .weather { display: none; text-align: center; color: #007bff; }
 .header_wrap .w_right { display: none; text-align: right; }
-
 .header_wrap #burgerbtn { display: block; position: absolute; top: 25px; right: 10px; width: 30px; height: 30px; cursor: pointer; }
 .header_wrap #burgerbtn img { vertical-align: initial; }
 
@@ -27,6 +27,7 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
     .header_logo .logo img  { width: 80px; }
     div.m_right { display: none; }
     .header_wrap .nav_mian{ display: flex; justify-content: space-between; }
+    .header_wrap .weather { display: block; }
     .header_wrap .w_right { display: block; }
     .header_wrap #burgerbtn{ display: none; }
 }

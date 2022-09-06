@@ -33,16 +33,16 @@
 
 /* MENU */
 .mypage .col-12.title a { margin-bottom: 15px; font-size: 30px; line-height: 36px; font-weight: 700; color: #212121; }
-.mypage_con .mypage_menu .mobile_title { padding: 10px 20px; font-size: 20px; line-height: 26px; color: #fff; background-color:  #00695C;  }
+.mypage_con .mypage_menu .mobile_title { padding: 10px 20px; font-size: 20px; line-height: 26px; color: #fff; background-color: #dcc5df;  }
 .mypage_con .mypage_menu .mobile_title span { float: right; }
-.mypage_con .mypage_menu .menu_list { /*display: none;*/ border: 1px solid #00695C; }
+.mypage_con .mypage_menu .menu_list { /*display: none;*/ border: 1px solid #dcc5df; }
 .mypage_con .mypage_menu .menu_list #menu_list_01, .mypage_con .mypage_menu .menu_list#menu_list_02 { display: none; }
-.mypage_con .mypage_menu .menu_list.mt { border: 1px solid #00695C; }
-.mypage_con .mypage_menu .menu_list .menu_title { padding: 10px 20px; font-size: 20px; line-height: 26px; color: #fff; background-color: #00695C; }
+.mypage_con .mypage_menu .menu_list.mt { border: 1px solid #dcc5df; }
+.mypage_con .mypage_menu .menu_list .menu_title { padding: 10px 20px; font-size: 20px; line-height: 26px; color: #fff; background-color: #dcc5df; }
 .mypage_con .mypage_menu ul { padding-left: 10px; padding-right: 10px; }
 .mypage_con .mypage_menu li { position: relative; padding: 10px; border-bottom: 2px solid #ccc; cursor: pointer; }
 .mypage_con .mypage_menu li:last-child { margin-bottom: 15px; }
-.mypage_con .mypage_menu li:hover { border-bottom: 1px solid #00695C; background-color: #E0F2F1; color: #212121 }
+.mypage_con .mypage_menu li:hover { border-bottom: 2px solid #000; background-color: #f7cc6d; color: #212121 }
 
 /* ----------- content 박스 [0. 내정보 메인] ----------- */
 .mypage_con .content_box .content_left .calender .sub_title, .mypage_con .content_box .content_right .sub_title

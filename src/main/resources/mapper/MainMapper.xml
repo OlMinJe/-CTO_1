@@ -64,6 +64,11 @@
 		select mb_id from hello_member where mb_email = #{mb_email}
 	</select>
 
+	<!-- header -->
+	<select id="session_id" parameterType="String" resultType="String">
+		select mb_id from hello_member where mb_email = #{mb_email}
+	</select>
+
 	<!-- 비밀번호 변경 -->
 	<update id="update_pw" parameterType="memberVO">
 		update hello_member set mb_pw = #{mb_pw} where mb_id = #{mb_id}

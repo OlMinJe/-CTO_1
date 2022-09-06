@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 
 @Controller
@@ -155,8 +156,8 @@ public class MemberController {
 
         ModelAndView mav = new ModelAndView();
 
-        // 카카오로그인 및 일반로그인 처리
-        if(code == null) { // 일반 로그인
+        //로그인 처리
+        if(code == null) {
             String inputPass = memberVO.getMb_pw(); // 입력한 비밀번호
             MemberVO member = memberService.userCheck(memberVO); // 암호화된 DB비밀번호
 
@@ -202,11 +203,20 @@ public class MemberController {
         return "/login/find_id";
     }
 
+    // header.html
+    @RequestMapping(value = "/header", method = RequestMethod.GET)
+    public String session_id(HttpServletResponse response, @RequestParam("mb_email") String mb_email, Model md) throws Exception {
+        md.addAttribute("session_id", memberService.session_id(response, mb_email));
+        //md.addAttribute("stateCode", memberService.s)
+        return "/fixed/header/header";
+    }
+
     // 비밀번호 찾기 폼
     @RequestMapping(value = "/find_pw_form")
     public String find_pw_form() throws Exception{
         return "/login/find_pw_form";
     }
+
 
     // 비밀번호 찾기
     @RequestMapping(value = "/find_pw", method = RequestMethod.GET)
@@ -214,6 +224,36 @@ public class MemberController {
         memberService.find_pw(response, memberVO);
     }
 
+/*
+    // 비밀번호 찾기
+    @RequestMapping(value = "/find_pw", method = RequestMethod.GET)
+    public void find_pw(@ModelAttribute MemberVO memberVO, HttpServletResponse response, Model model) throws Exception{
+        model.addAttribute("pw", memberService.find_pw(response, memberVO));
+
+    }*/
+
+    //*******security
+    // 어드민 페이지 - 회원 리스트 보기 및 관리
+    @GetMapping("/admin")
+    public String dispAdmin(Model model) throws Exception {
+        List<MemberVO> memebrlist = memberService.dispAdmin();
+        model.addAttribute("memebrlist", memebrlist);
+
+        return "admin/admin";
+    }
+
+    //관리자 페이지 - 회원 강제 탈퇴(DB에서 삭제)
+    @ResponseBody
+    @RequestMapping(value = "/dropId", method=RequestMethod.GET)
+    public void dropID(String mb_id) throws Exception {
+        memberService.dropUser(mb_id);
+    }
+
+    // 접근 거부 페이지
+    @GetMapping("/denied")
+    public String dispDenied() {
+        return "admin/denied";
+    }
 
 
 

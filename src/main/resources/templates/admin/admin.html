@@ -3,8 +3,72 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>관리자 페이지</title>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".userDrop").click(function () {
+                const dropId = $(this).data("user");
+                console.log(dropId);
+                $.ajax({
+                    type: 'GET',
+                    url: '/dropId',
+                    data: {
+                        mb_id: dropId,
+                    },
+                    success: function(data) {
+                        alert("해당 회원이 강제 탈퇴처리 되었습니다.");
+                        location.reload();
+                    }, error: function (status, error) {
+                        console.log('에러발생!!');
+                        console.log(status, error);
+                    }
+                })
+            })
+
+        });
+        /*
+        //자동 새로고침(추가)
+        $(function () {
+            $(".userDrop").click(function() {
+                location.reload();
+            })
+        });
+        */
+    </script>
 </head>
 <body>
 회원 리스트 및 회원 탈퇴 기능 구현 예정
+    <h1>회원관리 페이지</h1>
+    <table border="1">
+        <tr>
+            <th>회원 고유번호</th>
+            <th>회원 이름</th>
+            <th>회원 아이디</th>
+            <th>회원 닉네임</th>
+            <th>회원 이메일</th>
+            <th>회원 주소</th>
+            <th>회원 성별</th>
+            <th>전문가 여부</th>
+            <th>가입일자</th>
+            <th>회원 강제탈퇴</th>
+        </tr>
+        <!--컨트롤러 수정 예정-->
+        <!--
+        <c:forEach items="${memebrlist}" var="data">
+            <tr>
+                <td>${data.mb_seq}</td>
+                <td>${data.mb_name}</td>
+                <td>${data.mb_id}</td>
+                <td>${data.mb_nick}</td>
+                <td>${data.mb_email}</td>
+                <td>${data.mb_addr}</td>
+                <td>${data.mb_sex}</td>
+                <td>${data.mb_doctor}</td>
+                <td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${data.reg_date}"/></td>
+                <td><button type="button" id="userDrop" class="userDrop" data-user="${data.mb_id}">탈퇴 시키기</button></td>
+            </tr>
+        </c:forEach>
+        -->
+    </table>
 </body>
 </html>

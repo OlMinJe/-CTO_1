@@ -30,23 +30,31 @@ public interface MainMapper {
 	// 아이디 찾기
 	public String find_id(String email) throws Exception;
 
+	//header.html
+	public String session_id(String email) throws Exception;
+
 	//비밀번호 찾기(추가)
 	// 비밀번호 변경
 	public int update_pw(MemberVO memberVO) throws Exception;
 
+	//추가
+	//public int find_pw(String mb_pw) throws Exception;
+
 	// 로그인
 	public MemberVO memberLogin(MemberVO memberVO) throws Exception;
 
-
-
-
-
+	//관리자 페이지 - 회원 리스트
+	public List<MemberVO> dispAdmin() throws Exception;
 	
 	//회원 강제추방(관리자페이지)
 	public void dropUser(String id) throws Exception;
 
-	//관리자 페이지 - 회원 리스트
-	public List<MemberVO> dispAdmin() throws Exception;
+
+
+
+
+
+
 
 	//보기만 가능한 게시판
 	public List<BoardVO> boardList_view() throws Exception;

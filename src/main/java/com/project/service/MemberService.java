@@ -106,6 +106,14 @@ public class MemberService implements UserDetailsService {
         }
     }
 
+    //header.html
+    public String session_id(HttpServletResponse response, String mb_id) throws Exception {
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter out = response.getWriter();
+        String session_id = mapper.session_id(mb_id);
+        return session_id;
+    }
+
     //비밀번호 찾기 - 임시 비밀번호 전송폼
     @Autowired
     private JavaMailSender mailSender;
@@ -182,6 +190,15 @@ public class MemberService implements UserDetailsService {
         }
     }
 
+    //관리자 페이지 - 회원정보 리스트
+    public List<MemberVO> dispAdmin() throws Exception {
+        return mapper.dispAdmin();
+    }
+
+    //관리자 페이지 - 회원 강제 추방
+    public void dropUser(String id) throws Exception {
+        mapper.dropUser(id);
+    }
 
 
 }

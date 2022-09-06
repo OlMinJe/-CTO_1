@@ -255,6 +255,12 @@ public class MemberController {
         return "admin/denied";
     }
 
+    /** logout **/
+    //페이지 기능 추후 구현 예정
+    @RequestMapping(value="/logout", method=RequestMethod.GET)
+    public String logout() throws Exception {
+        return "login/logout";
+    }
 
 
 

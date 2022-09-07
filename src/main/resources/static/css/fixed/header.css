@@ -31,10 +31,3 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
     .header_wrap .w_right { display: block; }
     .header_wrap #burgerbtn{ display: none; }
 }
-
-@media all and (min-width: 992px){
-    .header_menu ul { display: flex; }
-
-    .web_right { display: block; }
-    .mob_right { display: none; }
-}

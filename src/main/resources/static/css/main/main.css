@@ -27,7 +27,8 @@
 /* second_row_wrap (location/ user) */
 .second_row_wrap { display: flex; flex-direction: column; }
 .location_wrap { border: 1px solid #ccc; min-height: 300px;}
-.user_wrap { padding: 30px 20px;}
+.user_wrap { padding: 30px 20px; border: 1px solid #ccc; }
+/*
 .user_wrap form { display: flex; flex-direction: column; }
 .user_wrap form input[name="username"], .second_row_wrap .user_wrap form input[name="password"] { border: 1px solid #ccc; padding: 20px 10px; color: #ccc; }
 .user_wrap form input[name="username"] { border-radius: 10px 10px 0 0; }
@@ -38,6 +39,7 @@
 .user_wrap form div.col-12 a:hover { color:  #f7cc6d; }
 .user_wrap form div.col-12 .user_id_pass a:first-child { margin-right: 5px; }
 .user_wrap form div.col-12 .new_user { text-align: right; }
+*/
 
 
 /* advice_wrap */

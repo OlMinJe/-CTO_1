@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>접근 불가 페이지</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="/includeHtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
+    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
 </head>
 <body>
-<h1>관리자 외에 접근 불가 페이지 입니다.</h1>
+<header data-include-path="/fixed/header/header.html"></header>
+<div class="col-12">
+    <div class="col-12 warning">
+        관리자 외에 접근 불가 페이지 입니다.
+    </div>
+</div>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

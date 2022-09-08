@@ -17,7 +17,7 @@
     <script type="text/javascript">
         /* session 상태확인 */
         var userId = '<%=(String)session.getAttribute("userId")%>';
-        if(userId =="null"){
+        if (userId == "null") {
             console.log("세션 null상태");
         } else {
             console.log(userId);
@@ -25,13 +25,13 @@
 
         /* /boardDelete에서 오는 msg */
         var msg = '${msg}'
-        if(msg == 'sessionFin') {
+        if (msg == 'sessionFin') {
             alert("로그인이 풀렸으니 재로그인해주세요.")
         }
     </script>
 </head>
 <body>
-    <header data-include-path="/fixed/header/header.html"></header>
+<header data-include-path="/fixed/header/header.html"></header>
 
 <!--    <div class="col12">
         <form action='/register' method="post">
@@ -51,26 +51,28 @@
         </form>
     </div>-->
 
-    <div class="col-12 login">
-        <div class="title">로그인</div>
-        <form action='/register' method="post" class="col-11 col-sm-8 col-md-6 col-lg-5">
-            <input type="text" class="box_eft_01" id="mb_id" name="mb_id" placeholder="아이디를 입력해주세요.">
-            <input type="password" class="box_eft_01" id="mb_pw" name="mb_pw" placeholder="비밀번호를 입력해주세요.">
-            <div class="col-12" style="margin-bottom: 20px;">
-                <div class="col-7 user_id_pass">
-                    <input type="button" title="아이디 찾기" id="find_id_btn" value="아이디 찾기" onclick="location.href='/login/find_id_form.html'">
-                    <input type="button" title="비밀번호 찾기" id="find_pw_btn" value="비밀번호 찾기" onclick="location.href='/login/find_pw_form.html'">
-                </div>
-                <div class="col-5 new_user">
-                    <input type="button" value="회원가입" onclick="location.href='/login/register.html'">
-                </div>
+<div class="col-12 login">
+    <div class="title">로그인</div>
+    <form action='/register' method="post" class="col-11 col-sm-8 col-md-6 col-lg-5">
+        <input type="text" class="box_eft_01" id="mb_id" name="mb_id" placeholder="아이디를 입력해주세요.">
+        <input type="password" class="box_eft_01" id="mb_pw" name="mb_pw" placeholder="비밀번호를 입력해주세요.">
+        <div class="col-12" style="margin-bottom: 20px;">
+            <div class="col-7 user_id_pass">
+                <input type="button" title="아이디 찾기" id="find_id_btn" value="아이디 찾기"
+                       onclick="location.href='/login/find_id_form.html'">
+                <input type="button" title="비밀번호 찾기" id="find_pw_btn" value="비밀번호 찾기"
+                       onclick="location.href='/login/find_pw_form.html'">
             </div>
-            <input type="submit" value="로그인" class="btn box_eft_02">
+            <div class="col-5 new_user">
+                <input type="button" value="회원가입" onclick="location.href='/login/register.html'">
+            </div>
+        </div>
+        <input type="submit" value="로그인" class="btn box_eft_02">
 
-        </form>
-    </div>
+    </form>
+</div>
 
 
-    <footer data-include-path="/fixed/footer/footer.html"></footer>
+<footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

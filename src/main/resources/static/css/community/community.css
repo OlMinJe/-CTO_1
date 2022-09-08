@@ -51,8 +51,8 @@ div.col-12.editor_wrap { text-align: center; }
 .view_con .category_title { text-align: initial; color: #dcc5df; font-weight: 500; }
 .view_list { margin-bottom: 30px; text-align: initial; }
 .view_list .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
-.view_list .board_view_info { border-bottom: 2px solid #dcc5df; padding: 0 15px 15px; font-weight: 500; }
-.view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
+.view_list .board_view_info { border-bottom: 2px solid #dcc5df; padding-bottom: 15px; font-weight: 500; }
+.view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 14px; }
 .view_list .board_view_info dl:first-child { padding-left: 0; }
 .view_list .board_view_info dl:last-child { padding-right: 0; }
 .view_list .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
@@ -77,9 +77,8 @@ div.col-12.editor_wrap { text-align: center; }
 .board_list dl dt { float: left; }
 .board_list .write_title, .board_list .write_info { margin-bottom: 15px; }
 .board_list .write_title dl dt, .board_list .write_info dl dt { padding: 10px 0; position: relative; }
-.board_list .write_title dl dd input, .board_list .write_info dl dd select { padding: 10px; width: 90%;  }
+.board_list .write_title dl dd input, .board_list .write_info dl dd select { padding: 10px; width: 100%; }
 .board_list .write_info { border-bottom: 2px solid #dcc5df; padding: 0 0 20px; }
-.board_list .write_info dl dd select { width: 50%; }
 .board_list .write_content { margin-bottom: 30px; padding: 30px 15px 0 15px; }
 .board_list .write_content textarea { width: 100%; min-height: 300px; }
 .board_list form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 2px solid #dcc5df;}
@@ -105,15 +104,16 @@ div.col-12.editor_wrap { text-align: center; }
 
 
 @media all and (min-width: 768px){
-
-
     .menu .menu-wrap li img { display: none; }
     .menu .menu-wrap li img { display: none; }
     .menu .menu-box-01 { flex-direction: row; }
     .menu .menu-box-01 li { width: 20%; border-right: none; border-radius: 0; }
     .menu .menu-box-01 li:first-child { border-radius: 10px 0 0 10px; }
-    .menu .menu-box-01 li:last-child { border-right: 1px solid #00695C; border-radius: 0 10px 10px 0; }
+    .menu .menu-box-01 li:last-child { border-right: 1px solid #dcc5df; border-radius: 0 10px 10px 0; }
     .menu #sub-menu.menu-box-01 { display: flex; }
+
+    .board_list .write_info dl dd select { width: 50%; }
+    .board_list .write_title dl dd input, .board_list .write_info dl dd select { width: 90%; }
 
     /* editor */
     .content_card .img { padding-top: 23%; margin-bottom: 0; margin-right: 20px; }

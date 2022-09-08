@@ -12,16 +12,16 @@
     <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
     <link rel="stylesheet" type="text/css" href="/css/login/find.css">
     <script>
-        $(function(){
-            $("#findBtn").click(function(){
+        $(function () {
+            $("#findBtn").click(function () {
                 $.ajax({
-                    url : "/find_pw",
-                    type : "GET",
-                    data : {
-                        mb_id : $("#mb_id").val(),
-                        mb_email : $("#mb_email").val()
+                    url: "/find_pw",
+                    type: "GET",
+                    data: {
+                        mb_id: $("#mb_id").val(),
+                        mb_email: $("#mb_email").val()
                     },
-                    success : function(result) {
+                    success: function (result) {
                         alert(result);
                     },
                 })

@@ -15,169 +15,172 @@
 <body>
 <header data-include-path="/fixed/header/header.html"></header>
 
-    <div class="col-12 mypage">
-        <div class="col-12 title" style="float: left">
-            <a class="col-12" id="tab_0" name="menu_tab" onclick="location.href='/mypage/mypage.html'">내정보</a>
-            <!--
-            <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="location.href='mypage.html">내정보</button>
-            -->
-        </div>
-        <div class="col-12 mypage_con">
-            <!--왼쪽 메뉴 -->
-            <div class="col-12 col-lg-3 mypage_menu">
-<!--                <button type="button" class="col-12 mobile_title" onclick="mobile_menu()">메뉴<span>&gt;</span></button>-->
-                <div class="col-0 menu_list mt">
-                    <div class="menu_title" onclick="mobile_menu()">활동내역</div>
-                    <ul id="menu_list_01">
-                        <li class="col-12" onclick="location.href='/mypage/mypage_01.html'">이벤트 참여내역</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_02.html'">커뮤니티 사용내역</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_03.html'">위치기반 사용내역</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_04.html'">테스트 결과 내역</li>
-                    </ul>
-                </div>
-                <div class="col-0 menu_list" id="menu_list_02">
-                    <div class="menu_title">정보변경</div>
-                    <ul>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_05.html'">비밀번호 변경</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_06.html'">닉네임 변경</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_07.html'">프로필 사진 변경</li>
-                        <li class="col-12" onclick="location.href='/mypage/mypage_08.html'">회원탈퇴</li>
-                    </ul>
-                </div>
+<div class="col-12 mypage">
+    <div class="col-12 title" style="float: left">
+        <a class="col-12" id="tab_0" name="menu_tab" onclick="location.href='/mypage/mypage.html'">내정보</a>
+        <!--
+        <button type="radio" id="tab_0" name="menu_tab" value="0" onclick="location.href='mypage.html">내정보</button>
+        -->
+    </div>
+    <div class="col-12 mypage_con">
+        <!--왼쪽 메뉴 -->
+        <div class="col-12 col-lg-3 mypage_menu">
+            <!--                <button type="button" class="col-12 mobile_title" onclick="mobile_menu()">메뉴<span>&gt;</span></button>-->
+            <div class="col-0 menu_list mt">
+                <div class="menu_title" onclick="mobile_menu()">활동내역</div>
+                <ul id="menu_list_01">
+                    <li class="col-12" onclick="location.href='/mypage/mypage_01.html'">이벤트 참여내역</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_02.html'">커뮤니티 사용내역</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_03.html'">위치기반 사용내역</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_04.html'">테스트 결과 내역</li>
+                </ul>
             </div>
+            <div class="col-0 menu_list" id="menu_list_02">
+                <div class="menu_title">정보변경</div>
+                <ul>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_05.html'">비밀번호 변경</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_06.html'">닉네임 변경</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_07.html'">프로필 사진 변경</li>
+                    <li class="col-12" onclick="location.href='/mypage/mypage_08.html'">회원탈퇴</li>
+                </ul>
+            </div>
+        </div>
 
-            <!-- 오른쪽 컨텐츠-->
-            <div class="col-12 col-lg-9 content">
-                <!-- 0. 내정보 [main] -->
-                <div class="col-12 content_box" id="tab_0_content"> <!--id="tab_1_content"-->
-                    <article class="col-12 col-lg-7 content_left">
-                        <section class="top">
-                            <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력
-                            / https://doolyit.tistory.com/204
-                            / 근데 닉네임 변경 페이지가 있는데 굳이 이 부분이 필요할까? -->
-                            <div class="col-4 photo">프로필 사진(변경 x)</div>
-                            <ul>
-                                <li>닉네임(변수로 교체)</li>
-                                <li>포인트(변수로 교체)</li>
+        <!-- 오른쪽 컨텐츠-->
+        <div class="col-12 col-lg-9 content">
+            <!-- 0. 내정보 [main] -->
+            <div class="col-12 content_box" id="tab_0_content"> <!--id="tab_1_content"-->
+                <article class="col-12 col-lg-7 content_left">
+                    <section class="top">
+                        <!-- TODO: 프로필 사진 변경 문구의 경우 프로필 사진이 없는 경우에만 출력
+                        / https://doolyit.tistory.com/204
+                        / 근데 닉네임 변경 페이지가 있는데 굳이 이 부분이 필요할까? -->
+                        <div class="col-4 photo">프로필 사진(변경 x)</div>
+                        <ul>
+                            <li>닉네임(변수로 교체)</li>
+                            <li>포인트(변수로 교체)</li>
+                        </ul>
+                    </section>
+                    <section class="col-12 calender">
+                        <div class="col-12 sub_title">출석체크 현황</div>
+                        <div class="col-12 calender_top">
+                            <div class="col-4 nav">
+                                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                                <!--<button class="nav-btn go-today"-->
+                                <div>Today</div>
+                                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                            </div>
+                            <div class="col-4 year_month"></div>
+                            <div class="col-4 today_complete">출석 완료</div>
+                        </div>
+                        <div class="calender_bottom">
+                            <div class="days">
+                                <div class="day">일</div>
+                                <div class="day">월</div>
+                                <div class="day">화</div>
+                                <div class="day">수</div>
+                                <div class="day">목</div>
+                                <div class="day">금</div>
+                                <div class="day">토</div>
+                            </div>
+                            <div class="dates"></div>
+                        </div>
+                    </section>
+                </article>
+                <article class="col-12 col-lg-5 content_right">
+                    <div class="col-12 sub_title">오늘의 날씨</div>
+                    <div class="col-12 weather_wrap">
+                        <section class="col-12 weather_api">날씨 api 이미지</section>
+                        <section class="col-12 weather_con">
+                            <ul class="col-4 weather_list">
+                                <li>강수확률<span>값</span></li>
+                                <li>북서풍<span>값</span></li>
+                                <li>미세<span>값</span></li>
+                                <li>일몰<span>값</span></li>
+                            </ul>
+                            <ul class="col-4 weather_list">
+                                <li>체감<span>값</span></li>
+                                <li>습도<span>값</span></li>
+                                <li>초미세<span>값</span></li>
+                                <li>체감<span>값</span></li>
                             </ul>
                         </section>
-                        <section class="col-12 calender">
-                            <div class="col-12 sub_title">출석체크 현황</div>
-                            <div class="col-12 calender_top">
-                                <div class="col-4 nav">
-                                    <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-                                    <!--<button class="nav-btn go-today"--><div>Today</div>
-                                    <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
-                                </div>
-                                <div class="col-4 year_month"></div>
-                                <div class="col-4 today_complete">출석 완료</div>
-                            </div>
-                            <div class="calender_bottom">
-                                <div class="days">
-                                    <div class="day">일</div>
-                                    <div class="day">월</div>
-                                    <div class="day">화</div>
-                                    <div class="day">수</div>
-                                    <div class="day">목</div>
-                                    <div class="day">금</div>
-                                    <div class="day">토</div>
-                                </div>
-                                <div class="dates"></div>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="col-12 col-lg-5 content_right">
-                        <div class="col-12 sub_title">오늘의 날씨</div>
-                        <div class="col-12 weather_wrap">
-                            <section class="col-12 weather_api">날씨 api 이미지</section>
-                            <section class="col-12 weather_con">
-                                <ul class="col-4 weather_list">
-                                    <li>강수확률<span>값</span></li>
-                                    <li>북서풍<span>값</span></li>
-                                    <li>미세<span>값</span></li>
-                                    <li>일몰<span>값</span></li>
-                                </ul>
-                                <ul class="col-4 weather_list">
-                                    <li>체감<span>값</span></li>
-                                    <li>습도<span>값</span></li>
-                                    <li>초미세<span>값</span></li>
-                                    <li>체감<span>값</span></li>
-                                </ul>
-                            </section>
-                        </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
+</div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>
 <script type="text/javascript" src="/js/mypage.js"></script>
 <script>
-/* 내정보 메인 - 달력(참고 사이트) https://www.youtube.com/watch?v=jFmcH5GVRs4 */
-const date = new Date();
-const renderCalender = () => {
-    document.querySelector('.year_month').innerHTML =  date.getFullYear() +'년 ' + (date.getMonth()+1) + '월';
+    /* 내정보 메인 - 달력(참고 사이트) https://www.youtube.com/watch?v=jFmcH5GVRs4 */
+    const date = new Date();
+    const renderCalender = () => {
+        document.querySelector('.year_month').innerHTML = date.getFullYear() + '년 ' + (date.getMonth() + 1) + '월';
 
-    // 지난 달 마지막 Date, 이번달 마지막 DAte
-    const prevLast = new Date(date.getFullYear(), date.getMonth(), 0);
-    const thisLast = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+        // 지난 달 마지막 Date, 이번달 마지막 DAte
+        const prevLast = new Date(date.getFullYear(), date.getMonth(), 0);
+        const thisLast = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 
-    const PLDate = prevLast.getDate();
-    const PLDay = prevLast.getDay();
+        const PLDate = prevLast.getDate();
+        const PLDay = prevLast.getDay();
 
-    const TLDate = thisLast.getDate();
-    const TLDay = thisLast.getDay();
+        const TLDate = thisLast.getDate();
+        const TLDay = thisLast.getDay();
 
-    //Dates 기본 배열
-    const prevDates = [];
-    const thisDates = [...Array(TLDate + 1).keys()].slice(1);
-    const nextDates = [];
-    //prevDates 계산
-    if(PLDay !== 6) {
-        for(let i = 0; i < PLDay+1 ; i++) {
-            prevDates.unshift(PLDate - i);
+        //Dates 기본 배열
+        const prevDates = [];
+        const thisDates = [...Array(TLDate + 1).keys()].slice(1);
+        const nextDates = [];
+        //prevDates 계산
+        if (PLDay !== 6) {
+            for (let i = 0; i < PLDay + 1; i++) {
+                prevDates.unshift(PLDate - i);
+            }
         }
+        //nextDates 계산
+        for (let i = 1; i < 7 - TLDate; i++) {
+            nextDates.push(i);
+        }
+
+        //Dates 합치기
+        const dates = prevDates.concat(thisDates, nextDates);
+        const firstDateIndex = dates.indexOf(1);
+        const lastDateIndex = dates.indexOf(TLDate);
+
+        //Dates 정리
+        dates.forEach((date, i) => {
+            const condition = i >= firstDateIndex && i <= lastDateIndex + 1
+                ? 'this'
+                : 'other';
+            dates[i] = '<div class="date"><span class="' + condition + '">' + date + '</span></div>';
+        })
+
+        document.querySelector('.dates').innerHTML = dates.join('');
+
+        //오늘 날짜 표시
+        const today = new Date();
+        if (date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
+            for (let date of document.querySelectorAll('.this')) {
+                if (+date.innerText === today.getDate()) {
+                    date.classList.add('today');
+                    break;
+                }
+            }
+        }
+    };
+    renderCalender();
+    const prevMonth = () => {
+        date.setDate(1);
+        date.setMonth(date.getMonth() - 1);
+        renderCalender();
     }
-    //nextDates 계산
-    for(let i = 1; i < 7 - TLDate; i++) { nextDates.push(i); }
-
-    //Dates 합치기
-    const dates = prevDates.concat(thisDates, nextDates);
-    const firstDateIndex = dates.indexOf(1);
-    const lastDateIndex = dates.indexOf(TLDate);
-
-    //Dates 정리
-    dates.forEach((date, i) => {
-        const condition = i >= firstDateIndex && i <= lastDateIndex + 1
-                          ? 'this'
-                          : 'other';
-        dates[i] = '<div class="date"><span class="' + condition + '">' + date + '</span></div>';
-    })
-
-    document.querySelector('.dates').innerHTML = dates.join('');
-
-    //오늘 날짜 표시
-    const today = new Date();
-      if (date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
-        for (let date of document.querySelectorAll('.this')) {
-          if (+date.innerText === today.getDate()) {
-            date.classList.add('today');
-            break;
-          }
-        }
-      }
-};
-renderCalender();
-const prevMonth = () => {
-  date.setDate(1);
-  date.setMonth(date.getMonth() - 1);
-  renderCalender();
-}
-const nextMonth = () => {
-  date.setDate(1);
-  date.setMonth(date.getMonth() + 1);
-  renderCalender();
-}
+    const nextMonth = () => {
+        date.setDate(1);
+        date.setMonth(date.getMonth() + 1);
+        renderCalender();
+    }
 </script>
 </body>
 </html>

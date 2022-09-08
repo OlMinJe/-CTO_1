@@ -1,5 +1,5 @@
 /* 글자 속성 */
-* { word-break: keep-all; font-family: 'SCDream' !important; font-size: 15px; line-height: 21px; font-weight: 300; color: #212121; }
+* { word-break: keep-all; font-family: 'SCDream' !important; font-size: 15px; line-height: 21px; font-weight: 300; }
 
 /* ul li 스타일 x */
 ul { padding-inline-start: 0;}
@@ -36,6 +36,11 @@ dd { margin-bottom: 0; margin-left: 0; }
 /* container */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl { padding-right: 0; padding-left: 0; margin-right: 0; margin-left: 0; }
 
+
+/* hr */
+hr { margin-top: 0; margin-bottom: 0; border: 0; border-top: 1px solid; }
+
+
 /*
 !* 선에 색만 있는 요소 (클래스명: box_eft_01) *!
 .box_eft_00 { border: 1px solid #00695C; border-radius: 10px; color: #212121; }
@@ -70,7 +75,6 @@ dd { margin-bottom: 0; margin-left: 0; }
 /* 마우스 오버 했을 때 색상 + 클릭 했을 때 색상 */
 .box_eft_02:hover { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
 .box_eft_02:focus-visible { border: 1px solid #dcc5df; background-color: #f7cc6d; color: #212121 }
-
 
 /* #dcc5df */
 /* #f7cc6d */

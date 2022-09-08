@@ -4,18 +4,18 @@
 
 .register { margin-left: auto; margin-right: auto }
 .title_01 { margin-bottom: 40px; padding: 10px 0 10px 10px; border-top: 3px solid #dcc5df; border-bottom: 3px solid #dcc5df; font-size: 25px; line-height: 31px; font-weight: 600; color: #dcc5df; }
-.title_02 { margin-bottom: 30px; text-align: center; font-size: 30px; line-height: 36px; color: #212121; font-weight: 600; }
+.title_02 { margin-bottom: 30px; text-align: center; font-size: 30px; line-height: 36px; font-weight: 600; }
 
 form { margin-bottom: 50px; text-align: center; }
 .register ul { display: inline-block; text-align: left; }
 .register ul li { display: flex; margin-bottom: 40px; }
-.register .sub_title { font-size: 13px; line-height: 36px; color: #212121; font-weight: 500; }
+.register .sub_title { font-size: 13px; line-height: 36px; font-weight: 500; }
 
 /* 프로필 사진 */
 .photo_select { padding: 7px 15px; text-align: center; }
 
 /* 폼 디테일 */
-.register input { padding: 7px 15px; border: 1px solid #212121; border-radius: 10px; line-height: 29px; }
+.register input { padding: 7px 15px; border: 1px solid; border-radius: 10px; line-height: 29px; }
 .register input[name="file"] { width: 200px; padding: 70px; border-radius: 25%; }
 .register input[type="text"], .register input[type="password"] { width: 40%; }
 .register button { margin-left: 10px; padding: 7px 15px; border: none; font-size: 13px; line-height: 27px; }
@@ -38,7 +38,7 @@ form { margin-bottom: 50px; text-align: center; }
 
 .gender { padding: 15px 10px; }
 .gender input[type=radio]{ display: none; }
-.gender input[type=radio]+label { display: inline-block; cursor: pointer; height: 35px; width: 90px; margin-left: -5px; border: 1px solid #333; border-radius: 10px; line-height: 35px; text-align: center; font-weight:bold; font-size:13px; background-color: #fff; color: #212121; }
+.gender input[type=radio]+label { display: inline-block; cursor: pointer; height: 35px; width: 90px; margin-left: -5px; border: 1px solid #333; border-radius: 10px; line-height: 35px; text-align: center; font-weight:bold; font-size:13px; background-color: #fff; }
 .gender input[type=radio]:checked+label{ background-color: #f7cc6d; }
 
 .register .doctor .sub_title { display: inline-block; margin-bottom: 10px; }

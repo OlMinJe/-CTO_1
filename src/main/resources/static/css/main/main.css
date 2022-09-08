@@ -9,12 +9,13 @@
 .board-content-search * { vertical-align: middle; }
 .board-content-search span { color: #fff; }
 .board-content-search .selectbox { position: relative; display: inline-block; text-align: initial; color: #fff; }
-.board-content-search .selectbox .bt-select { padding: 10px 50px 10px 30px; height: 100%; border: 2px solid #dcc5df; background-color: #dcc5df; color: #fff; border-bottom: none; border-radius: 10px 0 0 10px; text-align: left; }
+ { padding: 10px 30px 10px 30px; height: 100%; border: 1px solid #dcc5df; background-color: #dcc5df; color: #fff; border-bottom: none; border-radius: 10px 0 0 10px; text-align: left; }
 .board-content-search .selectbox ul { z-index: 1; display: none; position: absolute; left: 0; top: 0; width: 100%; padding: 7px 0 10px; text-indent: 18px; background-color: #E0F2F1; border-radius: 10px 0 0 10px; }
 .board-content-search .tagsearch { display: inline-flex; justify-content: space-between; margin-left: -6px; width: 70%; border-radius: 0 10px 10px 0; }
 .board-content-search .tagsearch input[type="text"] { float: left; margin-right: 10px; padding: 12px 20px; border-left: none; border-radius: 0 10px 10px 0; width: 87%; height: 100%; font-size: 13px; }
 .board-content-search .bt-submit { float: right; margin-top: 5px; margin-right: 8px; width: 30px; height: 30px; background-size: 30px 30px; background-image: url("/img/icon_search_btn_01.png"); background-repeat: no-repeat; }
 
+.board-content-search .selectbox .bt-select { padding: 10px 40px 10px 30px; height: 100%; border: 1px solid #dcc5df; background-color: #dcc5df; color: #fff; border-bottom: none; border-radius: 10px 0 0 10px; text-align: left; }
 
 /* mainvisual_wrap */
 .mainvisual_wrap { height: 500px; }

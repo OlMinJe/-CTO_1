@@ -22,7 +22,7 @@
                     data: {
                         mb_id: dropId,
                     },
-                    success: function(data) {
+                    success: function (data) {
                         alert("해당 회원이 강제 탈퇴처리 되었습니다.");
                         location.reload();
                     }, error: function (status, error) {
@@ -65,7 +65,9 @@
             <td><span th:text="${memebrlist.mb_sex}"></span></td>
             <td><span th:text="${memebrlist.mb_doctor}"></span></td>
             <td><span th:text="${#dates.format(memebrlist.reg_date, 'yyyy-MM-dd')}"></span>
-            <td><button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button></td>
+            <td>
+                <button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button>
+            </td>
         </tr>
         </tbody>
     </table>

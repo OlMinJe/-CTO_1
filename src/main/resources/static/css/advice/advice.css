@@ -19,7 +19,7 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
 
 /* advice 하위 메뉴 */
 .menu .menu-box-01, .menu .menu-box-02 { flex-direction: column; }
-.menu .menu-box-01 li, .menu .menu-box-02 li { border-right: none; border-radius: 0; white-space: nowrap; font-size: 16px; line-height: 22px; }
+.menu .menu-box-01 li, .menu .menu-box-02 li { border-radius: 0; white-space: nowrap; font-size: 16px; line-height: 22px; }
 .menu .menu-box-01 li:last-child, .menu .menu-box-02 li:last-child { border-right: 1px solid #dcc5df; }
 #sub-menu-01, #sub-menu-02 { display: none; }
 
@@ -50,8 +50,8 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
 .view_con .category_title { text-align: initial; color: #dcc5df; font-weight: 500; }
 .view_list { margin-bottom: 30px; text-align: initial; }
 .view_list .board_view_title { margin-bottom: 25px; font-size: 25px; line-height: 31px; font-weight: 600; }
-.view_list .board_view_info { border-bottom: 2px solid #dcc5df; padding: 0 15px 15px; font-weight: 500; }
-.view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 20px; }
+.view_list .board_view_info { border-bottom: 2px solid #dcc5df; padding-bottom: 15px; font-weight: 500; }
+.view_list .board_view_info dl { position: relative; display: inline-block; padding: 0 14px; }
 .view_list .board_view_info dl:first-child { padding-left: 0; }
 .view_list .board_view_info dl:last-child { padding-right: 0; }
 .view_list .board_view_info dl::before { content: ''; position: absolute; top: 6px; left: 0; height: 13px; border-right: 1px solid #ddd; }
@@ -74,9 +74,8 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
 .board_list dl dt { float: left; }
 .board_list .write_title, .board_list .write_info { margin-bottom: 15px; }
 .board_list .write_title dl dt, .board_list .write_info dl dt { padding: 10px 0; position: relative; }
-.board_list .write_title dl dd input, .board_list .write_info dl dd select { padding: 10px; width: 90%;  }
+.board_list .write_title dl dd input, .board_list .write_info dl dd select { padding: 10px; width: 100%; }
 .board_list .write_info { border-bottom: 2px solid #dcc5df; padding: 0 0 20px; }
-.board_list .write_info dl dd select { width: 50%; }
 .board_list .write_content { margin-bottom: 30px; padding: 30px 15px 0 15px; }
 .board_list .write_content textarea { width: 100%; min-height: 300px; }
 .board_list form[name="file"] { margin-bottom: 30px; padding: 0 15px 30px; border-bottom: 2px solid #dcc5df;}
@@ -91,7 +90,16 @@ body > div.col-12.advice, body > div.col-12.view_wrap, body > div.col-12.board_w
     .menu .menu-box-01, .menu .menu-box-02 { flex-direction: row; }
     .menu .menu-box-01 li { width: 20%; }
     .menu .menu-box-02 li { width: 25%; }
+    .menu .menu-box-01 li:first-child { border-radius: 10px 0 0 10px; }
+    .menu .menu-box-01 li:last-child { border-right: 1px solid #dcc5df; border-radius: 0 10px 10px 0; }
+
     #sub-menu-01, #sub-menu-02 { display: flex; }
+
+    .menu .menu-box-01 li, .menu .menu-box-02 li { border-right: none; }
+    .menu ul li:first-child { border-radius: 10px 0 0 10px; }
+    .menu ul li:last-child { border-radius: 0 10px 10px 0; }
+
+    .board_list .write_info dl dd select { width: 50%; }
 }
 
 @media all and (min-width: 992px){

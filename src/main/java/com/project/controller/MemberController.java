@@ -232,28 +232,37 @@ public class MemberController {
 
     }*/
 
-    //*******security
-    // 어드민 페이지 - 회원 리스트 보기 및 관리
-    @GetMapping("/admin")
+    // 어드민 페이지 - 회원 리스트 보기 및 관리 - 리스트 띄우기 실패
+    @GetMapping(value = "/admin")
+    //@RequestMapping(value = "/admin")
     public String dispAdmin(Model model) throws Exception {
         List<MemberVO> memebrlist = memberService.dispAdmin();
         model.addAttribute("memebrlist", memebrlist);
-
-        return "admin/admin";
+        return "/admin/admin";
     }
 
-    //관리자 페이지 - 회원 강제 탈퇴(DB에서 삭제)
+    //관리자 페이지 - 회원 강제 탈퇴(DB에서 삭제) - 성공했지만 추후 확인 예정
     @ResponseBody
     @RequestMapping(value = "/dropId", method=RequestMethod.GET)
     public void dropID(String mb_id) throws Exception {
         memberService.dropUser(mb_id);
     }
 
+    /*
+        @GetMapping(value = "/")
+        public String test(Model model) throws Exception {
+            List<MemberVO> memberlist = service.test();
+            model.addAttribute("memberlist", memberlist);
+            return "/main/test";
+        }*/
+
     // 접근 거부 페이지
     @GetMapping("/denied")
     public String dispDenied() {
-        return "admin/denied";
+        return "/admin/denied";
     }
+
+
 
     /** logout **/
     //페이지 기능 추후 구현 예정

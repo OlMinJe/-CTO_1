@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>관리자 페이지</title>
@@ -31,16 +31,7 @@
                     }
                 })
             })
-
         });
-        /*
-        //자동 새로고침(추가)
-        $(function () {
-            $(".userDrop").click(function() {
-                location.reload();
-            })
-        });
-        */
     </script>
 </head>
 <body>
@@ -64,23 +55,18 @@
         </tr>
         </thead>
         <tbody>
-        <!--컨트롤러 수정 예정-->
-        <!--
-        <c:forEach items="${memebrlist}" var="data">
-            <tr>
-                <td>${data.mb_seq}</td>
-                <td>${data.mb_name}</td>
-                <td>${data.mb_id}</td>
-                <td>${data.mb_nick}</td>
-                <td>${data.mb_email}</td>
-                <td>${data.mb_addr}</td>
-                <td>${data.mb_sex}</td>
-                <td>${data.mb_doctor}</td>
-                <td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${data.reg_date}"/></td>
-                <td><button type="button" id="userDrop" class="userDrop" data-user="${data.mb_id}">탈퇴 시키기</button></td>
-            </tr>
-        </c:forEach>
-        -->
+        <tr th:each="memberlist : ${memberlist}">
+            <td><span th:text="${memebrlist.mb_seq}"></span></td>
+            <td><span th:text="${memebrlist.mb_name}"></span></td>
+            <td><span th:text="${memebrlist.mb_id}"></span></td>
+            <td><span th:text="${memebrlist.mb_nick}"></span></td>
+            <td><span th:text="${memebrlist.mb_email}"></span></td>
+            <td><span th:text="${memebrlist.mb_addr}"></span></td>
+            <td><span th:text="${memebrlist.mb_sex}"></span></td>
+            <td><span th:text="${memebrlist.mb_doctor}"></span></td>
+            <td><span th:text="${#dates.format(memebrlist.reg_date, 'yyyy-MM-dd')}"></span>
+            <td><button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button></td>
+        </tr>
         </tbody>
     </table>
 </div>

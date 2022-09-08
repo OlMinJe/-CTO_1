@@ -30,7 +30,7 @@ if(session.val()!=''){
     var member = '<%=MemberVO vo=(MemberVO)session.getAttribute("member")%>';
     alert(member+"님 반갑습니다.");
 }
-*/
+
 
 if (test="${stateCode == '1'}") {
 
@@ -39,6 +39,7 @@ if (test="${stateCode == '1'}") {
 if (test="${stateCode == '0'}") {
 
 }
+*/
 /*
     <button type="button" onClick="location.href='mypage?stateCode=${stateCode}'">마이페이지</button>
     <button type="button" onClick="location.href='memberModify?stateCode=${stateCode}'">회원정보 수정</button>

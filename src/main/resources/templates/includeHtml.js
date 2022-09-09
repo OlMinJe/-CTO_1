@@ -1,3 +1,10 @@
+/* TODO: 화면 사이즈 변동시에 바로 새로고침 해줌 - 유지할지 말지 고민 */
+/*window.onresize = function(){
+    document.location.reload();
+};*/
+
+
+
 /*
     1. https://kyung-a.tistory.com/18
     2. https://www.w3schools.com/howto/howto_html_include.asp

@@ -52,8 +52,9 @@
                 <div class="col-12" style="text-align: center;">
                     <div class="col-12 user_nickname"><span>기존 닉네임값</span> 님<br>변경하실 닉네임을 적어주세요.</div>
                     <div class="col-12 change_nickname">
-                        <input type="text" class="changeNickname"/>
-                        <button type="submit" class="changeBtn btn btn-info">변경하기</button>
+                        <input type="text" class="col-10 col-md-5 box_eft_01 change_nickname changeNickname"/>
+                        <span>글자 제한 필요한거 아닌지?</span>
+                        <button type="submit" class="changeBtn btn btn-info box_eft_02">변경하기</button>
                         <script>
                             document.querySelector('.changeBtn').addEventListener('click', () => {
                                 const input = document.querySelector('.changeNickname'); //변경할 닉네임 입력하는 inoput 태그

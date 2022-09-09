@@ -51,12 +51,24 @@
                 <!-- TODO: 회원탈퇴 및 다른 부분 스프링 참고하기-->
                 <div class="col-12" id="sub_title">회원 탈퇴</div>
                 <div class="col-12" style="text-align: center;">
-                    <div class="col-12 login">로그인 하기</div>
-                    <form action="/user/login" method="post" id="login">
-                        <input type="text" name="username" placeholder="이메일 입력해주세요">
-                        <input type="password" name="password" placeholder="비밀번호">
-                        <button type="submit" class="btn btn-info">로그인</button>
+                    <div class="title">로그인</div>
+                    <form action='/register' method="post" class="col-11 col-sm-8 col-md-6 col-lg-5">
+                        <input type="text" class="box_eft_01" id="mb_id" name="mb_id" placeholder="아이디를 입력해주세요.">
+                        <input type="password" class="box_eft_01" id="mb_pw" name="mb_pw" placeholder="비밀번호를 입력해주세요.">
+                        <div class="col-12" style="margin-bottom: 20px;">
+                            <div class="col-7 user_id_pass">
+                                <input type="button" title="아이디 찾기" id="find_id_btn" value="아이디 찾기"
+                                       onclick="location.href='/login/find_id_form.html'">
+                                <input type="button" title="비밀번호 찾기" id="find_pw_btn" value="비밀번호 찾기"
+                                       onclick="location.href='/login/find_pw_form.html'">
+                            </div>
+                            <div class="col-5 new_user">
+                                <input type="button" value="회원가입" onclick="location.href='/login/register.html'">
+                            </div>
+                        </div>
+                        <input type="submit" value="로그인" class="btn box_eft_02">
                     </form>
+                </div>
                     <div class="col-12 no_user">
                         <div class="col-12 no_user_title">로그인 후 탈퇴 페이지</div>
                         <form>

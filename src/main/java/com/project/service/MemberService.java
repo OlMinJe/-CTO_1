@@ -191,8 +191,8 @@ public class MemberService implements UserDetailsService {
     }
 
     //관리자 페이지 - 회원정보 리스트
-    public List<MemberVO> dispAdmin() throws Exception {
-        return mapper.dispAdmin();
+    public List<MemberVO> Memberlist() throws Exception {
+        return mapper.Memberlist();
     }
 
     //관리자 페이지 - 회원 강제 추방

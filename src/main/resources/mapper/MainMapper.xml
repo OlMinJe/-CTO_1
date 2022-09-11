@@ -20,7 +20,7 @@
 	</update>
 
 	<!--관리자 페이지 - 회원리스트-->
-	<select id="dispAdmin" resultType="MemberVO">
+	<select id="Memberlist" resultType="MemberVO">
 		SELECT *
 		FROM hello_member
 	</select>
@@ -36,11 +36,6 @@
 		FROM hello_member
 		WHERE mb_id = #{mb_id}
 	</select>
-	
-	<insert id="kakaoLogin" parameterType="HashMap">
-		INSERT IGNORE into kakao_member 
-		VALUES (#{id}, #{name}, #{email})
-	</insert>
 	
 	<select id="idCheck" parameterType="String" resultType="Integer">
 		SELECT count(*)

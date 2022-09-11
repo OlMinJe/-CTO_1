@@ -44,7 +44,7 @@ public interface MainMapper {
 	public MemberVO memberLogin(MemberVO memberVO) throws Exception;
 
 	//관리자 페이지 - 회원 리스트
-	public List<MemberVO> dispAdmin() throws Exception;
+	public List<MemberVO> Memberlist() throws Exception;
 	
 	//회원 강제추방(관리자페이지)
 	public void dropUser(String id) throws Exception;

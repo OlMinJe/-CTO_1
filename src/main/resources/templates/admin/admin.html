@@ -1,16 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>관리자 페이지</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
-    <script type="text/javascript" src="/jquery-3.6.0.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script type="text/javascript" src="/includeHtml.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
-    <link rel="stylesheet" type="text/css" href="/css/fixed/footer.css"> <!--푸터-->
-    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
     <script type="text/javascript">
         $(function () {
             $(".userDrop").click(function () {
@@ -35,11 +27,9 @@
     </script>
 </head>
 <body>
-<header data-include-path="/fixed/header/header.html"></header>
-<div class="col-12 admin">
-    회원 리스트 및 회원 탈퇴 기능 구현 예정
-    <div class="col-12 title">관리자 페이지</div>
-    <table class="col-11 table table-striped table-bordered">
+
+    <h1>회원 리스트</h1>
+    <table border="1">
         <thead>
         <tr>
             <th>회원 고유번호</th>
@@ -54,24 +44,24 @@
             <th>회원 강제탈퇴</th>
         </tr>
         </thead>
+
         <tbody>
-        <tr th:each="memberlist : ${memberlist}">
-            <td><span th:text="${memebrlist.mb_seq}"></span></td>
-            <td><span th:text="${memebrlist.mb_name}"></span></td>
-            <td><span th:text="${memebrlist.mb_id}"></span></td>
-            <td><span th:text="${memebrlist.mb_nick}"></span></td>
-            <td><span th:text="${memebrlist.mb_email}"></span></td>
-            <td><span th:text="${memebrlist.mb_addr}"></span></td>
-            <td><span th:text="${memebrlist.mb_sex}"></span></td>
-            <td><span th:text="${memebrlist.mb_doctor}"></span></td>
-            <td><span th:text="${#dates.format(memebrlist.reg_date, 'yyyy-MM-dd')}"></span>
-            <td>
-                <button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button>
-            </td>
+        <!-- tr th:each : 행 반복문을 수행하겠다는 의미입니다 [여러 데이터 출력] -->
+        <tr th:each="list : ${memberlist}">
+            <td><span th:text="${list.mb_seq}"></span></td>
+            <td><span th:text="${list.mb_name}"></span></td>
+            <td><span th:text="${list.mb_id}"></span></td>
+            <td><span th:text="${list.mb_nick}"></span></td>
+            <td><span th:text="${list.mb_email}"></span></td>
+            <td><span th:text="${list.mb_addr}"></span></td>
+            <td><span th:text="${list.mb_sex}"></span></td>
+            <td><span th:text="${list.mb_doctor}"></span></td>
+            <!--<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${list.reg_date}"/></td>-->
+            <td><span th:text="${#dates.format(list.reg_date, 'yyyy-MM-dd')}"></span>
+            <td><button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button></td>
         </tr>
         </tbody>
     </table>
-</div>
-<footer data-include-path="/fixed/footer/footer.html"></footer>
+
 </body>
 </html>

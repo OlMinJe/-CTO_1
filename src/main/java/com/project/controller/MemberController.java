@@ -203,13 +203,6 @@ public class MemberController {
         return "/login/find_id";
     }
 
-    // header.html
-    @RequestMapping(value = "/header", method = RequestMethod.GET)
-    public String session_id(HttpServletResponse response, @RequestParam("mb_email") String mb_email, Model md) throws Exception {
-        md.addAttribute("session_id", memberService.session_id(response, mb_email));
-        //md.addAttribute("stateCode", memberService.s)
-        return "/fixed/header/header";
-    }
 
     // 비밀번호 찾기 폼
     @RequestMapping(value = "/find_pw_form")
@@ -224,20 +217,12 @@ public class MemberController {
         memberService.find_pw(response, memberVO);
     }
 
-/*
-    // 비밀번호 찾기
-    @RequestMapping(value = "/find_pw", method = RequestMethod.GET)
-    public void find_pw(@ModelAttribute MemberVO memberVO, HttpServletResponse response, Model model) throws Exception{
-        model.addAttribute("pw", memberService.find_pw(response, memberVO));
-
-    }*/
-
-    // 어드민 페이지 - 회원 리스트 보기 및 관리 - 리스트 띄우기 실패
-    @GetMapping(value = "/admin")
+    // 어드민 페이지 - 회원 리스트 보기 및 관리(리스트) - 실패
+    @GetMapping(value = "/admin/admin")
     //@RequestMapping(value = "/admin")
-    public String dispAdmin(Model model) throws Exception {
-        List<MemberVO> memebrlist = memberService.dispAdmin();
-        model.addAttribute("memebrlist", memebrlist);
+    public String Memberlist(Model model) throws Exception {
+        List<MemberVO> memberlist = memberService.Memberlist();
+        model.addAttribute("memberlist", memberlist);
         return "/admin/admin";
     }
 
@@ -247,14 +232,6 @@ public class MemberController {
     public void dropID(String mb_id) throws Exception {
         memberService.dropUser(mb_id);
     }
-
-    /*
-        @GetMapping(value = "/")
-        public String test(Model model) throws Exception {
-            List<MemberVO> memberlist = service.test();
-            model.addAttribute("memberlist", memberlist);
-            return "/main/test";
-        }*/
 
     // 접근 거부 페이지
     @GetMapping("/denied")

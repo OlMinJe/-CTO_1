@@ -65,7 +65,7 @@
             <td><span th:text="${list.mb_doctor}"></span></td>
             <td><span th:text="${#dates.format(list.reg_date, 'yyyy-MM-dd')}"></span>
             <td>
-                <button type="button" id="userDrop" class="userDrop" data-user="${list.mb_id}">탈퇴 시키기</button>
+                <button type="button" id="userDrop" class="userDrop" th:data-user="${list.mb_id}">탈퇴 시키기</button>
             </td>
         </tr>
         </tbody>

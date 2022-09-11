@@ -219,6 +219,7 @@ public class MemberController {
 
     // 어드민 페이지 - 회원 리스트 보기 및 관리(리스트) - 실패
     @GetMapping(value = "/admin/admin")
+    //@RequestMapping(value = "/admin/admin", method = RequestMethod.GET)
     //@RequestMapping(value = "/admin")
     public String Memberlist(Model model) throws Exception {
         List<MemberVO> memberlist = memberService.Memberlist();

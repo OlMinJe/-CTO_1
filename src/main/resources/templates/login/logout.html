@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>로그아웃</title>
+    <script type="text/javascript">
+        <![CDATA[
+        var session = [[ ${session.mb_id} ]];
+        ]]>
+        MemberVO vo=(MemberVO)session.getAttribute("member");
+        out.println(vo.getMb_id()+"님 반갑습니다.<br>");
+    </script>
 </head>
 <body>
-/*
+/**/
 <%
 session.removeAttribute("member");
 response.sendRedirect("/");
 %>
-*/
+
+
 </body>
 </html>

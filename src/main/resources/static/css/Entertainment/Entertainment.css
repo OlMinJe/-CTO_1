@@ -70,7 +70,7 @@ h1 { margin: 10px 0 15px 0;}
 .Ent_content { /*background-color: rgba(255, 255, 255, 0.2);*/ min-height: 250px; }
 
 
-.content-dis { border: 1px solid #dcc5df; height: 600px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; margin-bottom: 70px; }
+.content-dis { border: 1px solid #dcc5df; border-top: 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; margin-bottom: 70px; }
 body > div.col-12.Ent_content, body > div.col-12.Ent_main_content , body > div.col-12.board_wrap { text-align: center; }
 .Ent_content, .Ent_main_content, .view_con, .Enter_list_wrap { display: inline-block;}
 .Ent_menu ul { display: flex; text-align: center; }

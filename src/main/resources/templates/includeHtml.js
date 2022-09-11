@@ -106,3 +106,20 @@ function headerAction() {
         bool_menu = true;
     });
 }
+
+// fixed_header
+if(matchMedia("screen and (min-width: 772px)").matches){
+    console.log('test');
+    $(window).scroll(function () {
+
+        var scrollTop = $(this).scrollTop(); //현재 스크롤값
+        var navHeight = $("#header").outerHeight(true); //Nav 높이값
+
+        if (scrollTop >= navHeight) {
+            $(".fixed_header").css("display", "block");
+        } else {
+            $(".fixed_header").css("display", "none");
+        }
+
+    });
+}

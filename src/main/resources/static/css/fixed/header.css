@@ -21,6 +21,11 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .header_wrap #burgerbtn { display: block; position: absolute; top: 25px; right: 10px; width: 30px; height: 30px; cursor: pointer; }
 .header_wrap #burgerbtn img { vertical-align: initial; }
 
+/* 고정헤더 */
+.fixed_header { z-index: 100; padding: 10px; height: 50px; background-color: #fff; }
+.fixed_header .header_logo, .fixed_header #fixedBtn { display: inline-block; }
+.fixed_header .header_logo .logo img { width: 50%; }
+.fixed_header .mypage_btn { float: right; }
 
 @media all and (min-width: 768px){
     div#slide_menu { display: none; }

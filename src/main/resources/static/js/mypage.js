@@ -2,9 +2,6 @@ $(document).ready(function(){
 });
 
 /* 모바일 메뉴 */
-var windowWidth = window.matchMedia("screen and (max-width: 768px)");
-
-
 if(matchMedia("screen and (max-width: 991px)").matches){
     function mobile_menu() {
         var menu = $('#menu_list_01').css('display');

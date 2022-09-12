@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>비밀번호 변경</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
     <script type="text/javascript" src="/jquery-3.6.0.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,6 +12,80 @@
     <link rel="stylesheet" type="text/css" href="/css/mypage/mypage.css">
     <script type="text/javascript" src="/includeHtml.js"></script>
     <script type="text/javascript" src="/js/mypage.js"></script>
+
+    <script type="text/javascript">
+        /* ajax를 통한 비밀번호 수정처리 */
+        function pw_modify() { //3333
+
+            var mb_id = $("#mb_id").val();
+            var mb_pw = $("#mb_pw").val();
+            var new_pw = $("#pw_check").val();
+
+            var param = {"mb_id":mb_id, "mb_pw":mb_pw}
+            var stateCode = '?stateCode=1';
+
+            if(mb_pw != new_pw) {
+                alert("새 비밀번호가 일치하지 않습니다. 다시 한 번 확인해주세요.")
+            } else {
+                if(mb_pw == '') {
+                    alert("새비밀번호를 올바르게 입력해주세요.");
+                } else {
+                    $.ajax({
+                        async:true,
+                        type:'POST',
+                        data: JSON.stringify(param),
+
+                        url:"/pw_modify",
+                        dataType: "text",
+                        contentType: "application/json; charset=UTF-8",
+                        success : function() {
+                            alert("비밀번호 변경이 완료되었습니다.");
+                            location.href="/"+stateCode;
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            alert("ERROR : " + textStatus + " : " + errorThrown);
+                        }
+                    })
+                }
+            }
+        }
+
+        function or_pw_check(){
+
+            var modifyPw = $("#modifyPw").val();
+            var pw = $("#pw").val();
+
+            if(pw.trim() != '') {
+
+                var mb_id = $("#mb_id").val();
+                var param = {"mb_id":mb_id, "mb_pw":pw}
+
+                $.ajax({
+                    async: true,
+                    type: 'POST',
+                    data: JSON.stringify(param),
+
+                    url: "/pw_check",
+                    dataType: "text",
+                    contentType: "application/json; charset=UTF-8",
+                    success: function(data) {
+                        if(data == "success") {
+                            alert("기존 비밀번호와 일치합니다.");
+                        } else {
+                            alert("기존 비밀번호와 일치하지 않습니다.");
+                        }
+                    },
+                    error:function(request, status, error){
+                        alert("code:"+request.status+"\n"+
+                            "message:"+request.responseText+"\n"+"error:"+error);
+                    }
+                })
+            } else {
+                alert("비밀번호를 제대로 입력해주세요.");
+            }
+        }
+
+    </script>
 </head>
 <body>
 <header data-include-path="/fixed/header/header.html"></header>
@@ -44,9 +118,9 @@
         </div>
 
         <!-- 오른쪽 컨텐츠-->
-        <div class="col-12 col-lg-9 content">
+        <!--<div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_5_content">
-                <!------------------------------------------>
+                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
                 <div class="col-12" id="sub_title">비밀번호 변경</div>
                 <div class="col-12" style="text-align: center;">
                     <form action='/register' method="post" class="col-11 col-sm-8 col-md-6">
@@ -66,9 +140,31 @@
                         <input type="submit" value="로그인" class="btn box_eft_02">
                     </form>
                 </div>
-                <!------------------------------------------>
+                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
             </div>
-        </div>
+        </div>-->
+
+        <!--
+        <tbody>
+        <tr th:each="id : ${id}">
+            <span>회원님의 아이디는</span><br>
+            <td th:text="${id}"></td>
+        </tr>
+        </tbody>-->
+
+        <h2>[비밀번호 변경]</h2>
+        <form action='/register' method="post">
+        <div>이름<input type="text" name="memberName" id="mb_name" th:value="${modifyName}" readonly="readonly"></div>
+        <div>아이디<input type="text" name="memberId" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
+        <input type="hidden" name="modifyPw" id="modifyPw" th:value="${modifyPw}"/>
+        <div>기존 비밀번호를 입력해주세요. <br>
+            <input type="password" name="pw" id="pw" placeholder="기존 비밀번호 입력">
+            <button type="button" onclick="or_pw_check()">확인</button></div>
+        <div>새 비밀번호를 입력해주세요. <br><input type="password" name="mb_pw" id="mb_pw" placeholder="새 비밀번호"></div>
+        <div>다시 한 번 입력해 주세요. <br><input type="password" name="pw_check" id="pw_check" placeholder="새 비밀번호 재입력"></div>
+        </form>
+        <button type="button" id="submit" onclick="pw_modify()">변경하기</button>
+        <button type="button" onclick="location.href='/'">처음으로</button>
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>

@@ -106,14 +106,6 @@ public class MemberService implements UserDetailsService {
         }
     }
 
-    //header.html
-    public String session_id(HttpServletResponse response, String mb_id) throws Exception {
-        response.setContentType("text/html;charset=utf-8");
-        PrintWriter out = response.getWriter();
-        String session_id = mapper.session_id(mb_id);
-        return session_id;
-    }
-
     //비밀번호 찾기 - 임시 비밀번호 전송폼
     @Autowired
     private JavaMailSender mailSender;
@@ -198,6 +190,42 @@ public class MemberService implements UserDetailsService {
     //관리자 페이지 - 회원 강제 추방
     public void dropUser(String id) throws Exception {
         mapper.dropUser(id);
+    }
+
+    // 회원정보 수정 - 세션 가져오기
+    public MemberVO membermodifyGET(String mb_id) throws Exception {
+        return mapper.memberModifyGET(mb_id);
+    }
+
+    // 회원정보 수정
+    public void memberModifyPOST(MemberVO memberVO) throws Exception {
+        mapper.memberModifyPOST(memberVO);
+    }
+
+    // 회원 탈퇴
+    public void memberDeletePOST(MemberVO memberVO) throws Exception {
+        mapper.memberDeletePOST(memberVO);
+    }
+
+    public MemberVO memberDeleteGET(String mb_id) throws Exception {
+        return mapper.memberDeleteGET(mb_id);
+    }
+
+    // 닉네임 변경
+    public MemberVO nickModifyGET(String mb_id) throws Exception {
+        return mapper.nickModifyGET(mb_id);
+    }
+
+    public void nickModifyPOST(MemberVO memberVO) throws Exception {
+        mapper.nickModifyPOST(memberVO);
+    }
+
+    //프로필 사진 변경
+    public MemberVO profileModifyGET(String mb_id) throws Exception {
+        return mapper.profileModifyGET(mb_id);
+    }
+    public void profileModifyPOST(MemberVO memberVO) throws Exception {
+        mapper.profileModifyPOST(memberVO);
     }
 
 

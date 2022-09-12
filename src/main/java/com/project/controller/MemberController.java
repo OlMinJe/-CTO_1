@@ -240,13 +240,64 @@ public class MemberController {
         return "/admin/denied";
     }
 
+    /* membeModify */
+    // 회원정보 수정 화면 구현 : GET방식(회원정보 수정 페이지 진입시 해당 회원 정보를 새로운 세션과 연결하여 보여주는 역할)
+    @RequestMapping(value="/pw_modify", method=RequestMethod.GET)
+    public String memberModifyGET(HttpServletRequest req, Model model, @RequestParam("stateCode") int stateCode) throws Exception {
+
+        HttpSession session = req.getSession();
+
+        MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        MemberVO modifyMember = memberService.membermodifyGET(member.getMb_id());
+
+        model.addAttribute("modifyName", modifyMember.getMb_name());
+        model.addAttribute("modifyId", modifyMember.getMb_id());
+        //추가
+        model.addAttribute("modifyPw", modifyMember.getMb_pw());
+        model.addAttribute("stateCode", stateCode);
+
+        return "/mypage/mypage_05";
+    }
+
+    // 회원정보 수정 기능 구현 : POST방식 (회원정보 수정시 비동기 처리로 수정해주는 역할)
+    @RequestMapping(value="/pw_modify", method=RequestMethod.POST)
+    public void memberModifyPOST(@RequestBody MemberVO memberVO, HttpServletRequest req) throws Exception {
+
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        String encodePass = encoder.encode(memberVO.getMb_pw());
+        memberVO.setMb_pw(encodePass);
+        memberService.memberModifyPOST(memberVO);
+    }
+
+    //비밀번호 변경 시 - 기존 비밀번호와의 일치여부 확인
+    @ResponseBody
+    @RequestMapping(value="/pw_check", method=RequestMethod.POST)
+    public String pw_check(@RequestBody MemberVO memberVO, Model model) throws Exception {
+
+        String pw = memberVO.getMb_pw(); // 입력한 비밀번호
+        MemberVO member = memberService.userCheck(memberVO); // 암호화된 DB비밀번호
+        String result = "";
+
+        if(memberVO.getMb_id() != null && memberVO.getMb_id() != "") {
+            BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+
+            if(encoder.matches(pw, member.getMb_pw())) {
+                result = "success";
+            }
+        }
+        return result;
+    }
+
+
+
+
 
 
     /** logout **/
     //페이지 기능 추후 구현 예정
     @RequestMapping(value="/logout", method=RequestMethod.GET)
     public String logout() throws Exception {
-        return "login/logout";
+        return "/login/logout";
     }
 
 

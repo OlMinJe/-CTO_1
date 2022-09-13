@@ -89,12 +89,23 @@ function liActive02() {
             woman.style.display = "none";
         }
     } else {
-        normal.style.display = "flex";
+        woman.style.display = "flex";
     }
 }
 
 /* 일반 고민 - 테이블에 값 넣기 */
 function contentTable01() {
+    // TODO: 메뉴 값 text() 함수로 불러올 때 띄어쓰기 때문에 오류 생길 수 있음
+
+    // 조건1: 상위 메뉴 '일반 고민'을 선택한 경우 사용
+    // 예시: 값은 '일반고민'
+    // 선택된 메뉴가 DB에 저장된 메뉴 중에 해당하면 그에 알맞는 게시글 출력
+    var normalMenu = $('.menu-wrap #active_normal.box_eft_01.active').text();
+
+    // 조건2: 하위 메뉴를 선택한 경우
+    // 예시: 선택한 값이 '대인관계/가족' 이면 값도 '대인관계/가족'
+    var normalSubMenu = $('.menu-con #sub-menu-01 .box_eft_01.active').text();
+
     // 분기문으로 seq 값 만큼 html 넣어주기 - 10으로 임의 설정
     // 글 번호, 작성자, 글제목, 댓글수 순서로 배치함
     for(let i = 0; i < 10; i++) {
@@ -110,6 +121,17 @@ function contentTable01() {
 
 /* 여성 고민 - 테이블에 값 넣기 */
 function contentTable02() {
+    // TODO: 메뉴 값 text() 함수로 불러올 때 띄어쓰기 때문에 오류 생길 수 있음
+
+    // 조건1: 상위 메뉴 '여성 고민'을 선택한 경우 사용
+    // 예시: 값은 '여성고민'
+    // 선택된 메뉴가 DB에 저장된 메뉴 중에 해당하면 그에 알맞는 게시글 출력
+    var womanMenu = $('.menu-wrap #active_woman.box_eft_01.active').text();
+
+    // 조건2: 하위 메뉴를 선택한 경우
+    // 예시: 선택한 값이 '대인관계/가족' 이면 값도 '대인관계/가족'
+    var womanSubMenu = $('.menu-con #sub-menu-02 .box_eft_01.active').text();
+
     // 분기문으로 seq 값 만큼 html 넣어주기 - 10으로 임의 설정
     // 글 번호, 작성자, 글제목, 댓글수 순서로 배치함
     for(let i = 0; i < 10; i++) {

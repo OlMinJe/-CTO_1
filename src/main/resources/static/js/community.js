@@ -96,6 +96,16 @@ function content_table_01() {
         '<th style="width: auto;">제목</th>'+
         '<th style="width: 10%;">댓글수</th>'+
         '</tr>';
+
+    // 조건1: 선택된 상위 메뉴의 값이 커뮤니티 or 상담일 때
+    // 예시: 커뮤니티를 선택한 경우 값이 '커뮤니티'임
+    // 선택된 메뉴가 DB에 저장된 메뉴 중에 해당하면 그에 알맞는 게시글 출력
+    var topMenu = $('.menu-wrap .box_eft_01.active').text();
+
+    // 조건2: 선택된 하위 메뉴의 값
+    // 예시: 커뮤니티의 '정보'를 선택한 경우 값이 '정보'
+    var subMenu = $('.menu-con .box_eft_01.active').text();
+
     // 분기문으로 seq 값 만큼 html 넣어주기 - 10으로 임의 설정
     // 글 번호, 작성자, 글제목, 댓글수 순서로 배치함
     for(let i = 0; i < 10; i++) {

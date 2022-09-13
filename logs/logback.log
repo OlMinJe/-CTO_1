@@ -699,3 +699,1088 @@
 [2022-08-29 22:14:40:53517][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
 [2022-08-29 22:14:40:53518][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
 [2022-08-29 22:14:40:53520][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:45:56:3657][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 14:45:56:3753][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 14:45:56:3781][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 14:45:56:3796][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 14:46:11:18597][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 14:46:11:18598][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 14:46:11:18598][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 14:46:11:18598][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 14:46:11:18599][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a77eb6
+[2022-09-13 14:46:11:18600][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a7d914c
+[2022-09-13 14:46:11:18601][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 14:46:11:18601][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2022-09-13 14:46:11:18640][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 14:46:11:18650][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 14:46:11:18746][http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 14:46:11:18951][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:11:18977][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 14:46:11:18980][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:46:11:18982][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:11:18983][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:11:18995][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:11:18999][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19165][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 14:46:12:19165][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 14:46:12:19167][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19167][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19168][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 14:46:12:19168][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 14:46:12:19170][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19170][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19193][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19193][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19195][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19197][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19380][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 14:46:12:19382][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19382][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 14:46:12:19384][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:12:19387][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:12:19388][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21376][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 14:46:14:21377][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21379][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21395][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 14:46:14:21396][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21397][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:46:14:21397][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21400][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21400][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21423][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 14:46:14:21424][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 14:46:14:21424][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 14:46:14:21424][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21424][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21424][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21432][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21432][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21432][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21462][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 14:46:14:21462][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21463][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 14:46:14:21464][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:14:21465][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:14:21466][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:16:23630][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 14:46:16:23631][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:16:23632][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:46:16:23646][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:46:16:23646][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:46:16:23648][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:50:08:255872][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 14:50:08:255873][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:50:08:255875][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:50:08:255890][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:50:08:255891][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:50:08:255893][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:10:3809][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 14:51:10:3924][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 14:51:10:3968][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 14:51:10:3983][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 14:51:26:19838][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 14:51:26:19839][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 14:51:26:19839][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 14:51:26:19839][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 14:51:26:19840][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a77eb6
+[2022-09-13 14:51:26:19841][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a7d914c
+[2022-09-13 14:51:26:19841][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 14:51:26:19841][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 14:51:26:19870][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 14:51:26:19876][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 14:51:26:19979][http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 14:51:26:20177][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:26:20191][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 14:51:26:20194][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:51:26:20197][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:26:20197][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:26:20212][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:26:20215][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20242][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 14:51:27:20242][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 14:51:27:20243][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20243][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 14:51:27:20243][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20244][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20244][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 14:51:27:20245][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20259][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20260][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20259][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20260][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20332][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 14:51:27:20332][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 14:51:27:20333][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20333][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:27:20335][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:27:20335][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:28:22230][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 14:51:28:22231][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:28:22233][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22253][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 14:51:29:22254][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:51:29:22254][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22255][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22257][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22258][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22277][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 14:51:29:22277][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 14:51:29:22277][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 14:51:29:22278][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22279][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22279][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22287][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22288][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22288][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22315][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 14:51:29:22315][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 14:51:29:22316][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22316][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:29:22319][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:29:22319][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:30:24181][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 14:51:30:24182][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:30:24184][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:51:30:24196][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:51:30:24197][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:51:30:24198][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:53:13:126326][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 14:53:13:126326][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:53:13:126328][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:53:13:126342][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:53:13:126343][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:53:13:126344][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:57:19:373079][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 14:57:19:373080][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:57:19:373082][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 14:57:19:373099][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 14:57:19:373100][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 14:57:19:373102][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:00:55:3947][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 15:00:55:4060][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 15:00:55:4095][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 15:00:55:4111][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 15:01:01:10101][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 15:01:01:10101][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 15:01:01:10101][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 15:01:01:10101][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 15:01:01:10102][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52efb338
+[2022-09-13 15:01:01:10103][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b42b729
+[2022-09-13 15:01:01:10103][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 15:01:01:10103][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 15:01:01:10125][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 15:01:01:10134][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:01:10225][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:01:10240][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 15:01:01:10241][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 15:01:01:10242][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:01:10242][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:01:10245][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:01:10245][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:01:10272][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_jadoo_title_image.png", parameters={}
+[2022-09-13 15:01:01:10273][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:01:10274][http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 15:01:01:10274][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 15:01:01:10277][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 15:01:01:10280][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 15:01:01:10311][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 15:01:01:10313][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 15:01:01 KST 2022, status=404, error=Not Found, path=/css/Entertainment/Enter_ (truncated)...]
+[2022-09-13 15:01:01:10369][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 15:01:12:20736][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_jadoo_test/Enter_mbti_jadoo_minji.jpeg", parameters={}
+[2022-09-13 15:01:12:20737][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:12:20740][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24509][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 15:01:16:24511][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24514][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24531][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 15:01:16:24532][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24532][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 15:01:16:24533][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24536][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24537][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24577][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 15:01:16:24578][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 15:01:16:24578][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24578][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 15:01:16:24579][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24579][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24597][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24597][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24597][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24638][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 15:01:16:24638][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 15:01:16:24639][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24639][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:16:24641][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:16:24641][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:19:27467][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 15:01:19:27468][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:19:27470][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:19:27531][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 15:01:19:27531][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 15:01:19:27531][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:19:27531][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:19:27534][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:01:19:27537][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 15:01:19:27565][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_jadoo_title_image.png", parameters={}
+[2022-09-13 15:01:19:27566][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:01:19:27567][http-nio-8080-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 15:01:19:27567][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 15:01:19:27568][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 15:01:19:27568][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 15:01:19:27570][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 15:01:19:27570][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 15:01:19 KST 2022, status=404, error=Not Found, path=/css/Entertainment/Enter_ (truncated)...]
+[2022-09-13 15:01:19:27571][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 15:55:24:3272669][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 15:55:24:3272669][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:24:3272671][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:55:24:3272687][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 15:55:24:3272687][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 15:55:24:3272687][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:24:3272687][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:24:3272688][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 15:55:24:3272689][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:55:24:3272718][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_jadoo_title_image.png", parameters={}
+[2022-09-13 15:55:24:3272734][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:24:3272735][http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 15:55:24:3272735][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 15:55:24:3272736][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 15:55:24:3272737][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 15:55:24:3272737][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 15:55:24:3272738][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 15:55:24 KST 2022, status=404, error=Not Found, path=/css/Entertainment/Enter_ (truncated)...]
+[2022-09-13 15:55:24:3272738][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 15:55:25:3273544][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 15:55:25:3273545][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:25:3273548][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 15:55:25:3273563][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 15:55:25:3273564][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 15:55:25:3273566][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:00:47:3596411][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:00:47:3596412][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:00:47:3596413][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:00:47:3596428][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:00:47:3596429][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:00:47:3596431][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:00:48:3596460][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_jadoo_title_image.png", parameters={}
+[2022-09-13 16:00:48:3596461][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:00:48:3596462][http-nio-8080-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 16:00:48:3596462][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 16:00:48:3596463][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 16:00:48:3596463][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 16:00:48:3596464][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 16:00:48:3596464][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 16:00:48 KST 2022, status=404, error=Not Found, path=/css/Entertainment/Enter_ (truncated)...]
+[2022-09-13 16:00:48:3596465][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 16:08:17:4046355][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:08:17:4046355][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:17:4046357][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:08:17:4046373][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:08:17:4046373][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 16:08:17:4046374][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:17:4046374][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:17:4046375][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 16:08:17:4046375][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:08:17:4046417][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_jadoo_title_image.png", parameters={}
+[2022-09-13 16:08:17:4046417][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:17:4046418][http-nio-8080-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 16:08:17:4046418][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 16:08:17:4046419][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 16:08:17:4046419][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 16:08:17:4046420][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 16:08:17:4046420][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 16:08:17 KST 2022, status=404, error=Not Found, path=/css/Entertainment/Enter_ (truncated)...]
+[2022-09-13 16:08:17:4046421][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 16:08:18:4046894][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:08:18:4046895][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:18:4046896][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:08:18:4046947][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:08:18:4046948][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:08:18:4046950][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:09:41:4130058][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:09:41:4130059][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:09:41:4130061][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:09:41:4130077][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:09:41:4130078][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:09:41:4130079][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:09:42:4130696][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:09:42:4130697][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:09:42:4130698][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:09:42:4130722][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:09:42:4130722][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:09:42:4130724][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:09:52:4141157][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_jadoo_test/Enter_mbti_jadoo_eunseok.jpeg", parameters={}
+[2022-09-13 16:09:52:4141157][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:09:52:4141159][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:12:08:3930][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:12:08:4014][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:12:08:4040][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:12:08:4052][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:12:18:13304][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:12:18:13305][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:12:18:13305][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:12:18:13305][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:12:18:13306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64508788
+[2022-09-13 16:12:18:13306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4c164f81
+[2022-09-13 16:12:18:13306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:12:18:13306][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 16:12:18:13338][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:12:18:13354][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:12:18:13469][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:12:18:13482][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:12:18:13483][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:12:18:13487][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:13:23:3838][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:13:23:3935][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:13:23:3968][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:13:23:3985][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:13:32:12684][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:13:32:12684][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:13:32:12685][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:13:32:12685][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:13:32:12686][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5f9ebd5a
+[2022-09-13 16:13:32:12686][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f8df69
+[2022-09-13 16:13:32:12687][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:13:32:12687][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2022-09-13 16:13:32:12711][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:13:32:12722][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:13:32:12829][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:13:32:12839][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:13:32:12841][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:13:32:12843][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:13:57:3760][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:13:57:3861][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:13:57:3912][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:13:57:3929][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:14:05:12035][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:14:05:12035][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:14:05:12035][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:14:05:12036][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:14:05:12037][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a77eb6
+[2022-09-13 16:14:05:12037][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a7d914c
+[2022-09-13 16:14:05:12037][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:14:05:12037][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 16:14:05:12065][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:14:05:12076][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:14:05:12184][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:14:05:12194][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:14:05:12195][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:14:05:12197][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:31:22:1048631][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_jadoo_test/Enter_mbti_jadoo_minji.jpeg", parameters={}
+[2022-09-13 16:31:22:1048632][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:31:22:1048636][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 16:39:32:3712][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:39:32:3779][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:39:33:3798][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:39:33:3808][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:39:49:20682][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:39:49:20683][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:39:49:20683][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:39:49:20683][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:39:49:20684][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d6b5d3d
+[2022-09-13 16:39:49:20684][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5a06eeef
+[2022-09-13 16:39:49:20684][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:39:49:20684][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-09-13 16:39:49:20705][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 16:39:49:20714][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:39:50:20799][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:39:50:20809][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 16:39:50:20809][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:39:50:20810][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:39:50:20810][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:39:50:20812][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:39:50:20815][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:30976][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 16:40:00:30978][http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 16:40:00:30995][http-nio-8080-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 16:40:00:31166][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31189][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 16:40:00:31190][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31191][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:40:00:31192][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31197][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31198][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31282][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 16:40:00:31282][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31283][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31299][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31301][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31301][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31302][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31432][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 16:40:00:31432][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 16:40:00:31433][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31433][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:00:31437][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:00:31437][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33266][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 16:40:02:33267][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33269][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33336][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 16:40:02:33337][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:40:02:33337][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33338][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33339][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33340][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33359][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 16:40:02:33360][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 16:40:02:33360][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 16:40:02:33360][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33360][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33360][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33367][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33367][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33367][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33393][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 16:40:02:33393][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 16:40:02:33394][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33394][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:40:02:33395][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:40:02:33395][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:41:58:3475][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:41:58:3552][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:41:58:3574][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:41:58:3583][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:42:10:15786][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:42:10:15787][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:42:10:15787][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:42:10:15787][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:42:10:15788][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 16:42:10:15789][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 16:42:10:15789][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:42:10:15789][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 16:42:10:15814][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 16:42:10:15825][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15925][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:15937][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 16:42:10:15938][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15938][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:42:10:15939][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15941][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:15943][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:15962][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 16:42:10:15962][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 16:42:10:15962][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 16:42:10:15963][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15963][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15963][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:15980][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:15980][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:15980][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:16009][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 16:42:10:16009][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 16:42:10:16010][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:16010][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:10:16012][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:10:16012][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:13:18884][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 16:42:13:18885][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:13:18888][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:42:13:18901][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:42:13:18902][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:42:13:18904][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:16:3534][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:43:16:3610][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:43:16:3638][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:43:16:3650][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:43:21:8018][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:43:21:8019][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:43:21:8019][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:43:21:8019][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:43:21:8020][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 16:43:21:8020][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 16:43:21:8020][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:43:21:8020][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 16:43:21:8045][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 16:43:21:8055][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:21:8163][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:21:8176][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 16:43:21:8176][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:43:21:8178][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:21:8178][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:21:8181][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:21:8186][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:30:17519][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 16:43:30:17520][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:30:17522][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:30:17536][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 16:43:30:17536][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:43:30:17537][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:30:17537][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:30:17539][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 16:43:30:17539][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:31:18015][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 16:43:31:18016][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:31:18019][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:43:31:18031][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:43:31:18032][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:43:31:18034][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:44:15:3613][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:44:15:3710][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:44:15:3741][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:44:15:3754][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:46:15:4179][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:46:16:4306][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:46:16:4332][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:46:16:4342][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:47:03:3506][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 16:47:03:3608][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 16:47:03:3641][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 16:47:03:3657][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 16:47:20:21128][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 16:47:20:21129][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 16:47:20:21129][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 16:47:20:21129][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 16:47:20:21130][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 16:47:20:21131][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 16:47:20:21131][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 16:47:20:21131][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 16:47:20:21165][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 16:47:20:21172][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 16:47:20:21285][http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 16:47:21:21491][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21525][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 16:47:21:21525][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:47:21:21530][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21530][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21543][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21545][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21636][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 16:47:21:21637][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 16:47:21:21637][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 16:47:21:21637][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 16:47:21:21637][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21638][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21638][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21638][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21656][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21656][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21657][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21657][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21779][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 16:47:21:21779][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 16:47:21:21780][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21780][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:21:21783][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:21:21783][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23589][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 16:47:23:23590][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23592][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23606][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 16:47:23:23606][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23608][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:47:23:23609][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23610][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23611][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23623][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_title.jpg", parameters={}
+[2022-09-13 16:47:23:23624][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23627][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23632][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 16:47:23:23632][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 16:47:23:23632][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 16:47:23:23633][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23633][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23633][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23640][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23640][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23641][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23670][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 16:47:23:23670][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 16:47:23:23671][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23671][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:23:23673][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:23:23673][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:26:27156][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 16:47:26:27157][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:26:27159][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:26:27172][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 16:47:26:27172][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 16:47:26:27173][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:26:27173][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:26:27174][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:26:27179][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 16:47:33:33813][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_saint%20bernard.jpeg", parameters={}
+[2022-09-13 16:47:33:33814][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 16:47:33:33815][http-nio-8080-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2022-09-13 16:47:33:33815][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2022-09-13 16:47:33:33818][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2022-09-13 16:47:33:33820][http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2022-09-13 16:47:33:33839][http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[2022-09-13 16:47:33:33840][http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Sep 13 16:47:33 KST 2022, status=404, error=Not Found, path=/img/Enter_animal_test/En (truncated)...]
+[2022-09-13 16:47:33:33880][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2022-09-13 18:10:18:3693][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:10:18:3807][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:10:18:3852][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:10:18:3865][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:10:31:17305][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:10:31:17306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:10:31:17306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:10:31:17306][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:10:31:17307][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64508788
+[2022-09-13 18:10:31:17307][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4c164f81
+[2022-09-13 18:10:31:17307][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:10:31:17307][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 18:10:31:17332][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:10:31:17341][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:10:31:17433][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:10:31:17443][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 18:10:31:17443][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:10:31:17444][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:10:31:17444][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:10:31:17447][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:10:31:17448][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:10:31:17453][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_title.jpg", parameters={}
+[2022-09-13 18:10:31:17454][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:10:31:17456][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:10:38:23976][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_papillon.jpg", parameters={}
+[2022-09-13 18:10:38:23977][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:10:38:23980][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:12:12:3799][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:12:12:3908][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:12:12:3948][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:12:12:3966][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:12:31:22369][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:12:31:22370][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:12:31:22370][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:12:31:22370][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:12:31:22371][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 18:12:31:22371][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 18:12:31:22372][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:12:31:22372][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 18:12:31:22396][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:12:31:22406][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:12:31:22502][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:12:31:22515][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:12:31:22516][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:12:31:22518][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:12:36:27400][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_Bernese%20mountain%20dog.jpg", parameters={}
+[2022-09-13 18:12:36:27401][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:12:36:27404][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:33:144873][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:14:33:144874][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:33:144876][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:33:144890][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:14:33:144891][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:33:144892][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149142][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 18:14:38:149143][http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 18:14:38:149161][http-nio-8080-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 18:14:38:149351][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149373][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:14:38:149374][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149375][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:14:38:149377][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149380][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149382][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149454][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:14:38:149454][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:14:38:149455][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149455][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:14:38:149455][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149455][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 18:14:38:149456][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149456][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149471][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149471][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149472][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149472][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149546][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:14:38:149546][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:14:38:149547][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149547][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:38:149549][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:38:149549][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151252][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:14:40:151253][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151255][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151288][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:14:40:151289][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151290][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:14:40:151291][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151293][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151294][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151313][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151322][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151322][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151322][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151351][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:14:40:151351][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:14:40:151352][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151352][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:40:151353][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:40:151353][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:45:156189][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_mbti_jadoo.html", parameters={}
+[2022-09-13 18:14:45:156190][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:45:156192][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:45:156204][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:14:45:156205][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:45:156206][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:14:51:162460][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_jadoo_test/Enter_mbti_jadoo_eunhee.jpeg", parameters={}
+[2022-09-13 18:14:51:162460][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:14:51:162462][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:16:15:3657][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:16:15:3754][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:16:15:3785][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:16:15:3797][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:17:37:85363][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:17:37:85363][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:17:37:85364][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:17:37:85364][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:17:37:85365][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 18:17:37:85365][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 18:17:37:85365][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:17:37:85366][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2022-09-13 18:17:37:85397][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 18:17:37:85404][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 18:17:37:85502][http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 18:17:37:85680][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85702][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:17:37:85704][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:17:37:85709][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85709][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85728][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85731][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85775][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:17:37:85775][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:17:37:85777][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85777][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:17:37:85777][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85777][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 18:17:37:85778][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85779][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85800][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85801][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85801][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85802][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85948][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:17:37:85950][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85952][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:17:37:85953][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:37:85956][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:37:85959][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89865][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:17:41:89866][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89867][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89882][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:17:41:89883][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89884][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:17:41:89885][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89887][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89888][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89910][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:17:41:89910][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:17:41:89910][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:17:41:89911][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89911][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89911][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89919][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89919][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89919][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89945][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:17:41:89945][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:17:41:89946][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89946][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:41:89949][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:41:89949][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:43:92021][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:17:43:92021][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:43:92023][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:43:92036][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:17:43:92037][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:43:92038][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:17:53:101371][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_afghan%20hound.jpeg", parameters={}
+[2022-09-13 18:17:53:101372][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:17:53:101374][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:24:51:3925][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:24:51:4020][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:24:51:4046][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:24:51:4060][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:25:04:17055][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:25:04:17055][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:25:04:17056][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:25:04:17056][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:25:04:17057][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64508788
+[2022-09-13 18:25:04:17057][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4c164f81
+[2022-09-13 18:25:04:17057][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:25:04:17058][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2022-09-13 18:25:04:17082][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:25:04:17091][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:04:17178][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:04:17196][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:25:04:17196][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 18:25:04:17197][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:04:17197][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:04:17200][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:04:17203][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:04:17208][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_title.jpg", parameters={}
+[2022-09-13 18:25:04:17209][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:04:17212][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:25:09:21366][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 18:25:09:21368][http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 18:25:09:21386][http-nio-8080-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 18:25:09:21592][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21610][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:25:09:21612][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:25:09:21612][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21613][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21616][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/fixed/header.css", parameters={}
+[2022-09-13 18:25:09:21616][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21618][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21618][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21624][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21685][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 18:25:09:21685][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:25:09:21685][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:25:09:21686][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21686][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21686][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:25:09:21686][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21687][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21705][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21705][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21705][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21705][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21798][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:25:09:21798][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:25:09:21799][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21799][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:09:21801][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:09:21802][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23658][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:25:11:23659][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23661][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23680][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:25:11:23682][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23682][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Entertainment.css", parameters={}
+[2022-09-13 18:25:11:23682][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:25:11:23683][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23683][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23688][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23688][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23688][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23706][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23714][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23714][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23714][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23742][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:25:11:23742][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:25:11:23743][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23743][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:25:11:23745][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:25:11:23745][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:35:3971][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:27:35:4088][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:27:35:4128][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:27:35:4138][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:27:42:11227][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:27:42:11227][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:27:42:11227][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:27:42:11228][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:27:42:11229][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 18:27:42:11229][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 18:27:42:11229][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:27:42:11229][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2022-09-13 18:27:42:11252][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:27:42:11261][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11348][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11356][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:27:42:11357][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11358][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:27:42:11359][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11361][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11362][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11365][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_trip_test/Enter_trip_test_title.jpg", parameters={}
+[2022-09-13 18:27:42:11366][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11369][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11378][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:27:42:11379][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:27:42:11379][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:27:42:11379][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11380][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11380][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11394][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11395][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11395][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11421][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:27:42:11421][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:27:42:11421][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11421][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:42:11423][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:42:11423][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:47:16274][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_trip_test.html", parameters={}
+[2022-09-13 18:27:47:16275][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:47:16277][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:47:16292][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 18:27:47:16292][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:27:47:16293][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:47:16293][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:47:16295][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:27:47:16298][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:27:54:22907][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_trip_test/Enter_trip_test_sokcho(ENFJ).jpeg", parameters={}
+[2022-09-13 18:27:54:22908][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:27:54:22910][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:21:3726][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2022-09-13 18:29:21:3835][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
+[2022-09-13 18:29:21:3871][main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2022-09-13 18:29:21:3884][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2022-09-13 18:29:31:13913][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-09-13 18:29:31:13914][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2022-09-13 18:29:31:13914][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2022-09-13 18:29:31:13914][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2022-09-13 18:29:31:13916][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e18d2a2
+[2022-09-13 18:29:31:13917][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@608f310a
+[2022-09-13 18:29:31:13917][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-09-13 18:29:31:13917][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2022-09-13 18:29:31:13949][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 18:29:31:13955][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 18:29:31:14062][http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 18:29:31:14242][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14260][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:29:31:14262][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:29:31:14266][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14266][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14281][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14284][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14307][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:29:31:14307][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:29:31:14308][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 18:29:31:14308][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:29:31:14308][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14309][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14309][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14309][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14327][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14327][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14327][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14327][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14407][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:29:31:14407][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:29:31:14408][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14408][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:31:14410][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:31:14410][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16369][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:29:33:16377][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16380][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16397][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:29:33:16398][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16399][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:29:33:16400][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16402][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16402][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16421][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:29:33:16422][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:29:33:16422][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:29:33:16422][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16422][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16422][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16430][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16430][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16431][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16460][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:29:33:16460][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:29:33:16461][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16461][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:29:33:16463][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:29:33:16463][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:41:06:708816][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_animal_test.html", parameters={}
+[2022-09-13 18:41:06:708817][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:41:06:708820][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:41:06:708832][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 18:41:06:708832][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:41:06:708833][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:41:06:708833][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:41:06:708835][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:41:06:708838][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:41:06:708845][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_title.jpg", parameters={}
+[2022-09-13 18:41:06:708846][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:41:06:708847][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:45:31:973766][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Enter_test.css", parameters={}
+[2022-09-13 18:45:31:973767][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:45:31:973768][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:47:01:1064052][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_animal_test/Enter_ani_test_bull%20terrier.jpg", parameters={}
+[2022-09-13 18:47:01:1064053][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:01:1064056][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1073871][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2022-09-13 18:47:11:1073871][http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.project.controller.MemberController#main()
+[2022-09-13 18:47:11:1073872][http-nio-8080-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+[2022-09-13 18:47:11:1073884][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1073904][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:47:11:1073905][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1073905][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:47:11:1073906][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1073908][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1073909][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1073910][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/fixed/header.css", parameters={}
+[2022-09-13 18:47:11:1073911][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1073914][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:47:11:1074120][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:47:11:1074120][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:47:11:1074122][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074122][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074123][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream5.otf", parameters={}
+[2022-09-13 18:47:11:1074124][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074125][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:47:11:1074126][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074129][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1074132][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1074133][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1074134][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1074236][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:47:11:1074236][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:47:11:1074237][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074237][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:11:1074239][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:11:1074239][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:12:1075597][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Entertainment.html", parameters={}
+[2022-09-13 18:47:12:1075598][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:12:1075600][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:12:1075625][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/jquery-3.6.0.js", parameters={}
+[2022-09-13 18:47:12:1075626][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:12:1075627][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:47:12:1075627][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/Entertainment/Entertainment.css", parameters={}
+[2022-09-13 18:47:12:1075628][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:12:1075628][http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:12:1075629][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:12:1075629][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:47:12:1075630][http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:12:1075654][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_trip_test/Enter_trip_test_title.jpg", parameters={}
+[2022-09-13 18:47:12:1075655][http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:12:1075657][http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+[2022-09-13 18:47:13:1075684][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream6.otf", parameters={}
+[2022-09-13 18:47:13:1075685][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream3.otf", parameters={}
+[2022-09-13 18:47:13:1075685][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/FontFile/SCDream4.otf", parameters={}
+[2022-09-13 18:47:13:1075685][http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:13:1075685][http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:13:1075685][http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:13:1075690][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:13:1075691][http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:13:1075691][http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:13:1075733][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/header/header.html", parameters={}
+[2022-09-13 18:47:13:1075734][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/fixed/footer/footer.html", parameters={}
+[2022-09-13 18:47:13:1075735][http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:13:1075735][http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:13:1075737][http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:13:1075737][http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:20:1083354][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/Entertainment/Enter_trip_test.html", parameters={}
+[2022-09-13 18:47:20:1083355][http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:20:1083358][http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:20:1083373][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/includeHtml.js", parameters={}
+[2022-09-13 18:47:20:1083374][http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:20:1083376][http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2022-09-13 18:47:27:1089987][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/Enter_trip_test/Enter_trip_test_danyang(ISFP).jpeg", parameters={}
+[2022-09-13 18:47:27:1089987][http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [templates/], classpath [static/]]
+[2022-09-13 18:47:27:1090010][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

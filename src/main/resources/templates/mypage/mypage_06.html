@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>닉네임 변경</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- 부트스트랩 -->
     <script type="text/javascript" src="/jquery-3.6.0.js"></script>
@@ -12,6 +12,77 @@
     <link rel="stylesheet" type="text/css" href="/css/mypage/mypage.css">
     <script type="text/javascript" src="/includeHtml.js"></script>
     <script type="text/javascript" src="/js/mypage.js"></script>
+
+    <script>
+        function updateNick() {
+
+            var mb_id = $("#mb_id").val();
+            var nick = $("#nick").val();
+
+            var param = {"mb_id":mb_id, "mb_nick":nick}
+            var stateCode = '?stateCode=1';
+
+            if(nick == '') {
+                alert("새 닉네임을 올바르게 입력해주세요.");
+            } else {
+                $.ajax({
+                    async:true,
+                    type:'POST',
+                    data: JSON.stringify(param),
+
+                    url:"/nick_modify",
+                    dataType: "text",
+                    contentType: "application/json; charset=UTF-8",
+                    success : function() {
+                        alert("닉네임 변경이 완료되었습니다.");
+                        location.href="/boardList"+stateCode;
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        alert("ERROR : " + textStatus + " : " + errorThrown);
+                    }
+                })
+            }
+
+        }
+
+        /* 닉네임 중복 체크 : ajax 비동기처리 */
+        function nickCheck() {
+
+            var mb_nick = $("#nick").val();
+
+            if(mb_nick.search(/\s/) != -1) {
+                alert("닉네임에는 공백이 들어갈 수 없습니다.");
+            } else {
+                if(mb_nick.trim().length != 0) {
+                    console.log(mb_nick.trim().length);
+                    $.ajax({
+                        async : true,
+                        type : 'POST',
+                        data: mb_nick,
+
+                        url: "/nickCheck",
+                        dataType: "json",
+                        contentType: "application/json; charset=UTF-8",
+                        success: function(count) {
+                            if(count > 0) {
+                                alert("해당 닉네임 존재");
+                                window.location.reload();
+                            } else {
+                                alert("사용가능 닉네임");
+
+                            }
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(errorThrown + " " + textStatus);
+                            alert("닉네임을 입력해주세요.");
+                        }
+                    });
+                } else {
+                    alert("닉네임을 입력해주세요.");
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 <header data-include-path="/fixed/header/header.html"></header>
@@ -43,10 +114,10 @@
             </div>
         </div>
 
-        <!-- 오른쪽 컨텐츠-->
+        <!--&lt;!&ndash; 오른쪽 컨텐츠&ndash;&gt;
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_6_content">
-                <!------------------------------------------>
+                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
                 <div class="col-12" id="sub_title">닉네임 변경</div>
                 <div class="col-12" style="text-align: center;">
                     <div class="col-12 user_nickname"><span>기존 닉네임값</span> 님<br>변경하실 닉네임을 적어주세요.</div>
@@ -66,9 +137,18 @@
                         </script>
                     </div>
                 </div>
-                <!------------------------------------------>
+                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
             </div>
-        </div>
+        </div>-->
+
+        <h2>[닉네임 변경]</h2>
+        <form action=/register' method="post">
+        <div>아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
+        <div>기존 닉네임<input type="text" name="mb_nick" id="mb_nick" th:value="${modifyNick}" readonly="readonly"></div>
+        <div>새 닉네임<input type="text" name="nick" id="nick"><button type="button" onclick="nickCheck()">중복확인</button></div>
+        </form>
+        <button type="button" id="submit" onclick="updateNick()">변경하기</button>
+        <button type="button" onclick="location.href='/'">처음으로</button>
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>

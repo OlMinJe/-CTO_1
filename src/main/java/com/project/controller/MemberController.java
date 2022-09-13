@@ -179,7 +179,7 @@ public class MemberController {
 
                 } else { // 암호를 잘못 입력한 경우
                     mav.addObject("code", "matchesError");
-                    mav.setViewName("userCheck");
+                    mav.setViewName("/login/userCheck");
                 }
             } else { // 없는 아이디거나 빈공란
                 mav.addObject("code", "nullError");
@@ -288,10 +288,67 @@ public class MemberController {
         return result;
     }
 
+    //  닉네임 변경 화면 구현 : GET방식(회원정보 수정 페이지 진입시 해당 회원 정보를 새로운 세션과 연결하여 보여주는 역할)
+    @RequestMapping(value="/nick_modify", method=RequestMethod.GET)
+    public String nickModifyGET(HttpServletRequest req, Model model, @RequestParam("stateCode") int stateCode) throws Exception {
 
+        HttpSession session = req.getSession();
 
+        MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        MemberVO modifyMember = memberService.membermodifyGET(member.getMb_id());
 
+        model.addAttribute("modifyId", modifyMember.getMb_id());
+        model.addAttribute("modifyNick", modifyMember.getMb_nick());
+        model.addAttribute("stateCode", stateCode);
 
+        return "/mypage/mypage_06";
+    }
+
+    // 닉네임 수정 기능 구현 : POST방식 (회원정보 수정시 비동기 처리로 수정해주는 역할)
+    @ResponseBody
+    @RequestMapping(value = "/nick_modify", method=RequestMethod.POST)
+    public void nickModifyPOST(@RequestBody MemberVO memberVO) throws Exception {
+        memberService.nickModifyPOST(memberVO);
+    }
+
+    // 프로필 변경 화면 구현 : GET방식(회원정보 수정 페이지 진입시 해당 회원 정보를 새로운 세션과 연결하여 보여주는 역할)
+    @RequestMapping(value="/profile_modify", method=RequestMethod.GET)
+    public String profileModifyGET(HttpServletRequest req, Model model, @RequestParam("stateCode") int stateCode) throws Exception {
+
+        HttpSession session = req.getSession();
+
+        MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        MemberVO modifyMember = memberService.membermodifyGET(member.getMb_id());
+
+        model.addAttribute("modifyId", modifyMember.getMb_id());
+        model.addAttribute("modifyImg", modifyMember.getMb_img());
+        model.addAttribute("stateCode", stateCode);
+
+        return "/mypage/mypage_07";
+    }
+
+    // 프로필 수정 기능 구현 : POST방식 (회원정보 수정시 비동기 처리로 수정해주는 역할)
+    @ResponseBody
+    @RequestMapping(value = "/profile_modify", method=RequestMethod.POST)
+    public void profileModifyPOST(@RequestBody MemberVO memberVO) throws Exception {
+        memberService.profileModifyPOST(memberVO);
+    }
+
+    //  탈퇴 화면 구현 : GET방식(회원정보 수정 페이지 진입시 해당 회원 정보를 새로운 세션과 연결하여 보여주는 역할)
+    @RequestMapping(value="/memberDelete", method=RequestMethod.GET)
+    public String memberDeleteGET(HttpServletRequest req, Model model, @RequestParam("stateCode") int stateCode) throws Exception {
+
+        HttpSession session = req.getSession();
+
+        MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        MemberVO modifyMember = memberService.memberDeleteGET(member.getMb_id());
+
+        //추가
+        model.addAttribute("modifyId", modifyMember.getMb_id());
+        model.addAttribute("stateCode", stateCode);
+
+        return "/mypage/mypage_08";
+    }
 
     /** logout **/
     //페이지 기능 추후 구현 예정
@@ -299,6 +356,8 @@ public class MemberController {
     public String logout() throws Exception {
         return "/login/logout";
     }
+
+
 
 
 

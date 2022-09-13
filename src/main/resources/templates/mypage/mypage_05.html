@@ -154,7 +154,8 @@
 
         <h2>[비밀번호 변경]</h2>
         <form action='/register' method="post">
-        <div>이름<input type="text" name="memberName" id="mb_name" th:value="${modifyName}" readonly="readonly"></div>
+        <!--<div>이름<input type="text" name="memberName" id="mb_name" th:value="${modifyName}" readonly="readonly"></div>-->
+        <div>이름<input type="text" name="memberName" id="mb_name" th:text="${modifyName}" readonly="readonly"></div>
         <div>아이디<input type="text" name="memberId" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
         <input type="hidden" name="modifyPw" id="modifyPw" th:value="${modifyPw}"/>
         <div>기존 비밀번호를 입력해주세요. <br>

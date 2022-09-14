@@ -81,30 +81,24 @@
             </div>
         </div>
 
-        <!--&lt;!&ndash; 오른쪽 컨텐츠&ndash;&gt;
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_8_content">
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
-                &lt;!&ndash; TODO: 회원탈퇴 및 다른 부분 스프링 참고하기&ndash;&gt;
                 <div class="col-12" id="sub_title">회원 탈퇴</div>
-                <div class="col-12" style="text-align: center;">
-                    <div class="title">로그인</div>
-                    <form action='/register' method="post" class="col-11 col-sm-8 col-md-6 col-lg-5">
-                        <input type="text" class="box_eft_01" id="mb_id" name="mb_id" placeholder="아이디를 입력해주세요.">
-                        <input type="password" class="box_eft_01" id="mb_pw" name="mb_pw" placeholder="비밀번호를 입력해주세요.">
-                        <div class="col-12" style="margin-bottom: 20px;">
-                            <div class="col-7 user_id_pass">
-                                <input type="button" title="아이디 찾기" id="find_id_btn" value="아이디 찾기"
-                                       onclick="location.href='/login/find_id_form.html'">
-                                <input type="button" title="비밀번호 찾기" id="find_pw_btn" value="비밀번호 찾기"
-                                       onclick="location.href='/login/find_pw_form.html'">
-                            </div>
-                            <div class="col-5 new_user">
-                                <input type="button" value="회원가입" onclick="location.href='/login/register.html'">
-                            </div>
-                        </div>
-                        <input type="submit" value="로그인" class="btn box_eft_02">
+                <div class="col-12 col-md-8 col-lg-6" style="text-align: center;margin-left: auto; margin-right: auto;padding-top: 70px;">
+                    <form action='/register' method="post">
+                        <ul>
+                            <li>
+                                <span class="col-12 col-md-3">아이디</span>
+                                <input type="text" name="mb_id" id="mb_id" class="box_eft_01" th:value="${modifyId}" readonly="readonly">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-3">비밀번호</span>
+                                <input type="password" name="pw" id="pw" class="box_eft_01">
+                            </li>
+                        </ul>
                     </form>
+                    <button type="button" class="box_eft_02" onclick="deleteMember()">회원탈퇴</button>
+                    <button type="button" class="box_eft_02" onclick="location.href='/'">처음으로</button>
                 </div>
                     <div class="col-12 no_user">
                         <div class="col-12 no_user_title">로그인 후 탈퇴 페이지</div>
@@ -121,18 +115,8 @@
                         </form>
                     </div>
                 </div>
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
             </div>
-        </div>-->
-
-        <h2>[회원탈퇴]</h2>
-        <form action='/register' method="post">
-        <div>아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
-        <div>비밀번호<input type="password" name="pw" id="pw"></div>
-        </form>
-        <button type="button" onclick="deleteMember()">회원탈퇴</button>
-        <button type="button" onclick="location.href='/'">처음으로</button>
-
+        </div>
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>

@@ -12,13 +12,14 @@
     <link rel="stylesheet" type="text/css" href="/css/mypage/mypage.css">
     <script type="text/javascript" src="/includeHtml.js"></script>
     <script type="text/javascript" src="/js/mypage.js"></script>
-
+<!--    사진 띄우는거 (참고 사이트) https://velog.io/@minkyeong-ko/HTMLCSSJS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%A6%84-%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0-->
     <script type="text/javascript">
 
         function guid() {
             function s4() {
                 return ((1 + Math.random()) * 0x10000 | 0).toString(16).substring(1);
             }
+
             return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
         }
 
@@ -33,36 +34,36 @@
             //전체경로를 \로 나눈 길이.
             var filePathLength = filePathSplit.length;
             //마지막 경로를 .으로 나눔.
-            var fileNameSplit = filePathSplit[filePathLength-1].split('.');
+            var fileNameSplit = filePathSplit[filePathLength - 1].split('.');
             //파일명 : .으로 나눈 앞부분
             var fileName = fileNameSplit[0];
             //파일 확장자 : .으로 나눈 뒷부분
             var fileExt = fileNameSplit[1];
 
             var mb_id = $("#mb_id").val();
-            var mb_img = guid()+"_"+fileName+"."+fileExt;
+            var mb_img = guid() + "_" + fileName + "." + fileExt;
 
-            var param = {"mb_id":mb_id, "mb_img":mb_img}
+            var param = {"mb_id": mb_id, "mb_img": mb_img}
             var stateCode = '?stateCode=1';
 
-            if(mb_img == '') {
+            if (mb_img == '') {
                 alert("새 프로필 사진을 선택 해주세요.");
             } else {
                 $.ajax({
-                    async:true,
-                    type:'POST',
+                    async: true,
+                    type: 'POST',
                     data: JSON.stringify(param),
-                    beforeSend: function(xhr) {
+                    beforeSend: function (xhr) {
                         xhr.setRequestHeader("${_csrf.headerName}", "${_csrf.token}");
                     },
-                    url:"/profile_modify",
+                    url: "/profile_modify",
                     dataType: "text",
                     contentType: "application/json; charset=UTF-8",
-                    success : function() {
+                    success: function () {
                         alert("프로필 변경이 완료되었습니다.");
-                        location.href="/boardList"+stateCode;
+                        location.href = "/boardList" + stateCode;
                     },
-                    error: function(jqXHR, textStatus, errorThrown) {
+                    error: function (jqXHR, textStatus, errorThrown) {
                         alert("ERROR : " + textStatus + " : " + errorThrown);
                     }
                 })
@@ -100,88 +101,35 @@
             </div>
         </div>
 
-        <!--&lt;!&ndash; 오른쪽 컨텐츠&ndash;&gt;
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_7_content">
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
                 <div class="col-12" id="sub_title">프로필 사진 변경</div>
-                <div class="image-upload" id="image-upload" style="text-align: center;">
-                    <form method="post" enctype="multipart/form-data">
-                        <div class="button">
-                            <label for="chooseFile">
-                                "프로필 바꾸기"
-                            </label>
-                        </div>
-                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                <div class="col-12 col-md-10 col-lg-8 image_upload" style="text-align: center;">
+                    <form action=/register' method="post" enctype="multipart/form-data">
+                        <ul>
+                            <li>
+                                <span class="col-12 col-md-3">아이디</span>
+                                <input type="text" name="memberId" id="mb_id" class="box_eft_01" th:value="${modifyId}"
+                                       readonly="readonly">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-3">기존 프로필 사진</span>
+                                <input type="type" name="modifyImg" id="modifyImg" class="box_eft_01" th:value="${modifyImg}"
+                                readonly="readonly" size="50"/>
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-3">프로필 사진 선택</span>
+                                <input type="file" name="file" id="mb_img" class="box_eft_01" style="display: none;">
+                                <label for="mb_img" class="col-12 col-md-7 box_eft_01">프로필 사진 선택하기</label>
+                            </li>
+                        </ul>
                     </form>
-                    <div class="fileContainer">
-                        <div class="fileInput">
-                            <p>(test)FILE NAME: </p>
-                            <p id="fileName"></p>
-                        </div>
-                        <div class="buttonContainer">
-                            <div class="submitButton" id="submitButton">SUBMIT</div>
-                        </div>
-                    </div>
+                    <button type="button" class="box_eft_02" id="submit" onclick="updateImg()">변경하기</button>
+                    <button type="button" class="box_eft_02" onclick="location.href='/'">처음으로</button>
                 </div>
-                <div class="change-show" style="text-align: center;"></div>
-                <div class="image-show" id="image-show" style="text-align: center;"></div>
-                &lt;!&ndash; TODO: 변경하기 버튼 작업 해야함 &ndash;&gt;
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
             </div>
-        </div>-->
-
-        <h2>[프로필 사진 변경]</h2>
-        <form action=/register' method="post" enctype="multipart/form-data">
-        <div>아이디<input type="text" name="memberId" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
-        <div>기존 프로필 사진 <input type="type" name="modifyImg" id="modifyImg" th:value="${modifyImg}" readonly="readonly" size="50"/></div>
-        <div>프로필 사진 선택 <input type="file" name="file" id="mb_img"></div>
-        </form>
-        <button type="button" id="submit" onclick="updateImg()">변경하기</button>
-        <button type="button" onclick="location.href='/'">처음으로</button>
-
+        </div>
     </div>
-</div>
-<footer data-include-path="/fixed/footer/footer.html"></footer>
-<script>
-
-    /* (참고 사이트) https://velog.io/@minkyeong-ko/HTMLCSSJS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%A6%84-%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0 */
-    var submit = document.getElementById('submitButton');
-    submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
-
-    function showImage() {
-
-        var newImage = document.getElementById('image-show').lastElementChild;
-        newImage.style.display = "block";
-
-        document.querySelector('.change-show').innerHTML =
-            '<i>선택하신 이미지로 변경하고 싶으시다면,밑에 <span>변경하기</span> 버튼을 눌러주세용</i>' +
-            '<button type="submit" class="changeBtn btn btn-info">변경하기</button>';
-
-        document.getElementById('image-upload').style.display = 'none';
-
-        document.getElementById('fileName').textContent = null;     //기존 파일 이름 지우기
-    }
-
-    function loadFile(input) {
-        var file = input.files[0];
-
-        var name = document.getElementById('fileName');
-        name.textContent = file.name;
-
-        var newImage = document.createElement("img");
-        newImage.setAttribute("class", 'img');
-
-        newImage.src = URL.createObjectURL(file);
-
-        newImage.style.width = "70%";
-        newImage.style.height = "70%";
-        newImage.style.display = "none";   //버튼을 누르기 전까지는 이미지 숨기기
-        newImage.style.objectFit = "contain";
-
-        var container = document.getElementById('image-show');
-        container.appendChild(newImage);
-    }
-</script>
+    <footer data-include-path="/fixed/footer/footer.html"></footer>
 </body>
 </html>

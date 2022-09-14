@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    li_active_01();
+    /*li_active_01();*/
 });
 
 /* 상위 메뉴 */
@@ -30,10 +30,10 @@ function sub_menu() {
     active_editor.classList.remove('active');
     // 반응형 하위 메뉴 - 화면 크기가 767px 이하일 경우
     if (matchMedia("screen and (max-width: 767px)").matches) {
-        if (normal.style.display == "none") {
-            normal.style.display = "block";
-        } else {
+        if (normal.style.display == "block") {
             normal.style.display = "none";
+        } else {
+            normal.style.display = "block";
         }
     } else { normal.style.display = "block"; }
     // 바뀐 메뉴에 해당하는 게시글 출력
@@ -53,7 +53,6 @@ function li_active_01() {
     active_editor.classList.remove('active');
 
     // 하위 메뉴 영역
-    normal.style.display = "block";
     for(let i = 0; i < normal_li.length; i++) {
         normal_li[i].addEventListener("click", function () {
             // 선택한 메뉴에 active 클래스 추가 및 이전 메뉴 active 클래스 삭제

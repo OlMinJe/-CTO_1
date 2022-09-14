@@ -117,14 +117,28 @@
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_6_content">
                 <div class="col-12" id="sub_title">닉네임 변경</div>
-                <div class="col-12" style="text-align: center;">
-                    <form action=/register' method="post">
-                        <div style="display:none;">아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
-                        <div>기존 닉네임<input type="text" name="mb_nick" id="mb_nick" th:value="${modifyNick}" readonly="readonly"></div>
-                        <div>새 닉네임<input type="text" name="nick" id="nick"><button type="button" onclick="nickCheck()">중복확인</button></div>
+                <div class="col-12 col-md-10 col-lg-8" style="text-align: center;  margin-left: auto; margin-right: auto;">
+                    <form action=/register' method="post" style="margin-bottom: 30px;">
+                        <ul>
+                            <li style="display: none;">
+                                <span class="col-12 col-md-3">아이디</span>
+                                <input type="text" name="mb_id" id="mb_id" class="box_eft_01" th:value="${modifyId}" readonly="readonly">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-3">기존 닉네임</span>
+                                <input type="text" name="mb_nick" id="mb_nick" class="box_eft_01" th:value="${modifyNick}" readonly="readonly">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-3">새 닉네임</span>
+                                <div class="col-12 col-me-9" style="text-align: left;">
+                                    <input type="text" name="nick" id="nick" class="col-9 box_eft_01">
+                                    <button type="button" class="col-3 box_eft_02" onclick="nickCheck()">중복확인</button>
+                                </div>
+                            </li>
+                        </ul>
                     </form>
-                    <button type="button" id="submit" onclick="updateNick()">변경하기</button>
-                    <button type="button" onclick="location.href='/'">처음으로</button>
+                    <button type="button" id="submit" class="box_eft_02" onclick="updateNick()">변경하기</button>
+                    <button type="button" class="box_eft_02" onclick="location.href='/'">처음으로</button>
                 </div>
             </div>
         </div>

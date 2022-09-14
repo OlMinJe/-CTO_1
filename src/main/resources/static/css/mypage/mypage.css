@@ -116,9 +116,11 @@
 .content_box#tab_5_content button { padding: 15px 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
 
 /* ----------- content 박스 [6. 닉네임 변경] ----------- */
-.content_box#tab_6_content .user_nickname { font-size: 20px; line-height: 26px; margin-bottom: 3em;}
-.content_box#tab_6_content .user_nickname span { font-size: 28px; line-height: 40px; font-weight: 600; }
-.content_box#tab_6_content .change_nickname input { padding: 15px 20px; border-radius: 10px;  }
+.content_box#tab_6_content li { display: flex; flex-direction: column; margin-bottom: 20px; }
+.content_box#tab_6_content span { text-align: left; font-size: 16px; line-height: 22px; font-weight: 400; }
+.content_box#tab_6_content input { width: 70%; padding: 10px; }
+.content_box#tab_6_content button { padding: 9px 10px; text-align: center; font-size: 16px; line-height: 22px; font-weight: 600; }
+
 
 /* ----------- content 박스 [7. 프로필 사진 변경] ----------- */
 .content_box#tab_7_content .image_upload { margin-left: auto; margin-right: auto; }
@@ -191,6 +193,10 @@
     .content_box#tab_5_content li { flex-direction: row; align-items: center; }
     .content_box#tab_5_content input { width: 50%; }
     .content_box#tab_5_content input[type="password"] { width: 79%; }
+
+    /* [6] 닉네임 변경 */
+    .content_box#tab_6_content li { flex-direction: row; align-items: center; }
+    .content_box#tab_6_content input { width: 60%; }
 
     /* [7] 프로필 사진 변경 */
     .content_box#tab_7_content li { flex-direction: row; align-items: center; }

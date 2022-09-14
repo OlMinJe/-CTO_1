@@ -23,6 +23,7 @@ import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.lang.reflect.Member;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
@@ -148,6 +149,16 @@ public class MemberController {
     public String memberLogin() throws Exception {
         return "/login/login";
     }
+    /*
+    // 로그인 폼
+    @RequestMapping(value="/login")
+    public String memberLogin(HttpSession session, Model model) throws Exception {
+        //model.addAttribute("nickname", )
+        //MemberVO nickname = memberService.find_id();
+        String mail = memberVO.getMb_email();
+        session.setAttribute("nickname", memberService.find_id());
+        return "/login/login";
+    }*/
 
     // 로그인 기능
     @RequestMapping(value="/userCheck", method={RequestMethod.GET, RequestMethod.POST})

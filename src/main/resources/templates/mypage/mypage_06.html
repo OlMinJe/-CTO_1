@@ -119,7 +119,7 @@
                 <div class="col-12" id="sub_title">닉네임 변경</div>
                 <div class="col-12" style="text-align: center;">
                     <form action=/register' method="post">
-                        <div>아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
+                        <div style="display:none;">아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
                         <div>기존 닉네임<input type="text" name="mb_nick" id="mb_nick" th:value="${modifyNick}" readonly="readonly"></div>
                         <div>새 닉네임<input type="text" name="nick" id="nick"><button type="button" onclick="nickCheck()">중복확인</button></div>
                     </form>

@@ -1,5 +1,5 @@
 /* 공통 */
-.mypage_con .content { padding-top: 30px; padding-bottom: 30px; border: 1px solid #ccc; }
+.mypage_con .content { padding: 30px 10px; border: 1px solid #ccc; }
 #sub_title { margin-bottom: 20px; font-size: 20px; line-height: 26px; font-weight: 600; color: #333;  }
 .filter_wrap { margin-bottom: 30px;}
 .filter_wrap .filter_con { border: 1px solid #333; padding: 15px 10px; }
@@ -49,7 +49,7 @@
 { margin-bottom: 30px; text-align: center; font-size: 20px; line-height: 26px; font-weight: 600; }
 
 .content_box#tab_0_content { display: flex; flex-direction: column; height: 100%; }
-.content_box#tab_0_content .content_left { float: left; margin-bottom: 40px; padding-left: 20px; padding-right: 20px; }
+.content_box#tab_0_content .content_left { float: left; margin-bottom: 40px; }
 .content_box#tab_0_content .content_left .top { display: flex; justify-content: space-around; margin-bottom: 30px; }
 .content_box#tab_0_content .content_left .top .photo { display: inline-block; float: left; max-width: 160px; min-width: 160px; max-height: 200px; min-height: 160px; border-radius: 10px; background-color: #ccc; }
 .content_box#tab_0_content .content_left .top ul { width: 55%; }
@@ -107,25 +107,18 @@
 /* ----------- content 박스 [4. 테스트 결과 내역] ----------- */
 /* ----------- content 박스 [5. 비밀번호 변경] ----------- */
 .content_box#tab_5_content .title { margin-bottom: 40px; text-align: center; font-size: 30px; line-height: 30px; font-weight: 500; }
-.content_box#tab_5_content form { display: flex; flex-direction: column; margin-left: auto; margin-right: auto; padding-top: 40px;  }
-.content_box#tab_5_content input[type="text"], .content_box#tab_5_content input[type="button"]{ border: none; background: initial; }
-.content_box#tab_5_content input[name="mb_id"], .content_box#tab_5_content input[name="mb_pw"] { border: 1px solid #ccc; padding: 20px 10px; color: #ccc; }
-.content_box#tab_5_content input[name="mb_id"] { border-radius: 10px 10px 0 0; }
-.content_box#tab_5_content input[name="mb_pw"] { border-top: none; border-radius: 0 0 10px 10px; margin-bottom: 10px; }
-.content_box#tab_5_content button { padding: 15px 10px; margin-bottom: 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
-.content_box#tab_5_content .user_id_pass { display: inline-block; float: left; }
-.content_box#tab_5_content .user_id_pass input { font-size: 13px; line-height: 19px; font-weight: 400; }
-.content_box#tab_5_content .user_id_pass input:hover { color: #f7cc6d; }
-.content_box#tab_5_content .user_id_pass input:first-child { display: inline-block; margin-right: 5px; padding-left: 0; padding-right: 0; }
-.content_box#tab_5_content .new_user { display: inline-block; text-align: right; }
-.content_box#tab_5_content .new_user input { padding: 0; margin-bottom: 0; font-size: 13px; line-height: 19px; font-weight: 400; color: #212121; }
+.content_box#tab_5_content form { margin-left: auto; margin-right: auto; text-align: left; }
+.content_box#tab_5_content li { display: flex; flex-direction: column; margin-bottom: 20px; }
+.content_box#tab_5_content span { font-size: 16px; line-height: 22px; font-weight: 400; }
+.content_box#tab_5_content li button { padding: 8.5px 0;}
+.content_box#tab_5_content input { width: 80%; height: -webkit-fill-available; padding: 10px; }
+.content_box#tab_5_content input[type="password"] { width: 80%; }
+.content_box#tab_5_content button { padding: 15px 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
 
 /* ----------- content 박스 [6. 닉네임 변경] ----------- */
 .content_box#tab_6_content .user_nickname { font-size: 20px; line-height: 26px; margin-bottom: 3em;}
 .content_box#tab_6_content .user_nickname span { font-size: 28px; line-height: 40px; font-weight: 600; }
 .content_box#tab_6_content .change_nickname input { padding: 15px 20px; border-radius: 10px;  }
-.content_box#tab_6_content .change_nickname
-.content_box#tab_6_content .change_nickname
 
 /* ----------- content 박스 [7. 프로필 사진 변경] ----------- */
 .content_box#tab_7_content .image-upload { padding: 30px 0; }
@@ -187,6 +180,8 @@
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal .filter_sub_title { display: block; }
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 5px; }
 
+    /* [5] 비밀번호 변경 */
+    .content_box#tab_5_content input[type="password"] { margin-right: 9px; }
 
     /* [7] 프로필 사진 변경 */
     .content_box#tab_7_content .image-upload { padding: 30px 0; }
@@ -201,11 +196,15 @@
     body > div.col-12.mypage { padding-left: 45px; padding-right: 45px; }
     .filter_wrap .filter_con .filter_sub_title { width: 18%; }
 
-    .content_box#tab_0_content .content_left { padding-left: 0; padding-right: 0; }
     .content_box#tab_0_content .content_left .calender { padding-left: 20px; padding-right: 20px; }
 
     /* [2] 커뮤니티 이용내역 */
     .content_box#tab_2_content .filter_wrap .filter_con .community_category_box .inner_normal li { margin-bottom: 0; }
+
+    /* [5] 비밀번호 변경 */
+    .content_box#tab_5_content li { flex-direction: row; align-items: center; }
+    .content_box#tab_5_content input { width: 50%; }
+    .content_box#tab_5_content input[type="password"] { width: 79%; }
 
     /* [8] 회원탈퇴 */
     .content_box#tab_8_content form#login { width: 40%; }

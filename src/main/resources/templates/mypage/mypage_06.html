@@ -114,41 +114,20 @@
             </div>
         </div>
 
-        <!--&lt;!&ndash; 오른쪽 컨텐츠&ndash;&gt;
         <div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_6_content">
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
                 <div class="col-12" id="sub_title">닉네임 변경</div>
                 <div class="col-12" style="text-align: center;">
-                    <div class="col-12 user_nickname"><span>기존 닉네임값</span> 님<br>변경하실 닉네임을 적어주세요.</div>
-                    <div class="col-12 change_nickname">
-                        <input type="text" class="col-10 col-md-5 box_eft_01 change_nickname changeNickname"/>
-                        <span>글자 제한 필요한거 아닌지?</span>
-                        <button type="submit" class="changeBtn btn btn-info box_eft_02">변경하기</button>
-                        <script>
-                            document.querySelector('.changeBtn').addEventListener('click', () => {
-                                const input = document.querySelector('.changeNickname'); //변경할 닉네임 입력하는 inoput 태그
-                                const value = input.value; //변경할 닉네임 값을 저장
-                                input.value = '';//input 태그 값 초기화
-
-                                /* TODO: 백엔드 연결필요
-                                    참고 사이트 : https://roughroad.tistory.com/275 */
-                            })
-                        </script>
-                    </div>
+                    <form action=/register' method="post">
+                        <div>아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
+                        <div>기존 닉네임<input type="text" name="mb_nick" id="mb_nick" th:value="${modifyNick}" readonly="readonly"></div>
+                        <div>새 닉네임<input type="text" name="nick" id="nick"><button type="button" onclick="nickCheck()">중복확인</button></div>
+                    </form>
+                    <button type="button" id="submit" onclick="updateNick()">변경하기</button>
+                    <button type="button" onclick="location.href='/'">처음으로</button>
                 </div>
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
             </div>
-        </div>-->
-
-        <h2>[닉네임 변경]</h2>
-        <form action=/register' method="post">
-        <div>아이디<input type="text" name="mb_id" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
-        <div>기존 닉네임<input type="text" name="mb_nick" id="mb_nick" th:value="${modifyNick}" readonly="readonly"></div>
-        <div>새 닉네임<input type="text" name="nick" id="nick"><button type="button" onclick="nickCheck()">중복확인</button></div>
-        </form>
-        <button type="button" id="submit" onclick="updateNick()">변경하기</button>
-        <button type="button" onclick="location.href='/'">처음으로</button>
+        </div>
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>

@@ -120,7 +120,6 @@
         <!-- 오른쪽 컨텐츠-->
         <!--<div class="col-12 col-lg-9 content">
             <div class="col-12 content_box" id="tab_5_content">
-                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
                 <div class="col-12" id="sub_title">비밀번호 변경</div>
                 <div class="col-12" style="text-align: center;">
                     <form action='/register' method="post" class="col-11 col-sm-8 col-md-6">
@@ -152,20 +151,46 @@
         </tr>
         </tbody>-->
 
-        <h2>[비밀번호 변경]</h2>
-        <form action='/register' method="post">
-        <!--<div>이름<input type="text" name="memberName" id="mb_name" th:value="${modifyName}" readonly="readonly"></div>-->
-        <div>이름<input type="text" name="memberName" id="mb_name" th:text="${modifyName}" readonly="readonly"></div>
-        <div>아이디<input type="text" name="memberId" id="mb_id" th:value="${modifyId}" readonly="readonly"></div>
-        <input type="hidden" name="modifyPw" id="modifyPw" th:value="${modifyPw}"/>
-        <div>기존 비밀번호를 입력해주세요. <br>
-            <input type="password" name="pw" id="pw" placeholder="기존 비밀번호 입력">
-            <button type="button" onclick="or_pw_check()">확인</button></div>
-        <div>새 비밀번호를 입력해주세요. <br><input type="password" name="mb_pw" id="mb_pw" placeholder="새 비밀번호"></div>
-        <div>다시 한 번 입력해 주세요. <br><input type="password" name="pw_check" id="pw_check" placeholder="새 비밀번호 재입력"></div>
-        </form>
-        <button type="button" id="submit" onclick="pw_modify()">변경하기</button>
-        <button type="button" onclick="location.href='/'">처음으로</button>
+        <div class="col-12 col-lg-9 content">
+            <div class="col-12 content_box" id="tab_5_content">
+                <div class="col-12" id="sub_title">비밀번호 변경</div>
+                <div class="col-12" style="text-align: center; padding-top: 40px;">
+                    <form action='/register' method="post" class="col-12 col-md-10 col-lg-8">
+                        <ul>
+                            <li>
+                                <!--이름<input type="text" name="memberName" id="mb_name" th:value="${modifyName}" readonly="readonly">-->
+                                <span class="col-12 col-md-4">이름</span>
+                                <input type="text" name="memberName" class="col-12 col-md-8 box_eft_01" id="mb_name" th:text="${modifyName}" readonly="readonly">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-4">아이디</span>
+                                <input type="text" name="memberId" class="col-12 col-md-8 box_eft_01" id="mb_id" th:value="${modifyId}" readonly="readonly">
+                            </li>
+                            <li>
+                                <input type="hidden" name="modifyPw" id="modifyPw" th:value="${modifyPw}"/>
+                                <span class="col-12 col-md-4">기존 비밀번호를 입력해주세요.</span>
+                                <div class="col-12 col-md-8">
+                                    <input type="password" name="pw" id="pw" class="col-11 box_eft_01" placeholder="기존 비밀번호 입력">
+                                    <button type="button" class="col-2 btn box_eft_02" onclick="or_pw_check()">확인</button>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-4">새 비밀번호를 입력해주세요.</span>
+                                <input type="password" name="mb_pw" id="mb_pw" class="col-12 col-md-8 box_eft_01" placeholder="새 비밀번호">
+                            </li>
+                            <li>
+                                <span class="col-12 col-md-4">다시 한 번 입력해 주세요.</span>
+                                <input type="password" name="pw_check" id="pw_check" class="col-12 col-md-8 box_eft_01" placeholder="새 비밀번호 재입력">
+                            </li>
+                        </ul>
+                    </form>
+                    <button type="button" class="btn box_eft_02" id="submit" onclick="pw_modify()">변경하기</button>
+                    <button type="button" class="btn box_eft_02" onclick="location.href='/'">처음으로</button>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 <footer data-include-path="/fixed/footer/footer.html"></footer>

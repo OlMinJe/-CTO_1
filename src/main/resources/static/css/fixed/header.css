@@ -11,7 +11,7 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .m_right .user_name { margin-bottom: 15px; }
 
 /* 웹 */
-.header_wrap { display: flex; justify-content: space-between; align-items: flex-end; padding: 20px 30px; }
+.header_wrap { display: flex; justify-content: space-between; align-items: flex-end; padding: 20px 10px; }
 .header_logo .logo { display: inline-block; }
 .header_logo .logo img  { width: 60px; }
 .header_wrap .nav_mian { display: none; }
@@ -31,6 +31,7 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
     div#slide_menu { display: none; }
     .header_logo .logo img  { width: 80px; }
     div.m_right { display: none; }
+    .header_wrap { padding-left: 30px; padding-right: 30px; }
     .header_wrap .nav_mian{ display: flex; justify-content: space-between; }
     .header_wrap .weather { display: block; }
     .header_wrap .w_right { display: block; }

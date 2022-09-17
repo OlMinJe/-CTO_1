@@ -31,6 +31,7 @@ public class MemberService implements UserDetailsService {
     @Autowired
     MainMapper mapper;
 
+
     /** 회원가입 **/
     // 유저체크
     public MemberVO userCheck(MemberVO memberVO) throws Exception {

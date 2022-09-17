@@ -42,7 +42,20 @@ public class MemberController {
     //BoardService boardService;
 
     @GetMapping(value = "/")
-    public String main(){ return "/main/main";}
+    public String main(HttpServletRequest req, Model model, MemberVO memberVO)throws Exception {
+        HttpSession session = req.getSession();
+        String nickname = memberVO.getMb_nick();
+        session.setAttribute("session_nick", nickname);
+
+        String value = (String)session.getAttribute("session_nick");
+        System.out.println(value);
+
+        //MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        //MemberVO id = memberService.membermodifyGET(member.getMb_id()); //null point error
+        //model.addAttribute("nickname", memberLogin());
+        //model.addAttribute("nickname", id.getMb_id());
+        return "/main/main";
+    }
 
 
     /** 회원가입 **/
@@ -149,16 +162,11 @@ public class MemberController {
     public String memberLogin() throws Exception {
         return "/login/login";
     }
-    /*
-    // 로그인 폼
-    @RequestMapping(value="/login")
-    public String memberLogin(HttpSession session, Model model) throws Exception {
-        //model.addAttribute("nickname", )
-        //MemberVO nickname = memberService.find_id();
-        String mail = memberVO.getMb_email();
-        session.setAttribute("nickname", memberService.find_id());
-        return "/login/login";
-    }*/
+
+    @RequestMapping(value="/header")
+    public String header() throws Exception {
+        return "/fixed/header";
+    }
 
     // 로그인 기능
     @RequestMapping(value="/userCheck", method={RequestMethod.GET, RequestMethod.POST})

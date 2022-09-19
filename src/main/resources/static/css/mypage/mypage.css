@@ -57,7 +57,7 @@
 .content_box#tab_0_content .content_left .top ul li:first-child { font-size: 30px; line-height: 36px; font-weight: 600; }
 .content_box#tab_0_content .content_left .top ul li:last-child { margin-bottom: 0; text-align: right; font-size: 20px; line-height: 26px; font-weight: 500; }
 .content_box#tab_0_content .content_left .top ul li:last-child span { font-size: 20px; line-height: 26px; font-weight: 500; }
-.content_box#tab_0_content .content_left .calender { padding-top: 20px; border-radius: 10px; background-color: #fcf8e3 }
+.content_box#tab_0_content .content_left .calender { padding-top: 20px; border-radius: 10px; border: 1px solid #ccc; box-shadow: 0 0 5px rgb(0 0 0 / 20%); }
 .content_box#tab_0_content .content_left .calender .calender_top { display: flex; align-items: center; margin-bottom: 30px; }
 .content_box#tab_0_content .content_left .calender .calender_top .nav { align-items: center; }
 .content_box#tab_0_content .content_left .calender .calender_top .nav button.nav-btn { font-size: 15px; line-height:21px; background-color: transparent; border-radius: 50%; cursor: pointer; }

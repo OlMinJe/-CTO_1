@@ -1,0 +1,15 @@
+/*body { height: 100%; overflow: hidden; }*/
+.game_text { display: none; justify-content: center; align-items: center; flex-direction: column; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); left: 0; top: 0; color: #fff; font-size: 50px; line-height: 56px; }
+.game_text > button { padding: 0.5rem 1rem; color: #fff; background: salmon; border: none; cursor: pointer; }
+.score { text-align: center; font-size: 36px; margin-bottom: 2rem; }
+.playground > ul { width: 250px; margin: 0 auto; border: 1px solid #212121; }
+.playground > ul > li { width: 200%; height: 25px; }
+.playground > ul > li > ul { display: flex; }
+.playground > ul > li > ul > li { width: 25px; height: 25px; outline: 1px solid #ccc; }
+
+.tree { background: #67C23A; }
+.bar { background: salmon; }
+.zee { background: #E6A23C; }
+.elLeft { background: #8E44AD; }
+.elRight { background: #16A085;}
+.square { background: skyblue;}

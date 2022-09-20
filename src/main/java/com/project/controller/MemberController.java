@@ -42,18 +42,7 @@ public class MemberController {
     //BoardService boardService;
 
     @GetMapping(value = "/")
-    public String main(HttpServletRequest req, Model model, MemberVO memberVO)throws Exception {
-        HttpSession session = req.getSession();
-        String nickname = memberVO.getMb_nick();
-        session.setAttribute("session_nick", nickname);
-
-        String value = (String)session.getAttribute("session_nick");
-        System.out.println(value);
-
-        //MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
-        //MemberVO id = memberService.membermodifyGET(member.getMb_id()); //null point error
-        //model.addAttribute("nickname", memberLogin());
-        //model.addAttribute("nickname", id.getMb_id());
+    public String main()throws Exception {
         return "/main/main";
     }
 
@@ -171,7 +160,13 @@ public class MemberController {
     // 로그인 기능
     @RequestMapping(value="/userCheck", method={RequestMethod.GET, RequestMethod.POST})
     public ModelAndView userCheck(@RequestParam(required = false) String code, MemberVO memberVO,
-                                  HttpServletRequest req, RedirectAttributes redirect) throws Exception {
+                                  HttpServletRequest req, RedirectAttributes redirect, Model model, HttpSession httpSession) throws Exception {
+
+        //로그인 시 사용자 아이디가 보이도록 함.
+        String id = req.getParameter("id");
+        httpSession.setAttribute("id", memberVO.getMb_id()); // 세션에 값을 셋팅하는 방법
+        String sessionId = (String) httpSession.getAttribute("id");// 세션에서 값을 가져오는 방법
+
 
         ModelAndView mav = new ModelAndView();
 

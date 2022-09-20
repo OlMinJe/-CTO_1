@@ -4,20 +4,35 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>로그아웃</title>
     <script type="text/javascript">
-        <![CDATA[
-        var session = [[ ${session.mb_id} ]];
-        ]]>
-        MemberVO vo=(MemberVO)session.getAttribute("member");
-        out.println(vo.getMb_id()+"님 반갑습니다.<br>");
+/*        function init() {
+            $.ajax({
+                type : "GET",
+                url : "/logout",
+                contentType: "application/json",
+                dataType: "json",
+                success : function() {
+
+                    console.log("세션 삭제됨")
+                    alert("로그아웃 처리 되었습니다.");
+                },
+                error : function(status) {
+                    alert(status + "error!");
+                }
+            });
+        }*/
+
+    if(sessionStorage == null){
+        sessionStorage.clear(); //세션 싹 비워줌
+        alert("로그아웃 처리 되었습니다.")
+        window.location.reload();
+    } else {
+        alert("세션 값이 존재하지 않습니다.")
+    }
+
     </script>
 </head>
 <body>
-/**/
-<%
-session.removeAttribute("member");
-response.sendRedirect("/");
-%>
-
-
+<h1>BYE BYE</h1>
+<button type="button" onclick="location.href='/'">홈으로</button>
 </body>
 </html>

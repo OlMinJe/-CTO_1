@@ -365,10 +365,15 @@ public class MemberController {
     }
 
     /** logout **/
-    //페이지 기능 추후 구현 예정
     @RequestMapping(value="/logout", method=RequestMethod.GET)
-    public String logout() throws Exception {
-        return "/login/logout";
+    public String logout(HttpServletRequest req) throws Exception {
+        /*
+        HttpSession session = req.getSession();
+        if(session != null){
+            session.invalidate();
+        }
+        */
+        return "/main/main";
     }
 
 

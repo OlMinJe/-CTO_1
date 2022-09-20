@@ -25,7 +25,8 @@
                 <li id="m_user">
                     <div class="user_name"><span>이름</span>님, 환영합니다.</div>
                     <a onclick="location.href='/mypage/mypage.html?stateCode=${stateCode}'">마이페이지</a>
-                    <a onclick="location.href='/'">로그아웃</a>
+                    <a onclick="location.href='/login/logout.html'">로그아웃</a>
+                    <!--<a th:action = "@{/login/logout}">로그아웃</a>-->
                 </li>
                 <li id="m_admin"><a onclick="location.href='/'">관리자 페이지로 넘어가기.</a></li>
             </ul>
@@ -62,6 +63,8 @@
                 <div class="user_name"><span>이름</span>님, 환영합니다.</div>
                 <a onclick="location.href='/mypage/mypage.html'">마이페이지</a>
                 <a onclick="location.href='/login/logout.html'">로그아웃</a>
+                <!--<a th:href="@{/login/logout.html}">로그아웃</a>-->
+                <!--<a onclick="logout()">로그아웃</a>-->
             </li>
             <li id="w_admin"><a onclick="location.href='/admin/admin.html'">관리자 페이지로 넘어가기.</a></li>
         </ul>

@@ -13,17 +13,26 @@
     <link rel="stylesheet" type="text/css" href="/css/Entertainment/Enter_tetris.css">
 </head>
 <body>
-<header data-include-path="/fixed/header/header.html"></header>
-<div class="col-12">
+<!--<header data-include-path="/fixed/header/header.html"></header>-->
+<div class="col-12" style="background-color: #ccc;">
     <div class="wrapper">
-        <div class="game_text">게임종료<button>다시시작</button></div>
-        <div class="score">0</div>
-        <div class="playground">
-            <ul></ul>
+        <div class="game_text">
+            GAME OVER
+            <div>
+                <button style="margin-right: 5px;">다시시작</button>
+                <button style="margin-left: 5px;" onclick="location.href='/Entertainment/Entertainment.html'">그만하기</button>
+            </div>
+        </div>
+        <div class="col-12 score">0</div>
+        <div class="col-12 playground">
+            <ul class="col-5"></ul>
+        </div>
+        <div class="col-12" style="text-align: center;">
+            <button onclick="location.href='/Entertainment/Entertainment.html'">포기하기</button>
         </div>
     </div>
 </div>
-<footer data-include-path="/fixed/footer/footer.html"></footer>
+<!--<footer data-include-path="/fixed/footer/footer.html"></footer>-->
 <script src="/js/tetris.js" type="module"></script>
 </body>
 </html>

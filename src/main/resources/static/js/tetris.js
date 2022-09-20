@@ -4,7 +4,7 @@
 const playground = document.querySelector(".playground > ul");
 const gameText = document.querySelector(".game_text");
 const gemeScore = document.querySelector(".score");
-const restartBut = document.querySelector(".game_text > button");
+const restartBut = document.querySelector(".game_text .restart");
 
 // Setting
 const GAME_ROWS = 20;

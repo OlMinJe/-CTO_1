@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/**").permitAll()
 			.and() // 로그인 설정
 				.formLogin()
-				.loginPage("/login").permitAll()
+				.loginPage("/login/login").permitAll()
 				.defaultSuccessUrl("/") //로그인 성공 시 이동할 페이지
 				.permitAll()
 			.and() // 로그아웃 설정
@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.logoutSuccessUrl("/login")
 				.invalidateHttpSession(true)
 			.and() // 403 예외처리 핸들링
-				.exceptionHandling().accessDeniedPage("/securityDenied");	// 권한없는 자의 접근
+				.exceptionHandling().accessDeniedPage("/admin/denied");	// 권한없는 자의 접근
 	}
 	// HttpSecurity : HTTP 요청에 대한 웹 기반 보안을 구성할 수 있다.
 

@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable()
 			.authorizeRequests()
 				// 페이지 권한 설정
-				//.antMatchers("/securityAdmin/**").hasRole("ADMIN")
+				.antMatchers("/admin/admin.html").hasRole("ADMIN")
 				//.antMatchers("/boardList").access("hasRole('USER') or hasRole('ADMIN')")
 				.antMatchers("/**").permitAll()
 			.and() // 로그인 설정
@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.logoutSuccessUrl("/login")
 				.invalidateHttpSession(true)
 			.and() // 403 예외처리 핸들링
-				.exceptionHandling().accessDeniedPage("/admin/denied");	// 권한없는 자의 접근
+				.exceptionHandling().accessDeniedPage("/admin/denied.html");	// 권한없는 자의 접근
 	}
 	// HttpSecurity : HTTP 요청에 대한 웹 기반 보안을 구성할 수 있다.
 

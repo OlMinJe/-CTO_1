@@ -152,9 +152,12 @@ public class MemberController {
         return "/login/login";
     }
 
-    @RequestMapping(value="/header")
-    public String header() throws Exception {
-        return "/fixed/header";
+    @RequestMapping(value="/header", method={RequestMethod.GET, RequestMethod.POST})
+    public String header(HttpServletRequest req, Model model, MemberVO memberVO, HttpSession httpSession) throws Exception {
+        String id = req.getParameter("id");
+        httpSession.setAttribute("id", memberVO.getMb_id()); // 세션에 값을 셋팅하는 방법
+        String sessionId = (String) httpSession.getAttribute("id");// 세션에서 값을 가져오는 방법
+        return "/fixed/header/header";
     }
 
     // 로그인 기능
@@ -373,6 +376,9 @@ public class MemberController {
             session.invalidate();
         }
         */
+        //MemberVO member = (MemberVO) session.getAttribute("member"); // 로그인시 있던 세션
+        HttpSession session = req.getSession();
+        session.invalidate();
         return "/main/main";
     }
 

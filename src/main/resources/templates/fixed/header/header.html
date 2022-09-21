@@ -23,7 +23,7 @@
                     <a onclick="location.href='/login/register.html'">회원가입</a>
                 </li>
                 <li id="m_user">
-                    <div class="user_name"><span>이름</span>님, 환영합니다.</div>
+                    <div class="user_name"><span th:text="${session.id}"></span>님, 환영합니다.</div>
                     <a onclick="location.href='/mypage/mypage.html?stateCode=${stateCode}'">마이페이지</a>
                     <a onclick="location.href='/login/logout.html'">로그아웃</a>
                     <!--<a th:action = "@{/login/logout}">로그아웃</a>-->
@@ -64,7 +64,9 @@
                 <a onclick="location.href='/login/register.html'">회원가입</a>
             </li>
             <li id="w_user">
-                <div class="user_name"><span>이름</span>님, 환영합니다.</div>
+                <div class="user_name">
+                    <span th:text="${session.id}">님, 환영합니다.</span> <!--header에 사용자 아이디 출력 안됨.-->
+                </div>
                 <a onclick="location.href='/mypage/mypage.html'">마이페이지</a>
                 <a onclick="location.href='/login/logout.html'">로그아웃</a>
                 <!--<a th:href="@{/login/logout.html}">로그아웃</a>-->

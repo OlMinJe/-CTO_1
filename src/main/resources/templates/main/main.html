@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> <!-- 스와이퍼 -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="/includeHtml.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e0b9488f11b6cad91c9c64919764e1de"></script>
 
     <link rel="stylesheet" type="text/css" href="/css/common.css"> <!-- 공통 css -->
     <link rel="stylesheet" type="text/css" href="/css/fixed/header.css"> <!-- 헤더 -->
@@ -48,15 +49,12 @@
         </div>
     </div>
     <div class="col-12 second_row_wrap mb">
-        <div class="col-12 col-md-6 location_wrap">위치api 연결</div>
+        <div class="col-12 col-md-6 location_wrap">
+            <!--지도 추가-->
+        </div>
         <div class="col-12 col-md-6 user_wrap">
-<!--            <span>이름</span>-->
-<!--            <input type="text" th:placeholder="${session.mb_nick()}" name="userName" id="userName" readonly>-->
-            <!--<span th:text="${session.session_nick}"></span>-->
             <span th:text="${session.id}"></span> <!--로그인한 사용자의 아이디 출력(임시)-->
             <span>안녕하세요.</span>
-            <!--<span th:text="${session.member.getMb_id()}"></span>
-            <span th:text="${nickname}"></span>-->
         </div>
     </div>
 </div>

@@ -51,11 +51,22 @@
         <div class="col-12 col-md-6 location_wrap">
             <div id="map" style="width:100%;height:100%;"></div>
         </div>
-        <div class="col-12 col-md-6 user_wrap">
+        <div class="col-12 col-md-6 user_wrap"><!--회원 정보 및 로그인-->
             <span th:text="${session.id}"></span> <!--로그인한 사용자의 아이디 출력(임시)-->
             <span>안녕하세요.</span>
+            <li id="w_visitor">
+                <a onclick="location.href='/login/login.html'">로그인</a>&nbsp;
+                <a onclick="location.href='/login/register.html'">회원가입</a>
+            </li>
+            <li id="w_user">
+                <a onclick="location.href='/mypage/mypage.html'">마이페이지</a>
+                <a onclick="location.href='/login/logout.html'">로그아웃</a>
+            </li>
+            <li id="w_admin">
+                <a onclick="location.href='/admin/admin.html'">관리자 페이지로 넘어가기.</a>
+            </li>
         </div>
-    </div>
+        </div>
 </div>
 <section class="col-12 sub_swiper_wrap mb">
     <canvas id="nigthSky"></canvas>

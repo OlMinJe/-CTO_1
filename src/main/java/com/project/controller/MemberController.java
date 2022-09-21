@@ -170,7 +170,6 @@ public class MemberController {
         httpSession.setAttribute("id", memberVO.getMb_id()); // 세션에 값을 셋팅하는 방법
         String sessionId = (String) httpSession.getAttribute("id");// 세션에서 값을 가져오는 방법
 
-
         ModelAndView mav = new ModelAndView();
 
         //로그인 처리

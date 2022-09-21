@@ -27,7 +27,7 @@
 
 /* second_row_wrap (location/ user) */
 .second_row_wrap { display: flex; flex-direction: column; }
-.location_wrap { border: 1px solid #ccc; min-height: 300px;}
+.location_wrap { border: 1px solid #ccc; min-height: 300px;overflow: hidden;}
 .user_wrap { padding: 30px 20px; border: 1px solid #ccc; }
 /*
 .user_wrap form { display: flex; flex-direction: column; }

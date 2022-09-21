@@ -130,8 +130,8 @@ const API_KEY = "079aa2ca018001daee6e82cb90f282c0"; //add your API KEY
 const COORDS = 'coords'; //좌표를 받을 변수
 
 //DOM객체들
-const weatherInfo = document.querySelector('.weatherInfo');
-const weatherIconImg = document.querySelector('.weatherIcon');
+// const weatherInfo = document.querySelector("span.weatherInfo")[0];
+// const weatherIconImg = document.querySelector(".weatherIcon");
 
 //초기화
 // function init() {
@@ -160,6 +160,8 @@ function handleError() {
 
 //날씨 api를 통해 날씨에 관련된 정보들을 받아온다.
 function getWeather(lat, lon) {
+    const weatherInfo = document.querySelector('.weatherInfo');
+    const weatherIconImg = document.querySelector(".weatherIcon");
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`).then(function(response) {
         return response.json();
     })

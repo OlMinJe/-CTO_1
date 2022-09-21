@@ -117,7 +117,7 @@ if(matchMedia("screen and (min-width: 772px)").matches){
         var navHeight = $("#header").outerHeight(true); //Nav 높이값
 
         if (scrollTop >= navHeight) {
-            $(".fixed_header").css("display", "block");
+            $(".fixed_header").css("display", "inline-flex");
         } else {
             $(".fixed_header").css("display", "none");
         }

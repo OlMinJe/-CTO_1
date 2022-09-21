@@ -196,3 +196,8 @@ function fixedIcon(){
         fixed_comment.style.display = "none";
     }, false);
 }
+
+//session 상태에 따른 로그인 화면 보이기 조절 중
+if (sessionStorage != null){
+    
+}

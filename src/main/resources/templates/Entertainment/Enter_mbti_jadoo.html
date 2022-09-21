@@ -11,43 +11,45 @@
         </head>
 
         <body class="container">   <!-- container 적절히 간격을 띄우는 -->
-        <article class="Enter_start">
-            <div class ="mt-4 Enter_jadoo_test_title">너나들이</div>
-            <img class="Enter_image mt-5" src="/img/Enter_jadoo_test/Enter_jadoo_title_image.png"></img>
-            <h1 class="mt-5 text-center">안녕자두야 MBTI 테스트</h1>  <!-- mt-5 -> 부트스트랩으로 h1 위쪽 간격 띄어주기 margin top -->
-            <h5 class="mt-4" style="text-align: center; margin: 0px 0px 15px 0px;">내가 안녕 자두야 속 캐릭터라면?</h5>
-            <button type="button" class="btn btn-outline-secondary mt-5" style="height: 80px; font-size: large;" onclick="Enter_start(); ">테스트 시작하기</button>
-            <button type="button" class="btn btn-outline-secondary mt-5" style="height: 80px; font-size: large;" onclick="location.href='Entertainment.html'">다른 테스트 보러가기</button>
+        <article class="mb-4 Enter_start">
+            <div class ="mb-5 Enter_jadoo_test_title">너나들이</div>
+            <img class="Enter_image mb-5" src="/img/Enter_jadoo_test/Enter_jadoo_title_image.png"></img>
+            <h1 class="mb-5 text-center">안녕자두야 MBTI 테스트</h1>  <!-- mt-5 -> 부트스트랩으로 h1 위쪽 간격 띄어주기 margin top -->
+            <h5 class="mb-4" style="text-align: center; margin: 0px 0px 15px 0px;">내가 안녕 자두야 속 캐릭터라면?</h5>
+            <button type="button" class="btn btn-outline-secondary mb-5" style="height: 80px; font-size: large;" onclick="Enter_start(); ">테스트 시작하기</button>
+            <button type="button" class="btn btn-outline-secondary mb-5" style="height: 80px; font-size: large;" onclick="location.href='Entertainment.html'">다른 테스트 보러가기</button>
             <h5 class="mt-5" style="text-align: center;">테스트 공유하기</h5>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <div class="mt-2 share addthis_inline_share_toolbox"></div>
         </article>
 
-        <article class="Enter_question">
-            <div class ="mt-4 Enter_jadoo_title">안녕자두야 MTBI</div>
-            <h6 id="EnterjadooQnum" class="mt-2 " style="text-align: right; color: rgb(137, 137, 137);">문제 번호</h6>
-            <div class="progress mt-2">
-                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: calc(100/12*1%)"></div>
+        <article class="col-12 mb-4 Enter_question">
+            <div class ="mb-2 mt-4 Enter_jadoo_title">안녕자두야 MTBI</div>
+            <h6 id="EnterjadooQnum" class="mb-2 " style="text-align: right; color: rgb(137, 137, 137);">문제 번호</h6>
+            <div class="progress mb-2">
+                <div class="progress-bar mb-10" role="progressbar" aria-label="Basic example" style="width: calc(100/12*1%)"></div>
             </div>
-            <h2 id="Enter_title" class="text-center mt-10">문제</h2>
+            <div class="col-12" id="Enter_title" class="mb-10" style="min-height:30px; margin-bottom:30px; padding: 50px 0px 50px 0px; text-align: center;">문제</div>
+            <!--<h2 id="Enter_title" class="text-center mt-10">문제</h2>-->
             <input id="type" type="hidden" value="EI">
-            <button id="Enter_mbti_A" type="button" class="btn btn-light mt-5" style="height: 80px; line-height: 20px;  border-radius: 12px;">Primary</button>
-            <button id="Enter_mbti_B" type="button" class="btn btn-light mt-5" style="height: 80px; line-height: 20px;  border-radius: 12px;">Primary</button>
+            <button id="Enter_mbti_A" type="button" class="btn btn-light mb-5" style="height: 80px; line-height: 20px;  border-radius: 12px;">Primary</button>
+            <button id="Enter_mbti_B" type="button" class="btn btn-light mb-5" style="height: 80px; line-height: 20px;  border-radius: 12px;">Primary</button>
+
         </article>
 
-        <article class="result">
-            <div class ="mt-4 Enter_jadoo_title">안녕자두야 MTBI</div>
-            <h1 id="Enter_jadoo_keyword" class="text-center mt-5">안녕 자두야 키워드</h1>
-            <h2 id="Enter_mbti_jadoo_name" class="text-center mt-3">자두 캐릭터 이름</h2>
-            <img id="Enter_mbti_img" class="rounded-circle mt-4" style="margin-bottom: 40px;" alt="jadoo">
-            <div id="Enter_jadoo_result" class="mt-3" style="border: 1px solid #ddd;">
-                <h3 id="explain_title" class="mt-3" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 20px 350px 0px 350px;">자두 캐릭터 타이틀 설명</h3>
-                <h3 id="Enter_mbti_jadoo_explain" class="mt-1" style="font-size: medium; text-align: justify; line-height: 30px; margin: 20px 350px 20px 350px;">설명</h3>
+        <article class="result mb-4">
+            <div class ="mb-5 Enter_jadoo_title">안녕자두야 MTBI</div>
+            <h1 id="Enter_jadoo_keyword" class="text-center mb-3">안녕 자두야 키워드</h1>
+            <h2 id="Enter_mbti_jadoo_name" class="text-center mb-4">자두 캐릭터 이름</h2>
+            <img id="Enter_mbti_img" class="rounded-circle mb-3" style="margin-bottom: 40px;" alt="jadoo">
+            <div id="Enter_jadoo_result" class="mb-3" style="border: 1px solid #ddd;">
+                <h3 id="explain_title" class="mb-1" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 20px 350px 0px 350px;">자두 캐릭터 타이틀 설명</h3>
+                <h3 id="Enter_mbti_jadoo_explain" class="mb-20" style="font-size: medium; text-align: justify; line-height: 30px; margin: 20px 350px 20px 350px;">설명</h3>
                 <!-- 추후 안녕 자두야 결과 추가 예정 -->
             </div>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="mt-20 share addthis_inline_share_toolbox" style="margin-top: 20px;"></div>
-            <button id="Enter_page" type="button" class="btn btn-light mt-5" style="height: 60px; margin-bottom: 30px;" onclick="location.href='Entertainment.html'">다른 테스트 하러 가기!</button>
+            <div class="mb-5 share addthis_inline_share_toolbox" style="margin-top: 20px;"></div>
+            <button id="Enter_page" type="button" class="btn btn-light mb-5" style="height: 60px; margin-bottom: 30px;" onclick="location.href='Entertainment.html'">다른 테스트 하러 가기!</button>
 
         </article>
 

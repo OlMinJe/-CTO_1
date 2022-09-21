@@ -12,26 +12,27 @@
 
         <body class="container">
         <!-- 시작 화면 -->
-        <article class="trip_start">
-            <div class ="mt-4 Enter_trip_test_title">너나들이</div>
-            <img class="Enter_trip_image mt-5" src="/img/Enter_trip_test/Enter_trip_test_title.jpg"></img>
-            <h1 class="mt-5 text-center">국내 여행지 테스트</h1>
-            <h5 class="mt-4" style="text-align: center; margin: 0px 0px 15px 0px;">나의 여행 스타일과 잘 맞는 국내 여행지는?</h5>
-            <button type="button" class="btn btn-outline-secondary mt-5" style="height: 80px; font-size: large;" onclick="Enter_trip_start();">테스트 시작하기</button>
-            <button type="button" class="btn btn-outline-secondary mt-5" style="height: 80px; font-size: large;" onclick="location.href='Entertainment.html'">다른 테스트 보러가기</button>
-            <h5 class="mt-5" style="text-align: center;">테스트 공유하기</h5>
+        <article class="trip_start mb-4">
+            <div class ="mb-5 Enter_trip_test_title">너나들이</div>
+            <img class="Enter_trip_image mb-5" src="/img/Enter_trip_test/Enter_trip_test_title.jpg"></img>
+            <h1 class="mb-4 text-center">국내 여행지 테스트</h1>
+            <h5 class="mb-5" style="text-align: center; margin: 0px 0px 15px 0px;">나의 여행 스타일과 잘 맞는 국내 여행지는?</h5>
+            <button type="button" class="btn btn-outline-secondary mb-5" style="height: 80px; font-size: large;" onclick="Enter_trip_start();">테스트 시작하기</button>
+            <button type="button" class="btn btn-outline-secondary mb-5" style="height: 80px; font-size: large;" onclick="location.href='Entertainment.html'">다른 테스트 보러가기</button>
+            <h5 class="mb-2" style="text-align: center;">테스트 공유하기</h5>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="mt-2 share addthis_inline_share_toolbox"></div>
+            <div class="mb-2 share addthis_inline_share_toolbox"></div>
         </article>
 
         <!-- 문제 화면 -->
-        <article class="trip_question">
-            <div class ="mt-4 Enter_trip_test_title">국내 여행지 테스트</div>
-            <h6 id="EntertripQnum" class="mt-2" style="text-align:right; color: rgb(137, 137, 137);">문제 번호</h6>
-            <div class="progress mt-2">
-                <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: calc(100/12*1%)"></div>
+        <article class="col-12 mb-4 trip_question">
+            <div class ="mb-2 mt-4 Enter_trip_test_title">국내 여행지 테스트</div>
+            <h6 id="EntertripQnum" class="mb-2" style="text-align:right; color: rgb(137, 137, 137);">문제 번호</h6>
+            <div class="progress mb-2">
+                <div class="mb-10 progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: calc(100/12*1%)"></div>
             </div>
-            <h2 id="trip_title" class="text-center mt-10">문제</h2>
+            <div class="col-12" id="trip_title" class="mb-10" style="min-height:30px; margin-bottom:30px; padding: 50px 0px 50px 0px; text-align: center;">문제</div>
+            <!--<h2 id="trip_title" class="text-center mt-10">문제</h2>-->
             <input id="type" type="hidden" value="EI">
             <button id="Enter_trip_test_A" type="button" class="btn btn-light mt-5" style="height: 80px; line-height: 20px; border-radius: 12px;">Primary</button>
             <button id="Enter_trip_test_B" type="button" class="btn btn-light mt-5" style="height: 80px; line-height: 20px; border-radius: 12px;">Primary</button>
@@ -39,19 +40,19 @@
         </article>
 
         <!-- 결과 화면 -->
-        <article class="result">
-            <div class ="mt-4 Enter_trip_test_title">국내 여행지 테스트</div>
-            <h1 id="Enter_trip_keyword" class="text-center mt-5">여행지 키워드</h1>
-            <h2 id="Enter_trip" class="text-center mt-4">여행지</h2>
-            <img id="img" src="" class="rounded-circle mt-4" style="margin-bottom: 40px;" alt="Enter_trip">
-            <div id="Enter_trip_result" class="mt-3" style="border: 1px solid #ddd;">
-                <h3 id="explain_title" class="mt-3" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 20px 350px 0px 350px;">타이틀 설명</h3>
-                <h3 id="explain" class="mt-1" style="font-size: medium; text-align: justify; line-height: 30px; margin: 0px 350px 20px 350px;">여행 스타일 설명</h3>
-                <h3 id="explain_tourist" class="mt-1" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 0px 350px 20px 350px;">여행지에 대한 설명(코스)</h3> <!-- 내용 추후 추가 -->
+        <article class="result mb-4">
+            <div class ="mb-5 Enter_trip_test_title">국내 여행지 테스트</div>
+            <h1 id="Enter_trip_keyword" class="text-center mb-4">여행지 키워드</h1>
+            <h2 id="Enter_trip" class="text-center mb-4">여행지</h2>
+            <img id="img" src="" class="rounded-circle mb-3" style="margin-bottom: 40px;" alt="Enter_trip">
+            <div id="Enter_trip_result" class="mb-3" style="border: 1px solid #ddd;">
+                <h3 id="explain_title" class="mb-1" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 20px 350px 0px 350px;">타이틀 설명</h3>
+                <h3 id="explain" class="mb-1" style="font-size: medium; text-align: justify; line-height: 30px; margin: 0px 350px 20px 350px;">여행 스타일 설명</h3>
+                <h3 id="explain_tourist" class="mb-5" style="font-size: 1.3rem; text-align: justify; line-height: 30px; margin: 0px 350px 20px 350px;">여행지에 대한 설명(코스)</h3> <!-- 내용 추후 추가 -->
             </div>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="mt-5 share addthis_inline_share_toolbox"></div>
-            <button id="Enter_page" type="button" class="btn btn-light mt-5" style="height: 60px; margin-bottom: 30px;" onclick="location.href='Entertainment.html'">다른 테스트 하러 가기!</button>
+            <div class="mb-5 share addthis_inline_share_toolbox"></div>
+            <button id="Enter_page" type="button" class="btn btn-light mb-5" style="height: 60px; margin-bottom: 30px;" onclick="location.href='Entertainment.html'">다른 테스트 하러 가기!</button>
         </article>
 
         <!-- 타입별로 데이터 저장 -->

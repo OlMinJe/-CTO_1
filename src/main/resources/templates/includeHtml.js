@@ -174,7 +174,8 @@ function getWeather(lat, lon) {
         const weatherIconAdrs = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
         //받아온 정보들을 표현한다.
-        weatherInfo.innerText = temperature + "°C/ @" + place + " / " + weatherDescription;
+        //weatherInfo.innerText = temperature + "°C/ @" + place + " / " + weatherDescription;
+        weatherInfo.innerText = temperature + "°C/ @" + place;
         weatherIconImg.setAttribute('src', weatherIconAdrs);
     })
     .catch((error) => console.log("error:", error));

@@ -29,27 +29,18 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 
 /*날씨 api*/
 
-.container {display: flex;justify-content: center;align-items: center;}
-
-.container * {
-    margin: 10px;
-    color: #fce4ec;
-}
-
-.container h1 {
-    font-size: 1.8rem;
-}
-.weatherInfo {
-    font-size: 1.5em;
-}
+.container {position: relative;display: flex; justify-content: center; overflow: hidden; padding-left: 30px;}
+.container * {color: #212121;}
+.container h1 {font-size: 1.8rem;}
+.weatherInfo { font-size: 1em; margin: 0 10px;}
 
 @media all and (min-width: 768px){
-    div#slide_menu { display: none; }
-    .header_logo .logo img  { width: 80px; }
-    div.m_right { display: none; }
-    .header_wrap { padding-left: 30px; padding-right: 30px; }
-    .header_wrap .nav_mian{ display: flex; justify-content: space-between; }
-    .header_wrap .weather { display: block; }
-    .header_wrap .w_right { display: block; }
-    .header_wrap #burgerbtn{ display: none; }
+div#slide_menu { display: none; }
+.header_logo .logo img  { width: 80px; }
+div.m_right { display: none; }
+.header_wrap { padding-left: 30px; padding-right: 30px; }
+.header_wrap .nav_mian{ display: flex; justify-content: space-between; }
+.header_wrap .weather { display: block; }
+.header_wrap .w_right { display: block; }
+.header_wrap #burgerbtn{ display: none; }
 }

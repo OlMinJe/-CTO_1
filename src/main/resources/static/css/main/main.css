@@ -26,21 +26,36 @@
 
 
 /* second_row_wrap (location/ user) */
-.second_row_wrap { display: flex; flex-direction: column; }
-.location_wrap { border: 1px solid #ccc; min-height: 300px;overflow: hidden;}
-.user_wrap { padding: 30px 20px; border: 1px solid #ccc; }
-/*
-.user_wrap form { display: flex; flex-direction: column; }
-.user_wrap form input[name="username"], .second_row_wrap .user_wrap form input[name="password"] { border: 1px solid #ccc; padding: 20px 10px; color: #ccc; }
-.user_wrap form input[name="username"] { border-radius: 10px 10px 0 0; }
-.user_wrap form input[name="password"] { border-top: none; border-radius: 0 0 10px 10px; margin-bottom: 30px; }
-.user_wrap form button { padding: 15px 10px; margin-bottom: 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
-.user_wrap form div.col-12 { display: flex; }
-.user_wrap form div.col-12 a { font-size: 13px; line-height: 19px; font-weight: 400; }
-.user_wrap form div.col-12 a:hover { color:  #f7cc6d; }
-.user_wrap form div.col-12 .user_id_pass a:first-child { margin-right: 5px; }
-.user_wrap form div.col-12 .new_user { text-align: right; }
-*/
+.second_row_wrap { display: flex; flex-direction: column-reverse; }
+.location_wrap { min-height: 310px;overflow: hidden;}
+.user_wrap { padding-bottom: 30px;/* border: 1px solid #ccc;*/ }
+
+.user_wrap .login { padding-top: 30px; padding-bottom: 30px; }
+.user_wrap .login > form { display: flex; flex-direction: column; margin-left: auto; margin-right: auto; }
+.user_wrap .login input[name="mb_id"], .login input[name="mb_pw"] { border: 1px solid #ccc; padding: 20px 10px; color: #212121; }
+.user_wrap .login input[name="mb_id"] { border-radius: 10px 10px 0 0; }
+.user_wrap .login input[name="mb_pw"] { border-top: none; border-radius: 0 0 10px 10px; margin-bottom: 10px; }
+.user_wrap .login button { padding: 15px 10px; margin-bottom: 10px; font-size: 16px; line-height: 22px; font-weight: 600; }
+.user_wrap .input_type input { border: none; background: initial; }
+.user_wrap .login .user_id_pass { display: inline-block; float: left; }
+.user_wrap .login .user_id_pass input { font-size: 13px; line-height: 19px; font-weight: 400; }
+.user_wrap .login .user_id_pass input:hover { color: #f7cc6d; }
+.user_wrap .login .user_id_pass input:first-child { display: inline-block; margin-right: 5px; padding-left: 0; padding-right: 0; }
+.user_wrap .login .new_user { display: inline-block; text-align: right; }
+.user_wrap .login .new_user input { padding: 0; margin-bottom: 0; font-size: 13px; line-height: 19px; font-weight: 400; color: #212121; }
+
+.user_wrap .user_login { height: 100%; padding: 15px; border: 1px solid #dcc5df; border-radius: 10px;}
+.user_login_top { margin-bottom: 20px; }
+.user_login_top .user_information { display: flex; justify-content: space-between}
+.user_login_top .user_information li { display: grid; align-items: baseline; }
+.user_login_top .user_information li:first-child { display: block; border: 1px solid #ccc; }
+.user_login_top .user_information li span { margin-bottom: 5px; font-size: 23px; line-height: 29px; font-weight: 500; }
+.user_login_top .user_information li a { display: inline-block; width: fit-content; padding: 3px 5px; text-align: center; }
+.user_login_top .user_information .user_home_01 { padding-left: 10px;}
+.user_login_top .user_information .user_home_02 { justify-items: end; }
+.user_login_top .user_information .user_home_02 button { margin-top: 10px; }
+
+.user_login_bottom { padding: 10px; min-height: 195px; border: 1px solid #dcc5df; }
 
 
 /* advice_wrap */
@@ -121,6 +136,7 @@ div.col-12.fixed { position: fixed; z-index: 1000; max-width: initial; margin: 0
 
     .second_row_wrap { flex-direction: row; }
     .second_row_wrap .user_wrap form button { padding-top: 20px; font-size: 18px; line-height: 24px; }
+    .user_wrap { padding: 0 30px; }
 
     .sub_swiper_wrap .sub_swiper_con { left: 16.5%; }
     .sub_swiper_list .swiper-slide { height: 300px; }
@@ -143,6 +159,7 @@ div.col-12.fixed { position: fixed; z-index: 1000; max-width: initial; margin: 0
 
 @media all and (min-width: 992px) {
     .moble_mb { margin-bottom: 0; }
+
 
     .community_wrap { flex-direction: row; }
     .community_wrap div.pl{ padding-left: 15px; }

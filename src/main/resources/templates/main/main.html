@@ -38,22 +38,55 @@
     </div>
     <div class="col-12 second_row_wrap mb">
         <div class="col-12 col-md-6 location_wrap">
-            <div id="map" style="width:100%;height:300px;"></div>
+            <div id="map" style="width:100%;height:310px;"></div>
         </div>
         <div class="col-12 col-md-6 user_wrap"><!--회원 정보 및 로그인-->
-            <span th:text="${session.id}"></span> <!--로그인한 사용자의 아이디 출력(임시)-->
-            <span>안녕하세요.</span>
-            <li id="w_visitor">
-                <a onclick="location.href='/login/login.html'">로그인</a>&nbsp;
-                <a onclick="location.href='/login/register.html'">회원가입</a>
-            </li>
-            <li id="w_user">
-                <a onclick="location.href='/mypage/mypage.html'">마이페이지</a>
-                <a onclick="location.href='/login/logout.html'">로그아웃</a>
-            </li>
-            <li id="w_admin">
-                <a onclick="location.href='/admin/admin.html'">관리자 페이지로 넘어가기.</a>
-            </li>
+            <!-- [1] 로그인 화면  -->
+            <!--
+            <div class="col-12 login">
+                <div class="title" style="text-align: center; margin-bottom: 15px;">로그인</div>
+                <form action='/userCheck' method="post" class="col-12 col-lg-10">
+                    <input type="text" class="box_eft_01" id="mb_id" name="mb_id" placeholder="아이디를 입력해주세요.">
+                    <input type="password" class="box_eft_01" id="mb_pw" name="mb_pw" placeholder="비밀번호를 입력해주세요.">
+                    <div class="col-12 input_type" style="margin-bottom: 20px;">
+                        <div class="col-7 user_id_pass">
+                            <input type="button" title="아이디 찾기" id="find_id_btn" value="아이디 찾기"
+                                   onclick="location.href='/login/find_id_form.html'">
+                            <input type="button" title="비밀번호 찾기" id="find_pw_btn" value="비밀번호 찾기"
+                                   onclick="location.href='/login/find_pw_form.html'">
+                        </div>
+                        <div class="col-5 new_user">
+                            <input type="button" value="회원가입" onclick="location.href='/login/register.html'">
+                        </div>
+                    </div>
+                    <input type="submit" value="로그인" class="btn box_eft_02">
+                </form>
+            </div>
+            -->
+            <!-- [2] 유저 로그인 완료 이후 화면-->
+            <div class="col-12 user_login">
+                <div class="col-12 user_login_top">
+                    <ul class="col-12 user_information">
+                        <li class="col-3 user_profile">
+                            <img src="">프로필
+                        </li>
+                        <li class="col-4 user_home_01">
+                            <!--<span th:text="${session.izd}">--><span>닉넴</span>
+                            <a class="box_eft_02" onclick="location.href='/mypage/mypage.html'">마이페이지</a>
+                        </li>
+                        <li class="col-5 user_home_02">
+                            <span>300P</span>
+                            <a class="box_eft_02" onclick="location.href='/login/logout.html'">로그아웃(icon)</a>
+                            <button type="button" class="admin_page_btn box_eft_02" style="display: none;" onclick="location.href='/admin/admin.html'">관리자 페이지로 넘어가기.</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 user_login_bottom">
+                    <ul class="col-12">
+                        뭘 넣어야할지..
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-12 mainvisual_wrap">

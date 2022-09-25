@@ -129,15 +129,6 @@ if(matchMedia("screen and (min-width: 772px)").matches){
 const API_KEY = "079aa2ca018001daee6e82cb90f282c0"; //add your API KEY
 const COORDS = 'coords'; //좌표를 받을 변수
 
-//DOM객체들
-// const weatherInfo = document.querySelector("span.weatherInfo")[0];
-// const weatherIconImg = document.querySelector(".weatherIcon");
-
-//초기화
-// function init() {
-//     askForCoords();
-// }
-
 //좌표를 물어보는 함수
 function askForCoords() {
     navigator.geolocation.getCurrentPosition(handleSuccess, handleError);

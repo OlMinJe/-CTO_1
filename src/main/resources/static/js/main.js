@@ -7,6 +7,7 @@ $(document).ready(function(){
 function swiperEvent(){
 // mainvisual 스와이퍼 이벤트
     let mainvisual_swiper = new Swiper(".mySwiper", {
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
         },

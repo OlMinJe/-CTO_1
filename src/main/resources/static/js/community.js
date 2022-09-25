@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    /*li_active_01();*/
+    li_active_01();
 });
 
 /* 상위 메뉴 */

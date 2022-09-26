@@ -8,6 +8,11 @@ function swiperEvent(){
 // mainvisual 스와이퍼 이벤트
     let mainvisual_swiper = new Swiper(".mySwiper", {
         loop: true,
+        loopAdditionalSlides: 1,
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
         },
@@ -17,10 +22,10 @@ function swiperEvent(){
     const sub_swiper = new Swiper('.sub_swiper_list .swiper-container', {
         loop: true,
         loopAdditionalSlides: 1,
-        /*autoplay:{
+        autoplay:{
             delay: 3000,
             disableOnInteraction: false,
-        },*/
+        },
         centeredSlides: true,
         slidesPerView: 1,
         slideToClickedSlide: true,

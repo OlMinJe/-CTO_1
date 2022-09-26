@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable()
 			.authorizeRequests()
 				// 페이지 권한 설정
-				.antMatchers("/admin/admin.html").hasRole("ADMIN")
+				//.antMatchers("/admin/admin.html").hasRole("ADMIN")
 				//.antMatchers("/boardList").access("hasRole('USER') or hasRole('ADMIN')")
 				.antMatchers("/**").permitAll()
 			.and() // 로그인 설정

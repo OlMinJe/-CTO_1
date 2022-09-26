@@ -199,7 +199,7 @@ public class MemberController {
                 }
             } else { // 없는 아이디거나 빈공란
                 mav.addObject("code", "nullError");
-                mav.addObject("url", "login");
+                mav.addObject("url", "login"); //?
             }
 
         }

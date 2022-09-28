@@ -17,20 +17,9 @@
 
 .board-content-search .selectbox .bt-select { padding: 10px 40px 10px 30px; height: 100%; border: 1px solid #dcc5df; background-color: #dcc5df; color: #fff; border-bottom: none; border-radius: 10px 0 0 10px; text-align: left; }
 
-/* mainvisual_wrap */
-.mainvisual_wrap { height: 500px; }
-.mainvisual_wrap .swiper { width: 100%; height: 100%; }
-.mainvisual_wrap .swiper-slide { text-align: center; font-size: 18px; border: 1px solid #ccc;
-    /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
-.mainvisual_wrap .swiper-slide img { display: block; width: 100%;/* height: 100%;*/ object-fit: contain; }
-.mainvisual_wrap .swiper-slide.slide01 { background-color: #b5c7ed; }
-.mainvisual_wrap .swiper-slide.slide01 span { position: relative; font-size: 40px; line-height: 46px; color: #fff; text-shadow: 1px 1px salmon; }
-.mainvisual_wrap .swiper-slide.slide01 span::after { content: ''; position: absolute; bottom: -80px; right: -30px; background-image: url("/img/cursor_icon.png"); background-size: 70px; width: 70px; height: 70px; background-repeat: no-repeat; }
-.mainvisual_wrap .swiper-slide.slide02 { background-color: #b5c7ed;}
-
 /* second_row_wrap (location/ user) */
 .second_row_wrap { display: flex; flex-direction: column-reverse; }
-.location_wrap { min-height: 310px;overflow: hidden;}
+.location_wrap { min-height: 315px;overflow: hidden;}
 .user_wrap { padding-bottom: 30px;/* border: 1px solid #ccc;*/ }
 
 .user_wrap .login { padding-top: 30px; padding-bottom: 30px; }
@@ -60,9 +49,26 @@
 .user_login_top .user_information .user_home_02 .logout { background-image:url("/img/logout_icon.png"); background-size: 30px; background-repeat: no-repeat; width: 30px; height: 30px; }
 
 .user_login_bottom { padding: 10px; min-height: 195px; border: 1px solid #dcc5df; }
+.user_login_bottom .title { margin-bottom: 10px; font-size: 20px; line-height: 26px; font-weight: 500; }
+.user_login_bottom .container { flex-direction: column; padding-left: 0; }
+.user_login_bottom  input[type="text"] { margin-bottom: 5px; padding: 5px 10px; }
+.user_login_bottom .to-dos { margin-top:25px; }
+.user_login_bottom .to-dos li { position: relative; padding-left: 10px; }
+.user_login_bottom .to-dos li::after { content: ''; width: 7px; height: 7px; background: #000; top: 6px; left: 0; position: absolute; border-radius: 10px; }
 
+/* mainvisual_wrap */
+.mainvisual_wrap { height: 500px; }
+.mainvisual_wrap .swiper { width: 100%; height: 100%; }
+.mainvisual_wrap .swiper-slide { text-align: center; font-size: 18px; border: 1px solid #ccc;
+    /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.mainvisual_wrap .swiper-slide img { display: block; width: 100%;/* height: 100%;*/ object-fit: contain; }
+.mainvisual_wrap .swiper-slide.slide01 { background-color: #b5c7ed; }
+.mainvisual_wrap .swiper-slide.slide01 span { position: relative; font-size: 40px; line-height: 46px; color: #fff; text-shadow: 1px 1px salmon; }
+.mainvisual_wrap .swiper-slide.slide01 span::after { content: ''; position: absolute; bottom: -80px; right: -30px; background-image: url("/img/cursor_icon.png"); background-size: 70px; width: 70px; height: 70px; background-repeat: no-repeat; }
+.mainvisual_wrap .swiper-slide.slide02 { background-color: #b5c7ed;}
+.mainvisual_wrap .swiper-slide.slide02 img { height: 100%; }
 
-/* advice_wrap */
+    /* advice_wrap */
 .advice_wrap ul { display: flex; justify-content: space-around; text-align: center; }
 .advice_wrap ul li { padding: 15px 0; width: 30%; white-space: nowrap; font-size: 12px; line-height: 18px; font-weight: 600; }
 

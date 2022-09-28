@@ -50,7 +50,7 @@
 
 .user_login_bottom { padding: 10px; min-height: 195px; border: 1px solid #dcc5df; }
 .user_login_bottom .title { margin-bottom: 10px; font-size: 20px; line-height: 26px; font-weight: 500; }
-.user_login_bottom .container { flex-direction: column; padding-left: 0; }
+.user_login_bottom .container { display: flex; flex-direction: column; padding-left: 0; }
 .user_login_bottom  input[type="text"] { margin-bottom: 5px; padding: 5px 10px; }
 .user_login_bottom .to-dos { margin-top:25px; }
 .user_login_bottom .to-dos li { position: relative; padding-left: 10px; }

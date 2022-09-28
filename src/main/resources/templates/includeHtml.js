@@ -166,7 +166,7 @@ function getWeather(lat, lon) {
 
         //받아온 정보들을 표현한다.
         //weatherInfo.innerText = temperature + "°C/ @" + place + " / " + weatherDescription;
-        weatherInfo.innerText = temperature + "°C/ @" + place;
+        weatherInfo.innerText = temperature + "°C\n" + place;
         weatherIconImg.setAttribute('src', weatherIconAdrs);
     })
     .catch((error) => console.log("error:", error));

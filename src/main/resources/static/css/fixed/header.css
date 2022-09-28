@@ -9,6 +9,8 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .m_right ul li:last-child { margin-bottom: 0; }
 .m_right ul li a, .m_right .user_name, .m_right .user_name span { font-size: 22px; line-height: 28px; font-width: 400; }
 .m_right .user_name { margin-bottom: 15px; }
+/**/
+
 
 /* 웹 */
 .header_wrap { display: flex; justify-content: space-between; align-items: flex-end; padding: 20px 10px; }
@@ -21,6 +23,7 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .header_wrap #burgerbtn { display: block; position: absolute; top: 25px; right: 10px; width: 30px; height: 30px; cursor: pointer; }
 .header_wrap #burgerbtn img { vertical-align: initial; }
 
+
 /* 고정헤더 */
 .fixed_header { z-index: 100; padding: 10px; height: 50px; background-color: #fff; }
 .fixed_header .header_logo, .fixed_header #fixedBtn { display: inline-block; }
@@ -29,10 +32,11 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 
 /*날씨 api*/
 
-.container {position: relative;display: flex; justify-content: center; overflow: hidden; padding-left: 30px;}
+.container {position: relative;display: none; justify-content: flex-start; overflow: hidden; padding-left: 30px; }
 .container * {color: #212121;}
 .container h1 {font-size: 1.8rem;}
-.weatherInfo { font-size: 1em; margin: 0 10px;}
+.weatherInfo { font-size: 1em; margin: 0 10px; }
+.weatherIcon { width: 50px; position: absolute; top: -6px; left: -6px; white-space: nowrap; overflow: hidden; }
 
 @media all and (min-width: 768px){
 div#slide_menu { display: none; }
@@ -42,5 +46,7 @@ div.m_right { display: none; }
 .header_wrap .nav_mian{ display: flex; justify-content: space-between; }
 .header_wrap .weather { display: block; }
 .header_wrap .w_right { display: block; }
-.header_wrap #burgerbtn{ display: none; }
+.header_wrap #burgerbtn { display: none; }
+.header_wrap .container {display: flex;}
 }
+

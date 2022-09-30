@@ -52,9 +52,9 @@
 .user_login_bottom .title { margin-bottom: 10px; font-size: 20px; line-height: 26px; font-weight: 500; }
 .user_login_bottom .container { display: flex; flex-direction: column; padding-left: 0; }
 .user_login_bottom  input[type="text"] { margin-bottom: 5px; padding: 5px 10px; }
-.user_login_bottom .to-dos { margin-top:25px; }
-.user_login_bottom .to-dos li { position: relative; padding-left: 10px; }
-.user_login_bottom .to-dos li::after { content: ''; width: 7px; height: 7px; background: #000; top: 6px; left: 0; position: absolute; border-radius: 10px; }
+.user_login_bottom button#addToDo { padding: 5px 10px; }
+.user_login_bottom .to-dos { overflow-y: scroll; overflow-x: hidden; }
+.user_login_bottom .to-dos li { display: flex; align-items: center; }
 
 /* mainvisual_wrap */
 .mainvisual_wrap { height: 500px; }

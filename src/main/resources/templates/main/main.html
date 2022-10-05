@@ -19,8 +19,17 @@
 <body>
 <header data-include-path="/fixed/header/header.html"></header>
 <div class="col-12 main">
-    <div class="col-12 search-wrap mb">
-        <div class="board-content-search">
+    <div class="col-12 search_wrap mb">
+        <!--221005-->
+        <form id="search_input">
+            <input type="text" id="search" class="box_eft_01">
+            <button id="search_btn" class="box_eft_02">검색하기</button>
+        </form>
+        <!-- 실시간 검색어 -->
+        <div class="realtime_word">
+            실시간 검색어 공간
+        </div>
+       <!-- <div class="board-content-search">
             <div class="selectbox">
                 <button type="button" class="bt-select">
                     <span>제목</span><i class="ico"></i></button>
@@ -34,7 +43,7 @@
                 <input type="text" id="searchText" class="box_eft_01" placeholder="검색어를 입력하세요." autocomplete="off">
                 <button class="bt-submit"></button>
             </div>
-        </div>
+        </div>-->
     </div>
     <div class="col-12 second_row_wrap mb">
         <div class="col-12 col-md-6 location_wrap">

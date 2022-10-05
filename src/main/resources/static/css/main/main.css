@@ -54,8 +54,8 @@
 .user_login_bottom .title { margin-bottom: 10px; font-size: 20px; line-height: 26px; font-weight: 500; }
 .user_login_bottom ol { counter-reset:list-number; }
 .user_login_bottom ol li { counter-increment:list-number; display: flex; }
-.user_login_bottom ol li::before{ content:counter(list-number)"."; padding-right: 5px; height: 18px; font-weight: 500; font-size: 10px; line-height: 18px;}
-.A17-del { vertical-align: /*text-decoration: line-through;*/ color: red; }
+.user_login_bottom ol li::before{ content:counter(list-number)"."; padding-right: 5px; height: 18px; font-weight: 500; font-size: 13px; line-height: 19px;}
+.A17-del { vertical-align: middle; /*text-decoration: line-through;*/ color: red; }
 .user_login_bottom ol li button { vertical-align: middle; margin-bottom: 0; margin-left: 5px; border-radius: 50px; background-color: #dcc5df; color: #fff; }
 
 

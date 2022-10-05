@@ -9,8 +9,8 @@ li.m_nav_title.m_right { margin-bottom: 40px; }
 .m_right ul li { margin-bottom: 10px; }
 .m_right ul li:last-child { margin-bottom: 0; }
 .m_right ul li a, .m_right .user_name, .m_right .user_name span { font-size: 22px; line-height: 28px; font-width: 400; }
-.m_right .weatherIcon { top: 5%; left: 7px; margin-left: 0; margin-right: 0; }
-.m_right .weatherInfo br { display: none; }
+.m_right .weatherIcon01 { width: 50px; }
+/*.m_right .weatherInfo br { display: none; }*/
 .m_right .user_name { margin-bottom: 15px; }
 /**/
 

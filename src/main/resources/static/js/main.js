@@ -1,14 +1,16 @@
-$(document).ready(function(){
+$(document).ready(function () {
     subSwiperBack();
     mainTableActive();
     fixedIcon();
 });
 
+// 짭 todolist
+/*
 let inputBox = document.getElementById('inputField');  // 할 일 입력창
 let addToDo = document.getElementById('addToDo');      // 버튼
 let toDoList = document.getElementById('toDoList');    // 할 일 리스트창
 
-addToDo.addEventListener('click', function(){    // 버튼에 클릭 이벤트가 발생하면
+addToDo.addEventListener('click', function () {    // 버튼에 클릭 이벤트가 발생하면
     var list = document.createElement('li');     // html 'li' 태그 만들기
     var Btn = document.createElement('button'); // 버튼 태그
     if (!inputBox.value)            // 할 일 입력창에 내용이 입력되지 않으면 alert 발생
@@ -32,18 +34,103 @@ addToDo.addEventListener('click', function(){    // 버튼에 클릭 이벤트�
     // })
 })
 
-// TODO: 오류 작업중
-function deleteBtn(event){
+function deleteBtn(event) {
     const removeBtn = event.target.parentElement;
     removeBtn.remove();
 }
+*/
 
-function swiperEvent(){
+// 찐 todolist
+const toDoForm = document.querySelector("#A17-todo");
+const toDoInput = document.querySelector("#A17-todo input");
+const toDoList = document.querySelector("#A17-todo-list");
+const TODO_KEY = "todos";
+let toDos = [];
+
+function saveToDos() {
+    localStorage.setItem(TODO_KEY, JSON.stringify(toDos));
+}
+
+function deleteToDo(event) {
+    const target = toDoList.querySelector(`li[id="${event.target.id}"]`);
+    target.remove();
+    toDos = toDos.filter((toDos) => toDos.id !== parseInt(target.id));
+    saveToDos();
+}
+
+function doneFunc(event) {
+    const tar = event.target.parentElement;
+    for (const i in toDos) {
+        if (toDos[i].id === parseInt(tar.id)) {
+            if (toDos[i].is_done === true) {
+                event.target.classList.remove("A17-del");
+                toDos[i].is_done = false;
+            } else {
+                event.target.classList.add("A17-del");
+                toDos[i].is_done = true;
+            }
+        }
+    }
+    saveToDos();
+}
+
+function paintToDo(newObj) {
+    let isDone = "";
+    if (newObj.is_done === true) {
+        isDone = "A17-del";
+    }
+    const temp = document.createElement("b");
+    temp.textContent = newObj.text;
+    const newToDoSet = document.createElement("li");
+    newToDoSet.id = newObj.id;
+    newToDoSet.innerHTML = `
+    <span class="${isDone} col-10">
+      ${temp.innerHTML}
+    </span>
+    <button id=${newObj.id}>X</button>
+  `;
+    toDoList.appendChild(newToDoSet);
+}
+
+function submitFunc(event) {
+    event.preventDefault();
+    const newInput = toDoInput.value;
+    const newObj = {
+        text: newInput,
+        id: Date.now(),
+        is_done: false,
+    };
+    toDoInput.value = "";
+    toDos.push(newObj);
+    saveToDos();
+    paintToDo(newObj);
+}
+
+toDoForm.addEventListener("submit", submitFunc);
+toDoList.addEventListener("click", (event) => {
+    if (event.target.tagName === "SPAN") {
+        doneFunc(event);
+    } else if (event.target.tagName === "BUTTON") {
+        deleteToDo(event);
+    }
+});
+
+const savedToDos = localStorage.getItem(TODO_KEY);
+
+if (savedToDos !== null) {
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+}
+
+
+// mainvisual 스와이퍼
+function swiperEvent() {
 // mainvisual 스와이퍼 이벤트
     let mainvisual_swiper = new Swiper(".mySwiper", {
         loop: true,
         loopAdditionalSlides: 1,
-        autoplay:{
+        autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
@@ -56,7 +143,7 @@ function swiperEvent(){
     const sub_swiper = new Swiper('.sub_swiper_list .swiper-container', {
         loop: true,
         loopAdditionalSlides: 1,
-        autoplay:{
+        autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
@@ -85,11 +172,11 @@ function setDraggable(draggable) {
 
 
 // sub_swiper 배경 효과
-function subSwiperBack(){
+function subSwiperBack() {
     //https://marshallku.com/web/tips/html5-canvas%EB%A1%9C-%EB%B0%A4%ED%95%98%EB%8A%98-%EA%B7%B8%EB%A6%AC%EA%B8%B0
     swiperEvent();
     const width = window.innerWidth,
-        height = window.innerHeight*(0.8), /*(0.8)*/
+        height = window.innerHeight * (0.8), /*(0.8)*/
         stars = createStars(width, height, 30),
         moon = {
             x: 0,
@@ -100,6 +187,7 @@ function subSwiperBack(){
         ctx = canvas.getContext("2d");
     let counter = 0,
         time = 0;
+
     function random(max) {
         return Math.floor(Math.random() * max);
     }
@@ -146,7 +234,7 @@ function subSwiperBack(){
                 x = star.x,
                 y = star.y,
                 opacity = getOpacity(factor),
-                randomColor = Math.floor((Math.random()*360)+1);
+                randomColor = Math.floor((Math.random() * 360) + 1);
 
             fillCircle(ctx, x, y, star.r, `hsla(${randomColor}, 30%, 80%, ${opacity})`); //별 그리기
         });
@@ -176,20 +264,20 @@ function subSwiperBack(){
 
 
 // 커뮤니티+editor 이벤트
-function mainTableActive(){
+function mainTableActive() {
     let mainCommunity_li = document.querySelectorAll('.main_community_menu li');
     let mainCommunity_content = document.getElementById('main_community_table');
     let mainEditor_content = document.getElementById('main_editor_table');
 
-    function mainCommunityLiActive(){
+    function mainCommunityLiActive() {
         mainCommunityTable();
-        for(let i = 0; i < mainCommunity_li.length; i++) {
+        for (let i = 0; i < mainCommunity_li.length; i++) {
             mainCommunity_li[i].addEventListener("click", function () {
                 while (mainCommunity_content.hasChildNodes()) {
                     mainCommunity_content.removeChild(mainCommunity_content.firstChild);
                 }
-                for(let j = 0; j < mainCommunity_li.length; j++){
-                    if(mainCommunity_li[j].classList.contains('active') == true){
+                for (let j = 0; j < mainCommunity_li.length; j++) {
+                    if (mainCommunity_li[j].classList.contains('active') == true) {
                         mainCommunity_li[j].classList.remove('active');
                     }
                 }
@@ -199,22 +287,22 @@ function mainTableActive(){
         }
     }
 
-    function mainCommunityTable(){
-        for(let i = 0; i < 10; i++) { // 해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
+    function mainCommunityTable() {
+        for (let i = 0; i < 10; i++) { // 해당 카테고리 seq 값 만큼 돌리는걸로 바꾸기
             mainCommunity_content.innerHTML +=
-                '<tr class="community-table">'+
-                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>'+
-                '<td class="comment_count"><span>' + '100' + '</span></td>'+
+                '<tr class="community-table">' +
+                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>' +
+                '<td class="comment_count"><span>' + '100' + '</span></td>' +
                 '</tr>';
         }
     }
 
-    function mainEditorTable(){
-        for(let i = 0; i < 10; i++) {
+    function mainEditorTable() {
+        for (let i = 0; i < 10; i++) {
             mainEditor_content.innerHTML +=
-                '<tr class="community-table">'+
-                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>'+
-                '<td class="comment_count"><span>' + '100' + '</span></td>'+
+                '<tr class="community-table">' +
+                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>' +
+                '<td class="comment_count"><span>' + '100' + '</span></td>' +
                 '</tr>';
         }
     }
@@ -224,7 +312,7 @@ function mainTableActive(){
 }
 
 // fixed 아이콘 hover 이벤트
-function fixedIcon(){
+function fixedIcon() {
     let fixed = document.getElementById("fixed");
     let fixed_comment = document.getElementById("fixed_comment");
 
@@ -238,6 +326,6 @@ function fixedIcon(){
 }
 
 //session 상태에 따른 로그인 화면 보이기 조절 중
-if (sessionStorage != null){
-    
+if (sessionStorage != null) {
+
 }

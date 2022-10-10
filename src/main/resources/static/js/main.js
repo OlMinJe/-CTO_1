@@ -264,12 +264,11 @@ function mainTableActive() {
     }
 
     function mainEditorTable() {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 1; i++) {
             mainEditor_content.innerHTML +=
-                '<tr class="community-table">' +
-                '<td class="title"><span><a href="/community/community_view.html">' + i + '</a></span></td>' +
-                '<td class="comment_count"><span>' + '100' + '</span></td>' +
-                '</tr>';
+                '<span class="title"><a href="/community/community_view.html">제목</a></span>' +
+                '<span class="content_img"><img src=""></span>' +
+                '<span class="content_text">내용</span>';
         }
     }
 

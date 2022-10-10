@@ -121,9 +121,13 @@
 .community_normal .main_community_menu li.mb { margin-bottom: 10px; }
 .community_normal .main_community_menu span { width: 23%; }
 .community_editor .community_menu { padding: 5px 10px; cursor: pointer; border: 1px solid #dcc5df; border-radius: 10px; background-color: #dcc5df; text-align: center; color: #fff;}
+.community_editor .content_table { display: flex; flex-direction: column; }
+.community_editor span.title { overflow: hidden; text-overflow: ellipsis; width: 95%; }
+.community_editor span.title a { display: block; font-size: 20px; line-height: 26px; font-weight: 400; }
+.community_editor span.content_img { margin-bottom: 10px; width: 100%; min-height: 300px; max-height: 300px; border-radius: 10px; background-color: #ccc; }
+.community_editor span.content_text { height: 176px; }
 
-
-/* fixed_icon */
+    /* fixed_icon */
 div.col-12.fixed { position: fixed; z-index: 1000; max-width: initial; margin: 0; padding: 20px; bottom: 55px; right: 20px; width: 105px; height: 105px; background-image: url("/img/fixed_icon_02.png"); background-size: 105px; background-repeat: no-repeat; }
 .fixed div.comment { position: absolute; display:none; z-index: 1000; bottom: 105px; right: 35px; width: 220px; padding: 20px 20px; border-radius: 25px; background-color: #f7cc6d;}
 .fixed div.comment::after { border: 20px solid transparent; border-top-color: #f7cc6d; border-bottom: 0; border-right: 0; content: ""; position: absolute; top: 60px; right: 44px; }
